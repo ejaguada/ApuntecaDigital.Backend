@@ -542,3 +542,65 @@ SELECT Id, Name, Year, CareerId FROM Classes
 2025-05-07 16:39:50.540 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/favicon.ico - null null
 2025-05-07 16:39:50.540 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/favicon.ico - 404 0 null 0.2965ms
 2025-05-07 16:39:50.540 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:57679/favicon.ico, Response status code: 404
+2025-05-07 18:37:50.532 -03:00 [INF] Registered 25 endpoints in 1.068 milliseconds.
+2025-05-07 18:37:51.680 -03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-05-07 18:37:51.714 -03:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2025-05-07 18:37:51.850 -03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Contributors] AS [c]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-07 18:37:51.942 -03:00 [INF] Now listening on: https://localhost:57679
+2025-05-07 18:37:51.946 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-05-07 18:37:51.987 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-07 18:37:51.988 -03:00 [INF] Hosting environment: Development
+2025-05-07 18:37:51.989 -03:00 [INF] Content root path: C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Web
+2025-05-07 18:45:08.576 -03:00 [INF] Registered 25 endpoints in 250 milliseconds.
+2025-05-07 18:45:09.201 -03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-05-07 18:45:09.233 -03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2025-05-07 18:45:09.374 -03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Contributors] AS [c]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-07 18:45:09.474 -03:00 [INF] Now listening on: https://localhost:57679
+2025-05-07 18:45:09.478 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-05-07 18:45:09.519 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-07 18:45:09.520 -03:00 [INF] Hosting environment: Development
+2025-05-07 18:45:09.521 -03:00 [INF] Content root path: C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Web

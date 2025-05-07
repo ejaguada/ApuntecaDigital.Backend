@@ -10,3 +10,4 @@ C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Core\obj\
 C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Core\obj\Debug\net9.0\refint\ApuntecaDigital.Backend.Core.dll
 C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Core\obj\Debug\net9.0\ApuntecaDigital.Backend.Core.pdb
 C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Core\obj\Debug\net9.0\ref\ApuntecaDigital.Backend.Core.dll
+C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Core\obj\Debug\net9.0\ApuntecaDigital.Backend.Core.sourcelink.json

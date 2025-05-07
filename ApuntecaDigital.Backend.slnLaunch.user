@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Nuevo perfil",
+    "Projects": [
+      {
+        "Path": "src\\ApuntecaDigital.Backend.Web\\ApuntecaDigital.Backend.Web.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

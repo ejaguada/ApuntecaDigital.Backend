@@ -13,3 +13,4 @@ C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.UseCases\
 C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.UseCases\obj\Debug\net9.0\refint\ApuntecaDigital.Backend.UseCases.dll
 C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.UseCases\obj\Debug\net9.0\ApuntecaDigital.Backend.UseCases.pdb
 C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.UseCases\obj\Debug\net9.0\ref\ApuntecaDigital.Backend.UseCases.dll
+C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.UseCases\obj\Debug\net9.0\ApuntecaDigital.Backend.UseCases.sourcelink.json

@@ -1,0 +1,1635 @@
+{
+  "x-generator": "NSwag v14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))",
+  "openapi": "3.0.0",
+  "info": {
+    "title": "ApuntecaDigital.Backend.Web",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/Subjects": {
+      "post": {
+        "tags": [
+          "Subjects"
+        ],
+        "summary": "Create a new Subject",
+        "description": "Creates a new Subject given a name and class ID.",
+        "operationId": "ApuntecaDigitalBackendWebSubjectsCreate",
+        "requestBody": {
+          "x-name": "CreateSubjectRequest",
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateSubjectRequest"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CreateSubjectResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Subjects"
+        ],
+        "summary": "List all Subjects",
+        "description": "List all subjects - returns a SubjectListResponse containing the Subjects.",
+        "operationId": "ApuntecaDigitalBackendWebSubjectsList",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SubjectListResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Subjects/{subjectId}": {
+      "delete": {
+        "tags": [
+          "Subjects"
+        ],
+        "summary": "Delete a Subject.",
+        "description": "Delete a Subject by providing a valid integer id.",
+        "operationId": "ApuntecaDigitalBackendWebSubjectsDelete",
+        "parameters": [
+          {
+            "name": "subjectId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Subjects"
+        ],
+        "summary": "Get a Subject by integer ID.",
+        "description": "Takes a positive integer ID and returns a matching Subject record.",
+        "operationId": "ApuntecaDigitalBackendWebSubjectsGetById",
+        "parameters": [
+          {
+            "name": "subjectId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SubjectRecord"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Subjects"
+        ],
+        "summary": "Update an existing Subject.",
+        "description": "Update an existing Subject by providing a fully defined replacement set of values.",
+        "operationId": "ApuntecaDigitalBackendWebSubjectsUpdate",
+        "parameters": [
+          {
+            "name": "subjectId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "x-name": "UpdateSubjectRequest",
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateSubjectRequest"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UpdateSubjectResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Contributors": {
+      "post": {
+        "tags": [
+          "Contributors"
+        ],
+        "summary": "Create a new Contributor",
+        "description": "Creates a new Contributor given a name.",
+        "operationId": "ApuntecaDigitalBackendWebContributorsCreate",
+        "requestBody": {
+          "x-name": "CreateContributorRequest",
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateContributorRequest"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CreateContributorResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Contributors"
+        ],
+        "summary": "List all Contributors",
+        "description": "List all contributors - returns a ContributorListResponse containing the Contributors.",
+        "operationId": "ApuntecaDigitalBackendWebContributorsList",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ContributorListResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Contributors/{contributorId}": {
+      "delete": {
+        "tags": [
+          "Contributors"
+        ],
+        "summary": "Delete a Contributor.",
+        "description": "Delete a Contributor by providing a valid integer id.",
+        "operationId": "ApuntecaDigitalBackendWebContributorsDelete",
+        "parameters": [
+          {
+            "name": "contributorId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Contributors"
+        ],
+        "summary": "Get a Contributor by integer ID.",
+        "description": "Takes a positive integer ID and returns a matching Contributor record.",
+        "operationId": "ApuntecaDigitalBackendWebContributorsGetById",
+        "parameters": [
+          {
+            "name": "contributorId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ContributorRecord"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Contributors"
+        ],
+        "summary": "Update an existing Contributor.",
+        "description": "Update an existing Contributor by providing a fully defined replacement set of values.\nSee: https://stackoverflow.com/questions/60761955/rest-update-best-practice-put-collection-id-without-id-in-body-vs-put-collecti",
+        "operationId": "ApuntecaDigitalBackendWebContributorsUpdate",
+        "parameters": [
+          {
+            "name": "contributorId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "x-name": "UpdateContributorRequest",
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateContributorRequest"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UpdateContributorResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Classes": {
+      "post": {
+        "tags": [
+          "Classes"
+        ],
+        "summary": "Create a new Class",
+        "description": "Creates a new Class given a name, year, and career ID.",
+        "operationId": "ApuntecaDigitalBackendWebClassesCreate",
+        "requestBody": {
+          "x-name": "CreateClassRequest",
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateClassRequest"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CreateClassResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Classes"
+        ],
+        "summary": "List all Classes",
+        "description": "List all classes - returns a ClassListResponse containing the Classes.",
+        "operationId": "ApuntecaDigitalBackendWebClassesList",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ClassListResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Classes/{classId}": {
+      "delete": {
+        "tags": [
+          "Classes"
+        ],
+        "summary": "Delete a Class.",
+        "description": "Delete a Class by providing a valid integer id.",
+        "operationId": "ApuntecaDigitalBackendWebClassesDelete",
+        "parameters": [
+          {
+            "name": "classId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Classes"
+        ],
+        "summary": "Get a Class by integer ID.",
+        "description": "Takes a positive integer ID and returns a matching Class record.",
+        "operationId": "ApuntecaDigitalBackendWebClassesGetById",
+        "parameters": [
+          {
+            "name": "classId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ClassRecord"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Classes"
+        ],
+        "summary": "Update an existing Class.",
+        "description": "Update an existing Class by providing a fully defined replacement set of values.",
+        "operationId": "ApuntecaDigitalBackendWebClassesUpdate",
+        "parameters": [
+          {
+            "name": "classId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "x-name": "UpdateClassRequest",
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateClassRequest"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UpdateClassResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Careers": {
+      "post": {
+        "tags": [
+          "Careers"
+        ],
+        "summary": "Create a new Career",
+        "description": "Creates a new Career given a name.",
+        "operationId": "ApuntecaDigitalBackendWebCareersCreate",
+        "requestBody": {
+          "x-name": "CreateCareerRequest",
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateCareerRequest"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CreateCareerResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Careers"
+        ],
+        "summary": "List all Careers",
+        "description": "List all careers - returns a CareerListResponse containing the Careers.",
+        "operationId": "ApuntecaDigitalBackendWebCareersList",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CareerListResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Careers/{careerId}": {
+      "delete": {
+        "tags": [
+          "Careers"
+        ],
+        "summary": "Delete a Career.",
+        "description": "Delete a Career by providing a valid integer id.",
+        "operationId": "ApuntecaDigitalBackendWebCareersDelete",
+        "parameters": [
+          {
+            "name": "careerId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Careers"
+        ],
+        "summary": "Get a Career by integer ID.",
+        "description": "Takes a positive integer ID and returns a matching Career record.",
+        "operationId": "ApuntecaDigitalBackendWebCareersGetById",
+        "parameters": [
+          {
+            "name": "careerId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CareerRecord"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Careers"
+        ],
+        "summary": "Update an existing Career.",
+        "description": "Update an existing Career by providing a fully defined replacement set of values.",
+        "operationId": "ApuntecaDigitalBackendWebCareersUpdate",
+        "parameters": [
+          {
+            "name": "careerId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "x-name": "UpdateCareerRequest",
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateCareerRequest"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UpdateCareerResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Books": {
+      "post": {
+        "tags": [
+          "Books"
+        ],
+        "summary": "Create a new Book",
+        "description": "Creates a new Book given a title, author, and ISBN.",
+        "operationId": "ApuntecaDigitalBackendWebBooksCreate",
+        "requestBody": {
+          "x-name": "CreateBookRequest",
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateBookRequest"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CreateBookResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Books"
+        ],
+        "summary": "List all Books",
+        "description": "List all books - returns a BookListResponse containing the Books.",
+        "operationId": "ApuntecaDigitalBackendWebBooksList",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BookListResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Books/{bookId}": {
+      "delete": {
+        "tags": [
+          "Books"
+        ],
+        "summary": "Delete a Book.",
+        "description": "Delete a Book by providing a valid integer id.",
+        "operationId": "ApuntecaDigitalBackendWebBooksDelete",
+        "parameters": [
+          {
+            "name": "bookId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Books"
+        ],
+        "summary": "Get a Book by integer ID.",
+        "description": "Takes a positive integer ID and returns a matching Book record.",
+        "operationId": "ApuntecaDigitalBackendWebBooksGetById",
+        "parameters": [
+          {
+            "name": "bookId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BookRecord"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Books"
+        ],
+        "summary": "Update an existing Book.",
+        "description": "Update an existing Book by providing a fully defined replacement set of values.",
+        "operationId": "ApuntecaDigitalBackendWebBooksUpdate",
+        "parameters": [
+          {
+            "name": "bookId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "x-name": "UpdateBookRequest",
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateBookRequest"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UpdateBookResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CreateSubjectResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "classId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "CreateSubjectRequest": {
+        "type": "object",
+        "example": {
+          "name": "Subject Name",
+          "classId": 1
+        },
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "classId"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 2,
+            "nullable": false
+          },
+          "classId": {
+            "type": "integer",
+            "format": "int32",
+            "minimum": 0.0,
+            "minLength": 1,
+            "nullable": false,
+            "exclusiveMinimum": true
+          }
+        }
+      },
+      "ErrorResponse": {
+        "type": "object",
+        "description": "the dto used to send an error response to the client",
+        "additionalProperties": false,
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "description": "the http status code sent to the client. default is 400.",
+            "format": "int32",
+            "default": 400
+          },
+          "message": {
+            "type": "string",
+            "description": "the message for the error response",
+            "default": "One or more errors occurred!"
+          },
+          "errors": {
+            "type": "object",
+            "description": "the collection of errors for the current context",
+            "additionalProperties": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "DeleteSubjectRequest": {
+        "type": "object",
+        "additionalProperties": false
+      },
+      "SubjectRecord": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "classId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "GetSubjectByIdRequest": {
+        "type": "object",
+        "additionalProperties": false
+      },
+      "SubjectListResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "subjects": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SubjectRecord"
+            }
+          }
+        }
+      },
+      "UpdateSubjectResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "subject": {
+            "$ref": "#/components/schemas/SubjectRecord"
+          }
+        }
+      },
+      "UpdateSubjectRequest": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name",
+          "classId"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32",
+            "minLength": 1,
+            "nullable": false
+          },
+          "name": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 2,
+            "nullable": false
+          },
+          "classId": {
+            "type": "integer",
+            "format": "int32",
+            "minimum": 0.0,
+            "minLength": 1,
+            "nullable": false,
+            "exclusiveMinimum": true
+          }
+        }
+      },
+      "CreateContributorResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          }
+        }
+      },
+      "CreateContributorRequest": {
+        "type": "object",
+        "example": {
+          "name": "Contributor Name",
+          "phoneNumber": null
+        },
+        "additionalProperties": false,
+        "required": [
+          "name"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 2,
+            "nullable": false
+          },
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "DeleteContributorRequest": {
+        "type": "object",
+        "additionalProperties": false
+      },
+      "ContributorRecord": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "GetContributorByIdRequest": {
+        "type": "object",
+        "additionalProperties": false
+      },
+      "ContributorListResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "contributors": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ContributorRecord"
+            }
+          }
+        }
+      },
+      "UpdateContributorResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "contributor": {
+            "$ref": "#/components/schemas/ContributorRecord"
+          }
+        }
+      },
+      "UpdateContributorRequest": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 2,
+            "nullable": false
+          }
+        }
+      },
+      "CreateClassResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "year": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "careerId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "CreateClassRequest": {
+        "type": "object",
+        "example": {
+          "name": "Class Name",
+          "year": 2025,
+          "careerId": 1
+        },
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "year",
+          "careerId"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 2,
+            "nullable": false
+          },
+          "year": {
+            "type": "integer",
+            "format": "int32",
+            "minimum": 0.0,
+            "minLength": 1,
+            "nullable": false,
+            "exclusiveMinimum": true
+          },
+          "careerId": {
+            "type": "integer",
+            "format": "int32",
+            "minimum": 0.0,
+            "minLength": 1,
+            "nullable": false,
+            "exclusiveMinimum": true
+          }
+        }
+      },
+      "DeleteClassRequest": {
+        "type": "object",
+        "additionalProperties": false
+      },
+      "ClassRecord": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "year": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "careerId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "GetClassByIdRequest": {
+        "type": "object",
+        "additionalProperties": false
+      },
+      "ClassListResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "classes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ClassRecord"
+            }
+          }
+        }
+      },
+      "UpdateClassResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "class": {
+            "$ref": "#/components/schemas/ClassRecord"
+          }
+        }
+      },
+      "UpdateClassRequest": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name",
+          "year",
+          "careerId"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32",
+            "minLength": 1,
+            "nullable": false
+          },
+          "name": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 2,
+            "nullable": false
+          },
+          "year": {
+            "type": "integer",
+            "format": "int32",
+            "minimum": 0.0,
+            "minLength": 1,
+            "nullable": false,
+            "exclusiveMinimum": true
+          },
+          "careerId": {
+            "type": "integer",
+            "format": "int32",
+            "minimum": 0.0,
+            "minLength": 1,
+            "nullable": false,
+            "exclusiveMinimum": true
+          }
+        }
+      },
+      "CreateCareerResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          }
+        }
+      },
+      "CreateCareerRequest": {
+        "type": "object",
+        "example": {
+          "name": "Career Name"
+        },
+        "additionalProperties": false,
+        "required": [
+          "name"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 2,
+            "nullable": false
+          }
+        }
+      },
+      "DeleteCareerRequest": {
+        "type": "object",
+        "additionalProperties": false
+      },
+      "CareerRecord": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          }
+        }
+      },
+      "GetCareerByIdRequest": {
+        "type": "object",
+        "additionalProperties": false
+      },
+      "CareerListResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "careers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CareerRecord"
+            }
+          }
+        }
+      },
+      "UpdateCareerResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "career": {
+            "$ref": "#/components/schemas/CareerRecord"
+          }
+        }
+      },
+      "UpdateCareerRequest": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32",
+            "minLength": 1,
+            "nullable": false
+          },
+          "name": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 2,
+            "nullable": false
+          }
+        }
+      },
+      "CreateBookResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "title": {
+            "type": "string"
+          },
+          "author": {
+            "type": "string"
+          },
+          "isbn": {
+            "type": "string"
+          }
+        }
+      },
+      "CreateBookRequest": {
+        "type": "object",
+        "example": {
+          "title": "Book Title",
+          "author": "Book Author",
+          "isbn": "1234567890"
+        },
+        "additionalProperties": false,
+        "required": [
+          "title",
+          "author",
+          "isbn"
+        ],
+        "properties": {
+          "title": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 2,
+            "nullable": false
+          },
+          "author": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 2,
+            "nullable": false
+          },
+          "isbn": {
+            "type": "string",
+            "maxLength": 20,
+            "minLength": 10,
+            "nullable": false
+          }
+        }
+      },
+      "DeleteBookRequest": {
+        "type": "object",
+        "additionalProperties": false
+      },
+      "BookRecord": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "title": {
+            "type": "string"
+          },
+          "author": {
+            "type": "string"
+          },
+          "isbn": {
+            "type": "string"
+          }
+        }
+      },
+      "GetBookByIdRequest": {
+        "type": "object",
+        "additionalProperties": false
+      },
+      "BookListResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "books": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BookRecord"
+            }
+          }
+        }
+      },
+      "UpdateBookResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "book": {
+            "$ref": "#/components/schemas/BookRecord"
+          }
+        }
+      },
+      "UpdateBookRequest": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "title",
+          "author",
+          "isbn"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32",
+            "minLength": 1,
+            "nullable": false
+          },
+          "title": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 2,
+            "nullable": false
+          },
+          "author": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 2,
+            "nullable": false
+          },
+          "isbn": {
+            "type": "string",
+            "maxLength": 20,
+            "minLength": 10,
+            "nullable": false
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "JWTBearerAuth": {
+        "type": "http",
+        "description": "Enter a JWT token to authorize the requests...",
+        "scheme": "Bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  }
+}
