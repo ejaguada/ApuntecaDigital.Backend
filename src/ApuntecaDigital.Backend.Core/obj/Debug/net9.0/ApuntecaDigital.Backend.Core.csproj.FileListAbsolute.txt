@@ -1,0 +1,12 @@
+C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Core\bin\Debug\net9.0\ApuntecaDigital.Backend.Core.deps.json
+C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Core\bin\Debug\net9.0\ApuntecaDigital.Backend.Core.dll
+C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Core\bin\Debug\net9.0\ApuntecaDigital.Backend.Core.pdb
+C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Core\obj\Debug\net9.0\ApuntecaDigital.Backend.Core.csproj.AssemblyReference.cache
+C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Core\obj\Debug\net9.0\ApuntecaDigital.Backend.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Core\obj\Debug\net9.0\ApuntecaDigital.Backend.Core.AssemblyInfoInputs.cache
+C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Core\obj\Debug\net9.0\ApuntecaDigital.Backend.Core.AssemblyInfo.cs
+C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Core\obj\Debug\net9.0\ApuntecaDigital.Backend.Core.csproj.CoreCompileInputs.cache
+C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Core\obj\Debug\net9.0\ApuntecaDigital.Backend.Core.dll
+C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Core\obj\Debug\net9.0\refint\ApuntecaDigital.Backend.Core.dll
+C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Core\obj\Debug\net9.0\ApuntecaDigital.Backend.Core.pdb
+C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Core\obj\Debug\net9.0\ref\ApuntecaDigital.Backend.Core.dll
