@@ -301,306 +301,8 @@
       ]
     },
     {
-      "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.eid95sndb5.wasm",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Blazor.Client.eid95sndb5.wasm",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "19733"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"pnED2GCuPQEe5Iesihvrh2HNX4TyMrv4CNvww3DMFmU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:19:16 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "eid95sndb5"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-pnED2GCuPQEe5Iesihvrh2HNX4TyMrv4CNvww3DMFmU="
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/ApuntecaDigital.Backend.Blazor.Client.wasm"
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.eid95sndb5.wasm",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Blazor.Client.eid95sndb5.wasm.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000116550117"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "8579"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"dIHrJd+KmNmR+eP2a9G4QBjdS+rrRsmDITxvJiXsKxs=\""
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"pnED2GCuPQEe5Iesihvrh2HNX4TyMrv4CNvww3DMFmU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:19:17 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "eid95sndb5"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-pnED2GCuPQEe5Iesihvrh2HNX4TyMrv4CNvww3DMFmU="
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/ApuntecaDigital.Backend.Blazor.Client.wasm"
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.eid95sndb5.wasm.gz",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Blazor.Client.eid95sndb5.wasm.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "8579"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"dIHrJd+KmNmR+eP2a9G4QBjdS+rrRsmDITxvJiXsKxs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:19:17 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "eid95sndb5"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-dIHrJd+KmNmR+eP2a9G4QBjdS+rrRsmDITxvJiXsKxs="
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/ApuntecaDigital.Backend.Blazor.Client.wasm.gz"
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.pdb",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Blazor.Client.w6ei1rc4ru.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "23992"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"qDo5PW3uwsKEbg0iqor8pNzP9TR5Z3z5vJkWlkYeyo8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:19:15 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-qDo5PW3uwsKEbg0iqor8pNzP9TR5Z3z5vJkWlkYeyo8="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.pdb",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Blazor.Client.w6ei1rc4ru.pdb.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000064312818"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "15548"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"dAyXx1mguJZkNNGEB4+C9vY5n8Xb4pcmW8sdOBa/c6s=\""
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"qDo5PW3uwsKEbg0iqor8pNzP9TR5Z3z5vJkWlkYeyo8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:19:17 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-qDo5PW3uwsKEbg0iqor8pNzP9TR5Z3z5vJkWlkYeyo8="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.pdb.gz",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Blazor.Client.w6ei1rc4ru.pdb.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "15548"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"dAyXx1mguJZkNNGEB4+C9vY5n8Xb4pcmW8sdOBa/c6s=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:19:17 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-dAyXx1mguJZkNNGEB4+C9vY5n8Xb4pcmW8sdOBa/c6s="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.w6ei1rc4ru.pdb",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Blazor.Client.w6ei1rc4ru.pdb",
+      "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.38zrn813qj.pdb",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Blazor.Client.38zrn813qj.pdb",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -621,21 +323,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"qDo5PW3uwsKEbg0iqor8pNzP9TR5Z3z5vJkWlkYeyo8=\""
+          "Value": "\"7a15e+ryMNHtKV99YFl2jLpcU9YsWErfdWl+llkghY8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:19:15 GMT"
+          "Value": "Thu, 08 May 2025 20:19:04 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "w6ei1rc4ru"
+          "Value": "38zrn813qj"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-qDo5PW3uwsKEbg0iqor8pNzP9TR5Z3z5vJkWlkYeyo8="
+          "Value": "sha256-7a15e+ryMNHtKV99YFl2jLpcU9YsWErfdWl+llkghY8="
         },
         {
           "Name": "label",
@@ -644,13 +346,13 @@
       ]
     },
     {
-      "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.w6ei1rc4ru.pdb",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Blazor.Client.w6ei1rc4ru.pdb.gz",
+      "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.38zrn813qj.pdb",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Blazor.Client.38zrn813qj.pdb.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000064312818"
+          "Quality": "0.000064288010"
         }
       ],
       "ResponseHeaders": [
@@ -668,7 +370,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "15548"
+          "Value": "15554"
         },
         {
           "Name": "Content-Type",
@@ -676,15 +378,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"dAyXx1mguJZkNNGEB4+C9vY5n8Xb4pcmW8sdOBa/c6s=\""
+          "Value": "\"iKPLGIun9EqcUJYpkBwO0LtoTX/BayS7L9af47Blbrg=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"qDo5PW3uwsKEbg0iqor8pNzP9TR5Z3z5vJkWlkYeyo8=\""
+          "Value": "W/\"7a15e+ryMNHtKV99YFl2jLpcU9YsWErfdWl+llkghY8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:19:17 GMT"
+          "Value": "Thu, 08 May 2025 20:19:07 GMT"
         },
         {
           "Name": "Vary",
@@ -694,11 +396,11 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "w6ei1rc4ru"
+          "Value": "38zrn813qj"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-qDo5PW3uwsKEbg0iqor8pNzP9TR5Z3z5vJkWlkYeyo8="
+          "Value": "sha256-7a15e+ryMNHtKV99YFl2jLpcU9YsWErfdWl+llkghY8="
         },
         {
           "Name": "label",
@@ -707,8 +409,8 @@
       ]
     },
     {
-      "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.w6ei1rc4ru.pdb.gz",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Blazor.Client.w6ei1rc4ru.pdb.gz",
+      "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.38zrn813qj.pdb.gz",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Blazor.Client.38zrn813qj.pdb.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -725,7 +427,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "15548"
+          "Value": "15554"
         },
         {
           "Name": "Content-Type",
@@ -733,11 +435,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"dAyXx1mguJZkNNGEB4+C9vY5n8Xb4pcmW8sdOBa/c6s=\""
+          "Value": "\"iKPLGIun9EqcUJYpkBwO0LtoTX/BayS7L9af47Blbrg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:19:17 GMT"
+          "Value": "Thu, 08 May 2025 20:19:07 GMT"
         },
         {
           "Name": "Vary",
@@ -747,11 +449,11 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "w6ei1rc4ru"
+          "Value": "38zrn813qj"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-dAyXx1mguJZkNNGEB4+C9vY5n8Xb4pcmW8sdOBa/c6s="
+          "Value": "sha256-iKPLGIun9EqcUJYpkBwO0LtoTX/BayS7L9af47Blbrg="
         },
         {
           "Name": "label",
@@ -760,8 +462,145 @@
       ]
     },
     {
+      "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.pdb",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Blazor.Client.38zrn813qj.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23992"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7a15e+ryMNHtKV99YFl2jLpcU9YsWErfdWl+llkghY8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 20:19:04 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7a15e+ryMNHtKV99YFl2jLpcU9YsWErfdWl+llkghY8="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.pdb",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Blazor.Client.38zrn813qj.pdb.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000064288010"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15554"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iKPLGIun9EqcUJYpkBwO0LtoTX/BayS7L9af47Blbrg=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"7a15e+ryMNHtKV99YFl2jLpcU9YsWErfdWl+llkghY8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 20:19:07 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7a15e+ryMNHtKV99YFl2jLpcU9YsWErfdWl+llkghY8="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.pdb.gz",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Blazor.Client.38zrn813qj.pdb.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15554"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iKPLGIun9EqcUJYpkBwO0LtoTX/BayS7L9af47Blbrg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 20:19:07 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iKPLGIun9EqcUJYpkBwO0LtoTX/BayS7L9af47Blbrg="
+        }
+      ]
+    },
+    {
       "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.wasm",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Blazor.Client.eid95sndb5.wasm",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Blazor.Client.y47xixftoo.wasm",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -782,28 +621,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pnED2GCuPQEe5Iesihvrh2HNX4TyMrv4CNvww3DMFmU=\""
+          "Value": "\"nrekaue2Ft6sbj8f5r7r79f7w3POa1dmzszNUs7JX84=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:19:16 GMT"
+          "Value": "Thu, 08 May 2025 20:19:06 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pnED2GCuPQEe5Iesihvrh2HNX4TyMrv4CNvww3DMFmU="
+          "Value": "sha256-nrekaue2Ft6sbj8f5r7r79f7w3POa1dmzszNUs7JX84="
         }
       ]
     },
     {
       "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.wasm",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Blazor.Client.eid95sndb5.wasm.gz",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Blazor.Client.y47xixftoo.wasm.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000116550117"
+          "Quality": "0.000116522955"
         }
       ],
       "ResponseHeaders": [
@@ -821,7 +660,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8579"
+          "Value": "8581"
         },
         {
           "Name": "Content-Type",
@@ -829,15 +668,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"dIHrJd+KmNmR+eP2a9G4QBjdS+rrRsmDITxvJiXsKxs=\""
+          "Value": "\"rspC6w/FNrBjP1OU1PlhmNXJ+qgDVNz5k7SQsNw6O1k=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"pnED2GCuPQEe5Iesihvrh2HNX4TyMrv4CNvww3DMFmU=\""
+          "Value": "W/\"nrekaue2Ft6sbj8f5r7r79f7w3POa1dmzszNUs7JX84=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:19:17 GMT"
+          "Value": "Thu, 08 May 2025 20:19:07 GMT"
         },
         {
           "Name": "Vary",
@@ -847,13 +686,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pnED2GCuPQEe5Iesihvrh2HNX4TyMrv4CNvww3DMFmU="
+          "Value": "sha256-nrekaue2Ft6sbj8f5r7r79f7w3POa1dmzszNUs7JX84="
         }
       ]
     },
     {
       "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.wasm.gz",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Blazor.Client.eid95sndb5.wasm.gz",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Blazor.Client.y47xixftoo.wasm.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -870,7 +709,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8579"
+          "Value": "8581"
         },
         {
           "Name": "Content-Type",
@@ -878,11 +717,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"dIHrJd+KmNmR+eP2a9G4QBjdS+rrRsmDITxvJiXsKxs=\""
+          "Value": "\"rspC6w/FNrBjP1OU1PlhmNXJ+qgDVNz5k7SQsNw6O1k=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:19:17 GMT"
+          "Value": "Thu, 08 May 2025 20:19:07 GMT"
         },
         {
           "Name": "Vary",
@@ -892,13 +731,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-dIHrJd+KmNmR+eP2a9G4QBjdS+rrRsmDITxvJiXsKxs="
+          "Value": "sha256-rspC6w/FNrBjP1OU1PlhmNXJ+qgDVNz5k7SQsNw6O1k="
         }
       ]
     },
     {
-      "Route": "_framework/ApuntecaDigital.Backend.Core.1x2c07cbo9.wasm",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Core.1x2c07cbo9.wasm",
+      "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.y47xixftoo.wasm",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Blazor.Client.y47xixftoo.wasm",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -911,7 +750,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "20757"
+          "Value": "19733"
         },
         {
           "Name": "Content-Type",
@@ -919,31 +758,31 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"O2rPdB+8VMaU60EhLp9UuKGxCIX3pyrnydKAU5DAmiM=\""
+          "Value": "\"nrekaue2Ft6sbj8f5r7r79f7w3POa1dmzszNUs7JX84=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:53:26 GMT"
+          "Value": "Thu, 08 May 2025 20:19:06 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "1x2c07cbo9"
+          "Value": "y47xixftoo"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-O2rPdB+8VMaU60EhLp9UuKGxCIX3pyrnydKAU5DAmiM="
+          "Value": "sha256-nrekaue2Ft6sbj8f5r7r79f7w3POa1dmzszNUs7JX84="
         },
         {
           "Name": "label",
-          "Value": "_framework/ApuntecaDigital.Backend.Core.wasm"
+          "Value": "_framework/ApuntecaDigital.Backend.Blazor.Client.wasm"
         }
       ]
     },
     {
-      "Route": "_framework/ApuntecaDigital.Backend.Core.1x2c07cbo9.wasm",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Core.1x2c07cbo9.wasm.gz",
+      "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.y47xixftoo.wasm",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Blazor.Client.y47xixftoo.wasm.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -974,15 +813,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8wECy6m3ILKB8h162pbIEUSv25dJhFL09VOIzBN6VJw=\""
+          "Value": "\"rspC6w/FNrBjP1OU1PlhmNXJ+qgDVNz5k7SQsNw6O1k=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"O2rPdB+8VMaU60EhLp9UuKGxCIX3pyrnydKAU5DAmiM=\""
+          "Value": "W/\"nrekaue2Ft6sbj8f5r7r79f7w3POa1dmzszNUs7JX84=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:53:27 GMT"
+          "Value": "Thu, 08 May 2025 20:19:07 GMT"
         },
         {
           "Name": "Vary",
@@ -992,21 +831,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "1x2c07cbo9"
+          "Value": "y47xixftoo"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-O2rPdB+8VMaU60EhLp9UuKGxCIX3pyrnydKAU5DAmiM="
+          "Value": "sha256-nrekaue2Ft6sbj8f5r7r79f7w3POa1dmzszNUs7JX84="
         },
         {
           "Name": "label",
-          "Value": "_framework/ApuntecaDigital.Backend.Core.wasm"
+          "Value": "_framework/ApuntecaDigital.Backend.Blazor.Client.wasm"
         }
       ]
     },
     {
-      "Route": "_framework/ApuntecaDigital.Backend.Core.1x2c07cbo9.wasm.gz",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Core.1x2c07cbo9.wasm.gz",
+      "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.y47xixftoo.wasm.gz",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Blazor.Client.y47xixftoo.wasm.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1031,11 +870,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8wECy6m3ILKB8h162pbIEUSv25dJhFL09VOIzBN6VJw=\""
+          "Value": "\"rspC6w/FNrBjP1OU1PlhmNXJ+qgDVNz5k7SQsNw6O1k=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:53:27 GMT"
+          "Value": "Thu, 08 May 2025 20:19:07 GMT"
         },
         {
           "Name": "Vary",
@@ -1045,21 +884,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "1x2c07cbo9"
+          "Value": "y47xixftoo"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-8wECy6m3ILKB8h162pbIEUSv25dJhFL09VOIzBN6VJw="
+          "Value": "sha256-rspC6w/FNrBjP1OU1PlhmNXJ+qgDVNz5k7SQsNw6O1k="
         },
         {
           "Name": "label",
-          "Value": "_framework/ApuntecaDigital.Backend.Core.wasm.gz"
+          "Value": "_framework/ApuntecaDigital.Backend.Blazor.Client.wasm.gz"
         }
       ]
     },
     {
-      "Route": "_framework/ApuntecaDigital.Backend.Core.fqx0sii6rf.pdb",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Core.fqx0sii6rf.pdb",
+      "Route": "_framework/ApuntecaDigital.Backend.Core.crd8dxi8mw.pdb",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Core.crd8dxi8mw.pdb",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1072,7 +911,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "17284"
+          "Value": "17288"
         },
         {
           "Name": "Content-Type",
@@ -1080,21 +919,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"x26pBhIrWi5XYhCI38hKtrz5N3VMTlClDQCFCbLuBtA=\""
+          "Value": "\"WJfWbpIWKsuKUowPC0Dy/82sZCHpHDIeHGRHvKP3E/Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:53:21 GMT"
+          "Value": "Thu, 08 May 2025 20:18:57 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fqx0sii6rf"
+          "Value": "crd8dxi8mw"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-x26pBhIrWi5XYhCI38hKtrz5N3VMTlClDQCFCbLuBtA="
+          "Value": "sha256-WJfWbpIWKsuKUowPC0Dy/82sZCHpHDIeHGRHvKP3E/Y="
         },
         {
           "Name": "label",
@@ -1103,13 +942,13 @@
       ]
     },
     {
-      "Route": "_framework/ApuntecaDigital.Backend.Core.fqx0sii6rf.pdb",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Core.fqx0sii6rf.pdb.gz",
+      "Route": "_framework/ApuntecaDigital.Backend.Core.crd8dxi8mw.pdb",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Core.crd8dxi8mw.pdb.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000099870169"
+          "Quality": "0.000099850225"
         }
       ],
       "ResponseHeaders": [
@@ -1127,7 +966,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10012"
+          "Value": "10014"
         },
         {
           "Name": "Content-Type",
@@ -1135,15 +974,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"7iFaPOVCLVEA31UnnqwghHUDYuMFHCYJcUeXo7lDl+s=\""
+          "Value": "\"nzy/iLMzJvLTpu9kB/Ua9+7Xi7sor1IH6UfdAs0Ksjk=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"x26pBhIrWi5XYhCI38hKtrz5N3VMTlClDQCFCbLuBtA=\""
+          "Value": "W/\"WJfWbpIWKsuKUowPC0Dy/82sZCHpHDIeHGRHvKP3E/Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:53:27 GMT"
+          "Value": "Thu, 08 May 2025 20:19:07 GMT"
         },
         {
           "Name": "Vary",
@@ -1153,11 +992,11 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fqx0sii6rf"
+          "Value": "crd8dxi8mw"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-x26pBhIrWi5XYhCI38hKtrz5N3VMTlClDQCFCbLuBtA="
+          "Value": "sha256-WJfWbpIWKsuKUowPC0Dy/82sZCHpHDIeHGRHvKP3E/Y="
         },
         {
           "Name": "label",
@@ -1166,8 +1005,8 @@
       ]
     },
     {
-      "Route": "_framework/ApuntecaDigital.Backend.Core.fqx0sii6rf.pdb.gz",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Core.fqx0sii6rf.pdb.gz",
+      "Route": "_framework/ApuntecaDigital.Backend.Core.crd8dxi8mw.pdb.gz",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Core.crd8dxi8mw.pdb.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1184,7 +1023,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10012"
+          "Value": "10014"
         },
         {
           "Name": "Content-Type",
@@ -1192,11 +1031,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"7iFaPOVCLVEA31UnnqwghHUDYuMFHCYJcUeXo7lDl+s=\""
+          "Value": "\"nzy/iLMzJvLTpu9kB/Ua9+7Xi7sor1IH6UfdAs0Ksjk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:53:27 GMT"
+          "Value": "Thu, 08 May 2025 20:19:07 GMT"
         },
         {
           "Name": "Vary",
@@ -1206,11 +1045,11 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fqx0sii6rf"
+          "Value": "crd8dxi8mw"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-7iFaPOVCLVEA31UnnqwghHUDYuMFHCYJcUeXo7lDl+s="
+          "Value": "sha256-nzy/iLMzJvLTpu9kB/Ua9+7Xi7sor1IH6UfdAs0Ksjk="
         },
         {
           "Name": "label",
@@ -1219,8 +1058,169 @@
       ]
     },
     {
+      "Route": "_framework/ApuntecaDigital.Backend.Core.ggp378hioe.wasm",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Core.ggp378hioe.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20757"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YEU0xlc+QnPFREw/wTYDCLyVXwKxUyKcd7KBcDewMRI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 20:19:06 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ggp378hioe"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YEU0xlc+QnPFREw/wTYDCLyVXwKxUyKcd7KBcDewMRI="
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/ApuntecaDigital.Backend.Core.wasm"
+        }
+      ]
+    },
+    {
+      "Route": "_framework/ApuntecaDigital.Backend.Core.ggp378hioe.wasm",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Core.ggp378hioe.wasm.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000116441546"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8587"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ODGIYXygO8aL8rydC2Y7lINbN9en/uX4nHBXknk8B7g=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"YEU0xlc+QnPFREw/wTYDCLyVXwKxUyKcd7KBcDewMRI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 20:19:07 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ggp378hioe"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YEU0xlc+QnPFREw/wTYDCLyVXwKxUyKcd7KBcDewMRI="
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/ApuntecaDigital.Backend.Core.wasm"
+        }
+      ]
+    },
+    {
+      "Route": "_framework/ApuntecaDigital.Backend.Core.ggp378hioe.wasm.gz",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Core.ggp378hioe.wasm.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8587"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ODGIYXygO8aL8rydC2Y7lINbN9en/uX4nHBXknk8B7g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 20:19:07 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ggp378hioe"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ODGIYXygO8aL8rydC2Y7lINbN9en/uX4nHBXknk8B7g="
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/ApuntecaDigital.Backend.Core.wasm.gz"
+        }
+      ]
+    },
+    {
       "Route": "_framework/ApuntecaDigital.Backend.Core.pdb",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Core.fqx0sii6rf.pdb",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Core.crd8dxi8mw.pdb",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1233,7 +1233,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "17284"
+          "Value": "17288"
         },
         {
           "Name": "Content-Type",
@@ -1241,28 +1241,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"x26pBhIrWi5XYhCI38hKtrz5N3VMTlClDQCFCbLuBtA=\""
+          "Value": "\"WJfWbpIWKsuKUowPC0Dy/82sZCHpHDIeHGRHvKP3E/Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:53:21 GMT"
+          "Value": "Thu, 08 May 2025 20:18:57 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-x26pBhIrWi5XYhCI38hKtrz5N3VMTlClDQCFCbLuBtA="
+          "Value": "sha256-WJfWbpIWKsuKUowPC0Dy/82sZCHpHDIeHGRHvKP3E/Y="
         }
       ]
     },
     {
       "Route": "_framework/ApuntecaDigital.Backend.Core.pdb",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Core.fqx0sii6rf.pdb.gz",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Core.crd8dxi8mw.pdb.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000099870169"
+          "Quality": "0.000099850225"
         }
       ],
       "ResponseHeaders": [
@@ -1280,7 +1280,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10012"
+          "Value": "10014"
         },
         {
           "Name": "Content-Type",
@@ -1288,15 +1288,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"7iFaPOVCLVEA31UnnqwghHUDYuMFHCYJcUeXo7lDl+s=\""
+          "Value": "\"nzy/iLMzJvLTpu9kB/Ua9+7Xi7sor1IH6UfdAs0Ksjk=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"x26pBhIrWi5XYhCI38hKtrz5N3VMTlClDQCFCbLuBtA=\""
+          "Value": "W/\"WJfWbpIWKsuKUowPC0Dy/82sZCHpHDIeHGRHvKP3E/Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:53:27 GMT"
+          "Value": "Thu, 08 May 2025 20:19:07 GMT"
         },
         {
           "Name": "Vary",
@@ -1306,13 +1306,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-x26pBhIrWi5XYhCI38hKtrz5N3VMTlClDQCFCbLuBtA="
+          "Value": "sha256-WJfWbpIWKsuKUowPC0Dy/82sZCHpHDIeHGRHvKP3E/Y="
         }
       ]
     },
     {
       "Route": "_framework/ApuntecaDigital.Backend.Core.pdb.gz",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Core.fqx0sii6rf.pdb.gz",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Core.crd8dxi8mw.pdb.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1329,7 +1329,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10012"
+          "Value": "10014"
         },
         {
           "Name": "Content-Type",
@@ -1337,11 +1337,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"7iFaPOVCLVEA31UnnqwghHUDYuMFHCYJcUeXo7lDl+s=\""
+          "Value": "\"nzy/iLMzJvLTpu9kB/Ua9+7Xi7sor1IH6UfdAs0Ksjk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:53:27 GMT"
+          "Value": "Thu, 08 May 2025 20:19:07 GMT"
         },
         {
           "Name": "Vary",
@@ -1351,13 +1351,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-7iFaPOVCLVEA31UnnqwghHUDYuMFHCYJcUeXo7lDl+s="
+          "Value": "sha256-nzy/iLMzJvLTpu9kB/Ua9+7Xi7sor1IH6UfdAs0Ksjk="
         }
       ]
     },
     {
       "Route": "_framework/ApuntecaDigital.Backend.Core.wasm",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Core.1x2c07cbo9.wasm",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Core.ggp378hioe.wasm",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1378,28 +1378,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"O2rPdB+8VMaU60EhLp9UuKGxCIX3pyrnydKAU5DAmiM=\""
+          "Value": "\"YEU0xlc+QnPFREw/wTYDCLyVXwKxUyKcd7KBcDewMRI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:53:26 GMT"
+          "Value": "Thu, 08 May 2025 20:19:06 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-O2rPdB+8VMaU60EhLp9UuKGxCIX3pyrnydKAU5DAmiM="
+          "Value": "sha256-YEU0xlc+QnPFREw/wTYDCLyVXwKxUyKcd7KBcDewMRI="
         }
       ]
     },
     {
       "Route": "_framework/ApuntecaDigital.Backend.Core.wasm",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Core.1x2c07cbo9.wasm.gz",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Core.ggp378hioe.wasm.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000116522955"
+          "Quality": "0.000116441546"
         }
       ],
       "ResponseHeaders": [
@@ -1417,7 +1417,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8581"
+          "Value": "8587"
         },
         {
           "Name": "Content-Type",
@@ -1425,15 +1425,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8wECy6m3ILKB8h162pbIEUSv25dJhFL09VOIzBN6VJw=\""
+          "Value": "\"ODGIYXygO8aL8rydC2Y7lINbN9en/uX4nHBXknk8B7g=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"O2rPdB+8VMaU60EhLp9UuKGxCIX3pyrnydKAU5DAmiM=\""
+          "Value": "W/\"YEU0xlc+QnPFREw/wTYDCLyVXwKxUyKcd7KBcDewMRI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:53:27 GMT"
+          "Value": "Thu, 08 May 2025 20:19:07 GMT"
         },
         {
           "Name": "Vary",
@@ -1443,13 +1443,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-O2rPdB+8VMaU60EhLp9UuKGxCIX3pyrnydKAU5DAmiM="
+          "Value": "sha256-YEU0xlc+QnPFREw/wTYDCLyVXwKxUyKcd7KBcDewMRI="
         }
       ]
     },
     {
       "Route": "_framework/ApuntecaDigital.Backend.Core.wasm.gz",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Core.1x2c07cbo9.wasm.gz",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Core.ggp378hioe.wasm.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1466,7 +1466,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8581"
+          "Value": "8587"
         },
         {
           "Name": "Content-Type",
@@ -1474,11 +1474,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8wECy6m3ILKB8h162pbIEUSv25dJhFL09VOIzBN6VJw=\""
+          "Value": "\"ODGIYXygO8aL8rydC2Y7lINbN9en/uX4nHBXknk8B7g=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:53:27 GMT"
+          "Value": "Thu, 08 May 2025 20:19:07 GMT"
         },
         {
           "Name": "Vary",
@@ -1488,13 +1488,174 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-8wECy6m3ILKB8h162pbIEUSv25dJhFL09VOIzBN6VJw="
+          "Value": "sha256-ODGIYXygO8aL8rydC2Y7lINbN9en/uX4nHBXknk8B7g="
         }
       ]
     },
     {
-      "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.etp682qoy2.wasm",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Infrastructure.etp682qoy2.wasm",
+      "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.chi95kbh81.pdb",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Infrastructure.chi95kbh81.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26028"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0KpPNcBQE4ltY4GZsi6x4TwK561FzbvO1ufcU+5WJx0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 20:19:00 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "chi95kbh81"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0KpPNcBQE4ltY4GZsi6x4TwK561FzbvO1ufcU+5WJx0="
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/ApuntecaDigital.Backend.Infrastructure.pdb"
+        }
+      ]
+    },
+    {
+      "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.chi95kbh81.pdb",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Infrastructure.chi95kbh81.pdb.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000073491585"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13606"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rNApm8aYnYpBzDsz2OT/Waf+dY+vC1Ow6GpDhYxWHQk=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"0KpPNcBQE4ltY4GZsi6x4TwK561FzbvO1ufcU+5WJx0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 20:19:07 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "chi95kbh81"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0KpPNcBQE4ltY4GZsi6x4TwK561FzbvO1ufcU+5WJx0="
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/ApuntecaDigital.Backend.Infrastructure.pdb"
+        }
+      ]
+    },
+    {
+      "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.chi95kbh81.pdb.gz",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Infrastructure.chi95kbh81.pdb.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13606"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rNApm8aYnYpBzDsz2OT/Waf+dY+vC1Ow6GpDhYxWHQk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 20:19:07 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "chi95kbh81"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rNApm8aYnYpBzDsz2OT/Waf+dY+vC1Ow6GpDhYxWHQk="
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/ApuntecaDigital.Backend.Infrastructure.pdb.gz"
+        }
+      ]
+    },
+    {
+      "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.ku1noiri7h.wasm",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Infrastructure.ku1noiri7h.wasm",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1515,21 +1676,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"MriOfiFNR+Q2Lbi5n2UkrWc47jQEu5uXZDJdbSUBrgE=\""
+          "Value": "\"5MYWtanMHov6wRaVbCyGklnHfI4jOcdSQsAuoL6711Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:03:30 GMT"
+          "Value": "Thu, 08 May 2025 20:19:06 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "etp682qoy2"
+          "Value": "ku1noiri7h"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-MriOfiFNR+Q2Lbi5n2UkrWc47jQEu5uXZDJdbSUBrgE="
+          "Value": "sha256-5MYWtanMHov6wRaVbCyGklnHfI4jOcdSQsAuoL6711Y="
         },
         {
           "Name": "label",
@@ -1538,13 +1699,13 @@
       ]
     },
     {
-      "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.etp682qoy2.wasm",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Infrastructure.etp682qoy2.wasm.gz",
+      "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.ku1noiri7h.wasm",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Infrastructure.ku1noiri7h.wasm.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000051888751"
+          "Quality": "0.000051883366"
         }
       ],
       "ResponseHeaders": [
@@ -1562,7 +1723,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19271"
+          "Value": "19273"
         },
         {
           "Name": "Content-Type",
@@ -1570,15 +1731,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"N62pG6sAFhgCJI2hvPTxrx4LpWVBRSnhvuLAwqGFMzo=\""
+          "Value": "\"sh9Ek+trv73cVHLWkjcBJg5vAlcyblTRJqM0PKwKfVA=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"MriOfiFNR+Q2Lbi5n2UkrWc47jQEu5uXZDJdbSUBrgE=\""
+          "Value": "W/\"5MYWtanMHov6wRaVbCyGklnHfI4jOcdSQsAuoL6711Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:03:31 GMT"
+          "Value": "Thu, 08 May 2025 20:19:07 GMT"
         },
         {
           "Name": "Vary",
@@ -1588,11 +1749,11 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "etp682qoy2"
+          "Value": "ku1noiri7h"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-MriOfiFNR+Q2Lbi5n2UkrWc47jQEu5uXZDJdbSUBrgE="
+          "Value": "sha256-5MYWtanMHov6wRaVbCyGklnHfI4jOcdSQsAuoL6711Y="
         },
         {
           "Name": "label",
@@ -1601,8 +1762,8 @@
       ]
     },
     {
-      "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.etp682qoy2.wasm.gz",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Infrastructure.etp682qoy2.wasm.gz",
+      "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.ku1noiri7h.wasm.gz",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Infrastructure.ku1noiri7h.wasm.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1619,7 +1780,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19271"
+          "Value": "19273"
         },
         {
           "Name": "Content-Type",
@@ -1627,11 +1788,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"N62pG6sAFhgCJI2hvPTxrx4LpWVBRSnhvuLAwqGFMzo=\""
+          "Value": "\"sh9Ek+trv73cVHLWkjcBJg5vAlcyblTRJqM0PKwKfVA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:03:31 GMT"
+          "Value": "Thu, 08 May 2025 20:19:07 GMT"
         },
         {
           "Name": "Vary",
@@ -1641,11 +1802,11 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "etp682qoy2"
+          "Value": "ku1noiri7h"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-N62pG6sAFhgCJI2hvPTxrx4LpWVBRSnhvuLAwqGFMzo="
+          "Value": "sha256-sh9Ek+trv73cVHLWkjcBJg5vAlcyblTRJqM0PKwKfVA="
         },
         {
           "Name": "label",
@@ -1655,7 +1816,7 @@
     },
     {
       "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.pdb",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Infrastructure.y7a43nyx6s.pdb",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Infrastructure.chi95kbh81.pdb",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1668,7 +1829,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "26024"
+          "Value": "26028"
         },
         {
           "Name": "Content-Type",
@@ -1676,28 +1837,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vgsB8jpYvVsH+/NlP/D1TBTd3gnlWTRrKRJT7FtqDWc=\""
+          "Value": "\"0KpPNcBQE4ltY4GZsi6x4TwK561FzbvO1ufcU+5WJx0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:03:27 GMT"
+          "Value": "Thu, 08 May 2025 20:19:00 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-vgsB8jpYvVsH+/NlP/D1TBTd3gnlWTRrKRJT7FtqDWc="
+          "Value": "sha256-0KpPNcBQE4ltY4GZsi6x4TwK561FzbvO1ufcU+5WJx0="
         }
       ]
     },
     {
       "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.pdb",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Infrastructure.y7a43nyx6s.pdb.gz",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Infrastructure.chi95kbh81.pdb.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000073529412"
+          "Quality": "0.000073491585"
         }
       ],
       "ResponseHeaders": [
@@ -1715,7 +1876,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "13599"
+          "Value": "13606"
         },
         {
           "Name": "Content-Type",
@@ -1723,15 +1884,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"In36l8YpPNm+IUDG3dljyJ6F+aOPdRfusmh4GgxRCf0=\""
+          "Value": "\"rNApm8aYnYpBzDsz2OT/Waf+dY+vC1Ow6GpDhYxWHQk=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"vgsB8jpYvVsH+/NlP/D1TBTd3gnlWTRrKRJT7FtqDWc=\""
+          "Value": "W/\"0KpPNcBQE4ltY4GZsi6x4TwK561FzbvO1ufcU+5WJx0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:03:31 GMT"
+          "Value": "Thu, 08 May 2025 20:19:07 GMT"
         },
         {
           "Name": "Vary",
@@ -1741,13 +1902,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-vgsB8jpYvVsH+/NlP/D1TBTd3gnlWTRrKRJT7FtqDWc="
+          "Value": "sha256-0KpPNcBQE4ltY4GZsi6x4TwK561FzbvO1ufcU+5WJx0="
         }
       ]
     },
     {
       "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.pdb.gz",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Infrastructure.y7a43nyx6s.pdb.gz",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Infrastructure.chi95kbh81.pdb.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1764,7 +1925,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "13599"
+          "Value": "13606"
         },
         {
           "Name": "Content-Type",
@@ -1772,11 +1933,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"In36l8YpPNm+IUDG3dljyJ6F+aOPdRfusmh4GgxRCf0=\""
+          "Value": "\"rNApm8aYnYpBzDsz2OT/Waf+dY+vC1Ow6GpDhYxWHQk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:03:31 GMT"
+          "Value": "Thu, 08 May 2025 20:19:07 GMT"
         },
         {
           "Name": "Vary",
@@ -1786,13 +1947,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-In36l8YpPNm+IUDG3dljyJ6F+aOPdRfusmh4GgxRCf0="
+          "Value": "sha256-rNApm8aYnYpBzDsz2OT/Waf+dY+vC1Ow6GpDhYxWHQk="
         }
       ]
     },
     {
       "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.wasm",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Infrastructure.etp682qoy2.wasm",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Infrastructure.ku1noiri7h.wasm",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1813,28 +1974,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"MriOfiFNR+Q2Lbi5n2UkrWc47jQEu5uXZDJdbSUBrgE=\""
+          "Value": "\"5MYWtanMHov6wRaVbCyGklnHfI4jOcdSQsAuoL6711Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:03:30 GMT"
+          "Value": "Thu, 08 May 2025 20:19:06 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-MriOfiFNR+Q2Lbi5n2UkrWc47jQEu5uXZDJdbSUBrgE="
+          "Value": "sha256-5MYWtanMHov6wRaVbCyGklnHfI4jOcdSQsAuoL6711Y="
         }
       ]
     },
     {
       "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.wasm",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Infrastructure.etp682qoy2.wasm.gz",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Infrastructure.ku1noiri7h.wasm.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000051888751"
+          "Quality": "0.000051883366"
         }
       ],
       "ResponseHeaders": [
@@ -1852,7 +2013,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19271"
+          "Value": "19273"
         },
         {
           "Name": "Content-Type",
@@ -1860,15 +2021,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"N62pG6sAFhgCJI2hvPTxrx4LpWVBRSnhvuLAwqGFMzo=\""
+          "Value": "\"sh9Ek+trv73cVHLWkjcBJg5vAlcyblTRJqM0PKwKfVA=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"MriOfiFNR+Q2Lbi5n2UkrWc47jQEu5uXZDJdbSUBrgE=\""
+          "Value": "W/\"5MYWtanMHov6wRaVbCyGklnHfI4jOcdSQsAuoL6711Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:03:31 GMT"
+          "Value": "Thu, 08 May 2025 20:19:07 GMT"
         },
         {
           "Name": "Vary",
@@ -1878,13 +2039,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-MriOfiFNR+Q2Lbi5n2UkrWc47jQEu5uXZDJdbSUBrgE="
+          "Value": "sha256-5MYWtanMHov6wRaVbCyGklnHfI4jOcdSQsAuoL6711Y="
         }
       ]
     },
     {
       "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.wasm.gz",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Infrastructure.etp682qoy2.wasm.gz",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.Infrastructure.ku1noiri7h.wasm.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1901,7 +2062,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19271"
+          "Value": "19273"
         },
         {
           "Name": "Content-Type",
@@ -1909,11 +2070,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"N62pG6sAFhgCJI2hvPTxrx4LpWVBRSnhvuLAwqGFMzo=\""
+          "Value": "\"sh9Ek+trv73cVHLWkjcBJg5vAlcyblTRJqM0PKwKfVA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:03:31 GMT"
+          "Value": "Thu, 08 May 2025 20:19:07 GMT"
         },
         {
           "Name": "Vary",
@@ -1923,13 +2084,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-N62pG6sAFhgCJI2hvPTxrx4LpWVBRSnhvuLAwqGFMzo="
+          "Value": "sha256-sh9Ek+trv73cVHLWkjcBJg5vAlcyblTRJqM0PKwKfVA="
         }
       ]
     },
     {
-      "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.y7a43nyx6s.pdb",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Infrastructure.y7a43nyx6s.pdb",
+      "Route": "_framework/ApuntecaDigital.Backend.UseCases.2of5za5444.wasm",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.UseCases.2of5za5444.wasm",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1942,44 +2103,44 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "26024"
+          "Value": "76565"
         },
         {
           "Name": "Content-Type",
-          "Value": "application/octet-stream"
+          "Value": "application/wasm"
         },
         {
           "Name": "ETag",
-          "Value": "\"vgsB8jpYvVsH+/NlP/D1TBTd3gnlWTRrKRJT7FtqDWc=\""
+          "Value": "\"kplXbPnBpBIMYyY74qsQXPLUE0p7O1/2ghkXMvimQvw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:03:27 GMT"
+          "Value": "Thu, 08 May 2025 20:19:06 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "y7a43nyx6s"
+          "Value": "2of5za5444"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-vgsB8jpYvVsH+/NlP/D1TBTd3gnlWTRrKRJT7FtqDWc="
+          "Value": "sha256-kplXbPnBpBIMYyY74qsQXPLUE0p7O1/2ghkXMvimQvw="
         },
         {
           "Name": "label",
-          "Value": "_framework/ApuntecaDigital.Backend.Infrastructure.pdb"
+          "Value": "_framework/ApuntecaDigital.Backend.UseCases.wasm"
         }
       ]
     },
     {
-      "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.y7a43nyx6s.pdb",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Infrastructure.y7a43nyx6s.pdb.gz",
+      "Route": "_framework/ApuntecaDigital.Backend.UseCases.2of5za5444.wasm",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.UseCases.2of5za5444.wasm.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000073529412"
+          "Quality": "0.000037090612"
         }
       ],
       "ResponseHeaders": [
@@ -1997,23 +2158,23 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "13599"
+          "Value": "26960"
         },
         {
           "Name": "Content-Type",
-          "Value": "application/octet-stream"
+          "Value": "application/wasm"
         },
         {
           "Name": "ETag",
-          "Value": "\"In36l8YpPNm+IUDG3dljyJ6F+aOPdRfusmh4GgxRCf0=\""
+          "Value": "\"VXKFvBKV3mzrJ7Tb9/r8eqqP5opEbeXqlRV4BJO2D48=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"vgsB8jpYvVsH+/NlP/D1TBTd3gnlWTRrKRJT7FtqDWc=\""
+          "Value": "W/\"kplXbPnBpBIMYyY74qsQXPLUE0p7O1/2ghkXMvimQvw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:03:31 GMT"
+          "Value": "Thu, 08 May 2025 20:19:07 GMT"
         },
         {
           "Name": "Vary",
@@ -2023,21 +2184,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "y7a43nyx6s"
+          "Value": "2of5za5444"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-vgsB8jpYvVsH+/NlP/D1TBTd3gnlWTRrKRJT7FtqDWc="
+          "Value": "sha256-kplXbPnBpBIMYyY74qsQXPLUE0p7O1/2ghkXMvimQvw="
         },
         {
           "Name": "label",
-          "Value": "_framework/ApuntecaDigital.Backend.Infrastructure.pdb"
+          "Value": "_framework/ApuntecaDigital.Backend.UseCases.wasm"
         }
       ]
     },
     {
-      "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.y7a43nyx6s.pdb.gz",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.Infrastructure.y7a43nyx6s.pdb.gz",
+      "Route": "_framework/ApuntecaDigital.Backend.UseCases.2of5za5444.wasm.gz",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.UseCases.2of5za5444.wasm.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2054,19 +2215,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "13599"
+          "Value": "26960"
         },
         {
           "Name": "Content-Type",
-          "Value": "application/octet-stream"
+          "Value": "application/wasm"
         },
         {
           "Name": "ETag",
-          "Value": "\"In36l8YpPNm+IUDG3dljyJ6F+aOPdRfusmh4GgxRCf0=\""
+          "Value": "\"VXKFvBKV3mzrJ7Tb9/r8eqqP5opEbeXqlRV4BJO2D48=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:03:31 GMT"
+          "Value": "Thu, 08 May 2025 20:19:07 GMT"
         },
         {
           "Name": "Vary",
@@ -2076,21 +2237,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "y7a43nyx6s"
+          "Value": "2of5za5444"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-In36l8YpPNm+IUDG3dljyJ6F+aOPdRfusmh4GgxRCf0="
+          "Value": "sha256-VXKFvBKV3mzrJ7Tb9/r8eqqP5opEbeXqlRV4BJO2D48="
         },
         {
           "Name": "label",
-          "Value": "_framework/ApuntecaDigital.Backend.Infrastructure.pdb.gz"
+          "Value": "_framework/ApuntecaDigital.Backend.UseCases.wasm.gz"
         }
       ]
     },
     {
-      "Route": "_framework/ApuntecaDigital.Backend.UseCases.hmnz9pn480.pdb",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.UseCases.hmnz9pn480.pdb",
+      "Route": "_framework/ApuntecaDigital.Backend.UseCases.5puv05crlv.pdb",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.UseCases.5puv05crlv.pdb",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2103,7 +2264,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "30524"
+          "Value": "30528"
         },
         {
           "Name": "Content-Type",
@@ -2111,21 +2272,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"p4BK4npq1X2znVFm34B3UdcdRsEKeDwnBD53TUJ1I/M=\""
+          "Value": "\"156tSJN64LCSWOPNJ1o7P764PUD7f7C7aWyTXozS1qY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:03:26 GMT"
+          "Value": "Thu, 08 May 2025 20:18:58 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "hmnz9pn480"
+          "Value": "5puv05crlv"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-p4BK4npq1X2znVFm34B3UdcdRsEKeDwnBD53TUJ1I/M="
+          "Value": "sha256-156tSJN64LCSWOPNJ1o7P764PUD7f7C7aWyTXozS1qY="
         },
         {
           "Name": "label",
@@ -2134,13 +2295,13 @@
       ]
     },
     {
-      "Route": "_framework/ApuntecaDigital.Backend.UseCases.hmnz9pn480.pdb",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.UseCases.hmnz9pn480.pdb.gz",
+      "Route": "_framework/ApuntecaDigital.Backend.UseCases.5puv05crlv.pdb",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.UseCases.5puv05crlv.pdb.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000065150824"
+          "Quality": "0.000065133850"
         }
       ],
       "ResponseHeaders": [
@@ -2158,7 +2319,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "15348"
+          "Value": "15352"
         },
         {
           "Name": "Content-Type",
@@ -2166,15 +2327,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kK8Ksf9w5qiRf6oh2lCFJovZl2Vpon6yNdl34ijYDcA=\""
+          "Value": "\"ge9asxnDETwNm/UnAKhL0IJB2e34Ll9w9PMesy41rqI=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"p4BK4npq1X2znVFm34B3UdcdRsEKeDwnBD53TUJ1I/M=\""
+          "Value": "W/\"156tSJN64LCSWOPNJ1o7P764PUD7f7C7aWyTXozS1qY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:03:31 GMT"
+          "Value": "Thu, 08 May 2025 20:19:07 GMT"
         },
         {
           "Name": "Vary",
@@ -2184,11 +2345,11 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "hmnz9pn480"
+          "Value": "5puv05crlv"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-p4BK4npq1X2znVFm34B3UdcdRsEKeDwnBD53TUJ1I/M="
+          "Value": "sha256-156tSJN64LCSWOPNJ1o7P764PUD7f7C7aWyTXozS1qY="
         },
         {
           "Name": "label",
@@ -2197,8 +2358,8 @@
       ]
     },
     {
-      "Route": "_framework/ApuntecaDigital.Backend.UseCases.hmnz9pn480.pdb.gz",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.UseCases.hmnz9pn480.pdb.gz",
+      "Route": "_framework/ApuntecaDigital.Backend.UseCases.5puv05crlv.pdb.gz",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.UseCases.5puv05crlv.pdb.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2215,7 +2376,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "15348"
+          "Value": "15352"
         },
         {
           "Name": "Content-Type",
@@ -2223,11 +2384,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kK8Ksf9w5qiRf6oh2lCFJovZl2Vpon6yNdl34ijYDcA=\""
+          "Value": "\"ge9asxnDETwNm/UnAKhL0IJB2e34Ll9w9PMesy41rqI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:03:31 GMT"
+          "Value": "Thu, 08 May 2025 20:19:07 GMT"
         },
         {
           "Name": "Vary",
@@ -2237,11 +2398,11 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "hmnz9pn480"
+          "Value": "5puv05crlv"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-kK8Ksf9w5qiRf6oh2lCFJovZl2Vpon6yNdl34ijYDcA="
+          "Value": "sha256-ge9asxnDETwNm/UnAKhL0IJB2e34Ll9w9PMesy41rqI="
         },
         {
           "Name": "label",
@@ -2251,7 +2412,7 @@
     },
     {
       "Route": "_framework/ApuntecaDigital.Backend.UseCases.pdb",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.UseCases.hmnz9pn480.pdb",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.UseCases.5puv05crlv.pdb",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2264,7 +2425,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "30524"
+          "Value": "30528"
         },
         {
           "Name": "Content-Type",
@@ -2272,28 +2433,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"p4BK4npq1X2znVFm34B3UdcdRsEKeDwnBD53TUJ1I/M=\""
+          "Value": "\"156tSJN64LCSWOPNJ1o7P764PUD7f7C7aWyTXozS1qY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:03:26 GMT"
+          "Value": "Thu, 08 May 2025 20:18:58 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-p4BK4npq1X2znVFm34B3UdcdRsEKeDwnBD53TUJ1I/M="
+          "Value": "sha256-156tSJN64LCSWOPNJ1o7P764PUD7f7C7aWyTXozS1qY="
         }
       ]
     },
     {
       "Route": "_framework/ApuntecaDigital.Backend.UseCases.pdb",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.UseCases.hmnz9pn480.pdb.gz",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.UseCases.5puv05crlv.pdb.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000065150824"
+          "Quality": "0.000065133850"
         }
       ],
       "ResponseHeaders": [
@@ -2311,7 +2472,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "15348"
+          "Value": "15352"
         },
         {
           "Name": "Content-Type",
@@ -2319,15 +2480,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kK8Ksf9w5qiRf6oh2lCFJovZl2Vpon6yNdl34ijYDcA=\""
+          "Value": "\"ge9asxnDETwNm/UnAKhL0IJB2e34Ll9w9PMesy41rqI=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"p4BK4npq1X2znVFm34B3UdcdRsEKeDwnBD53TUJ1I/M=\""
+          "Value": "W/\"156tSJN64LCSWOPNJ1o7P764PUD7f7C7aWyTXozS1qY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:03:31 GMT"
+          "Value": "Thu, 08 May 2025 20:19:07 GMT"
         },
         {
           "Name": "Vary",
@@ -2337,13 +2498,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-p4BK4npq1X2znVFm34B3UdcdRsEKeDwnBD53TUJ1I/M="
+          "Value": "sha256-156tSJN64LCSWOPNJ1o7P764PUD7f7C7aWyTXozS1qY="
         }
       ]
     },
     {
       "Route": "_framework/ApuntecaDigital.Backend.UseCases.pdb.gz",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.UseCases.hmnz9pn480.pdb.gz",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.UseCases.5puv05crlv.pdb.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2360,7 +2521,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "15348"
+          "Value": "15352"
         },
         {
           "Name": "Content-Type",
@@ -2368,11 +2529,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kK8Ksf9w5qiRf6oh2lCFJovZl2Vpon6yNdl34ijYDcA=\""
+          "Value": "\"ge9asxnDETwNm/UnAKhL0IJB2e34Ll9w9PMesy41rqI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:03:31 GMT"
+          "Value": "Thu, 08 May 2025 20:19:07 GMT"
         },
         {
           "Name": "Vary",
@@ -2382,13 +2543,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-kK8Ksf9w5qiRf6oh2lCFJovZl2Vpon6yNdl34ijYDcA="
+          "Value": "sha256-ge9asxnDETwNm/UnAKhL0IJB2e34Ll9w9PMesy41rqI="
         }
       ]
     },
     {
       "Route": "_framework/ApuntecaDigital.Backend.UseCases.wasm",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.UseCases.xf1dt4svv5.wasm",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.UseCases.2of5za5444.wasm",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2409,28 +2570,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"c2qSpf7Fx3ztIAJReodIRFfKOlmkR6s/JAmVciFBcW8=\""
+          "Value": "\"kplXbPnBpBIMYyY74qsQXPLUE0p7O1/2ghkXMvimQvw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:03:30 GMT"
+          "Value": "Thu, 08 May 2025 20:19:06 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-c2qSpf7Fx3ztIAJReodIRFfKOlmkR6s/JAmVciFBcW8="
+          "Value": "sha256-kplXbPnBpBIMYyY74qsQXPLUE0p7O1/2ghkXMvimQvw="
         }
       ]
     },
     {
       "Route": "_framework/ApuntecaDigital.Backend.UseCases.wasm",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.UseCases.xf1dt4svv5.wasm.gz",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.UseCases.2of5za5444.wasm.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000037093364"
+          "Quality": "0.000037090612"
         }
       ],
       "ResponseHeaders": [
@@ -2448,7 +2609,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "26958"
+          "Value": "26960"
         },
         {
           "Name": "Content-Type",
@@ -2456,15 +2617,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"d/W1ei9lO3vB3MiIGxJcJBgWzIw45+9arONPGXQknkY=\""
+          "Value": "\"VXKFvBKV3mzrJ7Tb9/r8eqqP5opEbeXqlRV4BJO2D48=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"c2qSpf7Fx3ztIAJReodIRFfKOlmkR6s/JAmVciFBcW8=\""
+          "Value": "W/\"kplXbPnBpBIMYyY74qsQXPLUE0p7O1/2ghkXMvimQvw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:03:31 GMT"
+          "Value": "Thu, 08 May 2025 20:19:07 GMT"
         },
         {
           "Name": "Vary",
@@ -2474,13 +2635,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-c2qSpf7Fx3ztIAJReodIRFfKOlmkR6s/JAmVciFBcW8="
+          "Value": "sha256-kplXbPnBpBIMYyY74qsQXPLUE0p7O1/2ghkXMvimQvw="
         }
       ]
     },
     {
       "Route": "_framework/ApuntecaDigital.Backend.UseCases.wasm.gz",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.UseCases.xf1dt4svv5.wasm.gz",
+      "AssetFile": "_framework/ApuntecaDigital.Backend.UseCases.2of5za5444.wasm.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2497,7 +2658,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "26958"
+          "Value": "26960"
         },
         {
           "Name": "Content-Type",
@@ -2505,11 +2666,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"d/W1ei9lO3vB3MiIGxJcJBgWzIw45+9arONPGXQknkY=\""
+          "Value": "\"VXKFvBKV3mzrJ7Tb9/r8eqqP5opEbeXqlRV4BJO2D48=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:03:31 GMT"
+          "Value": "Thu, 08 May 2025 20:19:07 GMT"
         },
         {
           "Name": "Vary",
@@ -2519,168 +2680,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-d/W1ei9lO3vB3MiIGxJcJBgWzIw45+9arONPGXQknkY="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ApuntecaDigital.Backend.UseCases.xf1dt4svv5.wasm",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.UseCases.xf1dt4svv5.wasm",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "76565"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"c2qSpf7Fx3ztIAJReodIRFfKOlmkR6s/JAmVciFBcW8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:03:30 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "xf1dt4svv5"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-c2qSpf7Fx3ztIAJReodIRFfKOlmkR6s/JAmVciFBcW8="
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/ApuntecaDigital.Backend.UseCases.wasm"
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ApuntecaDigital.Backend.UseCases.xf1dt4svv5.wasm",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.UseCases.xf1dt4svv5.wasm.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000037093364"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "26958"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"d/W1ei9lO3vB3MiIGxJcJBgWzIw45+9arONPGXQknkY=\""
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"c2qSpf7Fx3ztIAJReodIRFfKOlmkR6s/JAmVciFBcW8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:03:31 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "xf1dt4svv5"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-c2qSpf7Fx3ztIAJReodIRFfKOlmkR6s/JAmVciFBcW8="
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/ApuntecaDigital.Backend.UseCases.wasm"
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ApuntecaDigital.Backend.UseCases.xf1dt4svv5.wasm.gz",
-      "AssetFile": "_framework/ApuntecaDigital.Backend.UseCases.xf1dt4svv5.wasm.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "26958"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"d/W1ei9lO3vB3MiIGxJcJBgWzIw45+9arONPGXQknkY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:03:31 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "xf1dt4svv5"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-d/W1ei9lO3vB3MiIGxJcJBgWzIw45+9arONPGXQknkY="
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/ApuntecaDigital.Backend.UseCases.wasm.gz"
+          "Value": "sha256-VXKFvBKV3mzrJ7Tb9/r8eqqP5opEbeXqlRV4BJO2D48="
         }
       ]
     },
@@ -73333,17 +73333,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"IvVWvdp42jEKsXX+NnTe4UADeL2j+fMYB8aQGF04F5M=\""
+          "Value": "\"7EzVm80eTHwuDN9NekAy93g6LjuvOBCiAFYQKp/JMx4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:19:17 GMT"
+          "Value": "Thu, 08 May 2025 20:19:07 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-IvVWvdp42jEKsXX+NnTe4UADeL2j+fMYB8aQGF04F5M="
+          "Value": "sha256-7EzVm80eTHwuDN9NekAy93g6LjuvOBCiAFYQKp/JMx4="
         }
       ]
     },
@@ -73354,7 +73354,7 @@
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000063395461"
+          "Quality": "0.000063407520"
         }
       ],
       "ResponseHeaders": [
@@ -73372,7 +73372,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "15773"
+          "Value": "15770"
         },
         {
           "Name": "Content-Type",
@@ -73380,15 +73380,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"uornX91rLlzjDwTSBbkHXsxhyVzwmh4izNmj+iwMnXg=\""
+          "Value": "\"srkk1Wbe126NlqcgxxBAHqHF32GP4l3OxxwVdPm+NcU=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"IvVWvdp42jEKsXX+NnTe4UADeL2j+fMYB8aQGF04F5M=\""
+          "Value": "W/\"7EzVm80eTHwuDN9NekAy93g6LjuvOBCiAFYQKp/JMx4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:03:31 GMT"
+          "Value": "Thu, 08 May 2025 19:42:28 GMT"
         },
         {
           "Name": "Vary",
@@ -73398,7 +73398,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-IvVWvdp42jEKsXX+NnTe4UADeL2j+fMYB8aQGF04F5M="
+          "Value": "sha256-7EzVm80eTHwuDN9NekAy93g6LjuvOBCiAFYQKp/JMx4="
         }
       ]
     },
@@ -73421,7 +73421,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "15773"
+          "Value": "15770"
         },
         {
           "Name": "Content-Type",
@@ -73429,11 +73429,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"uornX91rLlzjDwTSBbkHXsxhyVzwmh4izNmj+iwMnXg=\""
+          "Value": "\"srkk1Wbe126NlqcgxxBAHqHF32GP4l3OxxwVdPm+NcU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 19:03:31 GMT"
+          "Value": "Thu, 08 May 2025 19:42:28 GMT"
         },
         {
           "Name": "Vary",
@@ -73443,7 +73443,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-uornX91rLlzjDwTSBbkHXsxhyVzwmh4izNmj+iwMnXg="
+          "Value": "sha256-srkk1Wbe126NlqcgxxBAHqHF32GP4l3OxxwVdPm+NcU="
         }
       ]
     },

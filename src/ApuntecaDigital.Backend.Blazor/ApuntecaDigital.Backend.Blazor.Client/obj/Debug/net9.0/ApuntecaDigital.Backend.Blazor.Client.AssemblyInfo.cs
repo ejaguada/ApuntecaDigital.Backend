@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApuntecaDigital.Backend.Blazor.Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f2ba9c29e0eee5fd04c5b4bf6af315fec75f6bf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+69e5687f899e6e92a180e25f648aab1e8d1c90ab")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApuntecaDigital.Backend.Blazor.Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApuntecaDigital.Backend.Blazor.Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

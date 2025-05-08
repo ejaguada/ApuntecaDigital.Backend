@@ -1,4 +1,4 @@
-namespace ApuntecaDigital.Backend.Core.CareerAggregate.Specifications;
+﻿namespace ApuntecaDigital.Backend.Core.CareerAggregate.Specifications;
 
 public class CareerByNameSpec : Specification<Career>
 {
