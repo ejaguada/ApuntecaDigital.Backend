@@ -242,14 +242,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "GetCareerByNameRequest",
-        "Type": "ApuntecaDigital.Backend.Web.Careers.GetCareerByNameRequest",
+        "Name": "GetCareersByNameRequest",
+        "Type": "ApuntecaDigital.Backend.Web.Careers.GetCareersByNameRequest",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "ApuntecaDigital.Backend.Web.Careers.CareerRecord",
+        "Type": "ApuntecaDigital.Backend.Web.Careers.CareerListResponse",
         "MediaTypes": [
           "application/json"
         ],

@@ -19,3 +19,4 @@ C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Blazor\Ap
 C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Blazor\ApuntecaDigital.Backend.Blazor.Client\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Blazor\ApuntecaDigital.Backend.Blazor.Client\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Blazor\ApuntecaDigital.Backend.Blazor.Client\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Blazor\ApuntecaDigital.Backend.Blazor.Client\obj\Debug\net9.0\staticwebassets.build.json

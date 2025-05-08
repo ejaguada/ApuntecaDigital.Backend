@@ -797,8 +797,8 @@
         "tags": [
           "Careers"
         ],
-        "summary": "Get a Career by name.",
-        "description": "Takes a name and returns a matching Career record.",
+        "summary": "Get Careers by name.",
+        "description": "Takes a name and returns matching Career record.",
         "operationId": "ApuntecaDigitalBackendWebCareersGetByName",
         "parameters": [
           {
@@ -816,7 +816,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/CareerRecord"
+                  "$ref": "#/components/schemas/CareerListResponse"
                 }
               }
             }
@@ -1486,10 +1486,6 @@
         "type": "object",
         "additionalProperties": false
       },
-      "GetCareerByNameRequest": {
-        "type": "object",
-        "additionalProperties": false
-      },
       "CareerListResponse": {
         "type": "object",
         "additionalProperties": false,
@@ -1501,6 +1497,10 @@
             }
           }
         }
+      },
+      "GetCareersByNameRequest": {
+        "type": "object",
+        "additionalProperties": false
       },
       "UpdateCareerResponse": {
         "type": "object",

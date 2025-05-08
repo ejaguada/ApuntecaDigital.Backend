@@ -1,6 +1,6 @@
-namespace ApuntecaDigital.Backend.Web.Careers;
+﻿namespace ApuntecaDigital.Backend.Web.Careers;
 
-public class GetCareerByNameRequest
+public class GetCareersByNameRequest
 {
   public const string Route = "/Careers/name/{Name}";
   public static string BuildRoute(string name) => Route.Replace("{Name}", name);

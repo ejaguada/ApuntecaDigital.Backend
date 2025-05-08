@@ -144,18 +144,18 @@
         </member>
         <member name="T:ApuntecaDigital.Backend.Web.Careers.GetByName">
             <summary>
-            Get a Career by name.
+            Get Careers by name.
             </summary>
             <remarks>
-            Takes a name and returns a matching Career record.
+            Takes a name and returns matching Career record.
             </remarks>
         </member>
         <member name="M:ApuntecaDigital.Backend.Web.Careers.GetByName.#ctor(MediatR.IMediator)">
             <summary>
-            Get a Career by name.
+            Get Careers by name.
             </summary>
             <remarks>
-            Takes a name and returns a matching Career record.
+            Takes a name and returns matching Career record.
             </remarks>
         </member>
         <member name="T:ApuntecaDigital.Backend.Web.Careers.List">
