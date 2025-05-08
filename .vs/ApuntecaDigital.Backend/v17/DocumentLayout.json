@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C9751CB7-4CD6-4633-A99A-4F6ADD525437}|src\\ApuntecaDigital.Backend.Web\\ApuntecaDigital.Backend.Web.csproj|c:\\users\\jeagu\\dev\\apuntecadigital.backend\\src\\apuntecadigital.backend.web\\careers\\getbyid.getcareerbyidrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9751CB7-4CD6-4633-A99A-4F6ADD525437}|src\\ApuntecaDigital.Backend.Web\\ApuntecaDigital.Backend.Web.csproj|solutionrelative:src\\apuntecadigital.backend.web\\careers\\getbyid.getcareerbyidrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9751CB7-4CD6-4633-A99A-4F6ADD525437}|src\\ApuntecaDigital.Backend.Web\\ApuntecaDigital.Backend.Web.csproj|c:\\users\\jeagu\\dev\\apuntecadigital.backend\\src\\apuntecadigital.backend.web\\careers\\getbyid.getcareervalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9751CB7-4CD6-4633-A99A-4F6ADD525437}|src\\ApuntecaDigital.Backend.Web\\ApuntecaDigital.Backend.Web.csproj|solutionrelative:src\\apuntecadigital.backend.web\\careers\\getbyid.getcareervalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9751CB7-4CD6-4633-A99A-4F6ADD525437}|src\\ApuntecaDigital.Backend.Web\\ApuntecaDigital.Backend.Web.csproj|c:\\users\\jeagu\\dev\\apuntecadigital.backend\\src\\apuntecadigital.backend.web\\careers\\getbyid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9751CB7-4CD6-4633-A99A-4F6ADD525437}|src\\ApuntecaDigital.Backend.Web\\ApuntecaDigital.Backend.Web.csproj|solutionrelative:src\\apuntecadigital.backend.web\\careers\\getbyid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9751CB7-4CD6-4633-A99A-4F6ADD525437}|src\\ApuntecaDigital.Backend.Web\\ApuntecaDigital.Backend.Web.csproj|c:\\users\\jeagu\\dev\\apuntecadigital.backend\\src\\apuntecadigital.backend.web\\careers\\list.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9751CB7-4CD6-4633-A99A-4F6ADD525437}|src\\ApuntecaDigital.Backend.Web\\ApuntecaDigital.Backend.Web.csproj|solutionrelative:src\\apuntecadigital.backend.web\\careers\\list.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B74A78FF-B79E-4C38-A9C7-084A90990CAD}|src\\ApuntecaDigital.Backend.UseCases\\ApuntecaDigital.Backend.UseCases.csproj|c:\\users\\jeagu\\dev\\apuntecadigital.backend\\src\\apuntecadigital.backend.usecases\\books\\get\\getbookhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B74A78FF-B79E-4C38-A9C7-084A90990CAD}|src\\ApuntecaDigital.Backend.UseCases\\ApuntecaDigital.Backend.UseCases.csproj|solutionrelative:src\\apuntecadigital.backend.usecases\\books\\get\\getbookhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B74A78FF-B79E-4C38-A9C7-084A90990CAD}|src\\ApuntecaDigital.Backend.UseCases\\ApuntecaDigital.Backend.UseCases.csproj|c:\\users\\jeagu\\dev\\apuntecadigital.backend\\src\\apuntecadigital.backend.usecases\\books\\get\\getbookquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B74A78FF-B79E-4C38-A9C7-084A90990CAD}|src\\ApuntecaDigital.Backend.UseCases\\ApuntecaDigital.Backend.UseCases.csproj|solutionrelative:src\\apuntecadigital.backend.usecases\\books\\get\\getbookquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{220361D6-9C76-4E3F-BD34-3C7B50E2CA4D}|src\\ApuntecaDigital.Backend.Infrastructure\\ApuntecaDigital.Backend.Infrastructure.csproj|c:\\users\\jeagu\\dev\\apuntecadigital.backend\\src\\apuntecadigital.backend.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{220361D6-9C76-4E3F-BD34-3C7B50E2CA4D}|src\\ApuntecaDigital.Backend.Infrastructure\\ApuntecaDigital.Backend.Infrastructure.csproj|solutionrelative:src\\apuntecadigital.backend.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -50,11 +74,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GetById.GetCareerValidator.cs",
+              "DocumentMoniker": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Web\\Careers\\GetById.GetCareerValidator.cs",
+              "RelativeDocumentMoniker": "src\\ApuntecaDigital.Backend.Web\\Careers\\GetById.GetCareerValidator.cs",
+              "ToolTip": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Web\\Careers\\GetById.GetCareerValidator.cs",
+              "RelativeToolTip": "src\\ApuntecaDigital.Backend.Web\\Careers\\GetById.GetCareerValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T18:55:20.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GetById.cs",
+              "DocumentMoniker": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Web\\Careers\\GetById.cs",
+              "RelativeDocumentMoniker": "src\\ApuntecaDigital.Backend.Web\\Careers\\GetById.cs",
+              "ToolTip": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Web\\Careers\\GetById.cs",
+              "RelativeToolTip": "src\\ApuntecaDigital.Backend.Web\\Careers\\GetById.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T18:54:55.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "List.cs",
+              "DocumentMoniker": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Web\\Careers\\List.cs",
+              "RelativeDocumentMoniker": "src\\ApuntecaDigital.Backend.Web\\Careers\\List.cs",
+              "ToolTip": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Web\\Careers\\List.cs",
+              "RelativeToolTip": "src\\ApuntecaDigital.Backend.Web\\Careers\\List.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T18:54:50.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "GetById.GetCareerByIdRequest.cs",
+              "DocumentMoniker": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Web\\Careers\\GetById.GetCareerByIdRequest.cs",
+              "RelativeDocumentMoniker": "src\\ApuntecaDigital.Backend.Web\\Careers\\GetById.GetCareerByIdRequest.cs",
+              "ToolTip": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Web\\Careers\\GetById.GetCareerByIdRequest.cs",
+              "RelativeToolTip": "src\\ApuntecaDigital.Backend.Web\\Careers\\GetById.GetCareerByIdRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T18:52:55.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GetBookQuery.cs",
+              "DocumentMoniker": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.UseCases\\Books\\Get\\GetBookQuery.cs",
+              "RelativeDocumentMoniker": "src\\ApuntecaDigital.Backend.UseCases\\Books\\Get\\GetBookQuery.cs",
+              "ToolTip": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.UseCases\\Books\\Get\\GetBookQuery.cs",
+              "RelativeToolTip": "src\\ApuntecaDigital.Backend.UseCases\\Books\\Get\\GetBookQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T18:52:23.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetBookHandler.cs",
+              "DocumentMoniker": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.UseCases\\Books\\Get\\GetBookHandler.cs",
+              "RelativeDocumentMoniker": "src\\ApuntecaDigital.Backend.UseCases\\Books\\Get\\GetBookHandler.cs",
+              "ToolTip": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.UseCases\\Books\\Get\\GetBookHandler.cs",
+              "RelativeToolTip": "src\\ApuntecaDigital.Backend.UseCases\\Books\\Get\\GetBookHandler.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T18:52:20.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Infrastructure\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "src\\ApuntecaDigital.Backend.Infrastructure\\Data\\AppDbContext.cs",
@@ -67,7 +169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "CreateClassHandler.cs",
               "DocumentMoniker": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.UseCases\\Classes\\Create\\CreateClassHandler.cs",
               "RelativeDocumentMoniker": "src\\ApuntecaDigital.Backend.UseCases\\Classes\\Create\\CreateClassHandler.cs",
@@ -80,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "UpdateBookHandler.cs",
               "DocumentMoniker": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.UseCases\\Books\\Update\\UpdateBookHandler.cs",
               "RelativeDocumentMoniker": "src\\ApuntecaDigital.Backend.UseCases\\Books\\Update\\UpdateBookHandler.cs",
@@ -93,7 +195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "CreateBookHandler.cs",
               "DocumentMoniker": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.UseCases\\Books\\Create\\CreateBookHandler.cs",
               "RelativeDocumentMoniker": "src\\ApuntecaDigital.Backend.UseCases\\Books\\Create\\CreateBookHandler.cs",
@@ -106,7 +208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "GetCareerQuery.cs",
               "DocumentMoniker": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.UseCases\\Careers\\Get\\GetCareerQuery.cs",
               "RelativeDocumentMoniker": "src\\ApuntecaDigital.Backend.UseCases\\Careers\\Get\\GetCareerQuery.cs",
@@ -118,20 +220,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "Update.cs",
               "DocumentMoniker": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Web\\Careers\\Update.cs",
               "RelativeDocumentMoniker": "src\\ApuntecaDigital.Backend.Web\\Careers\\Update.cs",
               "ToolTip": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Web\\Careers\\Update.cs",
               "RelativeToolTip": "src\\ApuntecaDigital.Backend.Web\\Careers\\Update.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-08T18:19:14.274Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "GetCareerHandler.cs",
               "DocumentMoniker": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.UseCases\\Careers\\Get\\GetCareerHandler.cs",
               "RelativeDocumentMoniker": "src\\ApuntecaDigital.Backend.UseCases\\Careers\\Get\\GetCareerHandler.cs",
@@ -143,7 +245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "CareerService.cs",
               "DocumentMoniker": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\Services\\CareerService.cs",
               "RelativeDocumentMoniker": "src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\Services\\CareerService.cs",
@@ -156,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor\\appsettings.json",
               "RelativeDocumentMoniker": "src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor\\appsettings.json",
@@ -168,7 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "Careers.razor",
               "DocumentMoniker": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\Pages\\Careers.razor",
               "RelativeDocumentMoniker": "src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\Pages\\Careers.razor",

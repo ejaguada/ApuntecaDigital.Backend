@@ -30,7 +30,7 @@ public class Update(IMediator _mediator)
       return;
     }
 
-    var query = new GetCareerQuery(request.CareerId);
+    var query = new GetCareerQuery(request.CareerId, null);
 
     var queryResult = await _mediator.Send(query, cancellationToken);
 

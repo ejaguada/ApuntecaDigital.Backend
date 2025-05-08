@@ -11,3 +11,6 @@ packages/
 /tests/**/obj/
 /src/**/bin/
 /src/**/obj/
+Debug/
+/src/**/Debug/
+/tests/**/Debug/

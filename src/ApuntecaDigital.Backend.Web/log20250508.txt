@@ -963,3 +963,601 @@ SELECT Id, Name FROM Careers
 2025-05-08 15:48:18.529 -03:00 [INF] Handled ListCareersQuery with Ardalis.Result.Result`1[System.Collections.Generic.IEnumerable`1[ApuntecaDigital.Backend.UseCases.Careers.CareerDTO]] in 6 ms
 2025-05-08 15:48:18.531 -03:00 [INF] Executed endpoint 'HTTP: GET /Careers'
 2025-05-08 15:48:18.532 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:57679/careers - 200 null application/json; charset=utf-8 15.8525ms
+2025-05-08 15:53:31.353 -03:00 [INF] Registered 25 endpoints in 234 milliseconds.
+2025-05-08 15:53:32.003 -03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-05-08 15:53:32.034 -03:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2025-05-08 15:53:32.168 -03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Contributors] AS [c]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-08 15:53:32.255 -03:00 [INF] Now listening on: https://localhost:57679
+2025-05-08 15:53:32.258 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-05-08 15:53:32.298 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-08 15:53:32.298 -03:00 [INF] Hosting environment: Development
+2025-05-08 15:53:32.299 -03:00 [INF] Content root path: C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Web
+2025-05-08 15:53:35.902 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:57679/careers - null null
+2025-05-08 15:53:35.927 -03:00 [INF] Executing endpoint 'HTTP: GET /Careers'
+2025-05-08 15:53:35.942 -03:00 [INF] Handling ListCareersQuery
+2025-05-08 15:53:35.943 -03:00 [INF] Property Skip : null
+2025-05-08 15:53:35.944 -03:00 [INF] Property Take : null
+2025-05-08 15:53:36.066 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT Id, Name FROM Careers
+2025-05-08 15:53:36.070 -03:00 [INF] Handled ListCareersQuery with Ardalis.Result.Result`1[System.Collections.Generic.IEnumerable`1[ApuntecaDigital.Backend.UseCases.Careers.CareerDTO]] in 125 ms
+2025-05-08 15:53:36.080 -03:00 [INF] Executed endpoint 'HTTP: GET /Careers'
+2025-05-08 15:53:36.084 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:57679/careers - 200 null application/json; charset=utf-8 184.1255ms
+2025-05-08 15:53:36.252 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:57679/careers - null null
+2025-05-08 15:53:36.255 -03:00 [INF] Executing endpoint 'HTTP: GET /Careers'
+2025-05-08 15:53:36.255 -03:00 [INF] Handling ListCareersQuery
+2025-05-08 15:53:36.256 -03:00 [INF] Property Skip : null
+2025-05-08 15:53:36.257 -03:00 [INF] Property Take : null
+2025-05-08 15:53:36.290 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT Id, Name FROM Careers
+2025-05-08 15:53:36.292 -03:00 [INF] Handled ListCareersQuery with Ardalis.Result.Result`1[System.Collections.Generic.IEnumerable`1[ApuntecaDigital.Backend.UseCases.Careers.CareerDTO]] in 34 ms
+2025-05-08 15:53:36.293 -03:00 [INF] Executed endpoint 'HTTP: GET /Careers'
+2025-05-08 15:53:36.294 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:57679/careers - 200 null application/json; charset=utf-8 42.2025ms
+2025-05-08 15:53:45.394 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/careers - null null
+2025-05-08 15:53:45.446 -03:00 [INF] Executing endpoint 'HTTP: GET /Careers'
+2025-05-08 15:53:45.448 -03:00 [INF] Handling ListCareersQuery
+2025-05-08 15:53:45.449 -03:00 [INF] Property Skip : null
+2025-05-08 15:53:45.450 -03:00 [INF] Property Take : null
+2025-05-08 15:53:45.458 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT Id, Name FROM Careers
+2025-05-08 15:53:45.460 -03:00 [INF] Handled ListCareersQuery with Ardalis.Result.Result`1[System.Collections.Generic.IEnumerable`1[ApuntecaDigital.Backend.UseCases.Careers.CareerDTO]] in 9 ms
+2025-05-08 15:53:45.463 -03:00 [INF] Executed endpoint 'HTTP: GET /Careers'
+2025-05-08 15:53:45.465 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/careers - 200 null application/json; charset=utf-8 70.7463ms
+2025-05-08 15:53:51.007 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger - null null
+2025-05-08 15:53:51.016 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger - 302 0 null 8.8441ms
+2025-05-08 15:53:51.020 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2025-05-08 15:53:51.037 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 17.8219ms
+2025-05-08 15:53:51.060 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-08 15:53:51.068 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2025-05-08 15:53:51.074 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 16539 application/javascript; charset=utf-8 14.8722ms
+2025-05-08 15:53:51.093 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.4063ms
+2025-05-08 15:53:51.121 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2025-05-08 15:53:51.189 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 68.4398ms
+2025-05-08 15:54:21.863 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/careers/name/s - null null
+2025-05-08 15:54:21.873 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/careers/name/s - 404 0 null 9.8609ms
+2025-05-08 15:54:21.876 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:57679/careers/name/s, Response status code: 404
+2025-05-08 15:55:48.066 -03:00 [INF] Registered 25 endpoints in 216 milliseconds.
+2025-05-08 15:55:48.694 -03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-05-08 15:55:48.724 -03:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2025-05-08 15:55:48.868 -03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Contributors] AS [c]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-08 15:55:48.962 -03:00 [INF] Now listening on: https://localhost:57679
+2025-05-08 15:55:48.965 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-05-08 15:55:49.010 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-08 15:55:49.011 -03:00 [INF] Hosting environment: Development
+2025-05-08 15:55:49.011 -03:00 [INF] Content root path: C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Web
+2025-05-08 15:56:01.541 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/ - null null
+2025-05-08 15:56:01.622 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/ - 404 0 null 84.3543ms
+2025-05-08 15:56:01.626 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:57679/, Response status code: 404
+2025-05-08 15:56:05.944 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/careers - null null
+2025-05-08 15:56:05.951 -03:00 [INF] Executing endpoint 'HTTP: GET /Careers'
+2025-05-08 15:56:05.973 -03:00 [INF] Handling ListCareersQuery
+2025-05-08 15:56:05.974 -03:00 [INF] Property Skip : null
+2025-05-08 15:56:05.975 -03:00 [INF] Property Take : null
+2025-05-08 15:56:06.120 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT Id, Name FROM Careers
+2025-05-08 15:56:06.126 -03:00 [INF] Handled ListCareersQuery with Ardalis.Result.Result`1[System.Collections.Generic.IEnumerable`1[ApuntecaDigital.Backend.UseCases.Careers.CareerDTO]] in 149 ms
+2025-05-08 15:56:06.132 -03:00 [INF] Executed endpoint 'HTTP: GET /Careers'
+2025-05-08 15:56:06.137 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/careers - 200 null application/json; charset=utf-8 192.304ms
+2025-05-08 15:56:12.679 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/careers/name/a - null null
+2025-05-08 15:56:12.682 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/careers/name/a - 404 0 null 3.5941ms
+2025-05-08 15:56:12.685 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:57679/careers/name/a, Response status code: 404
+2025-05-08 15:56:17.288 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/careers/id/1 - null null
+2025-05-08 15:56:17.292 -03:00 [INF] Executing endpoint 'HTTP: GET /Careers/id/{CareerId:int}'
+2025-05-08 15:56:17.321 -03:00 [INF] Handling GetCareerQuery
+2025-05-08 15:56:17.322 -03:00 [INF] Property CareerId : 1
+2025-05-08 15:56:17.425 -03:00 [INF] Executed DbCommand (23ms) [Parameters=[@__careerId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Careers] AS [c]
+WHERE [c].[Id] = @__careerId_0
+2025-05-08 15:56:17.453 -03:00 [INF] Handled GetCareerQuery with Ardalis.Result.Result`1[ApuntecaDigital.Backend.UseCases.Careers.CareerDTO] in 129 ms
+2025-05-08 15:56:17.456 -03:00 [INF] Executed endpoint 'HTTP: GET /Careers/id/{CareerId:int}'
+2025-05-08 15:56:17.457 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/careers/id/1 - 200 null application/json; charset=utf-8 168.765ms
+2025-05-08 15:56:22.967 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/careers/id/2 - null null
+2025-05-08 15:56:22.970 -03:00 [INF] Executing endpoint 'HTTP: GET /Careers/id/{CareerId:int}'
+2025-05-08 15:56:22.972 -03:00 [INF] Handling GetCareerQuery
+2025-05-08 15:56:22.972 -03:00 [INF] Property CareerId : 2
+2025-05-08 15:56:22.977 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__careerId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Careers] AS [c]
+WHERE [c].[Id] = @__careerId_0
+2025-05-08 15:56:22.978 -03:00 [INF] Handled GetCareerQuery with Ardalis.Result.Result`1[ApuntecaDigital.Backend.UseCases.Careers.CareerDTO] in 5 ms
+2025-05-08 15:56:22.980 -03:00 [INF] Executed endpoint 'HTTP: GET /Careers/id/{CareerId:int}'
+2025-05-08 15:56:22.980 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/careers/id/2 - 404 null null 13.7749ms
+2025-05-08 15:56:26.392 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/careers/id/1 - null null
+2025-05-08 15:56:26.395 -03:00 [INF] Executing endpoint 'HTTP: GET /Careers/id/{CareerId:int}'
+2025-05-08 15:56:26.397 -03:00 [INF] Handling GetCareerQuery
+2025-05-08 15:56:26.398 -03:00 [INF] Property CareerId : 1
+2025-05-08 15:56:26.402 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__careerId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Careers] AS [c]
+WHERE [c].[Id] = @__careerId_0
+2025-05-08 15:56:26.404 -03:00 [INF] Handled GetCareerQuery with Ardalis.Result.Result`1[ApuntecaDigital.Backend.UseCases.Careers.CareerDTO] in 5 ms
+2025-05-08 15:56:26.405 -03:00 [INF] Executed endpoint 'HTTP: GET /Careers/id/{CareerId:int}'
+2025-05-08 15:56:26.407 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/careers/id/1 - 200 null application/json; charset=utf-8 14.2387ms
+2025-05-08 15:56:39.607 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger - null null
+2025-05-08 15:56:39.613 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger - 302 0 null 5.4773ms
+2025-05-08 15:56:39.617 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2025-05-08 15:56:39.665 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 48.008ms
+2025-05-08 15:56:39.670 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-08 15:56:39.679 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2025-05-08 15:56:39.688 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 16539 application/javascript; charset=utf-8 18.7193ms
+2025-05-08 15:56:39.708 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.9647ms
+2025-05-08 15:56:39.734 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2025-05-08 15:56:39.794 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 59.667ms
+2025-05-08 16:03:36.092 -03:00 [INF] Registered 26 endpoints in 257 milliseconds.
+2025-05-08 16:03:36.796 -03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-05-08 16:03:36.826 -03:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2025-05-08 16:03:36.982 -03:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Contributors] AS [c]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-08 16:03:37.088 -03:00 [INF] Now listening on: https://localhost:57679
+2025-05-08 16:03:37.091 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-05-08 16:03:37.138 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-08 16:03:37.139 -03:00 [INF] Hosting environment: Development
+2025-05-08 16:03:37.140 -03:00 [INF] Content root path: C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Web
+2025-05-08 16:03:45.376 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/ - null null
+2025-05-08 16:03:45.477 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The constraint reference 'string' could not be resolved to a type. Register the constraint type with 'Microsoft.AspNetCore.Routing.RouteOptions.ConstraintMap'.
+   at Microsoft.AspNetCore.Routing.DefaultParameterPolicyFactory.Create(RoutePatternParameterPart parameter, String inlineText)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CachingParameterPolicyFactory.Create(RoutePatternParameterPart parameter, String inlineText)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidate(Endpoint endpoint, Int32 score)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidates(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.Build()
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.CreateMatcher(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|10_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-08 16:03:45.520 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/ - 500 null text/html; charset=utf-8 148.1315ms
+2025-05-08 16:03:45.538 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2025-05-08 16:03:45.538 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-08 16:03:45.562 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 16539 application/javascript; charset=utf-8 24.7264ms
+2025-05-08 16:03:45.571 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.6826ms
+2025-05-08 16:04:26.174 -03:00 [INF] Registered 26 endpoints in 266 milliseconds.
+2025-05-08 16:04:26.746 -03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-05-08 16:04:26.777 -03:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2025-05-08 16:04:26.922 -03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Contributors] AS [c]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-08 16:04:27.033 -03:00 [INF] Now listening on: https://localhost:57679
+2025-05-08 16:04:27.037 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-05-08 16:04:27.095 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-08 16:04:27.096 -03:00 [INF] Hosting environment: Development
+2025-05-08 16:04:27.097 -03:00 [INF] Content root path: C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Web
+2025-05-08 16:04:30.712 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/ - null null
+2025-05-08 16:04:30.812 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/ - 404 0 null 102.7207ms
+2025-05-08 16:04:30.817 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:57679/, Response status code: 404
+2025-05-08 16:04:36.100 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger - null null
+2025-05-08 16:04:36.108 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger - 302 0 null 8.7601ms
+2025-05-08 16:04:36.114 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2025-05-08 16:04:36.133 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 19.9062ms
+2025-05-08 16:04:36.157 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-08 16:04:36.169 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2025-05-08 16:04:36.171 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 16539 application/javascript; charset=utf-8 13.4658ms
+2025-05-08 16:04:36.196 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 26.6759ms
+2025-05-08 16:04:36.232 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2025-05-08 16:04:36.292 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 60.3176ms
+2025-05-08 16:04:48.313 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/Careers/name/ea - null null
+2025-05-08 16:04:48.317 -03:00 [INF] Executing endpoint 'HTTP: GET /Careers/name/{Name}'
+2025-05-08 16:04:48.355 -03:00 [INF] Handling GetCareerQuery
+2025-05-08 16:04:48.356 -03:00 [INF] Property CareerId : null
+2025-05-08 16:04:48.356 -03:00 [INF] Property CareerName : ea
+2025-05-08 16:04:48.453 -03:00 [INF] Executed DbCommand (23ms) [Parameters=[@__careerName_0_startswith='?' (Size = 4000), @__careerName_0_endswith='?' (Size = 4000), @__careerName_0_contains='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Careers] AS [c]
+WHERE [c].[Name] LIKE @__careerName_0_startswith ESCAPE N'\' OR [c].[Name] LIKE @__careerName_0_endswith ESCAPE N'\' OR [c].[Name] LIKE @__careerName_0_contains ESCAPE N'\'
+2025-05-08 16:04:48.457 -03:00 [INF] Handled GetCareerQuery with Ardalis.Result.Result`1[ApuntecaDigital.Backend.UseCases.Careers.CareerDTO] in 99 ms
+2025-05-08 16:04:48.460 -03:00 [INF] Executed endpoint 'HTTP: GET /Careers/name/{Name}'
+2025-05-08 16:04:48.463 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/Careers/name/ea - 404 null null 150.6785ms
+2025-05-08 16:04:57.211 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/Careers/name/software engineering - null null
+2025-05-08 16:04:57.214 -03:00 [INF] Executing endpoint 'HTTP: GET /Careers/name/{Name}'
+2025-05-08 16:04:57.216 -03:00 [INF] Handling GetCareerQuery
+2025-05-08 16:04:57.216 -03:00 [INF] Property CareerId : null
+2025-05-08 16:04:57.217 -03:00 [INF] Property CareerName : software engineering
+2025-05-08 16:04:57.258 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__careerName_0_startswith='?' (Size = 4000), @__careerName_0_endswith='?' (Size = 4000), @__careerName_0_contains='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Careers] AS [c]
+WHERE [c].[Name] LIKE @__careerName_0_startswith ESCAPE N'\' OR [c].[Name] LIKE @__careerName_0_endswith ESCAPE N'\' OR [c].[Name] LIKE @__careerName_0_contains ESCAPE N'\'
+2025-05-08 16:04:57.287 -03:00 [INF] Handled GetCareerQuery with Ardalis.Result.Result`1[ApuntecaDigital.Backend.UseCases.Careers.CareerDTO] in 69 ms
+2025-05-08 16:04:57.290 -03:00 [INF] Executed endpoint 'HTTP: GET /Careers/name/{Name}'
+2025-05-08 16:04:57.292 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/Careers/name/software engineering - 200 null application/json; charset=utf-8 80.9322ms
+2025-05-08 16:05:13.591 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/Careers/id/1 - null null
+2025-05-08 16:05:13.594 -03:00 [INF] Executing endpoint 'HTTP: GET /Careers/id/{CareerId:int}'
+2025-05-08 16:05:13.601 -03:00 [INF] Handling GetCareerQuery
+2025-05-08 16:05:13.602 -03:00 [INF] Property CareerId : 1
+2025-05-08 16:05:13.603 -03:00 [INF] Property CareerName : null
+2025-05-08 16:05:13.611 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__careerId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Careers] AS [c]
+WHERE [c].[Id] = @__careerId_0
+2025-05-08 16:05:13.613 -03:00 [INF] Handled GetCareerQuery with Ardalis.Result.Result`1[ApuntecaDigital.Backend.UseCases.Careers.CareerDTO] in 9 ms
+2025-05-08 16:05:13.614 -03:00 [INF] Executed endpoint 'HTTP: GET /Careers/id/{CareerId:int}'
+2025-05-08 16:05:13.615 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/Careers/id/1 - 200 null application/json; charset=utf-8 24.3827ms
+2025-05-08 16:05:16.636 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/Careers/id/2 - null null
+2025-05-08 16:05:16.639 -03:00 [INF] Executing endpoint 'HTTP: GET /Careers/id/{CareerId:int}'
+2025-05-08 16:05:16.640 -03:00 [INF] Handling GetCareerQuery
+2025-05-08 16:05:16.640 -03:00 [INF] Property CareerId : 2
+2025-05-08 16:05:16.641 -03:00 [INF] Property CareerName : null
+2025-05-08 16:05:16.644 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__careerId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Careers] AS [c]
+WHERE [c].[Id] = @__careerId_0
+2025-05-08 16:05:16.645 -03:00 [INF] Handled GetCareerQuery with Ardalis.Result.Result`1[ApuntecaDigital.Backend.UseCases.Careers.CareerDTO] in 3 ms
+2025-05-08 16:05:16.646 -03:00 [INF] Executed endpoint 'HTTP: GET /Careers/id/{CareerId:int}'
+2025-05-08 16:05:16.647 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/Careers/id/2 - 404 null null 11.1475ms
+2025-05-08 16:16:07.764 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/Careers/name/soft - null null
+2025-05-08 16:16:07.768 -03:00 [INF] Executing endpoint 'HTTP: GET /Careers/name/{Name}'
+2025-05-08 16:16:07.769 -03:00 [INF] Handling GetCareerQuery
+2025-05-08 16:16:07.770 -03:00 [INF] Property CareerId : null
+2025-05-08 16:16:07.771 -03:00 [INF] Property CareerName : soft
+2025-05-08 16:16:07.789 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__careerName_0_startswith='?' (Size = 4000), @__careerName_0_endswith='?' (Size = 4000), @__careerName_0_contains='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Careers] AS [c]
+WHERE [c].[Name] LIKE @__careerName_0_startswith ESCAPE N'\' OR [c].[Name] LIKE @__careerName_0_endswith ESCAPE N'\' OR [c].[Name] LIKE @__careerName_0_contains ESCAPE N'\'
+2025-05-08 16:16:07.792 -03:00 [INF] Handled GetCareerQuery with Ardalis.Result.Result`1[ApuntecaDigital.Backend.UseCases.Careers.CareerDTO] in 19 ms
+2025-05-08 16:16:07.793 -03:00 [INF] Executed endpoint 'HTTP: GET /Careers/name/{Name}'
+2025-05-08 16:16:07.795 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/Careers/name/soft - 200 null application/json; charset=utf-8 32.1721ms
+2025-05-08 16:16:13.414 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/Careers/name/enginee - null null
+2025-05-08 16:16:13.417 -03:00 [INF] Executing endpoint 'HTTP: GET /Careers/name/{Name}'
+2025-05-08 16:16:13.418 -03:00 [INF] Handling GetCareerQuery
+2025-05-08 16:16:13.419 -03:00 [INF] Property CareerId : null
+2025-05-08 16:16:13.420 -03:00 [INF] Property CareerName : enginee
+2025-05-08 16:16:13.423 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__careerName_0_startswith='?' (Size = 4000), @__careerName_0_endswith='?' (Size = 4000), @__careerName_0_contains='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Careers] AS [c]
+WHERE [c].[Name] LIKE @__careerName_0_startswith ESCAPE N'\' OR [c].[Name] LIKE @__careerName_0_endswith ESCAPE N'\' OR [c].[Name] LIKE @__careerName_0_contains ESCAPE N'\'
+2025-05-08 16:16:13.425 -03:00 [INF] Handled GetCareerQuery with Ardalis.Result.Result`1[ApuntecaDigital.Backend.UseCases.Careers.CareerDTO] in 4 ms
+2025-05-08 16:16:13.427 -03:00 [INF] Executed endpoint 'HTTP: GET /Careers/name/{Name}'
+2025-05-08 16:16:13.428 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/Careers/name/enginee - 200 null application/json; charset=utf-8 13.5818ms
+2025-05-08 16:16:17.976 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/Careers/name/eng - null null
+2025-05-08 16:16:17.978 -03:00 [INF] Executing endpoint 'HTTP: GET /Careers/name/{Name}'
+2025-05-08 16:16:17.980 -03:00 [INF] Handling GetCareerQuery
+2025-05-08 16:16:17.981 -03:00 [INF] Property CareerId : null
+2025-05-08 16:16:17.982 -03:00 [INF] Property CareerName : eng
+2025-05-08 16:16:17.985 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__careerName_0_startswith='?' (Size = 4000), @__careerName_0_endswith='?' (Size = 4000), @__careerName_0_contains='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Careers] AS [c]
+WHERE [c].[Name] LIKE @__careerName_0_startswith ESCAPE N'\' OR [c].[Name] LIKE @__careerName_0_endswith ESCAPE N'\' OR [c].[Name] LIKE @__careerName_0_contains ESCAPE N'\'
+2025-05-08 16:16:17.987 -03:00 [INF] Handled GetCareerQuery with Ardalis.Result.Result`1[ApuntecaDigital.Backend.UseCases.Careers.CareerDTO] in 3 ms
+2025-05-08 16:16:17.988 -03:00 [INF] Executed endpoint 'HTTP: GET /Careers/name/{Name}'
+2025-05-08 16:16:17.989 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/Careers/name/eng - 200 null application/json; charset=utf-8 13.9677ms
+2025-05-08 16:16:22.208 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/Careers/name/engs - null null
+2025-05-08 16:16:22.211 -03:00 [INF] Executing endpoint 'HTTP: GET /Careers/name/{Name}'
+2025-05-08 16:16:22.212 -03:00 [INF] Handling GetCareerQuery
+2025-05-08 16:16:22.213 -03:00 [INF] Property CareerId : null
+2025-05-08 16:16:22.213 -03:00 [INF] Property CareerName : engs
+2025-05-08 16:16:22.216 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__careerName_0_startswith='?' (Size = 4000), @__careerName_0_endswith='?' (Size = 4000), @__careerName_0_contains='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Careers] AS [c]
+WHERE [c].[Name] LIKE @__careerName_0_startswith ESCAPE N'\' OR [c].[Name] LIKE @__careerName_0_endswith ESCAPE N'\' OR [c].[Name] LIKE @__careerName_0_contains ESCAPE N'\'
+2025-05-08 16:16:22.218 -03:00 [INF] Handled GetCareerQuery with Ardalis.Result.Result`1[ApuntecaDigital.Backend.UseCases.Careers.CareerDTO] in 4 ms
+2025-05-08 16:16:22.220 -03:00 [INF] Executed endpoint 'HTTP: GET /Careers/name/{Name}'
+2025-05-08 16:16:22.221 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/Careers/name/engs - 404 null null 13.044ms
+2025-05-08 16:19:21.038 -03:00 [INF] Registered 26 endpoints in 296 milliseconds.
+2025-05-08 16:19:22.052 -03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-05-08 16:19:22.084 -03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2025-05-08 16:19:22.237 -03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Contributors] AS [c]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-08 16:19:22.328 -03:00 [INF] Now listening on: https://localhost:57679
+2025-05-08 16:19:22.332 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-05-08 16:19:22.374 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-08 16:19:22.375 -03:00 [INF] Hosting environment: Development
+2025-05-08 16:19:22.376 -03:00 [INF] Content root path: C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Web
+2025-05-08 16:19:25.038 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:57679/careers - null null
+2025-05-08 16:19:25.064 -03:00 [INF] Executing endpoint 'HTTP: GET /Careers'
+2025-05-08 16:19:25.080 -03:00 [INF] Handling ListCareersQuery
+2025-05-08 16:19:25.081 -03:00 [INF] Property Skip : null
+2025-05-08 16:19:25.082 -03:00 [INF] Property Take : null
+2025-05-08 16:19:25.240 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT Id, Name FROM Careers
+2025-05-08 16:19:25.246 -03:00 [INF] Handled ListCareersQuery with Ardalis.Result.Result`1[System.Collections.Generic.IEnumerable`1[ApuntecaDigital.Backend.UseCases.Careers.CareerDTO]] in 163 ms
+2025-05-08 16:19:25.260 -03:00 [INF] Executed endpoint 'HTTP: GET /Careers'
+2025-05-08 16:19:25.264 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:57679/careers - 200 null application/json; charset=utf-8 228.897ms
+2025-05-08 16:19:25.494 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:57679/careers - null null
+2025-05-08 16:19:25.497 -03:00 [INF] Executing endpoint 'HTTP: GET /Careers'
+2025-05-08 16:19:25.498 -03:00 [INF] Handling ListCareersQuery
+2025-05-08 16:19:25.499 -03:00 [INF] Property Skip : null
+2025-05-08 16:19:25.500 -03:00 [INF] Property Take : null
+2025-05-08 16:19:25.534 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT Id, Name FROM Careers
+2025-05-08 16:19:25.536 -03:00 [INF] Handled ListCareersQuery with Ardalis.Result.Result`1[System.Collections.Generic.IEnumerable`1[ApuntecaDigital.Backend.UseCases.Careers.CareerDTO]] in 35 ms
+2025-05-08 16:19:25.538 -03:00 [INF] Executed endpoint 'HTTP: GET /Careers'
+2025-05-08 16:19:25.539 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:57679/careers - 200 null application/json; charset=utf-8 45.0225ms
+2025-05-08 16:19:29.232 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:57679/careers - null null
+2025-05-08 16:19:29.234 -03:00 [INF] Executing endpoint 'HTTP: GET /Careers'
+2025-05-08 16:19:29.235 -03:00 [INF] Handling ListCareersQuery
+2025-05-08 16:19:29.235 -03:00 [INF] Property Skip : null
+2025-05-08 16:19:29.236 -03:00 [INF] Property Take : null
+2025-05-08 16:19:29.239 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT Id, Name FROM Careers
+2025-05-08 16:19:29.240 -03:00 [INF] Handled ListCareersQuery with Ardalis.Result.Result`1[System.Collections.Generic.IEnumerable`1[ApuntecaDigital.Backend.UseCases.Careers.CareerDTO]] in 3 ms
+2025-05-08 16:19:29.241 -03:00 [INF] Executed endpoint 'HTTP: GET /Careers'
+2025-05-08 16:19:29.242 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:57679/careers - 200 null application/json; charset=utf-8 10.2065ms
+2025-05-08 16:19:30.397 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:57679/careers - null null
+2025-05-08 16:19:30.399 -03:00 [INF] Executing endpoint 'HTTP: GET /Careers'
+2025-05-08 16:19:30.399 -03:00 [INF] Handling ListCareersQuery
+2025-05-08 16:19:30.400 -03:00 [INF] Property Skip : null
+2025-05-08 16:19:30.401 -03:00 [INF] Property Take : null
+2025-05-08 16:19:30.403 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT Id, Name FROM Careers
+2025-05-08 16:19:30.404 -03:00 [INF] Handled ListCareersQuery with Ardalis.Result.Result`1[System.Collections.Generic.IEnumerable`1[ApuntecaDigital.Backend.UseCases.Careers.CareerDTO]] in 2 ms
+2025-05-08 16:19:30.405 -03:00 [INF] Executed endpoint 'HTTP: GET /Careers'
+2025-05-08 16:19:30.406 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:57679/careers - 200 null application/json; charset=utf-8 9.2548ms
+2025-05-08 16:19:31.085 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:57679/Careers/name/soft - null null
+2025-05-08 16:19:31.087 -03:00 [INF] Executing endpoint 'HTTP: GET /Careers/name/{Name}'
+2025-05-08 16:19:31.103 -03:00 [INF] Handling GetCareerQuery
+2025-05-08 16:19:31.104 -03:00 [INF] Property CareerId : null
+2025-05-08 16:19:31.105 -03:00 [INF] Property CareerName : soft
+2025-05-08 16:19:31.154 -03:00 [INF] Executed DbCommand (11ms) [Parameters=[@__careerName_0_startswith='?' (Size = 4000), @__careerName_0_endswith='?' (Size = 4000), @__careerName_0_contains='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Careers] AS [c]
+WHERE [c].[Name] LIKE @__careerName_0_startswith ESCAPE N'\' OR [c].[Name] LIKE @__careerName_0_endswith ESCAPE N'\' OR [c].[Name] LIKE @__careerName_0_contains ESCAPE N'\'
+2025-05-08 16:19:31.175 -03:00 [INF] Handled GetCareerQuery with Ardalis.Result.Result`1[ApuntecaDigital.Backend.UseCases.Careers.CareerDTO] in 69 ms
+2025-05-08 16:19:31.177 -03:00 [INF] Executed endpoint 'HTTP: GET /Careers/name/{Name}'
+2025-05-08 16:19:31.178 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:57679/Careers/name/soft - 200 null application/json; charset=utf-8 92.8843ms
+2025-05-08 16:19:33.552 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:57679/Careers/name/soft - null null
+2025-05-08 16:19:33.554 -03:00 [INF] Executing endpoint 'HTTP: GET /Careers/name/{Name}'
+2025-05-08 16:19:33.555 -03:00 [INF] Handling GetCareerQuery
+2025-05-08 16:19:33.556 -03:00 [INF] Property CareerId : null
+2025-05-08 16:19:33.556 -03:00 [INF] Property CareerName : soft
+2025-05-08 16:19:33.559 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__careerName_0_startswith='?' (Size = 4000), @__careerName_0_endswith='?' (Size = 4000), @__careerName_0_contains='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Careers] AS [c]
+WHERE [c].[Name] LIKE @__careerName_0_startswith ESCAPE N'\' OR [c].[Name] LIKE @__careerName_0_endswith ESCAPE N'\' OR [c].[Name] LIKE @__careerName_0_contains ESCAPE N'\'
+2025-05-08 16:19:33.561 -03:00 [INF] Handled GetCareerQuery with Ardalis.Result.Result`1[ApuntecaDigital.Backend.UseCases.Careers.CareerDTO] in 3 ms
+2025-05-08 16:19:33.561 -03:00 [INF] Executed endpoint 'HTTP: GET /Careers/name/{Name}'
+2025-05-08 16:19:33.562 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:57679/Careers/name/soft - 200 null application/json; charset=utf-8 9.8028ms
+2025-05-08 16:19:36.197 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:57679/careers - null null
+2025-05-08 16:19:36.198 -03:00 [INF] Executing endpoint 'HTTP: GET /Careers'
+2025-05-08 16:19:36.199 -03:00 [INF] Handling ListCareersQuery
+2025-05-08 16:19:36.199 -03:00 [INF] Property Skip : null
+2025-05-08 16:19:36.200 -03:00 [INF] Property Take : null
+2025-05-08 16:19:36.202 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT Id, Name FROM Careers
+2025-05-08 16:19:36.203 -03:00 [INF] Handled ListCareersQuery with Ardalis.Result.Result`1[System.Collections.Generic.IEnumerable`1[ApuntecaDigital.Backend.UseCases.Careers.CareerDTO]] in 2 ms
+2025-05-08 16:19:36.204 -03:00 [INF] Executed endpoint 'HTTP: GET /Careers'
+2025-05-08 16:19:36.204 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:57679/careers - 200 null application/json; charset=utf-8 7.8268ms
+2025-05-08 16:19:36.234 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:57679/careers - null null
+2025-05-08 16:19:36.235 -03:00 [INF] Executing endpoint 'HTTP: GET /Careers'
+2025-05-08 16:19:36.236 -03:00 [INF] Handling ListCareersQuery
+2025-05-08 16:19:36.237 -03:00 [INF] Property Skip : null
+2025-05-08 16:19:36.237 -03:00 [INF] Property Take : null
+2025-05-08 16:19:36.239 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT Id, Name FROM Careers
+2025-05-08 16:19:36.240 -03:00 [INF] Handled ListCareersQuery with Ardalis.Result.Result`1[System.Collections.Generic.IEnumerable`1[ApuntecaDigital.Backend.UseCases.Careers.CareerDTO]] in 2 ms
+2025-05-08 16:19:36.241 -03:00 [INF] Executed endpoint 'HTTP: GET /Careers'
+2025-05-08 16:19:36.242 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:57679/careers - 200 null application/json; charset=utf-8 7.7576ms
+2025-05-08 16:19:39.327 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:57679/careers - null null
+2025-05-08 16:19:39.328 -03:00 [INF] Executing endpoint 'HTTP: GET /Careers'
+2025-05-08 16:19:39.329 -03:00 [INF] Handling ListCareersQuery
+2025-05-08 16:19:39.329 -03:00 [INF] Property Skip : null
+2025-05-08 16:19:39.330 -03:00 [INF] Property Take : null
+2025-05-08 16:19:39.332 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT Id, Name FROM Careers
+2025-05-08 16:19:39.332 -03:00 [INF] Handled ListCareersQuery with Ardalis.Result.Result`1[System.Collections.Generic.IEnumerable`1[ApuntecaDigital.Backend.UseCases.Careers.CareerDTO]] in 2 ms
+2025-05-08 16:19:39.333 -03:00 [INF] Executed endpoint 'HTTP: GET /Careers'
+2025-05-08 16:19:39.334 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:57679/careers - 200 null application/json; charset=utf-8 7.2767ms
+2025-05-08 16:19:40.355 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:57679/careers - null null
+2025-05-08 16:19:40.356 -03:00 [INF] Executing endpoint 'HTTP: GET /Careers'
+2025-05-08 16:19:40.357 -03:00 [INF] Handling ListCareersQuery
+2025-05-08 16:19:40.358 -03:00 [INF] Property Skip : null
+2025-05-08 16:19:40.358 -03:00 [INF] Property Take : null
+2025-05-08 16:19:40.360 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT Id, Name FROM Careers
+2025-05-08 16:19:40.361 -03:00 [INF] Handled ListCareersQuery with Ardalis.Result.Result`1[System.Collections.Generic.IEnumerable`1[ApuntecaDigital.Backend.UseCases.Careers.CareerDTO]] in 2 ms
+2025-05-08 16:19:40.362 -03:00 [INF] Executed endpoint 'HTTP: GET /Careers'
+2025-05-08 16:19:40.362 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:57679/careers - 200 null application/json; charset=utf-8 7.2828ms
+2025-05-08 16:19:41.429 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:57679/careers - null null
+2025-05-08 16:19:41.431 -03:00 [INF] Executing endpoint 'HTTP: GET /Careers'
+2025-05-08 16:19:41.432 -03:00 [INF] Handling ListCareersQuery
+2025-05-08 16:19:41.432 -03:00 [INF] Property Skip : null
+2025-05-08 16:19:41.433 -03:00 [INF] Property Take : null
+2025-05-08 16:19:41.435 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT Id, Name FROM Careers
+2025-05-08 16:19:41.436 -03:00 [INF] Handled ListCareersQuery with Ardalis.Result.Result`1[System.Collections.Generic.IEnumerable`1[ApuntecaDigital.Backend.UseCases.Careers.CareerDTO]] in 2 ms
+2025-05-08 16:19:41.437 -03:00 [INF] Executed endpoint 'HTTP: GET /Careers'
+2025-05-08 16:19:41.438 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:57679/careers - 200 null application/json; charset=utf-8 8.5153ms
+2025-05-08 16:21:35.959 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:57679/Careers/name/soft - null null
+2025-05-08 16:21:35.961 -03:00 [INF] Executing endpoint 'HTTP: GET /Careers/name/{Name}'
+2025-05-08 16:21:42.550 -03:00 [INF] Handling GetCareerQuery
+2025-05-08 16:21:42.551 -03:00 [INF] Property CareerId : null
+2025-05-08 16:21:42.551 -03:00 [INF] Property CareerName : soft
+2025-05-08 16:21:42.568 -03:00 [INF] Executed DbCommand (14ms) [Parameters=[@__careerName_0_startswith='?' (Size = 4000), @__careerName_0_endswith='?' (Size = 4000), @__careerName_0_contains='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Careers] AS [c]
+WHERE [c].[Name] LIKE @__careerName_0_startswith ESCAPE N'\' OR [c].[Name] LIKE @__careerName_0_endswith ESCAPE N'\' OR [c].[Name] LIKE @__careerName_0_contains ESCAPE N'\'
+2025-05-08 16:21:42.574 -03:00 [INF] Handled GetCareerQuery with Ardalis.Result.Result`1[ApuntecaDigital.Backend.UseCases.Careers.CareerDTO] in 22 ms
+2025-05-08 16:21:51.620 -03:00 [INF] Executed endpoint 'HTTP: GET /Careers/name/{Name}'
+2025-05-08 16:21:51.621 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:57679/Careers/name/soft - 200 null application/json; charset=utf-8 15662.3739ms
+2025-05-08 16:22:13.988 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:57679/Careers/name/soft - null null
+2025-05-08 16:22:13.990 -03:00 [INF] Executing endpoint 'HTTP: GET /Careers/name/{Name}'
+2025-05-08 16:22:14.794 -03:00 [INF] Handling GetCareerQuery
+2025-05-08 16:22:14.794 -03:00 [INF] Property CareerId : null
+2025-05-08 16:22:14.796 -03:00 [INF] Property CareerName : soft
+2025-05-08 16:22:14.798 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__careerName_0_startswith='?' (Size = 4000), @__careerName_0_endswith='?' (Size = 4000), @__careerName_0_contains='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Careers] AS [c]
+WHERE [c].[Name] LIKE @__careerName_0_startswith ESCAPE N'\' OR [c].[Name] LIKE @__careerName_0_endswith ESCAPE N'\' OR [c].[Name] LIKE @__careerName_0_contains ESCAPE N'\'
+2025-05-08 16:22:14.800 -03:00 [INF] Handled GetCareerQuery with Ardalis.Result.Result`1[ApuntecaDigital.Backend.UseCases.Careers.CareerDTO] in 3 ms
+2025-05-08 16:22:14.802 -03:00 [INF] Executed endpoint 'HTTP: GET /Careers/name/{Name}'
+2025-05-08 16:22:14.803 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:57679/Careers/name/soft - 200 null application/json; charset=utf-8 845.9895ms
+2025-05-08 16:23:08.603 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:57679/Careers/name/soft - null null
+2025-05-08 16:23:08.605 -03:00 [INF] Executing endpoint 'HTTP: GET /Careers/name/{Name}'
+2025-05-08 16:23:08.606 -03:00 [INF] Handling GetCareerQuery
+2025-05-08 16:23:08.607 -03:00 [INF] Property CareerId : null
+2025-05-08 16:23:08.607 -03:00 [INF] Property CareerName : soft
+2025-05-08 16:23:08.611 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__careerName_0_startswith='?' (Size = 4000), @__careerName_0_endswith='?' (Size = 4000), @__careerName_0_contains='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Careers] AS [c]
+WHERE [c].[Name] LIKE @__careerName_0_startswith ESCAPE N'\' OR [c].[Name] LIKE @__careerName_0_endswith ESCAPE N'\' OR [c].[Name] LIKE @__careerName_0_contains ESCAPE N'\'
+2025-05-08 16:23:08.613 -03:00 [INF] Handled GetCareerQuery with Ardalis.Result.Result`1[ApuntecaDigital.Backend.UseCases.Careers.CareerDTO] in 5 ms
+2025-05-08 16:23:08.614 -03:00 [INF] Executed endpoint 'HTTP: GET /Careers/name/{Name}'
+2025-05-08 16:23:08.615 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:57679/Careers/name/soft - 200 null application/json; charset=utf-8 49.788ms
+2025-05-08 16:25:35.332 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/Careers/name/engs - null null
+2025-05-08 16:25:35.332 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2025-05-08 16:25:35.335 -03:00 [INF] Executing endpoint 'HTTP: GET /Careers/name/{Name}'
+2025-05-08 16:25:35.337 -03:00 [INF] Handling GetCareerQuery
+2025-05-08 16:25:35.338 -03:00 [INF] Property CareerId : null
+2025-05-08 16:25:35.339 -03:00 [INF] Property CareerName : engs
+2025-05-08 16:25:35.345 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__careerName_0_startswith='?' (Size = 4000), @__careerName_0_endswith='?' (Size = 4000), @__careerName_0_contains='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Careers] AS [c]
+WHERE [c].[Name] LIKE @__careerName_0_startswith ESCAPE N'\' OR [c].[Name] LIKE @__careerName_0_endswith ESCAPE N'\' OR [c].[Name] LIKE @__careerName_0_contains ESCAPE N'\'
+2025-05-08 16:25:35.347 -03:00 [INF] Handled GetCareerQuery with Ardalis.Result.Result`1[ApuntecaDigital.Backend.UseCases.Careers.CareerDTO] in 7 ms
+2025-05-08 16:25:35.349 -03:00 [INF] Executed endpoint 'HTTP: GET /Careers/name/{Name}'
+2025-05-08 16:25:35.350 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/Careers/name/engs - 404 null null 17.6822ms
+2025-05-08 16:25:35.405 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 72.7569ms
+2025-05-08 16:25:35.427 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-08 16:25:35.429 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2025-05-08 16:25:35.442 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 16539 application/javascript; charset=utf-8 14.9591ms
+2025-05-08 16:25:35.452 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.8799ms
+2025-05-08 16:25:35.484 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2025-05-08 16:25:35.540 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 55.6925ms
+2025-05-08 16:25:52.923 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/Careers/name/e - null null
+2025-05-08 16:25:52.926 -03:00 [INF] Executing endpoint 'HTTP: GET /Careers/name/{Name}'
+2025-05-08 16:25:52.927 -03:00 [INF] Handling GetCareerQuery
+2025-05-08 16:25:52.928 -03:00 [INF] Property CareerId : null
+2025-05-08 16:25:52.929 -03:00 [INF] Property CareerName : e
+2025-05-08 16:25:52.963 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__careerName_0_startswith='?' (Size = 4000), @__careerName_0_endswith='?' (Size = 4000), @__careerName_0_contains='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Careers] AS [c]
+WHERE [c].[Name] LIKE @__careerName_0_startswith ESCAPE N'\' OR [c].[Name] LIKE @__careerName_0_endswith ESCAPE N'\' OR [c].[Name] LIKE @__careerName_0_contains ESCAPE N'\'
+2025-05-08 16:25:52.965 -03:00 [INF] Handled GetCareerQuery with Ardalis.Result.Result`1[ApuntecaDigital.Backend.UseCases.Careers.CareerDTO] in 35 ms
+2025-05-08 16:25:52.967 -03:00 [INF] Executed endpoint 'HTTP: GET /Careers/name/{Name}'
+2025-05-08 16:25:52.969 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/Careers/name/e - 200 null application/json; charset=utf-8 46.0028ms
+2025-05-08 16:26:05.779 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/Careers/name/soft - null null
+2025-05-08 16:26:05.783 -03:00 [INF] Executing endpoint 'HTTP: GET /Careers/name/{Name}'
+2025-05-08 16:26:05.784 -03:00 [INF] Handling GetCareerQuery
+2025-05-08 16:26:05.786 -03:00 [INF] Property CareerId : null
+2025-05-08 16:26:05.787 -03:00 [INF] Property CareerName : soft
+2025-05-08 16:26:05.790 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__careerName_0_startswith='?' (Size = 4000), @__careerName_0_endswith='?' (Size = 4000), @__careerName_0_contains='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Careers] AS [c]
+WHERE [c].[Name] LIKE @__careerName_0_startswith ESCAPE N'\' OR [c].[Name] LIKE @__careerName_0_endswith ESCAPE N'\' OR [c].[Name] LIKE @__careerName_0_contains ESCAPE N'\'
+2025-05-08 16:26:05.792 -03:00 [INF] Handled GetCareerQuery with Ardalis.Result.Result`1[ApuntecaDigital.Backend.UseCases.Careers.CareerDTO] in 3 ms
+2025-05-08 16:26:05.794 -03:00 [INF] Executed endpoint 'HTTP: GET /Careers/name/{Name}'
+2025-05-08 16:26:05.795 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/Careers/name/soft - 200 null application/json; charset=utf-8 16.1217ms
+2025-05-08 16:26:18.142 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/Careers - null null
+2025-05-08 16:26:18.145 -03:00 [INF] Executing endpoint 'HTTP: GET /Careers'
+2025-05-08 16:26:18.146 -03:00 [INF] Handling ListCareersQuery
+2025-05-08 16:26:18.147 -03:00 [INF] Property Skip : null
+2025-05-08 16:26:18.148 -03:00 [INF] Property Take : null
+2025-05-08 16:26:18.151 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT Id, Name FROM Careers
+2025-05-08 16:26:18.154 -03:00 [INF] Handled ListCareersQuery with Ardalis.Result.Result`1[System.Collections.Generic.IEnumerable`1[ApuntecaDigital.Backend.UseCases.Careers.CareerDTO]] in 3 ms
+2025-05-08 16:26:18.155 -03:00 [INF] Executed endpoint 'HTTP: GET /Careers'
+2025-05-08 16:26:18.156 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/Careers - 200 null application/json; charset=utf-8 13.8963ms

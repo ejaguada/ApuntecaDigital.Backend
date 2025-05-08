@@ -3,24 +3,24 @@ using ApuntecaDigital.Backend.UseCases.Careers.Get;
 namespace ApuntecaDigital.Backend.Web.Careers;
 
 /// <summary>
-/// Get a Career by integer ID.
+/// Get a Career by name.
 /// </summary>
 /// <remarks>
-/// Takes a positive integer ID and returns a matching Career record.
+/// Takes a name and returns a matching Career record.
 /// </remarks>
-public class GetById(IMediator _mediator)
-  : Endpoint<GetCareerByIdRequest, CareerRecord>
+public class GetByName(IMediator _mediator)
+  : Endpoint<GetCareerByNameRequest, CareerRecord>
 {
   public override void Configure()
   {
-    Get(GetCareerByIdRequest.Route);
+    Get(GetCareerByNameRequest.Route);
     AllowAnonymous();
   }
 
-  public override async Task HandleAsync(GetCareerByIdRequest request,
+  public override async Task HandleAsync(GetCareerByNameRequest request,
     CancellationToken cancellationToken)
   {
-    var query = new GetCareerQuery(request.CareerId, null);
+    var query = new GetCareerQuery(null, request.Name);
 
     var result = await _mediator.Send(query, cancellationToken);
 

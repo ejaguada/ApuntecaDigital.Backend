@@ -15,8 +15,17 @@ public class GetCareerHandler : IRequestHandler<GetCareerQuery, Result<CareerDTO
 
   public async Task<Result<CareerDTO>> Handle(GetCareerQuery request, CancellationToken cancellationToken)
   {
-    var spec = new CareerByIdSpec(request.CareerId);
-    var career = await _repository.FirstOrDefaultAsync(spec, cancellationToken);
+    Career? career = null;
+    if (request.CareerId.HasValue)
+    {
+      var spec = new CareerByIdSpec(request.CareerId.Value);
+      career = await _repository.FirstOrDefaultAsync(spec, cancellationToken);
+    }
+    else if (!string.IsNullOrEmpty(request.CareerName))
+    {
+      var spec = new CareerByNameSpec(request.CareerName);
+      career = await _repository.FirstOrDefaultAsync(spec, cancellationToken);
+    }
 
     if (career == null)
     {
@@ -26,3 +35,4 @@ public class GetCareerHandler : IRequestHandler<GetCareerQuery, Result<CareerDTO
     return Result<CareerDTO>.Success(new CareerDTO(career.Id, career.Name));
   }
 }
+

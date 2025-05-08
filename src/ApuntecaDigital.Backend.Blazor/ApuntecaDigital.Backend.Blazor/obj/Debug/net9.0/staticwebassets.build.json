@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "or9ajVWgBJ2dIDvf6nlhHyS5r638iJUscVHKtdNQYMs=",
+  "Hash": "WmcYl8rMhMvSN2/6/VC1nK9J23ypVF9Uzpi+A87srQQ=",
   "Source": "ApuntecaDigital.Backend.Blazor",
   "BasePath": "_content/ApuntecaDigital.Backend.Blazor",
   "Mode": "Default",
@@ -50,8 +50,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "d7s40bbg1y",
-      "Integrity": "N9wU3Tl5UsizgZcLX+RM3udPcG7lTj/hqTBvjXVnt/s=",
+      "Fingerprint": "w6ei1rc4ru",
+      "Integrity": "qDo5PW3uwsKEbg0iqor8pNzP9TR5Z3z5vJkWlkYeyo8=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ApuntecaDigital.Backend.Blazor.Client.pdb"
@@ -71,8 +71,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "9en9ibm2bv",
-      "Integrity": "T+PHsqX0qfKOK1f7cdzjM6+NBrPLrAhVW9omxKLLsvI=",
+      "Fingerprint": "eid95sndb5",
+      "Integrity": "pnED2GCuPQEe5Iesihvrh2HNX4TyMrv4CNvww3DMFmU=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ApuntecaDigital.Backend.Blazor.Client.wasm"
@@ -92,8 +92,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "1t8tl0kesy",
-      "Integrity": "KzlIhJCOf7jCy2AN/pwh/OtiaTPsUqodVGDuc4H9aCQ=",
+      "Fingerprint": "fqx0sii6rf",
+      "Integrity": "x26pBhIrWi5XYhCI38hKtrz5N3VMTlClDQCFCbLuBtA=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ApuntecaDigital.Backend.Core.pdb"
@@ -113,8 +113,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "3wyzza21dc",
-      "Integrity": "Y2YedYww6xQNWhhcfxqfzdosEtX/r0TGtfCoK/sVnho=",
+      "Fingerprint": "1x2c07cbo9",
+      "Integrity": "O2rPdB+8VMaU60EhLp9UuKGxCIX3pyrnydKAU5DAmiM=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ApuntecaDigital.Backend.Core.wasm"
@@ -134,8 +134,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "o9mgp6gkul",
-      "Integrity": "RJqjaB9b+nm0LdtCZgjpKAsLkRuxaek3LN9RVuw5eUY=",
+      "Fingerprint": "y7a43nyx6s",
+      "Integrity": "vgsB8jpYvVsH+/NlP/D1TBTd3gnlWTRrKRJT7FtqDWc=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ApuntecaDigital.Backend.Infrastructure.pdb"
@@ -155,8 +155,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "u0zuaa9vhm",
-      "Integrity": "zg4roxOciKcCL/cBwikNi1+pONsTvrUQZyeQb91/tDU=",
+      "Fingerprint": "etp682qoy2",
+      "Integrity": "MriOfiFNR+Q2Lbi5n2UkrWc47jQEu5uXZDJdbSUBrgE=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ApuntecaDigital.Backend.Infrastructure.wasm"
@@ -176,8 +176,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "afurjqtiz3",
-      "Integrity": "xr2zDM+rCydjq3sNacrW8W92+oYyXwDfVJICAnUNpZ4=",
+      "Fingerprint": "hmnz9pn480",
+      "Integrity": "p4BK4npq1X2znVFm34B3UdcdRsEKeDwnBD53TUJ1I/M=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ApuntecaDigital.Backend.UseCases.pdb"
@@ -197,8 +197,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "224ug1l386",
-      "Integrity": "CjRxt5o5xSsbc4hK/X7EO04jQtyP1k4c7R4lb26IgT4=",
+      "Fingerprint": "xf1dt4svv5",
+      "Integrity": "c2qSpf7Fx3ztIAJReodIRFfKOlmkR6s/JAmVciFBcW8=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ApuntecaDigital.Backend.UseCases.wasm"
@@ -386,8 +386,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "cqv6c8cdyw",
-      "Integrity": "JJJ9eCLDTfYRWDiRvIkLRdhyrJsAO2o4uW1tESZ040w=",
+      "Fingerprint": "etchas68of",
+      "Integrity": "IvVWvdp42jEKsXX+NnTe4UADeL2j+fMYB8aQGF04F5M=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -5895,12 +5895,12 @@
       "OriginalItemSpec": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\1ycrvy2m32-nkebuzz0o3.gz"
     },
     {
-      "Identity": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\1yk8tmlxbj-3wyzza21dc.gz",
+      "Identity": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\1yk8tmlxbj-1x2c07cbo9.gz",
       "SourceId": "ApuntecaDigital.Backend.Blazor.Client",
       "SourceType": "Project",
       "ContentRoot": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/ApuntecaDigital.Backend.Core#[.{fingerprint=3wyzza21dc}]!.wasm.gz",
+      "RelativePath": "_framework/ApuntecaDigital.Backend.Core#[.{fingerprint=1x2c07cbo9}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -5909,11 +5909,11 @@
       "RelatedAsset": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ApuntecaDigital.Backend.Core.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "ehnt3692hr",
-      "Integrity": "3hh9O6EngsrkoI1wIlqmBBykPXgBqcmPGvS9SJrFLjQ=",
+      "Fingerprint": "1jabsuelju",
+      "Integrity": "8wECy6m3ILKB8h162pbIEUSv25dJhFL09VOIzBN6VJw=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\1yk8tmlxbj-3wyzza21dc.gz"
+      "OriginalItemSpec": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\1yk8tmlxbj-1x2c07cbo9.gz"
     },
     {
       "Identity": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\254wmn28bj-lh20ntqzs7.gz",
@@ -6630,12 +6630,12 @@
       "OriginalItemSpec": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\7m1hlh9bwm-zi8dinr564.gz"
     },
     {
-      "Identity": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\81phm15gyk-d7s40bbg1y.gz",
+      "Identity": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\81phm15gyk-w6ei1rc4ru.gz",
       "SourceId": "ApuntecaDigital.Backend.Blazor.Client",
       "SourceType": "Project",
       "ContentRoot": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/ApuntecaDigital.Backend.Blazor.Client#[.{fingerprint=d7s40bbg1y}]!.pdb.gz",
+      "RelativePath": "_framework/ApuntecaDigital.Backend.Blazor.Client#[.{fingerprint=w6ei1rc4ru}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -6644,19 +6644,19 @@
       "RelatedAsset": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ApuntecaDigital.Backend.Blazor.Client.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "kd21xp5aon",
-      "Integrity": "SFcWKL4lYGNDAWtl3ketwwwmesXjO249tD7nKKcFhoY=",
+      "Fingerprint": "ozj9b1zqqg",
+      "Integrity": "dAyXx1mguJZkNNGEB4+C9vY5n8Xb4pcmW8sdOBa/c6s=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\81phm15gyk-d7s40bbg1y.gz"
+      "OriginalItemSpec": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\81phm15gyk-w6ei1rc4ru.gz"
     },
     {
-      "Identity": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\89f1opag80-9en9ibm2bv.gz",
+      "Identity": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\89f1opag80-eid95sndb5.gz",
       "SourceId": "ApuntecaDigital.Backend.Blazor.Client",
       "SourceType": "Project",
       "ContentRoot": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/ApuntecaDigital.Backend.Blazor.Client#[.{fingerprint=9en9ibm2bv}]!.wasm.gz",
+      "RelativePath": "_framework/ApuntecaDigital.Backend.Blazor.Client#[.{fingerprint=eid95sndb5}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -6665,11 +6665,11 @@
       "RelatedAsset": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ApuntecaDigital.Backend.Blazor.Client.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "v0afy1iuph",
-      "Integrity": "f4Z0zTYCJNc8Vatr98l0kOTnKJbIjiV8l/6Rarwn9uo=",
+      "Fingerprint": "46f3vobi6r",
+      "Integrity": "dIHrJd+KmNmR+eP2a9G4QBjdS+rrRsmDITxvJiXsKxs=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\89f1opag80-9en9ibm2bv.gz"
+      "OriginalItemSpec": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\89f1opag80-eid95sndb5.gz"
     },
     {
       "Identity": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\89qh5t2i7q-veyjlq1ebi.gz",
@@ -7386,12 +7386,12 @@
       "OriginalItemSpec": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\cq0j7s5h6d-ffzrnftong.gz"
     },
     {
-      "Identity": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\ctysr4y7d1-u0zuaa9vhm.gz",
+      "Identity": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\ctysr4y7d1-etp682qoy2.gz",
       "SourceId": "ApuntecaDigital.Backend.Blazor.Client",
       "SourceType": "Project",
       "ContentRoot": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/ApuntecaDigital.Backend.Infrastructure#[.{fingerprint=u0zuaa9vhm}]!.wasm.gz",
+      "RelativePath": "_framework/ApuntecaDigital.Backend.Infrastructure#[.{fingerprint=etp682qoy2}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -7400,11 +7400,11 @@
       "RelatedAsset": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ApuntecaDigital.Backend.Infrastructure.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "u5wr3xzmnr",
-      "Integrity": "bm3kudpiue70LC8RpAWjmUcuCvUu58PBYgj9uyc9Pso=",
+      "Fingerprint": "j5jhu1f78h",
+      "Integrity": "N62pG6sAFhgCJI2hvPTxrx4LpWVBRSnhvuLAwqGFMzo=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\ctysr4y7d1-u0zuaa9vhm.gz"
+      "OriginalItemSpec": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\ctysr4y7d1-etp682qoy2.gz"
     },
     {
       "Identity": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\cvpfhr1n27-e66zwuqcl8.gz",
@@ -8520,12 +8520,12 @@
       "OriginalItemSpec": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\izvkig8ebi-8ithpgtr9z.gz"
     },
     {
-      "Identity": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\j5zsi8gyq7-afurjqtiz3.gz",
+      "Identity": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\j5zsi8gyq7-hmnz9pn480.gz",
       "SourceId": "ApuntecaDigital.Backend.Blazor.Client",
       "SourceType": "Project",
       "ContentRoot": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/ApuntecaDigital.Backend.UseCases#[.{fingerprint=afurjqtiz3}]!.pdb.gz",
+      "RelativePath": "_framework/ApuntecaDigital.Backend.UseCases#[.{fingerprint=hmnz9pn480}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -8534,11 +8534,11 @@
       "RelatedAsset": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ApuntecaDigital.Backend.UseCases.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "9kblegqavo",
-      "Integrity": "yVuloZ9V4D5/165lLw01Xarpwx6prKHvj7XLx/s9zLc=",
+      "Fingerprint": "434bz9m56h",
+      "Integrity": "kK8Ksf9w5qiRf6oh2lCFJovZl2Vpon6yNdl34ijYDcA=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\j5zsi8gyq7-afurjqtiz3.gz"
+      "OriginalItemSpec": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\j5zsi8gyq7-hmnz9pn480.gz"
     },
     {
       "Identity": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\j79jwk0j77-ck6tnk99mb.gz",
@@ -8919,7 +8919,7 @@
       "OriginalItemSpec": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\lubdupj0t4-13lb3w228t.gz"
     },
     {
-      "Identity": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\lyrbapraf7-cqv6c8cdyw.gz",
+      "Identity": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\lyrbapraf7-etchas68of.gz",
       "SourceId": "ApuntecaDigital.Backend.Blazor.Client",
       "SourceType": "Project",
       "ContentRoot": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\",
@@ -8933,11 +8933,11 @@
       "RelatedAsset": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "3tnvbef9gi",
-      "Integrity": "R50vO+WCUg5d+4uU+4/+htG7tTdh5yK3QAlRW9tsq/k=",
+      "Fingerprint": "qf1cfduxfj",
+      "Integrity": "uornX91rLlzjDwTSBbkHXsxhyVzwmh4izNmj+iwMnXg=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\lyrbapraf7-cqv6c8cdyw.gz"
+      "OriginalItemSpec": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\lyrbapraf7-etchas68of.gz"
     },
     {
       "Identity": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\m0btkyhkpl-uarlhvhlht.gz",
@@ -9738,12 +9738,12 @@
       "OriginalItemSpec": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\qh6en2rjz8-agm2pt0019.gz"
     },
     {
-      "Identity": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\qqn3754dpj-1t8tl0kesy.gz",
+      "Identity": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\qqn3754dpj-fqx0sii6rf.gz",
       "SourceId": "ApuntecaDigital.Backend.Blazor.Client",
       "SourceType": "Project",
       "ContentRoot": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/ApuntecaDigital.Backend.Core#[.{fingerprint=1t8tl0kesy}]!.pdb.gz",
+      "RelativePath": "_framework/ApuntecaDigital.Backend.Core#[.{fingerprint=fqx0sii6rf}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -9752,11 +9752,11 @@
       "RelatedAsset": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ApuntecaDigital.Backend.Core.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "vrvstozg72",
-      "Integrity": "21zNCcT0t/xTVkljMpEZZudg2qjz6VEtu6NvhwPGEi4=",
+      "Fingerprint": "q5mv4z71lv",
+      "Integrity": "7iFaPOVCLVEA31UnnqwghHUDYuMFHCYJcUeXo7lDl+s=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\qqn3754dpj-1t8tl0kesy.gz"
+      "OriginalItemSpec": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\qqn3754dpj-fqx0sii6rf.gz"
     },
     {
       "Identity": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\qtlcetz7f7-71x3j8ea4m.gz",
@@ -9969,12 +9969,12 @@
       "OriginalItemSpec": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\rvu8m47zy6-9fz83usnsr.gz"
     },
     {
-      "Identity": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\rz0knozzeq-o9mgp6gkul.gz",
+      "Identity": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\rz0knozzeq-y7a43nyx6s.gz",
       "SourceId": "ApuntecaDigital.Backend.Blazor.Client",
       "SourceType": "Project",
       "ContentRoot": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/ApuntecaDigital.Backend.Infrastructure#[.{fingerprint=o9mgp6gkul}]!.pdb.gz",
+      "RelativePath": "_framework/ApuntecaDigital.Backend.Infrastructure#[.{fingerprint=y7a43nyx6s}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -9983,11 +9983,11 @@
       "RelatedAsset": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ApuntecaDigital.Backend.Infrastructure.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "0otn7ld0vv",
-      "Integrity": "EF8NUWpccR3CzQ44qXOcP6YEd09wUy3GWoIvH4SJe40=",
+      "Fingerprint": "yn06md9axb",
+      "Integrity": "In36l8YpPNm+IUDG3dljyJ6F+aOPdRfusmh4GgxRCf0=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\rz0knozzeq-o9mgp6gkul.gz"
+      "OriginalItemSpec": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\rz0knozzeq-y7a43nyx6s.gz"
     },
     {
       "Identity": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\s0g2wb8ee1-myq4mmrtuj.gz",
@@ -10683,12 +10683,12 @@
       "OriginalItemSpec": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\xkylgswqzn-z1ha3dnoj6.gz"
     },
     {
-      "Identity": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\xsjfv2ggj6-224ug1l386.gz",
+      "Identity": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\xsjfv2ggj6-xf1dt4svv5.gz",
       "SourceId": "ApuntecaDigital.Backend.Blazor.Client",
       "SourceType": "Project",
       "ContentRoot": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/ApuntecaDigital.Backend.UseCases#[.{fingerprint=224ug1l386}]!.wasm.gz",
+      "RelativePath": "_framework/ApuntecaDigital.Backend.UseCases#[.{fingerprint=xf1dt4svv5}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -10697,11 +10697,11 @@
       "RelatedAsset": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ApuntecaDigital.Backend.UseCases.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "2hz0e6dk3c",
-      "Integrity": "lin79hE3LY5dluBprcjg+CHTJuMC3J+yJ1cPODrzd70=",
+      "Fingerprint": "hy32u7rmpt",
+      "Integrity": "d/W1ei9lO3vB3MiIGxJcJBgWzIw45+9arONPGXQknkY=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\xsjfv2ggj6-224ug1l386.gz"
+      "OriginalItemSpec": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\xsjfv2ggj6-xf1dt4svv5.gz"
     },
     {
       "Identity": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\ybyqjk313d-1qh9om2u2p.gz",
@@ -12995,7 +12995,7 @@
   ],
   "Endpoints": [
     {
-      "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.9en9ibm2bv.wasm",
+      "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.eid95sndb5.wasm",
       "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ApuntecaDigital.Backend.Blazor.Client.wasm",
       "Selectors": [],
       "ResponseHeaders": [
@@ -13017,21 +13017,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"T+PHsqX0qfKOK1f7cdzjM6+NBrPLrAhVW9omxKLLsvI=\""
+          "Value": "\"pnED2GCuPQEe5Iesihvrh2HNX4TyMrv4CNvww3DMFmU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:00 GMT"
+          "Value": "Thu, 08 May 2025 19:19:16 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "9en9ibm2bv"
+          "Value": "eid95sndb5"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-T+PHsqX0qfKOK1f7cdzjM6+NBrPLrAhVW9omxKLLsvI="
+          "Value": "sha256-pnED2GCuPQEe5Iesihvrh2HNX4TyMrv4CNvww3DMFmU="
         },
         {
           "Name": "label",
@@ -13040,8 +13040,8 @@
       ]
     },
     {
-      "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.9en9ibm2bv.wasm",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\89f1opag80-9en9ibm2bv.gz",
+      "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.eid95sndb5.wasm",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\89f1opag80-eid95sndb5.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -13068,11 +13068,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"f4Z0zTYCJNc8Vatr98l0kOTnKJbIjiV8l/6Rarwn9uo=\""
+          "Value": "\"dIHrJd+KmNmR+eP2a9G4QBjdS+rrRsmDITxvJiXsKxs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:01 GMT"
+          "Value": "Thu, 08 May 2025 19:19:17 GMT"
         },
         {
           "Name": "Vary",
@@ -13084,17 +13084,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"T+PHsqX0qfKOK1f7cdzjM6+NBrPLrAhVW9omxKLLsvI=\""
+          "Value": "W/\"pnED2GCuPQEe5Iesihvrh2HNX4TyMrv4CNvww3DMFmU=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "9en9ibm2bv"
+          "Value": "eid95sndb5"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-T+PHsqX0qfKOK1f7cdzjM6+NBrPLrAhVW9omxKLLsvI="
+          "Value": "sha256-pnED2GCuPQEe5Iesihvrh2HNX4TyMrv4CNvww3DMFmU="
         },
         {
           "Name": "label",
@@ -13103,8 +13103,8 @@
       ]
     },
     {
-      "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.9en9ibm2bv.wasm.gz",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\89f1opag80-9en9ibm2bv.gz",
+      "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.eid95sndb5.wasm.gz",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\89f1opag80-eid95sndb5.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13129,11 +13129,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"f4Z0zTYCJNc8Vatr98l0kOTnKJbIjiV8l/6Rarwn9uo=\""
+          "Value": "\"dIHrJd+KmNmR+eP2a9G4QBjdS+rrRsmDITxvJiXsKxs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:01 GMT"
+          "Value": "Thu, 08 May 2025 19:19:17 GMT"
         },
         {
           "Name": "Vary",
@@ -13143,11 +13143,11 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "9en9ibm2bv"
+          "Value": "eid95sndb5"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-f4Z0zTYCJNc8Vatr98l0kOTnKJbIjiV8l/6Rarwn9uo="
+          "Value": "sha256-dIHrJd+KmNmR+eP2a9G4QBjdS+rrRsmDITxvJiXsKxs="
         },
         {
           "Name": "label",
@@ -13156,167 +13156,6 @@
       ]
     },
     {
-      "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.d7s40bbg1y.pdb",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ApuntecaDigital.Backend.Blazor.Client.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "23180"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"N9wU3Tl5UsizgZcLX+RM3udPcG7lTj/hqTBvjXVnt/s=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:47:58 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "d7s40bbg1y"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-N9wU3Tl5UsizgZcLX+RM3udPcG7lTj/hqTBvjXVnt/s="
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/ApuntecaDigital.Backend.Blazor.Client.pdb"
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.d7s40bbg1y.pdb",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\81phm15gyk-d7s40bbg1y.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000067508270"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "14812"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SFcWKL4lYGNDAWtl3ketwwwmesXjO249tD7nKKcFhoY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:01 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"N9wU3Tl5UsizgZcLX+RM3udPcG7lTj/hqTBvjXVnt/s=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "d7s40bbg1y"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-N9wU3Tl5UsizgZcLX+RM3udPcG7lTj/hqTBvjXVnt/s="
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/ApuntecaDigital.Backend.Blazor.Client.pdb"
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.d7s40bbg1y.pdb.gz",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\81phm15gyk-d7s40bbg1y.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "14812"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SFcWKL4lYGNDAWtl3ketwwwmesXjO249tD7nKKcFhoY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:01 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "d7s40bbg1y"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-SFcWKL4lYGNDAWtl3ketwwwmesXjO249tD7nKKcFhoY="
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/ApuntecaDigital.Backend.Blazor.Client.pdb.gz"
-        }
-      ]
-    },
-    {
       "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.pdb",
       "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ApuntecaDigital.Backend.Blazor.Client.pdb",
       "Selectors": [],
@@ -13331,7 +13170,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "23180"
+          "Value": "23992"
         },
         {
           "Name": "Content-Type",
@@ -13339,28 +13178,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"N9wU3Tl5UsizgZcLX+RM3udPcG7lTj/hqTBvjXVnt/s=\""
+          "Value": "\"qDo5PW3uwsKEbg0iqor8pNzP9TR5Z3z5vJkWlkYeyo8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:47:58 GMT"
+          "Value": "Thu, 08 May 2025 19:19:15 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-N9wU3Tl5UsizgZcLX+RM3udPcG7lTj/hqTBvjXVnt/s="
+          "Value": "sha256-qDo5PW3uwsKEbg0iqor8pNzP9TR5Z3z5vJkWlkYeyo8="
         }
       ]
     },
     {
       "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.pdb",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\81phm15gyk-d7s40bbg1y.gz",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\81phm15gyk-w6ei1rc4ru.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000067508270"
+          "Quality": "0.000064312818"
         }
       ],
       "ResponseHeaders": [
@@ -13378,15 +13217,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14812"
+          "Value": "15548"
         },
         {
           "Name": "ETag",
-          "Value": "\"SFcWKL4lYGNDAWtl3ketwwwmesXjO249tD7nKKcFhoY=\""
+          "Value": "\"dAyXx1mguJZkNNGEB4+C9vY5n8Xb4pcmW8sdOBa/c6s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:01 GMT"
+          "Value": "Thu, 08 May 2025 19:19:17 GMT"
         },
         {
           "Name": "Vary",
@@ -13398,19 +13237,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"N9wU3Tl5UsizgZcLX+RM3udPcG7lTj/hqTBvjXVnt/s=\""
+          "Value": "W/\"qDo5PW3uwsKEbg0iqor8pNzP9TR5Z3z5vJkWlkYeyo8=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-N9wU3Tl5UsizgZcLX+RM3udPcG7lTj/hqTBvjXVnt/s="
+          "Value": "sha256-qDo5PW3uwsKEbg0iqor8pNzP9TR5Z3z5vJkWlkYeyo8="
         }
       ]
     },
     {
       "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.pdb.gz",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\81phm15gyk-d7s40bbg1y.gz",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\81phm15gyk-w6ei1rc4ru.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13427,7 +13266,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14812"
+          "Value": "15548"
         },
         {
           "Name": "Content-Type",
@@ -13435,11 +13274,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SFcWKL4lYGNDAWtl3ketwwwmesXjO249tD7nKKcFhoY=\""
+          "Value": "\"dAyXx1mguJZkNNGEB4+C9vY5n8Xb4pcmW8sdOBa/c6s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:01 GMT"
+          "Value": "Thu, 08 May 2025 19:19:17 GMT"
         },
         {
           "Name": "Vary",
@@ -13449,7 +13288,168 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-SFcWKL4lYGNDAWtl3ketwwwmesXjO249tD7nKKcFhoY="
+          "Value": "sha256-dAyXx1mguJZkNNGEB4+C9vY5n8Xb4pcmW8sdOBa/c6s="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.w6ei1rc4ru.pdb",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ApuntecaDigital.Backend.Blazor.Client.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23992"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qDo5PW3uwsKEbg0iqor8pNzP9TR5Z3z5vJkWlkYeyo8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 19:19:15 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w6ei1rc4ru"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qDo5PW3uwsKEbg0iqor8pNzP9TR5Z3z5vJkWlkYeyo8="
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/ApuntecaDigital.Backend.Blazor.Client.pdb"
+        }
+      ]
+    },
+    {
+      "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.w6ei1rc4ru.pdb",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\81phm15gyk-w6ei1rc4ru.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000064312818"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15548"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dAyXx1mguJZkNNGEB4+C9vY5n8Xb4pcmW8sdOBa/c6s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 19:19:17 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"qDo5PW3uwsKEbg0iqor8pNzP9TR5Z3z5vJkWlkYeyo8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w6ei1rc4ru"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qDo5PW3uwsKEbg0iqor8pNzP9TR5Z3z5vJkWlkYeyo8="
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/ApuntecaDigital.Backend.Blazor.Client.pdb"
+        }
+      ]
+    },
+    {
+      "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.w6ei1rc4ru.pdb.gz",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\81phm15gyk-w6ei1rc4ru.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15548"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dAyXx1mguJZkNNGEB4+C9vY5n8Xb4pcmW8sdOBa/c6s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 19:19:17 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w6ei1rc4ru"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dAyXx1mguJZkNNGEB4+C9vY5n8Xb4pcmW8sdOBa/c6s="
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/ApuntecaDigital.Backend.Blazor.Client.pdb.gz"
         }
       ]
     },
@@ -13476,23 +13476,23 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"T+PHsqX0qfKOK1f7cdzjM6+NBrPLrAhVW9omxKLLsvI=\""
+          "Value": "\"pnED2GCuPQEe5Iesihvrh2HNX4TyMrv4CNvww3DMFmU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:00 GMT"
+          "Value": "Thu, 08 May 2025 19:19:16 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-T+PHsqX0qfKOK1f7cdzjM6+NBrPLrAhVW9omxKLLsvI="
+          "Value": "sha256-pnED2GCuPQEe5Iesihvrh2HNX4TyMrv4CNvww3DMFmU="
         }
       ]
     },
     {
       "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.wasm",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\89f1opag80-9en9ibm2bv.gz",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\89f1opag80-eid95sndb5.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -13519,11 +13519,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"f4Z0zTYCJNc8Vatr98l0kOTnKJbIjiV8l/6Rarwn9uo=\""
+          "Value": "\"dIHrJd+KmNmR+eP2a9G4QBjdS+rrRsmDITxvJiXsKxs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:01 GMT"
+          "Value": "Thu, 08 May 2025 19:19:17 GMT"
         },
         {
           "Name": "Vary",
@@ -13535,19 +13535,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"T+PHsqX0qfKOK1f7cdzjM6+NBrPLrAhVW9omxKLLsvI=\""
+          "Value": "W/\"pnED2GCuPQEe5Iesihvrh2HNX4TyMrv4CNvww3DMFmU=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-T+PHsqX0qfKOK1f7cdzjM6+NBrPLrAhVW9omxKLLsvI="
+          "Value": "sha256-pnED2GCuPQEe5Iesihvrh2HNX4TyMrv4CNvww3DMFmU="
         }
       ]
     },
     {
       "Route": "_framework/ApuntecaDigital.Backend.Blazor.Client.wasm.gz",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\89f1opag80-9en9ibm2bv.gz",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\89f1opag80-eid95sndb5.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13572,11 +13572,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"f4Z0zTYCJNc8Vatr98l0kOTnKJbIjiV8l/6Rarwn9uo=\""
+          "Value": "\"dIHrJd+KmNmR+eP2a9G4QBjdS+rrRsmDITxvJiXsKxs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:01 GMT"
+          "Value": "Thu, 08 May 2025 19:19:17 GMT"
         },
         {
           "Name": "Vary",
@@ -13586,173 +13586,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-f4Z0zTYCJNc8Vatr98l0kOTnKJbIjiV8l/6Rarwn9uo="
+          "Value": "sha256-dIHrJd+KmNmR+eP2a9G4QBjdS+rrRsmDITxvJiXsKxs="
         }
       ]
     },
     {
-      "Route": "_framework/ApuntecaDigital.Backend.Core.1t8tl0kesy.pdb",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ApuntecaDigital.Backend.Core.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "16516"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"KzlIhJCOf7jCy2AN/pwh/OtiaTPsUqodVGDuc4H9aCQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:47:04 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "1t8tl0kesy"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-KzlIhJCOf7jCy2AN/pwh/OtiaTPsUqodVGDuc4H9aCQ="
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/ApuntecaDigital.Backend.Core.pdb"
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ApuntecaDigital.Backend.Core.1t8tl0kesy.pdb",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\qqn3754dpj-1t8tl0kesy.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000107284626"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "9320"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"21zNCcT0t/xTVkljMpEZZudg2qjz6VEtu6NvhwPGEi4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:01 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"KzlIhJCOf7jCy2AN/pwh/OtiaTPsUqodVGDuc4H9aCQ=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "1t8tl0kesy"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-KzlIhJCOf7jCy2AN/pwh/OtiaTPsUqodVGDuc4H9aCQ="
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/ApuntecaDigital.Backend.Core.pdb"
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ApuntecaDigital.Backend.Core.1t8tl0kesy.pdb.gz",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\qqn3754dpj-1t8tl0kesy.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "9320"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"21zNCcT0t/xTVkljMpEZZudg2qjz6VEtu6NvhwPGEi4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:01 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "1t8tl0kesy"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-21zNCcT0t/xTVkljMpEZZudg2qjz6VEtu6NvhwPGEi4="
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/ApuntecaDigital.Backend.Core.pdb.gz"
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ApuntecaDigital.Backend.Core.3wyzza21dc.wasm",
+      "Route": "_framework/ApuntecaDigital.Backend.Core.1x2c07cbo9.wasm",
       "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ApuntecaDigital.Backend.Core.wasm",
       "Selectors": [],
       "ResponseHeaders": [
@@ -13774,21 +13613,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Y2YedYww6xQNWhhcfxqfzdosEtX/r0TGtfCoK/sVnho=\""
+          "Value": "\"O2rPdB+8VMaU60EhLp9UuKGxCIX3pyrnydKAU5DAmiM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:00 GMT"
+          "Value": "Thu, 08 May 2025 18:53:26 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "3wyzza21dc"
+          "Value": "1x2c07cbo9"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Y2YedYww6xQNWhhcfxqfzdosEtX/r0TGtfCoK/sVnho="
+          "Value": "sha256-O2rPdB+8VMaU60EhLp9UuKGxCIX3pyrnydKAU5DAmiM="
         },
         {
           "Name": "label",
@@ -13797,13 +13636,13 @@
       ]
     },
     {
-      "Route": "_framework/ApuntecaDigital.Backend.Core.3wyzza21dc.wasm",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\1yk8tmlxbj-3wyzza21dc.gz",
+      "Route": "_framework/ApuntecaDigital.Backend.Core.1x2c07cbo9.wasm",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\1yk8tmlxbj-1x2c07cbo9.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000116468670"
+          "Quality": "0.000116522955"
         }
       ],
       "ResponseHeaders": [
@@ -13821,15 +13660,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8585"
+          "Value": "8581"
         },
         {
           "Name": "ETag",
-          "Value": "\"3hh9O6EngsrkoI1wIlqmBBykPXgBqcmPGvS9SJrFLjQ=\""
+          "Value": "\"8wECy6m3ILKB8h162pbIEUSv25dJhFL09VOIzBN6VJw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:01 GMT"
+          "Value": "Thu, 08 May 2025 18:53:27 GMT"
         },
         {
           "Name": "Vary",
@@ -13841,17 +13680,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Y2YedYww6xQNWhhcfxqfzdosEtX/r0TGtfCoK/sVnho=\""
+          "Value": "W/\"O2rPdB+8VMaU60EhLp9UuKGxCIX3pyrnydKAU5DAmiM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "3wyzza21dc"
+          "Value": "1x2c07cbo9"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Y2YedYww6xQNWhhcfxqfzdosEtX/r0TGtfCoK/sVnho="
+          "Value": "sha256-O2rPdB+8VMaU60EhLp9UuKGxCIX3pyrnydKAU5DAmiM="
         },
         {
           "Name": "label",
@@ -13860,8 +13699,8 @@
       ]
     },
     {
-      "Route": "_framework/ApuntecaDigital.Backend.Core.3wyzza21dc.wasm.gz",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\1yk8tmlxbj-3wyzza21dc.gz",
+      "Route": "_framework/ApuntecaDigital.Backend.Core.1x2c07cbo9.wasm.gz",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\1yk8tmlxbj-1x2c07cbo9.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13878,7 +13717,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8585"
+          "Value": "8581"
         },
         {
           "Name": "Content-Type",
@@ -13886,11 +13725,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"3hh9O6EngsrkoI1wIlqmBBykPXgBqcmPGvS9SJrFLjQ=\""
+          "Value": "\"8wECy6m3ILKB8h162pbIEUSv25dJhFL09VOIzBN6VJw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:01 GMT"
+          "Value": "Thu, 08 May 2025 18:53:27 GMT"
         },
         {
           "Name": "Vary",
@@ -13900,11 +13739,11 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "3wyzza21dc"
+          "Value": "1x2c07cbo9"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-3hh9O6EngsrkoI1wIlqmBBykPXgBqcmPGvS9SJrFLjQ="
+          "Value": "sha256-8wECy6m3ILKB8h162pbIEUSv25dJhFL09VOIzBN6VJw="
         },
         {
           "Name": "label",
@@ -13913,6 +13752,167 @@
       ]
     },
     {
+      "Route": "_framework/ApuntecaDigital.Backend.Core.fqx0sii6rf.pdb",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ApuntecaDigital.Backend.Core.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17284"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"x26pBhIrWi5XYhCI38hKtrz5N3VMTlClDQCFCbLuBtA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 18:53:21 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fqx0sii6rf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-x26pBhIrWi5XYhCI38hKtrz5N3VMTlClDQCFCbLuBtA="
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/ApuntecaDigital.Backend.Core.pdb"
+        }
+      ]
+    },
+    {
+      "Route": "_framework/ApuntecaDigital.Backend.Core.fqx0sii6rf.pdb",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\qqn3754dpj-fqx0sii6rf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000099870169"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10012"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7iFaPOVCLVEA31UnnqwghHUDYuMFHCYJcUeXo7lDl+s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 18:53:27 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"x26pBhIrWi5XYhCI38hKtrz5N3VMTlClDQCFCbLuBtA=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fqx0sii6rf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-x26pBhIrWi5XYhCI38hKtrz5N3VMTlClDQCFCbLuBtA="
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/ApuntecaDigital.Backend.Core.pdb"
+        }
+      ]
+    },
+    {
+      "Route": "_framework/ApuntecaDigital.Backend.Core.fqx0sii6rf.pdb.gz",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\qqn3754dpj-fqx0sii6rf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10012"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7iFaPOVCLVEA31UnnqwghHUDYuMFHCYJcUeXo7lDl+s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 18:53:27 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fqx0sii6rf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7iFaPOVCLVEA31UnnqwghHUDYuMFHCYJcUeXo7lDl+s="
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/ApuntecaDigital.Backend.Core.pdb.gz"
+        }
+      ]
+    },
+    {
       "Route": "_framework/ApuntecaDigital.Backend.Core.pdb",
       "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ApuntecaDigital.Backend.Core.pdb",
       "Selectors": [],
@@ -13927,7 +13927,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "16516"
+          "Value": "17284"
         },
         {
           "Name": "Content-Type",
@@ -13935,28 +13935,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"KzlIhJCOf7jCy2AN/pwh/OtiaTPsUqodVGDuc4H9aCQ=\""
+          "Value": "\"x26pBhIrWi5XYhCI38hKtrz5N3VMTlClDQCFCbLuBtA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:47:04 GMT"
+          "Value": "Thu, 08 May 2025 18:53:21 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-KzlIhJCOf7jCy2AN/pwh/OtiaTPsUqodVGDuc4H9aCQ="
+          "Value": "sha256-x26pBhIrWi5XYhCI38hKtrz5N3VMTlClDQCFCbLuBtA="
         }
       ]
     },
     {
       "Route": "_framework/ApuntecaDigital.Backend.Core.pdb",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\qqn3754dpj-1t8tl0kesy.gz",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\qqn3754dpj-fqx0sii6rf.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000107284626"
+          "Quality": "0.000099870169"
         }
       ],
       "ResponseHeaders": [
@@ -13974,15 +13974,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9320"
+          "Value": "10012"
         },
         {
           "Name": "ETag",
-          "Value": "\"21zNCcT0t/xTVkljMpEZZudg2qjz6VEtu6NvhwPGEi4=\""
+          "Value": "\"7iFaPOVCLVEA31UnnqwghHUDYuMFHCYJcUeXo7lDl+s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:01 GMT"
+          "Value": "Thu, 08 May 2025 18:53:27 GMT"
         },
         {
           "Name": "Vary",
@@ -13994,19 +13994,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"KzlIhJCOf7jCy2AN/pwh/OtiaTPsUqodVGDuc4H9aCQ=\""
+          "Value": "W/\"x26pBhIrWi5XYhCI38hKtrz5N3VMTlClDQCFCbLuBtA=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-KzlIhJCOf7jCy2AN/pwh/OtiaTPsUqodVGDuc4H9aCQ="
+          "Value": "sha256-x26pBhIrWi5XYhCI38hKtrz5N3VMTlClDQCFCbLuBtA="
         }
       ]
     },
     {
       "Route": "_framework/ApuntecaDigital.Backend.Core.pdb.gz",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\qqn3754dpj-1t8tl0kesy.gz",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\qqn3754dpj-fqx0sii6rf.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14023,7 +14023,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9320"
+          "Value": "10012"
         },
         {
           "Name": "Content-Type",
@@ -14031,11 +14031,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"21zNCcT0t/xTVkljMpEZZudg2qjz6VEtu6NvhwPGEi4=\""
+          "Value": "\"7iFaPOVCLVEA31UnnqwghHUDYuMFHCYJcUeXo7lDl+s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:01 GMT"
+          "Value": "Thu, 08 May 2025 18:53:27 GMT"
         },
         {
           "Name": "Vary",
@@ -14045,7 +14045,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-21zNCcT0t/xTVkljMpEZZudg2qjz6VEtu6NvhwPGEi4="
+          "Value": "sha256-7iFaPOVCLVEA31UnnqwghHUDYuMFHCYJcUeXo7lDl+s="
         }
       ]
     },
@@ -14072,28 +14072,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Y2YedYww6xQNWhhcfxqfzdosEtX/r0TGtfCoK/sVnho=\""
+          "Value": "\"O2rPdB+8VMaU60EhLp9UuKGxCIX3pyrnydKAU5DAmiM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:00 GMT"
+          "Value": "Thu, 08 May 2025 18:53:26 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Y2YedYww6xQNWhhcfxqfzdosEtX/r0TGtfCoK/sVnho="
+          "Value": "sha256-O2rPdB+8VMaU60EhLp9UuKGxCIX3pyrnydKAU5DAmiM="
         }
       ]
     },
     {
       "Route": "_framework/ApuntecaDigital.Backend.Core.wasm",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\1yk8tmlxbj-3wyzza21dc.gz",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\1yk8tmlxbj-1x2c07cbo9.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000116468670"
+          "Quality": "0.000116522955"
         }
       ],
       "ResponseHeaders": [
@@ -14111,15 +14111,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8585"
+          "Value": "8581"
         },
         {
           "Name": "ETag",
-          "Value": "\"3hh9O6EngsrkoI1wIlqmBBykPXgBqcmPGvS9SJrFLjQ=\""
+          "Value": "\"8wECy6m3ILKB8h162pbIEUSv25dJhFL09VOIzBN6VJw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:01 GMT"
+          "Value": "Thu, 08 May 2025 18:53:27 GMT"
         },
         {
           "Name": "Vary",
@@ -14131,19 +14131,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Y2YedYww6xQNWhhcfxqfzdosEtX/r0TGtfCoK/sVnho=\""
+          "Value": "W/\"O2rPdB+8VMaU60EhLp9UuKGxCIX3pyrnydKAU5DAmiM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Y2YedYww6xQNWhhcfxqfzdosEtX/r0TGtfCoK/sVnho="
+          "Value": "sha256-O2rPdB+8VMaU60EhLp9UuKGxCIX3pyrnydKAU5DAmiM="
         }
       ]
     },
     {
       "Route": "_framework/ApuntecaDigital.Backend.Core.wasm.gz",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\1yk8tmlxbj-3wyzza21dc.gz",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\1yk8tmlxbj-1x2c07cbo9.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14160,7 +14160,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8585"
+          "Value": "8581"
         },
         {
           "Name": "Content-Type",
@@ -14168,11 +14168,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"3hh9O6EngsrkoI1wIlqmBBykPXgBqcmPGvS9SJrFLjQ=\""
+          "Value": "\"8wECy6m3ILKB8h162pbIEUSv25dJhFL09VOIzBN6VJw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:01 GMT"
+          "Value": "Thu, 08 May 2025 18:53:27 GMT"
         },
         {
           "Name": "Vary",
@@ -14182,310 +14182,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-3hh9O6EngsrkoI1wIlqmBBykPXgBqcmPGvS9SJrFLjQ="
+          "Value": "sha256-8wECy6m3ILKB8h162pbIEUSv25dJhFL09VOIzBN6VJw="
         }
       ]
     },
     {
-      "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.o9mgp6gkul.pdb",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ApuntecaDigital.Backend.Infrastructure.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "25068"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"RJqjaB9b+nm0LdtCZgjpKAsLkRuxaek3LN9RVuw5eUY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:47:54 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "o9mgp6gkul"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-RJqjaB9b+nm0LdtCZgjpKAsLkRuxaek3LN9RVuw5eUY="
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/ApuntecaDigital.Backend.Infrastructure.pdb"
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.o9mgp6gkul.pdb",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\rz0knozzeq-o9mgp6gkul.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000077441338"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "12912"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"EF8NUWpccR3CzQ44qXOcP6YEd09wUy3GWoIvH4SJe40=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:01 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"RJqjaB9b+nm0LdtCZgjpKAsLkRuxaek3LN9RVuw5eUY=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "o9mgp6gkul"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-RJqjaB9b+nm0LdtCZgjpKAsLkRuxaek3LN9RVuw5eUY="
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/ApuntecaDigital.Backend.Infrastructure.pdb"
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.o9mgp6gkul.pdb.gz",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\rz0knozzeq-o9mgp6gkul.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "12912"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"EF8NUWpccR3CzQ44qXOcP6YEd09wUy3GWoIvH4SJe40=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:01 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "o9mgp6gkul"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-EF8NUWpccR3CzQ44qXOcP6YEd09wUy3GWoIvH4SJe40="
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/ApuntecaDigital.Backend.Infrastructure.pdb.gz"
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.pdb",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ApuntecaDigital.Backend.Infrastructure.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "25068"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"RJqjaB9b+nm0LdtCZgjpKAsLkRuxaek3LN9RVuw5eUY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:47:54 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-RJqjaB9b+nm0LdtCZgjpKAsLkRuxaek3LN9RVuw5eUY="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.pdb",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\rz0knozzeq-o9mgp6gkul.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000077441338"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "12912"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"EF8NUWpccR3CzQ44qXOcP6YEd09wUy3GWoIvH4SJe40=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:01 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"RJqjaB9b+nm0LdtCZgjpKAsLkRuxaek3LN9RVuw5eUY=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-RJqjaB9b+nm0LdtCZgjpKAsLkRuxaek3LN9RVuw5eUY="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.pdb.gz",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\rz0knozzeq-o9mgp6gkul.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "12912"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"EF8NUWpccR3CzQ44qXOcP6YEd09wUy3GWoIvH4SJe40=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:01 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-EF8NUWpccR3CzQ44qXOcP6YEd09wUy3GWoIvH4SJe40="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.u0zuaa9vhm.wasm",
+      "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.etp682qoy2.wasm",
       "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ApuntecaDigital.Backend.Infrastructure.wasm",
       "Selectors": [],
       "ResponseHeaders": [
@@ -14507,21 +14209,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zg4roxOciKcCL/cBwikNi1+pONsTvrUQZyeQb91/tDU=\""
+          "Value": "\"MriOfiFNR+Q2Lbi5n2UkrWc47jQEu5uXZDJdbSUBrgE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:00 GMT"
+          "Value": "Thu, 08 May 2025 19:03:30 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "u0zuaa9vhm"
+          "Value": "etp682qoy2"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-zg4roxOciKcCL/cBwikNi1+pONsTvrUQZyeQb91/tDU="
+          "Value": "sha256-MriOfiFNR+Q2Lbi5n2UkrWc47jQEu5uXZDJdbSUBrgE="
         },
         {
           "Name": "label",
@@ -14530,13 +14232,13 @@
       ]
     },
     {
-      "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.u0zuaa9vhm.wasm",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\ctysr4y7d1-u0zuaa9vhm.gz",
+      "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.etp682qoy2.wasm",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\ctysr4y7d1-etp682qoy2.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000051886058"
+          "Quality": "0.000051888751"
         }
       ],
       "ResponseHeaders": [
@@ -14554,15 +14256,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19272"
+          "Value": "19271"
         },
         {
           "Name": "ETag",
-          "Value": "\"bm3kudpiue70LC8RpAWjmUcuCvUu58PBYgj9uyc9Pso=\""
+          "Value": "\"N62pG6sAFhgCJI2hvPTxrx4LpWVBRSnhvuLAwqGFMzo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:01 GMT"
+          "Value": "Thu, 08 May 2025 19:03:31 GMT"
         },
         {
           "Name": "Vary",
@@ -14574,17 +14276,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"zg4roxOciKcCL/cBwikNi1+pONsTvrUQZyeQb91/tDU=\""
+          "Value": "W/\"MriOfiFNR+Q2Lbi5n2UkrWc47jQEu5uXZDJdbSUBrgE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "u0zuaa9vhm"
+          "Value": "etp682qoy2"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-zg4roxOciKcCL/cBwikNi1+pONsTvrUQZyeQb91/tDU="
+          "Value": "sha256-MriOfiFNR+Q2Lbi5n2UkrWc47jQEu5uXZDJdbSUBrgE="
         },
         {
           "Name": "label",
@@ -14593,8 +14295,8 @@
       ]
     },
     {
-      "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.u0zuaa9vhm.wasm.gz",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\ctysr4y7d1-u0zuaa9vhm.gz",
+      "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.etp682qoy2.wasm.gz",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\ctysr4y7d1-etp682qoy2.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14611,7 +14313,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19272"
+          "Value": "19271"
         },
         {
           "Name": "Content-Type",
@@ -14619,11 +14321,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"bm3kudpiue70LC8RpAWjmUcuCvUu58PBYgj9uyc9Pso=\""
+          "Value": "\"N62pG6sAFhgCJI2hvPTxrx4LpWVBRSnhvuLAwqGFMzo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:01 GMT"
+          "Value": "Thu, 08 May 2025 19:03:31 GMT"
         },
         {
           "Name": "Vary",
@@ -14633,11 +14335,11 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "u0zuaa9vhm"
+          "Value": "etp682qoy2"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-bm3kudpiue70LC8RpAWjmUcuCvUu58PBYgj9uyc9Pso="
+          "Value": "sha256-N62pG6sAFhgCJI2hvPTxrx4LpWVBRSnhvuLAwqGFMzo="
         },
         {
           "Name": "label",
@@ -14646,6 +14348,143 @@
       ]
     },
     {
+      "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.pdb",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ApuntecaDigital.Backend.Infrastructure.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26024"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vgsB8jpYvVsH+/NlP/D1TBTd3gnlWTRrKRJT7FtqDWc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 19:03:27 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vgsB8jpYvVsH+/NlP/D1TBTd3gnlWTRrKRJT7FtqDWc="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.pdb",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\rz0knozzeq-y7a43nyx6s.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000073529412"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13599"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"In36l8YpPNm+IUDG3dljyJ6F+aOPdRfusmh4GgxRCf0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 19:03:31 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"vgsB8jpYvVsH+/NlP/D1TBTd3gnlWTRrKRJT7FtqDWc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vgsB8jpYvVsH+/NlP/D1TBTd3gnlWTRrKRJT7FtqDWc="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.pdb.gz",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\rz0knozzeq-y7a43nyx6s.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13599"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"In36l8YpPNm+IUDG3dljyJ6F+aOPdRfusmh4GgxRCf0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 19:03:31 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-In36l8YpPNm+IUDG3dljyJ6F+aOPdRfusmh4GgxRCf0="
+        }
+      ]
+    },
+    {
       "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.wasm",
       "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ApuntecaDigital.Backend.Infrastructure.wasm",
       "Selectors": [],
@@ -14668,28 +14507,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zg4roxOciKcCL/cBwikNi1+pONsTvrUQZyeQb91/tDU=\""
+          "Value": "\"MriOfiFNR+Q2Lbi5n2UkrWc47jQEu5uXZDJdbSUBrgE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:00 GMT"
+          "Value": "Thu, 08 May 2025 19:03:30 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-zg4roxOciKcCL/cBwikNi1+pONsTvrUQZyeQb91/tDU="
+          "Value": "sha256-MriOfiFNR+Q2Lbi5n2UkrWc47jQEu5uXZDJdbSUBrgE="
         }
       ]
     },
     {
       "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.wasm",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\ctysr4y7d1-u0zuaa9vhm.gz",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\ctysr4y7d1-etp682qoy2.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000051886058"
+          "Quality": "0.000051888751"
         }
       ],
       "ResponseHeaders": [
@@ -14707,15 +14546,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19272"
+          "Value": "19271"
         },
         {
           "Name": "ETag",
-          "Value": "\"bm3kudpiue70LC8RpAWjmUcuCvUu58PBYgj9uyc9Pso=\""
+          "Value": "\"N62pG6sAFhgCJI2hvPTxrx4LpWVBRSnhvuLAwqGFMzo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:01 GMT"
+          "Value": "Thu, 08 May 2025 19:03:31 GMT"
         },
         {
           "Name": "Vary",
@@ -14727,19 +14566,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"zg4roxOciKcCL/cBwikNi1+pONsTvrUQZyeQb91/tDU=\""
+          "Value": "W/\"MriOfiFNR+Q2Lbi5n2UkrWc47jQEu5uXZDJdbSUBrgE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-zg4roxOciKcCL/cBwikNi1+pONsTvrUQZyeQb91/tDU="
+          "Value": "sha256-MriOfiFNR+Q2Lbi5n2UkrWc47jQEu5uXZDJdbSUBrgE="
         }
       ]
     },
     {
       "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.wasm.gz",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\ctysr4y7d1-u0zuaa9vhm.gz",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\ctysr4y7d1-etp682qoy2.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14756,7 +14595,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19272"
+          "Value": "19271"
         },
         {
           "Name": "Content-Type",
@@ -14764,11 +14603,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"bm3kudpiue70LC8RpAWjmUcuCvUu58PBYgj9uyc9Pso=\""
+          "Value": "\"N62pG6sAFhgCJI2hvPTxrx4LpWVBRSnhvuLAwqGFMzo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:01 GMT"
+          "Value": "Thu, 08 May 2025 19:03:31 GMT"
         },
         {
           "Name": "Vary",
@@ -14778,13 +14617,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-bm3kudpiue70LC8RpAWjmUcuCvUu58PBYgj9uyc9Pso="
+          "Value": "sha256-N62pG6sAFhgCJI2hvPTxrx4LpWVBRSnhvuLAwqGFMzo="
         }
       ]
     },
     {
-      "Route": "_framework/ApuntecaDigital.Backend.UseCases.224ug1l386.wasm",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ApuntecaDigital.Backend.UseCases.wasm",
+      "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.y7a43nyx6s.pdb",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ApuntecaDigital.Backend.Infrastructure.pdb",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14797,44 +14636,44 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "76053"
+          "Value": "26024"
         },
         {
           "Name": "Content-Type",
-          "Value": "application/wasm"
+          "Value": "application/octet-stream"
         },
         {
           "Name": "ETag",
-          "Value": "\"CjRxt5o5xSsbc4hK/X7EO04jQtyP1k4c7R4lb26IgT4=\""
+          "Value": "\"vgsB8jpYvVsH+/NlP/D1TBTd3gnlWTRrKRJT7FtqDWc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:00 GMT"
+          "Value": "Thu, 08 May 2025 19:03:27 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "224ug1l386"
+          "Value": "y7a43nyx6s"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-CjRxt5o5xSsbc4hK/X7EO04jQtyP1k4c7R4lb26IgT4="
+          "Value": "sha256-vgsB8jpYvVsH+/NlP/D1TBTd3gnlWTRrKRJT7FtqDWc="
         },
         {
           "Name": "label",
-          "Value": "_framework/ApuntecaDigital.Backend.UseCases.wasm"
+          "Value": "_framework/ApuntecaDigital.Backend.Infrastructure.pdb"
         }
       ]
     },
     {
-      "Route": "_framework/ApuntecaDigital.Backend.UseCases.224ug1l386.wasm",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\xsjfv2ggj6-224ug1l386.gz",
+      "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.y7a43nyx6s.pdb",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\rz0knozzeq-y7a43nyx6s.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000037567151"
+          "Quality": "0.000073529412"
         }
       ],
       "ResponseHeaders": [
@@ -14852,15 +14691,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "26618"
+          "Value": "13599"
         },
         {
           "Name": "ETag",
-          "Value": "\"lin79hE3LY5dluBprcjg+CHTJuMC3J+yJ1cPODrzd70=\""
+          "Value": "\"In36l8YpPNm+IUDG3dljyJ6F+aOPdRfusmh4GgxRCf0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:01 GMT"
+          "Value": "Thu, 08 May 2025 19:03:31 GMT"
         },
         {
           "Name": "Vary",
@@ -14868,31 +14707,31 @@
         },
         {
           "Name": "Content-Type",
-          "Value": "application/wasm"
+          "Value": "application/octet-stream"
         },
         {
           "Name": "ETag",
-          "Value": "W/\"CjRxt5o5xSsbc4hK/X7EO04jQtyP1k4c7R4lb26IgT4=\""
+          "Value": "W/\"vgsB8jpYvVsH+/NlP/D1TBTd3gnlWTRrKRJT7FtqDWc=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "224ug1l386"
+          "Value": "y7a43nyx6s"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-CjRxt5o5xSsbc4hK/X7EO04jQtyP1k4c7R4lb26IgT4="
+          "Value": "sha256-vgsB8jpYvVsH+/NlP/D1TBTd3gnlWTRrKRJT7FtqDWc="
         },
         {
           "Name": "label",
-          "Value": "_framework/ApuntecaDigital.Backend.UseCases.wasm"
+          "Value": "_framework/ApuntecaDigital.Backend.Infrastructure.pdb"
         }
       ]
     },
     {
-      "Route": "_framework/ApuntecaDigital.Backend.UseCases.224ug1l386.wasm.gz",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\xsjfv2ggj6-224ug1l386.gz",
+      "Route": "_framework/ApuntecaDigital.Backend.Infrastructure.y7a43nyx6s.pdb.gz",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\rz0knozzeq-y7a43nyx6s.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14909,19 +14748,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "26618"
+          "Value": "13599"
         },
         {
           "Name": "Content-Type",
-          "Value": "application/wasm"
+          "Value": "application/octet-stream"
         },
         {
           "Name": "ETag",
-          "Value": "\"lin79hE3LY5dluBprcjg+CHTJuMC3J+yJ1cPODrzd70=\""
+          "Value": "\"In36l8YpPNm+IUDG3dljyJ6F+aOPdRfusmh4GgxRCf0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:01 GMT"
+          "Value": "Thu, 08 May 2025 19:03:31 GMT"
         },
         {
           "Name": "Vary",
@@ -14931,20 +14770,20 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "224ug1l386"
+          "Value": "y7a43nyx6s"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-lin79hE3LY5dluBprcjg+CHTJuMC3J+yJ1cPODrzd70="
+          "Value": "sha256-In36l8YpPNm+IUDG3dljyJ6F+aOPdRfusmh4GgxRCf0="
         },
         {
           "Name": "label",
-          "Value": "_framework/ApuntecaDigital.Backend.UseCases.wasm.gz"
+          "Value": "_framework/ApuntecaDigital.Backend.Infrastructure.pdb.gz"
         }
       ]
     },
     {
-      "Route": "_framework/ApuntecaDigital.Backend.UseCases.afurjqtiz3.pdb",
+      "Route": "_framework/ApuntecaDigital.Backend.UseCases.hmnz9pn480.pdb",
       "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ApuntecaDigital.Backend.UseCases.pdb",
       "Selectors": [],
       "ResponseHeaders": [
@@ -14958,7 +14797,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "29576"
+          "Value": "30524"
         },
         {
           "Name": "Content-Type",
@@ -14966,21 +14805,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"xr2zDM+rCydjq3sNacrW8W92+oYyXwDfVJICAnUNpZ4=\""
+          "Value": "\"p4BK4npq1X2znVFm34B3UdcdRsEKeDwnBD53TUJ1I/M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:47:54 GMT"
+          "Value": "Thu, 08 May 2025 19:03:26 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "afurjqtiz3"
+          "Value": "hmnz9pn480"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-xr2zDM+rCydjq3sNacrW8W92+oYyXwDfVJICAnUNpZ4="
+          "Value": "sha256-p4BK4npq1X2znVFm34B3UdcdRsEKeDwnBD53TUJ1I/M="
         },
         {
           "Name": "label",
@@ -14989,13 +14828,13 @@
       ]
     },
     {
-      "Route": "_framework/ApuntecaDigital.Backend.UseCases.afurjqtiz3.pdb",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\j5zsi8gyq7-afurjqtiz3.gz",
+      "Route": "_framework/ApuntecaDigital.Backend.UseCases.hmnz9pn480.pdb",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\j5zsi8gyq7-hmnz9pn480.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000068889501"
+          "Quality": "0.000065150824"
         }
       ],
       "ResponseHeaders": [
@@ -15013,15 +14852,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14515"
+          "Value": "15348"
         },
         {
           "Name": "ETag",
-          "Value": "\"yVuloZ9V4D5/165lLw01Xarpwx6prKHvj7XLx/s9zLc=\""
+          "Value": "\"kK8Ksf9w5qiRf6oh2lCFJovZl2Vpon6yNdl34ijYDcA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:01 GMT"
+          "Value": "Thu, 08 May 2025 19:03:31 GMT"
         },
         {
           "Name": "Vary",
@@ -15033,17 +14872,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"xr2zDM+rCydjq3sNacrW8W92+oYyXwDfVJICAnUNpZ4=\""
+          "Value": "W/\"p4BK4npq1X2znVFm34B3UdcdRsEKeDwnBD53TUJ1I/M=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "afurjqtiz3"
+          "Value": "hmnz9pn480"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-xr2zDM+rCydjq3sNacrW8W92+oYyXwDfVJICAnUNpZ4="
+          "Value": "sha256-p4BK4npq1X2znVFm34B3UdcdRsEKeDwnBD53TUJ1I/M="
         },
         {
           "Name": "label",
@@ -15052,8 +14891,8 @@
       ]
     },
     {
-      "Route": "_framework/ApuntecaDigital.Backend.UseCases.afurjqtiz3.pdb.gz",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\j5zsi8gyq7-afurjqtiz3.gz",
+      "Route": "_framework/ApuntecaDigital.Backend.UseCases.hmnz9pn480.pdb.gz",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\j5zsi8gyq7-hmnz9pn480.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -15070,7 +14909,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14515"
+          "Value": "15348"
         },
         {
           "Name": "Content-Type",
@@ -15078,11 +14917,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"yVuloZ9V4D5/165lLw01Xarpwx6prKHvj7XLx/s9zLc=\""
+          "Value": "\"kK8Ksf9w5qiRf6oh2lCFJovZl2Vpon6yNdl34ijYDcA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:01 GMT"
+          "Value": "Thu, 08 May 2025 19:03:31 GMT"
         },
         {
           "Name": "Vary",
@@ -15092,11 +14931,11 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "afurjqtiz3"
+          "Value": "hmnz9pn480"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-yVuloZ9V4D5/165lLw01Xarpwx6prKHvj7XLx/s9zLc="
+          "Value": "sha256-kK8Ksf9w5qiRf6oh2lCFJovZl2Vpon6yNdl34ijYDcA="
         },
         {
           "Name": "label",
@@ -15119,7 +14958,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "29576"
+          "Value": "30524"
         },
         {
           "Name": "Content-Type",
@@ -15127,28 +14966,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"xr2zDM+rCydjq3sNacrW8W92+oYyXwDfVJICAnUNpZ4=\""
+          "Value": "\"p4BK4npq1X2znVFm34B3UdcdRsEKeDwnBD53TUJ1I/M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:47:54 GMT"
+          "Value": "Thu, 08 May 2025 19:03:26 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-xr2zDM+rCydjq3sNacrW8W92+oYyXwDfVJICAnUNpZ4="
+          "Value": "sha256-p4BK4npq1X2znVFm34B3UdcdRsEKeDwnBD53TUJ1I/M="
         }
       ]
     },
     {
       "Route": "_framework/ApuntecaDigital.Backend.UseCases.pdb",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\j5zsi8gyq7-afurjqtiz3.gz",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\j5zsi8gyq7-hmnz9pn480.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000068889501"
+          "Quality": "0.000065150824"
         }
       ],
       "ResponseHeaders": [
@@ -15166,15 +15005,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14515"
+          "Value": "15348"
         },
         {
           "Name": "ETag",
-          "Value": "\"yVuloZ9V4D5/165lLw01Xarpwx6prKHvj7XLx/s9zLc=\""
+          "Value": "\"kK8Ksf9w5qiRf6oh2lCFJovZl2Vpon6yNdl34ijYDcA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:01 GMT"
+          "Value": "Thu, 08 May 2025 19:03:31 GMT"
         },
         {
           "Name": "Vary",
@@ -15186,19 +15025,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"xr2zDM+rCydjq3sNacrW8W92+oYyXwDfVJICAnUNpZ4=\""
+          "Value": "W/\"p4BK4npq1X2znVFm34B3UdcdRsEKeDwnBD53TUJ1I/M=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-xr2zDM+rCydjq3sNacrW8W92+oYyXwDfVJICAnUNpZ4="
+          "Value": "sha256-p4BK4npq1X2znVFm34B3UdcdRsEKeDwnBD53TUJ1I/M="
         }
       ]
     },
     {
       "Route": "_framework/ApuntecaDigital.Backend.UseCases.pdb.gz",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\j5zsi8gyq7-afurjqtiz3.gz",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\j5zsi8gyq7-hmnz9pn480.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -15215,7 +15054,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14515"
+          "Value": "15348"
         },
         {
           "Name": "Content-Type",
@@ -15223,11 +15062,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"yVuloZ9V4D5/165lLw01Xarpwx6prKHvj7XLx/s9zLc=\""
+          "Value": "\"kK8Ksf9w5qiRf6oh2lCFJovZl2Vpon6yNdl34ijYDcA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:01 GMT"
+          "Value": "Thu, 08 May 2025 19:03:31 GMT"
         },
         {
           "Name": "Vary",
@@ -15237,7 +15076,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-yVuloZ9V4D5/165lLw01Xarpwx6prKHvj7XLx/s9zLc="
+          "Value": "sha256-kK8Ksf9w5qiRf6oh2lCFJovZl2Vpon6yNdl34ijYDcA="
         }
       ]
     },
@@ -15256,7 +15095,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "76053"
+          "Value": "76565"
         },
         {
           "Name": "Content-Type",
@@ -15264,28 +15103,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"CjRxt5o5xSsbc4hK/X7EO04jQtyP1k4c7R4lb26IgT4=\""
+          "Value": "\"c2qSpf7Fx3ztIAJReodIRFfKOlmkR6s/JAmVciFBcW8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:00 GMT"
+          "Value": "Thu, 08 May 2025 19:03:30 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-CjRxt5o5xSsbc4hK/X7EO04jQtyP1k4c7R4lb26IgT4="
+          "Value": "sha256-c2qSpf7Fx3ztIAJReodIRFfKOlmkR6s/JAmVciFBcW8="
         }
       ]
     },
     {
       "Route": "_framework/ApuntecaDigital.Backend.UseCases.wasm",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\xsjfv2ggj6-224ug1l386.gz",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\xsjfv2ggj6-xf1dt4svv5.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000037567151"
+          "Quality": "0.000037093364"
         }
       ],
       "ResponseHeaders": [
@@ -15303,15 +15142,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "26618"
+          "Value": "26958"
         },
         {
           "Name": "ETag",
-          "Value": "\"lin79hE3LY5dluBprcjg+CHTJuMC3J+yJ1cPODrzd70=\""
+          "Value": "\"d/W1ei9lO3vB3MiIGxJcJBgWzIw45+9arONPGXQknkY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:01 GMT"
+          "Value": "Thu, 08 May 2025 19:03:31 GMT"
         },
         {
           "Name": "Vary",
@@ -15323,19 +15162,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"CjRxt5o5xSsbc4hK/X7EO04jQtyP1k4c7R4lb26IgT4=\""
+          "Value": "W/\"c2qSpf7Fx3ztIAJReodIRFfKOlmkR6s/JAmVciFBcW8=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-CjRxt5o5xSsbc4hK/X7EO04jQtyP1k4c7R4lb26IgT4="
+          "Value": "sha256-c2qSpf7Fx3ztIAJReodIRFfKOlmkR6s/JAmVciFBcW8="
         }
       ]
     },
     {
       "Route": "_framework/ApuntecaDigital.Backend.UseCases.wasm.gz",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\xsjfv2ggj6-224ug1l386.gz",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\xsjfv2ggj6-xf1dt4svv5.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -15352,7 +15191,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "26618"
+          "Value": "26958"
         },
         {
           "Name": "Content-Type",
@@ -15360,11 +15199,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"lin79hE3LY5dluBprcjg+CHTJuMC3J+yJ1cPODrzd70=\""
+          "Value": "\"d/W1ei9lO3vB3MiIGxJcJBgWzIw45+9arONPGXQknkY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:01 GMT"
+          "Value": "Thu, 08 May 2025 19:03:31 GMT"
         },
         {
           "Name": "Vary",
@@ -15374,7 +15213,168 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-lin79hE3LY5dluBprcjg+CHTJuMC3J+yJ1cPODrzd70="
+          "Value": "sha256-d/W1ei9lO3vB3MiIGxJcJBgWzIw45+9arONPGXQknkY="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/ApuntecaDigital.Backend.UseCases.xf1dt4svv5.wasm",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ApuntecaDigital.Backend.UseCases.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "76565"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"c2qSpf7Fx3ztIAJReodIRFfKOlmkR6s/JAmVciFBcW8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 19:03:30 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xf1dt4svv5"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-c2qSpf7Fx3ztIAJReodIRFfKOlmkR6s/JAmVciFBcW8="
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/ApuntecaDigital.Backend.UseCases.wasm"
+        }
+      ]
+    },
+    {
+      "Route": "_framework/ApuntecaDigital.Backend.UseCases.xf1dt4svv5.wasm",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\xsjfv2ggj6-xf1dt4svv5.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000037093364"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26958"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d/W1ei9lO3vB3MiIGxJcJBgWzIw45+9arONPGXQknkY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 19:03:31 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"c2qSpf7Fx3ztIAJReodIRFfKOlmkR6s/JAmVciFBcW8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xf1dt4svv5"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-c2qSpf7Fx3ztIAJReodIRFfKOlmkR6s/JAmVciFBcW8="
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/ApuntecaDigital.Backend.UseCases.wasm"
+        }
+      ]
+    },
+    {
+      "Route": "_framework/ApuntecaDigital.Backend.UseCases.xf1dt4svv5.wasm.gz",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\xsjfv2ggj6-xf1dt4svv5.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26958"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d/W1ei9lO3vB3MiIGxJcJBgWzIw45+9arONPGXQknkY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 19:03:31 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xf1dt4svv5"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-d/W1ei9lO3vB3MiIGxJcJBgWzIw45+9arONPGXQknkY="
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/ApuntecaDigital.Backend.UseCases.wasm.gz"
         }
       ]
     },
@@ -17785,28 +17785,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"JJJ9eCLDTfYRWDiRvIkLRdhyrJsAO2o4uW1tESZ040w=\""
+          "Value": "\"IvVWvdp42jEKsXX+NnTe4UADeL2j+fMYB8aQGF04F5M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:48:01 GMT"
+          "Value": "Thu, 08 May 2025 19:19:17 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-JJJ9eCLDTfYRWDiRvIkLRdhyrJsAO2o4uW1tESZ040w="
+          "Value": "sha256-IvVWvdp42jEKsXX+NnTe4UADeL2j+fMYB8aQGF04F5M="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\lyrbapraf7-cqv6c8cdyw.gz",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\lyrbapraf7-etchas68of.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000063403500"
+          "Quality": "0.000063395461"
         }
       ],
       "ResponseHeaders": [
@@ -17824,15 +17824,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "15771"
+          "Value": "15773"
         },
         {
           "Name": "ETag",
-          "Value": "\"R50vO+WCUg5d+4uU+4/+htG7tTdh5yK3QAlRW9tsq/k=\""
+          "Value": "\"uornX91rLlzjDwTSBbkHXsxhyVzwmh4izNmj+iwMnXg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:28:40 GMT"
+          "Value": "Thu, 08 May 2025 19:03:31 GMT"
         },
         {
           "Name": "Vary",
@@ -17844,19 +17844,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"JJJ9eCLDTfYRWDiRvIkLRdhyrJsAO2o4uW1tESZ040w=\""
+          "Value": "W/\"IvVWvdp42jEKsXX+NnTe4UADeL2j+fMYB8aQGF04F5M=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-JJJ9eCLDTfYRWDiRvIkLRdhyrJsAO2o4uW1tESZ040w="
+          "Value": "sha256-IvVWvdp42jEKsXX+NnTe4UADeL2j+fMYB8aQGF04F5M="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\lyrbapraf7-cqv6c8cdyw.gz",
+      "AssetFile": "C:\\Users\\jeagu\\dev\\ApuntecaDigital.Backend\\src\\ApuntecaDigital.Backend.Blazor\\ApuntecaDigital.Backend.Blazor.Client\\obj\\Debug\\net9.0\\compressed\\lyrbapraf7-etchas68of.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -17873,7 +17873,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "15771"
+          "Value": "15773"
         },
         {
           "Name": "Content-Type",
@@ -17881,11 +17881,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"R50vO+WCUg5d+4uU+4/+htG7tTdh5yK3QAlRW9tsq/k=\""
+          "Value": "\"uornX91rLlzjDwTSBbkHXsxhyVzwmh4izNmj+iwMnXg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 18:28:40 GMT"
+          "Value": "Thu, 08 May 2025 19:03:31 GMT"
         },
         {
           "Name": "Vary",
@@ -17895,7 +17895,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-R50vO+WCUg5d+4uU+4/+htG7tTdh5yK3QAlRW9tsq/k="
+          "Value": "sha256-uornX91rLlzjDwTSBbkHXsxhyVzwmh4izNmj+iwMnXg="
         }
       ]
     },

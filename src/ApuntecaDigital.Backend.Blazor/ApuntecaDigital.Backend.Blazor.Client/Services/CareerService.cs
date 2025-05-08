@@ -20,7 +20,7 @@ public class CareerService
             string url = "/careers";
             if (!string.IsNullOrWhiteSpace(name))
             {
-                url += $"?name={Uri.EscapeDataString(name)}";
+                url = $"/Careers/name/{Uri.EscapeDataString(name)}";
             }
 
             var response = await _httpClient.GetFromJsonAsync<CareerListResponse>(url);
