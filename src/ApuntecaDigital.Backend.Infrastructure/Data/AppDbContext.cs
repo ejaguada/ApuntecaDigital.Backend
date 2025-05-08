@@ -1,5 +1,8 @@
-﻿using ApuntecaDigital.Backend.Core.CareerAggregate;
+﻿using ApuntecaDigital.Backend.Core.BookAggregate;
+using ApuntecaDigital.Backend.Core.CareerAggregate;
+using ApuntecaDigital.Backend.Core.ClassAggregate;
 using ApuntecaDigital.Backend.Core.ContributorAggregate;
+using ApuntecaDigital.Backend.Core.SubjectAggregate;
 
 namespace ApuntecaDigital.Backend.Infrastructure.Data;
 public class AppDbContext(DbContextOptions<AppDbContext> options,

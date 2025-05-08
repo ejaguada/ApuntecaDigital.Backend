@@ -1,7 +1,9 @@
-using Ardalis.Result;
+﻿using Ardalis.Result;
 using ApuntecaDigital.Backend.Core.CareerAggregate;
 using ApuntecaDigital.Backend.Core.CareerAggregate.Specifications;
 using MediatR;
+using ApuntecaDigital.Backend.Core.BookAggregate;
+using ApuntecaDigital.Backend.Core.BookAggregate.Specifications;
 
 namespace ApuntecaDigital.Backend.UseCases.Books.Update;
 

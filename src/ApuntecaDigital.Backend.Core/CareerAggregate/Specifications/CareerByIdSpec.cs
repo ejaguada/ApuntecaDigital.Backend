@@ -1,5 +1,3 @@
-using Ardalis.Specification;
-
 namespace ApuntecaDigital.Backend.Core.CareerAggregate.Specifications;
 
 public class CareerByIdSpec : Specification<Career>

@@ -1,6 +1,4 @@
-using Ardalis.Specification;
-
-namespace ApuntecaDigital.Backend.Core.CareerAggregate.Specifications;
+namespace ApuntecaDigital.Backend.Core.ClassAggregate.Specifications;
 
 public class ClassByIdSpec : Specification<Class>
 {

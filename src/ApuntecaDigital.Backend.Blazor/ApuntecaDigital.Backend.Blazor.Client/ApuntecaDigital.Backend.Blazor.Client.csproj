@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
@@ -10,6 +10,11 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ApuntecaDigital.Backend.Infrastructure\ApuntecaDigital.Backend.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\ApuntecaDigital.Backend.UseCases\ApuntecaDigital.Backend.UseCases.csproj" />
   </ItemGroup>
 
 </Project>

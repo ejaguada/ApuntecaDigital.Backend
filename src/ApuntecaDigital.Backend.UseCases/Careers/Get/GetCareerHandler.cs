@@ -1,5 +1,4 @@
-using Ardalis.Result;
-using ApuntecaDigital.Backend.Core.CareerAggregate;
+﻿using ApuntecaDigital.Backend.Core.CareerAggregate;
 using ApuntecaDigital.Backend.Core.CareerAggregate.Specifications;
 using MediatR;
 
@@ -18,7 +17,7 @@ public class GetCareerHandler : IRequestHandler<GetCareerQuery, Result<CareerDTO
   {
     var spec = new CareerByIdSpec(request.CareerId);
     var career = await _repository.FirstOrDefaultAsync(spec, cancellationToken);
-    
+
     if (career == null)
     {
       return Result<CareerDTO>.NotFound();

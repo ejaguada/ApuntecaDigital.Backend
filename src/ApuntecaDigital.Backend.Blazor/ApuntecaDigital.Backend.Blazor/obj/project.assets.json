@@ -1741,6 +1741,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "ApuntecaDigital.Backend.Infrastructure": "1.0.0",
+          "ApuntecaDigital.Backend.UseCases": "1.0.0",
           "Microsoft.AspNetCore.Components.WebAssembly": "9.0.4"
         },
         "compile": {
@@ -4503,6 +4505,7 @@
         "net9.0"
       ],
       "sources": {
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "c:\\LocalNuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },

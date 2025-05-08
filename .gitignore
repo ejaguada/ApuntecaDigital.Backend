@@ -1,0 +1,13 @@
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.sln.docstates
+*.cache
+_ReSharper*/
+packages/
+/tests/**/bin/
+/tests/**/obj/
+/src/**/bin/
+/src/**/obj/

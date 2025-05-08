@@ -577,3 +577,4 @@ C:\Users\jeagu\dev\ApuntecaDigital.Backend\tests\ApuntecaDigital.Backend.Functio
 C:\Users\jeagu\dev\ApuntecaDigital.Backend\tests\ApuntecaDigital.Backend.FunctionalTests\obj\Debug\net9.0\ApuntecaDigital.Backend.FunctionalTests.pdb
 C:\Users\jeagu\dev\ApuntecaDigital.Backend\tests\ApuntecaDigital.Backend.FunctionalTests\obj\Debug\net9.0\ApuntecaDigital.Backend.FunctionalTests.genruntimeconfig.cache
 C:\Users\jeagu\dev\ApuntecaDigital.Backend\tests\ApuntecaDigital.Backend.FunctionalTests\obj\Debug\net9.0\ref\ApuntecaDigital.Backend.FunctionalTests.dll
+C:\Users\jeagu\dev\ApuntecaDigital.Backend\tests\ApuntecaDigital.Backend.FunctionalTests\bin\Debug\net9.0\appsettings.Docker.json

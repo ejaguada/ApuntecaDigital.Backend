@@ -16,13 +16,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ApuntecaDigital.Backend.Blazor.gm912k0pg8.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-CMcSXam3d/OioerW\u002BtDnMKLZY6945HOnDkGYqf2/JjE="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"6007"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022CMcSXam3d/OioerW\u002BtDnMKLZY6945HOnDkGYqf2/JjE=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 21:45:04 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"6007"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022CMcSXam3d/OioerW\u002BtDnMKLZY6945HOnDkGYqf2/JjE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 May 2025 15:43:22 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ApuntecaDigital.Backend.Blazor/ApuntecaDigital.Backend.Blazor.gm912k0pg8.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ApuntecaDigital.Backend.Blazor.gm912k0pg8.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"gm912k0pg8"},{"Name":"integrity","Value":"sha256-CMcSXam3d/OioerW\u002BtDnMKLZY6945HOnDkGYqf2/JjE="},{"Name":"label","Value":"_content/ApuntecaDigital.Backend.Blazor/ApuntecaDigital.Backend.Blazor.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6007"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022CMcSXam3d/OioerW\u002BtDnMKLZY6945HOnDkGYqf2/JjE=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 21:45:04 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6007"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022CMcSXam3d/OioerW\u002BtDnMKLZY6945HOnDkGYqf2/JjE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 May 2025 15:43:22 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ApuntecaDigital.Backend.Blazor/favicon.ifv42okdf2.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.png'))</AssetFile>

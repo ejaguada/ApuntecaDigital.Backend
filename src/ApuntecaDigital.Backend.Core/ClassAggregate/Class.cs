@@ -1,4 +1,6 @@
-namespace ApuntecaDigital.Backend.Core.CareerAggregate;
+using ApuntecaDigital.Backend.Core.CareerAggregate;
+
+namespace ApuntecaDigital.Backend.Core.ClassAggregate;
 
 public class Class(string name, int year, int careerId) : EntityBase, IAggregateRoot
 {

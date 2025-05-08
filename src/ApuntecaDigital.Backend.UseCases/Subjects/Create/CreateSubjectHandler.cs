@@ -1,5 +1,4 @@
-using Ardalis.Result;
-using ApuntecaDigital.Backend.Core.CareerAggregate;
+using ApuntecaDigital.Backend.Core.SubjectAggregate;
 using MediatR;
 
 namespace ApuntecaDigital.Backend.UseCases.Subjects.Create;

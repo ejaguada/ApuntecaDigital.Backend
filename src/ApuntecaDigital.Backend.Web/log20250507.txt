@@ -604,3 +604,65 @@ END
 2025-05-07 18:45:09.519 -03:00 [INF] Application started. Press Ctrl+C to shut down.
 2025-05-07 18:45:09.520 -03:00 [INF] Hosting environment: Development
 2025-05-07 18:45:09.521 -03:00 [INF] Content root path: C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Web
+2025-05-07 19:08:08.232 -03:00 [INF] Registered 25 endpoints in 217 milliseconds.
+2025-05-07 19:08:08.859 -03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-05-07 19:08:08.893 -03:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2025-05-07 19:08:09.036 -03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Contributors] AS [c]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-07 19:08:09.144 -03:00 [INF] Now listening on: https://localhost:57679
+2025-05-07 19:08:09.148 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-05-07 19:08:09.191 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-07 19:08:09.192 -03:00 [INF] Hosting environment: Development
+2025-05-07 19:08:09.193 -03:00 [INF] Content root path: C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Web
+2025-05-07 19:39:12.804 -03:00 [INF] Registered 25 endpoints in 213 milliseconds.
+2025-05-07 19:39:13.434 -03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-05-07 19:39:13.464 -03:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2025-05-07 19:39:13.622 -03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Contributors] AS [c]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-07 19:39:13.707 -03:00 [INF] Now listening on: https://localhost:57679
+2025-05-07 19:39:13.710 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-05-07 19:39:13.748 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-07 19:39:13.749 -03:00 [INF] Hosting environment: Development
+2025-05-07 19:39:13.750 -03:00 [INF] Content root path: C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Web

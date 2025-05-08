@@ -1,6 +1,7 @@
-using Ardalis.Result;
+﻿using Ardalis.Result;
 using ApuntecaDigital.Backend.Core.CareerAggregate;
 using MediatR;
+using ApuntecaDigital.Backend.Core.ClassAggregate;
 
 namespace ApuntecaDigital.Backend.UseCases.Classes.Create;
 

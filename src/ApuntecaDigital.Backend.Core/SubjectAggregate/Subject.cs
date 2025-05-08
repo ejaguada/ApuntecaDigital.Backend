@@ -1,4 +1,6 @@
-namespace ApuntecaDigital.Backend.Core.CareerAggregate;
+using ApuntecaDigital.Backend.Core.ClassAggregate;
+
+namespace ApuntecaDigital.Backend.Core.SubjectAggregate;
 
 public class Subject(string name, int classId) : EntityBase, IAggregateRoot
 {

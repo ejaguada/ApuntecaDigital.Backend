@@ -1,0 +1,109 @@
+@page "/careers"
+@rendermode InteractiveAuto
+@using ApuntecaDigital.Backend.Blazor.Client.Models
+@using ApuntecaDigital.Backend.Blazor.Client.Services
+@inject CareerService CareerService
+
+<PageTitle>Careers Search</PageTitle>
+
+<h1>Careers Search</h1>
+
+<div class="row mb-4">
+    <div class="col-md-6">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search careers..."
+                   @bind="name" @onkeyup="HandleKeyUp" />
+            <button class="btn btn-primary" @onclick="SearchCareers">Search</button>
+        </div>
+    </div>
+</div>
+
+@if (isLoading)
+{
+    <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+}
+else if (careers == null || !careers.Any())
+{
+    <div class="alert alert-info">
+        @(string.IsNullOrWhiteSpace(name)
+            ? "No careers found. Please try a different search term."
+            : $"No careers found matching '{name}'. Please try a different search term.")
+    </div>
+}
+else
+{
+    <div class="table-responsive">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Career Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var career in careers)
+                {
+                    <tr>
+                        <td>@career.Id</td>
+                        <td>@career.Name</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+
+@code {
+    private List<Career> careers = new();
+    private bool isLoading = false;
+    private string name = string.Empty;
+    private System.Threading.Timer? debounceTimer;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadCareers();
+    }
+
+    private async Task LoadCareers()
+    {
+        isLoading = true;
+        try
+        {
+            careers = await CareerService.GetCareersAsync(name);
+        }
+        finally
+        {
+            isLoading = false;
+            StateHasChanged();
+        }
+    }
+
+    private async Task SearchCareers()
+    {
+        await LoadCareers();
+    }
+
+    private async Task HandleKeyUp(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+        {
+            await SearchCareers();
+        }
+        else
+        {
+            // Debounce search as user types
+            debounceTimer?.Dispose();
+            debounceTimer = new System.Threading.Timer(async _ =>
+            {
+                await InvokeAsync(async () =>
+                {
+                    await SearchCareers();
+                });
+            }, null, 500, Timeout.Infinite);
+        }
+    }
+}

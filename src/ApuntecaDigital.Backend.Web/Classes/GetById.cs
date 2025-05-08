@@ -1,4 +1,3 @@
-using ApuntecaDigital.Backend.UseCases.Classes;
 using ApuntecaDigital.Backend.UseCases.Classes.Get;
 
 namespace ApuntecaDigital.Backend.Web.Classes;

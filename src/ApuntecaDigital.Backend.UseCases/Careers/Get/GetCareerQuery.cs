@@ -1,5 +1,4 @@
-using Ardalis.Result;
-using MediatR;
+﻿using MediatR;
 
 namespace ApuntecaDigital.Backend.UseCases.Careers.Get;
 

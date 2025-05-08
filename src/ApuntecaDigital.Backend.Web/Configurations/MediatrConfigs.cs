@@ -1,7 +1,6 @@
 ﻿using Ardalis.SharedKernel;
 using ApuntecaDigital.Backend.Core.ContributorAggregate;
 using ApuntecaDigital.Backend.UseCases.Contributors.Create;
-using MediatR;
 using System.Reflection;
 
 namespace ApuntecaDigital.Backend.Web.Configurations;

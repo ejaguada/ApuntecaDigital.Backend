@@ -1,4 +1,3 @@
-using FastEndpoints;
 using FluentValidation;
 
 namespace ApuntecaDigital.Backend.Web.Careers;

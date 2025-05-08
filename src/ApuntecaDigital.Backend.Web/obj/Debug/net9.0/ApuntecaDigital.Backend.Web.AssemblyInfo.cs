@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApuntecaDigital.Backend.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac6873fd71822a07e245a31506091596d05dd023")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a1803d6db223d51c184b361d909efdc3330bb1da")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApuntecaDigital.Backend.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApuntecaDigital.Backend.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,4 +1,3 @@
-using ApuntecaDigital.Backend.UseCases.Careers;
 using ApuntecaDigital.Backend.UseCases.Careers.Get;
 
 namespace ApuntecaDigital.Backend.Web.Careers;

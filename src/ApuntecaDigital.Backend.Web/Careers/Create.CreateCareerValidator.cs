@@ -1,5 +1,4 @@
 using ApuntecaDigital.Backend.Infrastructure.Data.Config;
-using FastEndpoints;
 using FluentValidation;
 
 namespace ApuntecaDigital.Backend.Web.Careers;

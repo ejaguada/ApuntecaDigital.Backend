@@ -126,22 +126,6 @@
             Delete a Career by providing a valid integer id.
             </remarks>
         </member>
-        <member name="T:ApuntecaDigital.Backend.Web.Careers.GetById">
-            <summary>
-            Get a Career by integer ID.
-            </summary>
-            <remarks>
-            Takes a positive integer ID and returns a matching Career record.
-            </remarks>
-        </member>
-        <member name="M:ApuntecaDigital.Backend.Web.Careers.GetById.#ctor(MediatR.IMediator)">
-            <summary>
-            Get a Career by integer ID.
-            </summary>
-            <remarks>
-            Takes a positive integer ID and returns a matching Career record.
-            </remarks>
-        </member>
         <member name="T:ApuntecaDigital.Backend.Web.Careers.List">
             <summary>
             List all Careers

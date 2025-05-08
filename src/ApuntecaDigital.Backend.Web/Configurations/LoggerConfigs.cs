@@ -1,6 +1,4 @@
-﻿using Serilog;
-
-namespace ApuntecaDigital.Backend.Web.Configurations;
+﻿namespace ApuntecaDigital.Backend.Web.Configurations;
 
 public static class LoggerConfigs
 {

@@ -187,31 +187,6 @@
     "ContainingType": "FastEndpoints.MainExtensions\u002B\u003C\u003Ec",
     "Method": "\u003CMapFastEndpoints\u003Eb__2_1",
     "RelativePath": "Careers/{CareerId:int}",
-    "HttpMethod": "GET",
-    "IsController": false,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "GetCareerByIdRequest",
-        "Type": "ApuntecaDigital.Backend.Web.Careers.GetCareerByIdRequest",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "ApuntecaDigital.Backend.Web.Careers.CareerRecord",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 200
-      }
-    ],
-    "EndpointName": "ApuntecaDigitalBackendWebCareersGetById"
-  },
-  {
-    "ContainingType": "FastEndpoints.MainExtensions\u002B\u003C\u003Ec",
-    "Method": "\u003CMapFastEndpoints\u003Eb__2_1",
-    "RelativePath": "Careers/{CareerId:int}",
     "HttpMethod": "PUT",
     "IsController": false,
     "Order": 0,

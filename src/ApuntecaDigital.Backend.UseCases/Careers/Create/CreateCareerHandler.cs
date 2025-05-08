@@ -1,4 +1,3 @@
-using Ardalis.Result;
 using ApuntecaDigital.Backend.Core.CareerAggregate;
 using MediatR;
 

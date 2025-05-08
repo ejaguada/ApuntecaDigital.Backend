@@ -1,0 +1,17 @@
+# .dockerignore
+
+# Exclude build artifacts
+**/bin/
+**/obj/
+
+# Exclude Visual Studio specific files
+.vs/
+*.suo
+*.user
+
+# Exclude Git files
+.git/
+.gitignore
+
+# Exclude Dockerfile itself if it's in the context
+Dockerfile

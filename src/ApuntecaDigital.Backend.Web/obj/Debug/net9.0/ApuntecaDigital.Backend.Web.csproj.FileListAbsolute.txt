@@ -532,3 +532,4 @@ C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Web\obj\D
 C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Web\obj\Debug\net9.0\ref\ApuntecaDigital.Backend.Web.dll
 C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Web\obj\Debug\net9.0\ApuntecaDigital.Backend.Web.sourcelink.json
 C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Web\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Web\bin\Debug\net9.0\appsettings.Docker.json

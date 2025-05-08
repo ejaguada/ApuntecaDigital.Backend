@@ -694,47 +694,6 @@
           }
         }
       },
-      "get": {
-        "tags": [
-          "Careers"
-        ],
-        "summary": "Get a Career by integer ID.",
-        "description": "Takes a positive integer ID and returns a matching Career record.",
-        "operationId": "ApuntecaDigitalBackendWebCareersGetById",
-        "parameters": [
-          {
-            "name": "careerId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/CareerRecord"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "Bad Request",
-            "content": {
-              "application/problem+json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          }
-        }
-      },
       "put": {
         "tags": [
           "Careers"
@@ -1425,6 +1384,18 @@
         "type": "object",
         "additionalProperties": false
       },
+      "CareerListResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "careers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CareerRecord"
+            }
+          }
+        }
+      },
       "CareerRecord": {
         "type": "object",
         "additionalProperties": false,
@@ -1435,22 +1406,6 @@
           },
           "name": {
             "type": "string"
-          }
-        }
-      },
-      "GetCareerByIdRequest": {
-        "type": "object",
-        "additionalProperties": false
-      },
-      "CareerListResponse": {
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "careers": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/CareerRecord"
-            }
           }
         }
       },

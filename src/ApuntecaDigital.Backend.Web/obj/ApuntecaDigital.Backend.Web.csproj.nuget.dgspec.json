@@ -27,6 +27,7 @@
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "c:\\LocalNuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -174,6 +175,7 @@
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "c:\\LocalNuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -359,6 +361,7 @@
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "c:\\LocalNuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -485,6 +488,7 @@
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "c:\\LocalNuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },

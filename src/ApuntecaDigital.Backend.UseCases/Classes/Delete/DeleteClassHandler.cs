@@ -1,6 +1,5 @@
-using Ardalis.Result;
-using ApuntecaDigital.Backend.Core.CareerAggregate;
-using ApuntecaDigital.Backend.Core.CareerAggregate.Specifications;
+using ApuntecaDigital.Backend.Core.ClassAggregate;
+using ApuntecaDigital.Backend.Core.ClassAggregate.Specifications;
 using MediatR;
 
 namespace ApuntecaDigital.Backend.UseCases.Classes.Delete;

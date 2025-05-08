@@ -1,4 +1,6 @@
-namespace ApuntecaDigital.Backend.Core.CareerAggregate;
+using ApuntecaDigital.Backend.Core.SubjectAggregate;
+
+namespace ApuntecaDigital.Backend.Core.BookAggregate;
 
 public class Book(string title, string author, string isbn, string description, int subjectId) : EntityBase, IAggregateRoot
 {

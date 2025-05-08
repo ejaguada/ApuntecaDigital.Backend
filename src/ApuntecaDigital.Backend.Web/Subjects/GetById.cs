@@ -1,4 +1,3 @@
-using ApuntecaDigital.Backend.UseCases.Subjects;
 using ApuntecaDigital.Backend.UseCases.Subjects.Get;
 
 namespace ApuntecaDigital.Backend.Web.Subjects;

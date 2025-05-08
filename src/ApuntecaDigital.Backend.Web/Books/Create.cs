@@ -1,4 +1,3 @@
-using ApuntecaDigital.Backend.UseCases.Books;
 using ApuntecaDigital.Backend.UseCases.Books.Create;
 
 namespace ApuntecaDigital.Backend.Web.Books;
