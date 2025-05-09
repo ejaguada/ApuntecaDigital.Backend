@@ -1,5 +1,6 @@
-﻿using System.Net.Http.Json;
+﻿﻿using System.Net.Http.Json;
 using ApuntecaDigital.Backend.Blazor.Client.Models;
+using ApuntecaDigital.Backend.UseCases.Careers;
 
 namespace ApuntecaDigital.Backend.Blazor.Client.Services;
 
@@ -24,12 +25,26 @@ public class CareerService
             }
 
             var response = await _httpClient.GetFromJsonAsync<CareerListResponse>(url);
-            return response?.Careers ?? new List<Career>();
+            return response?.Careers?.Select(c => new Career { Id = c.Id, Name = c.Name }).ToList() ?? new List<Career>();
         }
         catch (Exception ex)
         {
             Console.Error.WriteLine($"Error fetching careers: {ex.Message}");
             return new List<Career>();
+        }
+    }
+
+    public async Task<Career?> GetCareerByIdAsync(int id)
+    {
+        try
+        {
+            var response = await _httpClient.GetFromJsonAsync<CareerDTO>($"/careers/id/{id}");
+            return response == null ? null : new Career { Id = response.Id, Name = response.Name };
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine($"Error fetching career by id {id}: {ex.Message}");
+            return null;
         }
     }
 }

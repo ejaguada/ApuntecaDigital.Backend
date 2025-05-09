@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\ApuntecaDigital.Backend.Web.props" />
-</Project>

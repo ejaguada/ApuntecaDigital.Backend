@@ -3,20 +3,23 @@
 @using ApuntecaDigital.Backend.Blazor.Client.Models
 @using ApuntecaDigital.Backend.Blazor.Client.Services
 @inject CareerService CareerService
+@inject DialogService DialogService
+@inject ContextMenuService ContextMenuService
+@inject TooltipService TooltipService
+@inject NotificationService NotificationService
+@using Radzen
+@using Radzen.Blazor
 
 <PageTitle>Careers Search</PageTitle>
 
-<h1>Careers Search</h1>
+<RadzenCard class="rz-mb-3">
+    <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Normal" Wrap="FlexWrap.NoWrap">
+        <RadzenTextBox @bind-Value="name" Placeholder="Search careers..." Style="width: 100%;" @oninput="OnInputChange"
+            @onkeypress="OnKeyPress" />
+        <RadzenButton Text="ADD" Click="SearchCareers" />
+    </RadzenStack>
+</RadzenCard>
 
-<div class="row mb-4">
-    <div class="col-md-6">
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search careers..."
-                   @bind="name" @onkeyup="HandleKeyUp" />
-            <button class="btn btn-primary" @onclick="SearchCareers">Search</button>
-        </div>
-    </div>
-</div>
 
 @if (isLoading)
 {
@@ -32,36 +35,36 @@ else if (careers == null || !careers.Any())
         @(string.IsNullOrWhiteSpace(name)
             ? "No careers found. Please try a different search term."
             : $"No careers found matching '{name}'. Please try a different search term.")
-    </div>
+</div>
 }
 else
 {
-    <div class="table-responsive">
-        <table class="table table-striped table-hover">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Career Name</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var career in careers)
-                {
-                    <tr>
-                        <td>@career.Id</td>
-                        <td>@career.Name</td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-    </div>
+    <RadzenCard>
+        <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Normal" Wrap="FlexWrap.NoWrap">
+            <RadzenDataGrid @ref="grid" AllowFiltering="true" AllowColumnResize="true" AllowAlternatingRows="false"
+                AllowSorting="true" Data="@careers" TItem="Career" ColumnWidth="300px" FilterMode="FilterMode.Advanced"
+                AllowPaging="true" PageSize="5">
+                <Columns>
+                    <RadzenDataGridColumn TItem="Career" Property="Id" Title="ID" Width="70px" />
+                    <RadzenDataGridColumn TItem="Career" Property="Name" Title="Career Name" Width="200px" />
+                    <RadzenDataGridColumn TItem="Career" Title="Actions" Width="100px">
+                        <Template Context="context">
+                            <RadzenButton Text="Edit" Click="@(() => OnEditClick(context.Id))" />
+                        </Template>
+                    </RadzenDataGridColumn>
+                </Columns>
+            </RadzenDataGrid>
+        </RadzenStack>
+    </RadzenCard>
 }
 
 @code {
+    RadzenDataGrid<Career>? grid = null;
     private List<Career> careers = new();
     private bool isLoading = false;
     private string name = string.Empty;
     private System.Threading.Timer? debounceTimer;
+
 
     protected override async Task OnInitializedAsync()
     {
@@ -75,6 +78,16 @@ else
         {
             careers = await CareerService.GetCareersAsync(name);
         }
+        catch (Exception ex)
+        {
+            NotificationService.Notify(new NotificationMessage
+            {
+                Severity = NotificationSeverity.Error,
+                Summary = "Error",
+                Detail = $"Failed to load careers: {ex.Message}",
+                Duration = 4000
+            });
+        }
         finally
         {
             isLoading = false;
@@ -87,23 +100,43 @@ else
         await LoadCareers();
     }
 
-    private async Task HandleKeyUp(KeyboardEventArgs e)
+    private void OnInputChange(ChangeEventArgs e)
+    {
+        name = e.Value?.ToString() ?? string.Empty;
+
+        // Debounce the search to avoid excessive calls
+        debounceTimer?.Dispose();
+        debounceTimer = new System.Threading.Timer(async _ =>
+        {
+            await InvokeAsync(SearchCareers);
+        }, null, 500, Timeout.Infinite);
+    }
+
+    private async Task OnKeyPress(KeyboardEventArgs e)
     {
         if (e.Key == "Enter")
         {
             await SearchCareers();
         }
+    }
+
+    private async Task OnEditClick(int id)
+    {
+        var career = await CareerService.GetCareerByIdAsync(id);
+        if (career != null)
+        {
+            // Open the edit dialog or navigate to the edit page
+            await DialogService.OpenAsync<CareerDetails>("Edit Career", new Dictionary<string, object> { { "Career", career } });
+        }
         else
         {
-            // Debounce search as user types
-            debounceTimer?.Dispose();
-            debounceTimer = new System.Threading.Timer(async _ =>
+            NotificationService.Notify(new NotificationMessage
             {
-                await InvokeAsync(async () =>
-                {
-                    await SearchCareers();
-                });
-            }, null, 500, Timeout.Infinite);
+                Severity = NotificationSeverity.Error,
+                Summary = "Error",
+                Detail = "Career not found.",
+                Duration = 4000
+            });
         }
     }
 }

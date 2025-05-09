@@ -1,0 +1,44 @@
+@using ApuntecaDigital.Backend.Blazor.Client.Services
+@using ApuntecaDigital.Backend.Blazor.Client.Models
+@page "/careerdetails/{CareerId:int}"
+@inject CareerService CareerService
+
+<h3>Career Details</h3>
+
+@if (career == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div>
+        <h4>@career.Name</h4>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public int CareerId { get; set; }
+    [Parameter]
+    public Career? career { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (career != null)
+        {
+            if (career.Id != 0)
+            {
+                career = await CareerService.GetCareerByIdAsync(career.Id);
+            }
+            else
+            {
+                career = new Career();
+            }
+        }
+
+        if (CareerId != 0)
+        {
+            career = await CareerService.GetCareerByIdAsync(CareerId);
+        }
+    }
+}
