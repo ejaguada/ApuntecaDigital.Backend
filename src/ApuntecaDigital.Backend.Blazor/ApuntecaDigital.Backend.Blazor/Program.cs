@@ -1,5 +1,6 @@
-using ApuntecaDigital.Backend.Blazor.Components;
+﻿using ApuntecaDigital.Backend.Blazor.Components;
 using ApuntecaDigital.Backend.Blazor.Client.Services;
+using Radzen;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +14,8 @@ builder.Services.AddHttpClient("ApiClient", client =>
 {
     client.BaseAddress = new Uri(builder.Configuration["ApiBaseUrl"] ?? "https://localhost:57679");
 });
+builder.Services.AddRadzenComponents();
+
 
 // Register the CareerService for server-side rendering
 builder.Services.AddScoped<CareerService>(sp => {
@@ -20,7 +23,11 @@ builder.Services.AddScoped<CareerService>(sp => {
     var httpClient = httpClientFactory.CreateClient("ApiClient");
     return new CareerService(httpClient);
 });
-
+builder.Services.AddScoped<DialogService>();
+builder.Services.AddScoped<TooltipService>();
+builder.Services.AddScoped<ContextMenuService>();
+builder.Services.AddScoped<NotificationService>();
+builder.Services.AddScoped<ThemeService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -43,6 +50,8 @@ app.UseHttpsRedirection();
 app.UseAntiforgery();
 
 app.MapStaticAssets();
+
+
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode()
     .AddInteractiveWebAssemblyRenderMode()

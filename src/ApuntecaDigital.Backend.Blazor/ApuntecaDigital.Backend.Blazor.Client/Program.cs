@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using ApuntecaDigital.Backend.Blazor.Client.Services;
+using Radzen;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 
@@ -14,6 +15,11 @@ builder.Services.AddScoped(sp =>
 });
 
 // Register services
+builder.Services.AddRadzenComponents();
 builder.Services.AddScoped<CareerService>();
-
+builder.Services.AddScoped<DialogService>();
+builder.Services.AddScoped<TooltipService>();
+builder.Services.AddScoped<ContextMenuService>();
+builder.Services.AddScoped<NotificationService>();
+builder.Services.AddScoped<ThemeService>();
 await builder.Build().RunAsync();

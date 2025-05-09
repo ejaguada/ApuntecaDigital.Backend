@@ -1,4 +1,0 @@
-C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Blazor\ApuntecaDigital.Backend.Blazor.Client\wwwroot\appsettings.json
-C:\Users\jeagu\dev\ApuntecaDigital.Backend\src\ApuntecaDigital.Backend.Blazor\ApuntecaDigital.Backend.Blazor.Client\wwwroot\appsettings.Development.json
-wwwroot\appsettings.Development.json
-wwwroot\appsettings.json

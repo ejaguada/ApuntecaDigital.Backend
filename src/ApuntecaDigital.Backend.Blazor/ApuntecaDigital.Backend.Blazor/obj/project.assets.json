@@ -1126,6 +1126,29 @@
           }
         }
       },
+      "Radzen.Blazor/7.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "9.0.4",
+          "Microsoft.AspNetCore.Components.Web": "9.0.4"
+        },
+        "compile": {
+          "lib/net9.0/Radzen.Blazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Radzen.Blazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Radzen.Blazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Radzen.Blazor.props": {}
+        }
+      },
       "SQLite/3.13.0": {
         "type": "package",
         "compile": {
@@ -1743,7 +1766,8 @@
         "dependencies": {
           "ApuntecaDigital.Backend.Infrastructure": "1.0.0",
           "ApuntecaDigital.Backend.UseCases": "1.0.0",
-          "Microsoft.AspNetCore.Components.WebAssembly": "9.0.4"
+          "Microsoft.AspNetCore.Components.WebAssembly": "9.0.4",
+          "Radzen.Blazor": "7.0.2"
         },
         "compile": {
           "bin/placeholder/ApuntecaDigital.Backend.Blazor.Client.dll": {}
@@ -3400,6 +3424,77 @@
         "mimekit.nuspec"
       ]
     },
+    "Radzen.Blazor/7.0.2": {
+      "sha512": "Z59NDMbXlYTOO99md4kmnWsUBJveIunBviQk5WV+H0Uc6RJFeRdgxVEOfDkvKqHw3aBjht9aroQ2ztET4Xg6Aw==",
+      "type": "package",
+      "path": "radzen.blazor/7.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Radzen.Blazor.props",
+        "buildMultiTargeting/Radzen.Blazor.props",
+        "buildTransitive/Radzen.Blazor.props",
+        "icon.png",
+        "lib/net6.0/Radzen.Blazor.dll",
+        "lib/net6.0/Radzen.Blazor.xml",
+        "lib/net7.0/Radzen.Blazor.dll",
+        "lib/net7.0/Radzen.Blazor.xml",
+        "lib/net8.0/Radzen.Blazor.dll",
+        "lib/net8.0/Radzen.Blazor.xml",
+        "lib/net9.0/Radzen.Blazor.dll",
+        "lib/net9.0/Radzen.Blazor.xml",
+        "radzen.blazor.7.0.2.nupkg.sha512",
+        "radzen.blazor.nuspec",
+        "staticwebassets/Radzen.Blazor.js",
+        "staticwebassets/Radzen.Blazor.min.js",
+        "staticwebassets/css/dark-base.css",
+        "staticwebassets/css/dark-wcag.css",
+        "staticwebassets/css/dark.css",
+        "staticwebassets/css/default-base.css",
+        "staticwebassets/css/default-wcag.css",
+        "staticwebassets/css/default.css",
+        "staticwebassets/css/fluent-base.css",
+        "staticwebassets/css/fluent-dark-base.css",
+        "staticwebassets/css/fluent-dark.css",
+        "staticwebassets/css/fluent.css",
+        "staticwebassets/css/humanistic-base.css",
+        "staticwebassets/css/humanistic-dark-base.css",
+        "staticwebassets/css/humanistic-dark-wcag.css",
+        "staticwebassets/css/humanistic-dark.css",
+        "staticwebassets/css/humanistic-wcag.css",
+        "staticwebassets/css/humanistic.css",
+        "staticwebassets/css/material-base.css",
+        "staticwebassets/css/material-dark-base.css",
+        "staticwebassets/css/material-dark-wcag.css",
+        "staticwebassets/css/material-dark.css",
+        "staticwebassets/css/material-wcag.css",
+        "staticwebassets/css/material.css",
+        "staticwebassets/css/material3-base.css",
+        "staticwebassets/css/material3-dark-base.css",
+        "staticwebassets/css/material3-dark.css",
+        "staticwebassets/css/material3.css",
+        "staticwebassets/css/software-base.css",
+        "staticwebassets/css/software-dark-base.css",
+        "staticwebassets/css/software-dark-wcag.css",
+        "staticwebassets/css/software-dark.css",
+        "staticwebassets/css/software-wcag.css",
+        "staticwebassets/css/software.css",
+        "staticwebassets/css/standard-base.css",
+        "staticwebassets/css/standard-dark-base.css",
+        "staticwebassets/css/standard-dark-wcag.css",
+        "staticwebassets/css/standard-dark.css",
+        "staticwebassets/css/standard-wcag.css",
+        "staticwebassets/css/standard.css",
+        "staticwebassets/fonts/MaterialSymbolsOutlined.woff2",
+        "staticwebassets/fonts/RobotoFlex.woff2",
+        "staticwebassets/fonts/SourceSans3VF-Italic.ttf.woff2",
+        "staticwebassets/fonts/SourceSans3VF-Upright.ttf.woff2"
+      ]
+    },
     "SQLite/3.13.0": {
       "sha512": "MJfRiz2p6aMVOxrxGMdVzhpzI0oxTgZSwC8eVuOpV8L7yYaFUu8q/OFYwv9P0/aZ/pdEu24O6gma6wZJMTun9A==",
       "type": "package",
@@ -4475,7 +4570,8 @@
       "ApuntecaDigital.Backend.Blazor.Client >= 1.0.0",
       "ApuntecaDigital.Backend.Infrastructure >= 1.0.0",
       "ApuntecaDigital.Backend.UseCases >= 1.0.0",
-      "Microsoft.AspNetCore.Components.WebAssembly.Server >= 9.0.4"
+      "Microsoft.AspNetCore.Components.WebAssembly.Server >= 9.0.4",
+      "Radzen.Blazor >= 7.0.2"
     ]
   },
   "packageFolders": {
@@ -4546,6 +4642,11 @@
             "target": "Package",
             "version": "[9.0.4, )",
             "versionCentrallyManaged": true
+          },
+          "Radzen.Blazor": {
+            "target": "Package",
+            "version": "[7.0.2, )",
+            "versionCentrallyManaged": true
           }
         },
         "centralPackageVersions": {
@@ -4581,6 +4682,7 @@
           "Microsoft.Extensions.Options.ConfigurationExtensions": "9.0.0",
           "Microsoft.NET.Test.Sdk": "17.12.0",
           "NSubstitute": "5.3.0",
+          "Radzen.Blazor": "7.0.2",
           "ReportGenerator": "5.4.1",
           "Serilog.AspNetCore": "9.0.0",
           "Shouldly": "4.3.0",

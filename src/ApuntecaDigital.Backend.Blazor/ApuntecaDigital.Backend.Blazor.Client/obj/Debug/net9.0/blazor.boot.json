@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "ApuntecaDigital.Backend.Blazor.Client",
   "resources": {
-    "hash": "sha256-v5SHK0t78hIwaP1C7Vk0TP3W+2mkOcsfdEPHUYu/KUs=",
+    "hash": "sha256-JGwQwqCyD8V1ezeUklDqIX/zkSNTdk/IE88oJv361S0=",
     "fingerprinting": {
       "Ardalis.GuardClauses.leqc9cxdo1.wasm": "Ardalis.GuardClauses.wasm",
       "Ardalis.Result.wq9tstwtnx.wasm": "Ardalis.Result.wasm",
@@ -60,6 +60,7 @@
       "Microsoft.SqlServer.Server.yamodpu5qp.wasm": "Microsoft.SqlServer.Server.wasm",
       "Microsoft.Win32.SystemEvents.asbyu30enw.wasm": "Microsoft.Win32.SystemEvents.wasm",
       "MimeKit.psndedmim7.wasm": "MimeKit.wasm",
+      "Radzen.Blazor.988ucmraj8.wasm": "Radzen.Blazor.wasm",
       "SQLitePCLRaw.batteries_v2.3v5whd3evz.wasm": "SQLitePCLRaw.batteries_v2.wasm",
       "SQLitePCLRaw.core.1iu403apcu.wasm": "SQLitePCLRaw.core.wasm",
       "SQLitePCLRaw.provider.e_sqlite3.uxqvbkxd4r.wasm": "SQLitePCLRaw.provider.e_sqlite3.wasm",
@@ -247,16 +248,16 @@
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "ApuntecaDigital.Backend.Core.ggp378hioe.wasm": "ApuntecaDigital.Backend.Core.wasm",
-      "ApuntecaDigital.Backend.Infrastructure.adbyoy9l6m.wasm": "ApuntecaDigital.Backend.Infrastructure.wasm",
-      "ApuntecaDigital.Backend.UseCases.o7laq5nuo0.wasm": "ApuntecaDigital.Backend.UseCases.wasm",
-      "ApuntecaDigital.Backend.Infrastructure.sjcfcbgw1s.pdb": "ApuntecaDigital.Backend.Infrastructure.pdb",
-      "ApuntecaDigital.Backend.UseCases.5zb8ve1gyd.pdb": "ApuntecaDigital.Backend.UseCases.pdb",
-      "ApuntecaDigital.Backend.Core.crd8dxi8mw.pdb": "ApuntecaDigital.Backend.Core.pdb",
-      "dotnet.native.xawtd3sbwo.wasm": "dotnet.native.wasm",
+      "ApuntecaDigital.Backend.Core.7c2m9jo8gn.wasm": "ApuntecaDigital.Backend.Core.wasm",
+      "ApuntecaDigital.Backend.Infrastructure.16pxedhc00.wasm": "ApuntecaDigital.Backend.Infrastructure.wasm",
+      "ApuntecaDigital.Backend.UseCases.wyjfvnbnb5.wasm": "ApuntecaDigital.Backend.UseCases.wasm",
+      "ApuntecaDigital.Backend.Infrastructure.qaiq4yjz9k.pdb": "ApuntecaDigital.Backend.Infrastructure.pdb",
+      "ApuntecaDigital.Backend.UseCases.jlyj5dfq68.pdb": "ApuntecaDigital.Backend.UseCases.pdb",
+      "ApuntecaDigital.Backend.Core.xla9tjkzb3.pdb": "ApuntecaDigital.Backend.Core.pdb",
+      "dotnet.native.wldco70ni8.wasm": "dotnet.native.wasm",
       "dotnet.native.p6gbdodatn.js": "dotnet.native.js",
-      "ApuntecaDigital.Backend.Blazor.Client.lly3gzzozv.wasm": "ApuntecaDigital.Backend.Blazor.Client.wasm",
-      "ApuntecaDigital.Backend.Blazor.Client.6sf4f4sdmd.pdb": "ApuntecaDigital.Backend.Blazor.Client.pdb"
+      "ApuntecaDigital.Backend.Blazor.Client.9t5b8z3grt.wasm": "ApuntecaDigital.Backend.Blazor.Client.wasm",
+      "ApuntecaDigital.Backend.Blazor.Client.htwmqyqx8j.pdb": "ApuntecaDigital.Backend.Blazor.Client.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.p6gbdodatn.js": "sha256-T/zPH4O4hPbr1KknYSVbUJLBxUO3VIudbt1DSETZz7g="
@@ -265,7 +266,7 @@
       "dotnet.runtime.cymp1amu5g.js": "sha256-dCmS9Zx4egtLYSUgTI3R6gMS+Yg8MkzxW1CgEMJKAEw="
     },
     "wasmNative": {
-      "dotnet.native.xawtd3sbwo.wasm": "sha256-Nx77tO6b/BPGi/R3ejKgLAiFo0CWSLJqXZbDwYHcTms="
+      "dotnet.native.wldco70ni8.wasm": "sha256-5CPUHOkZcr0tuZl0lCtiZdzJZ1BFj1XW0uRFSGBdXrw="
     },
     "icu": {
       "icudt_CJK.tjcz0u77k5.dat": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
@@ -334,6 +335,7 @@
       "Microsoft.SqlServer.Server.yamodpu5qp.wasm": "sha256-Fig+5hq00gGQlXAgSnyFlUlWyhlx9f+yPJb4INt3gNc=",
       "Microsoft.Win32.SystemEvents.asbyu30enw.wasm": "sha256-1kUoFxSGzlbndQM4zal3G/YBdouUTf444lDjqhuWALU=",
       "MimeKit.psndedmim7.wasm": "sha256-R0QH4sKojLmr9/vgPnYuI1HSd3nbSBRQj29jEh23bhQ=",
+      "Radzen.Blazor.988ucmraj8.wasm": "sha256-16Y008aO0MOlBdUUSwh2eefy+5tqIdMezlW4blpKM5U=",
       "SQLitePCLRaw.batteries_v2.3v5whd3evz.wasm": "sha256-r5pUQvWwdp1MxZ7qFfD4+L+mh0WmE7DrApFw8tLgXLA=",
       "SQLitePCLRaw.core.1iu403apcu.wasm": "sha256-aT9iJxIXrYsk8FoIIsd6aHViCVRd9BN56E6BlayaAI4=",
       "SQLitePCLRaw.provider.e_sqlite3.uxqvbkxd4r.wasm": "sha256-IqWf9GZE+hQv57kMpvhKmc8Uuo5cD4NOnTGLYFaOhL0=",
@@ -514,16 +516,16 @@
       "WindowsBase.5lai2eowco.wasm": "sha256-GcDi5293y2A7oSiFYTbBTUe0d+ISbvgeel4ZNd8KkPM=",
       "mscorlib.wzkfrp7u5k.wasm": "sha256-9PjsU0gaxxz5Vyw++p9DeYUWLsaXbaMS2RbX6wmTUmk=",
       "netstandard.d82br99ghv.wasm": "sha256-DS8keXxU4eQpa1kIoiFxOA2Ii2g9hoNWSaVi8F8AnIE=",
-      "ApuntecaDigital.Backend.Core.ggp378hioe.wasm": "sha256-YEU0xlc+QnPFREw/wTYDCLyVXwKxUyKcd7KBcDewMRI=",
-      "ApuntecaDigital.Backend.Infrastructure.adbyoy9l6m.wasm": "sha256-Dh6KQTGegso3OO2r8lVNqqDljfLSKkF5IRpY8XuZipw=",
-      "ApuntecaDigital.Backend.UseCases.o7laq5nuo0.wasm": "sha256-HPg64U47ySX5WMHXnaL22gXylYwAIrcM/6qIeviIEdE=",
-      "ApuntecaDigital.Backend.Blazor.Client.lly3gzzozv.wasm": "sha256-F4JaUEUt+ge9V2LQFQPgQPfzkxj72FlqSIDuHF07ARA="
+      "ApuntecaDigital.Backend.Core.7c2m9jo8gn.wasm": "sha256-Vwrov0OrZzg7XTRuAXGJnbwzqj95LfRBtr5HWU3AeQ4=",
+      "ApuntecaDigital.Backend.Infrastructure.16pxedhc00.wasm": "sha256-V9BrgQy3PlCqRH+VuBTGyUhqLfo389WIlZ7sU673PRI=",
+      "ApuntecaDigital.Backend.UseCases.wyjfvnbnb5.wasm": "sha256-2L3mj8OYI3g8h8Nw/CjIUpMAisIcdTzOGTmt9zaWUrs=",
+      "ApuntecaDigital.Backend.Blazor.Client.9t5b8z3grt.wasm": "sha256-02lGaXUXh53gvtHPWujOwGE4phFFOWiVwJHA6KHXSI0="
     },
     "pdb": {
-      "ApuntecaDigital.Backend.Infrastructure.sjcfcbgw1s.pdb": "sha256-uHriRVu5HlbhdFZdAllUfhHfpQ9GUzDVC/anLA1cyqU=",
-      "ApuntecaDigital.Backend.UseCases.5zb8ve1gyd.pdb": "sha256-oXVu/RXefER1ZAfjw8Z6jHh4QiZUgQcr1qt8UiHIUzU=",
-      "ApuntecaDigital.Backend.Core.crd8dxi8mw.pdb": "sha256-WJfWbpIWKsuKUowPC0Dy/82sZCHpHDIeHGRHvKP3E/Y=",
-      "ApuntecaDigital.Backend.Blazor.Client.6sf4f4sdmd.pdb": "sha256-Gti44F9jj5j4aQHjT9Eo7nLJzBmFDcer7MYztx0MYg4="
+      "ApuntecaDigital.Backend.Infrastructure.qaiq4yjz9k.pdb": "sha256-Ihvtwpx+/Icg9GLs0pqtC/IwasxhKdETH3Kg7xOoHbQ=",
+      "ApuntecaDigital.Backend.UseCases.jlyj5dfq68.pdb": "sha256-5x6jDEqIrIF6BPYVdTr2NSaZF4dD3q2hJsjDOP6Si7k=",
+      "ApuntecaDigital.Backend.Core.xla9tjkzb3.pdb": "sha256-9QYP6nNxoUxzW2PvZWid0glCxvGVBKKSR5216AFnfkk=",
+      "ApuntecaDigital.Backend.Blazor.Client.htwmqyqx8j.pdb": "sha256-pVGmqp44R5Bf0XwPOnY+bpOXDg8bwWtFtnipHuiwZ7c="
     }
   },
   "cacheBootResources": true,

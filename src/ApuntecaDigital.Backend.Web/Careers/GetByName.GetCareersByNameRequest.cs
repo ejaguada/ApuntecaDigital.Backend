@@ -1,4 +1,4 @@
-﻿namespace ApuntecaDigital.Backend.Web.Careers;
+namespace ApuntecaDigital.Backend.Web.Careers;
 
 public class GetCareersByNameRequest
 {

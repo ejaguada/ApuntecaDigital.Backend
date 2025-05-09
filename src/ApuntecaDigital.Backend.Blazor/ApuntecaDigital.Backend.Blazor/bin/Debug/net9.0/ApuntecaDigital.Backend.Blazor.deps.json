@@ -11,7 +11,8 @@
           "ApuntecaDigital.Backend.Blazor.Client": "1.0.0",
           "ApuntecaDigital.Backend.Infrastructure": "1.0.0",
           "ApuntecaDigital.Backend.UseCases": "1.0.0",
-          "Microsoft.AspNetCore.Components.WebAssembly.Server": "9.0.4"
+          "Microsoft.AspNetCore.Components.WebAssembly.Server": "9.0.4",
+          "Radzen.Blazor": "7.0.2"
         },
         "runtime": {
           "ApuntecaDigital.Backend.Blazor.dll": {}
@@ -739,6 +740,18 @@
           }
         }
       },
+      "Radzen.Blazor/7.0.2": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "9.0.4",
+          "Microsoft.AspNetCore.Components.Web": "9.0.4"
+        },
+        "runtime": {
+          "lib/net9.0/Radzen.Blazor.dll": {
+            "assemblyVersion": "7.0.2.0",
+            "fileVersion": "7.0.2.0"
+          }
+        }
+      },
       "SQLite/3.13.0": {
         "runtimeTargets": {
           "runtimes/linux-x64/native/libsqlite3.so": {
@@ -1090,7 +1103,8 @@
         "dependencies": {
           "ApuntecaDigital.Backend.Infrastructure": "1.0.0",
           "ApuntecaDigital.Backend.UseCases": "1.0.0",
-          "Microsoft.AspNetCore.Components.WebAssembly": "9.0.4"
+          "Microsoft.AspNetCore.Components.WebAssembly": "9.0.4",
+          "Radzen.Blazor": "7.0.2"
         },
         "runtime": {
           "ApuntecaDigital.Backend.Blazor.Client.dll": {
@@ -1615,6 +1629,13 @@
       "sha512": "sha512-DZXXMZzmAABDxFhOSMb6SE8KKxcRd/sk1E6aJTUE5ys2FWOQhznYV2Gl3klaaSfqKn27hQ32haqquH1J8Z6kJw==",
       "path": "mimekit/4.9.0",
       "hashPath": "mimekit.4.9.0.nupkg.sha512"
+    },
+    "Radzen.Blazor/7.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Z59NDMbXlYTOO99md4kmnWsUBJveIunBviQk5WV+H0Uc6RJFeRdgxVEOfDkvKqHw3aBjht9aroQ2ztET4Xg6Aw==",
+      "path": "radzen.blazor/7.0.2",
+      "hashPath": "radzen.blazor.7.0.2.nupkg.sha512"
     },
     "SQLite/3.13.0": {
       "type": "package",

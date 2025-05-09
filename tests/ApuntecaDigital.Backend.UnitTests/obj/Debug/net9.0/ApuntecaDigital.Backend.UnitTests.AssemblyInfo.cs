@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApuntecaDigital.Backend.UnitTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a1803d6db223d51c184b361d909efdc3330bb1da")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8df1a00ca84d6af85b6f8b14f23b704348b0fcf7")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApuntecaDigital.Backend.UnitTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApuntecaDigital.Backend.UnitTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
