@@ -11,13 +11,7 @@
 
 <PageTitle>Careers Search</PageTitle>
 
-<RadzenCard class="rz-mb-3">
-    <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Normal" Wrap="FlexWrap.NoWrap">
-        <RadzenTextBox @bind-Value="name" Placeholder="Search careers..." Style="width: 100%;" @oninput="OnInputChange"
-            @onkeypress="OnKeyPress" />
-        <RadzenButton Text="ADD" Click="SearchCareers" />
-    </RadzenStack>
-</RadzenCard>
+
 
 
 @if (isLoading)
@@ -36,8 +30,16 @@ else if (careers == null || !careers.Any())
             : $"No careers found matching '{name}'. Please try a different search term.")
 </div>
 }
-else
+else if (careers.Count > 10000)
 {
+    <RadzenCard class="rz-mb-3">
+        <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Normal" Wrap="FlexWrap.NoWrap">
+            <RadzenTextBox @bind-Value="name" Placeholder="Search careers..." Style="width: 100%;" @oninput="OnInputChange"
+                @onkeypress="OnKeyPress" />
+            <RadzenButton Text="ADD" Click="SearchCareers" />
+        </RadzenStack>
+    </RadzenCard>
+
     <RadzenCard>
         <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Normal" Wrap="FlexWrap.NoWrap">
             <RadzenDataGrid @ref="grid" AllowFiltering="true" AllowColumnResize="true" AllowAlternatingRows="false"
@@ -56,14 +58,61 @@ else
         </RadzenStack>
     </RadzenCard>
 }
+else
+{
+    <RadzenDataGrid @ref="grid" AllowAlternatingRows="false" AllowFiltering="true" AllowPaging="true" PageSize="5"
+        Data="@careers" AllowSorting="true" EditMode="@editMode" TItem="Career" RowUpdate="@OnUpdateRow" RowCreate="@OnCreateRow"
+        Sort="@Reset" Page="@Reset" Filter="@Reset" ColumnWidth="200px">
+        <HeaderTemplate>
+            <RadzenButton ButtonStyle="ButtonStyle.Success" Icon="add_circle" Text="Add New Career" Click="@InsertRow"
+                Disabled="@(editMode == DataGridEditMode.Single && careersToInsert.Count() > 0)" />
+        </HeaderTemplate>
+        <Columns>
+            <RadzenDataGridColumn Property="Id" Title="Career ID" Width="120px" Frozen="true" />
+            <RadzenDataGridColumn Property="@nameof(Career.Name)" Title="Career Name">
+                <EditTemplate Context="career">
+                    <RadzenTextBox @bind-Value="career.Name" Style="width:200px; display: block" Name="CareerName"
+                        aria-label="Enter career name" />
+                    <RadzenRequiredValidator Text="CareerName is required" Component="CareerName" Popup="true" />
+                </EditTemplate>
+            </RadzenDataGridColumn>
+            <RadzenDataGridColumn Context="career" Filterable="false" Sortable="false" TextAlign="TextAlign.Right"
+                Frozen="true" FrozenPosition="FrozenColumnPosition.Right">
+                <Template Context="career">
+                    <RadzenButton Icon="add_circle" ButtonStyle="ButtonStyle.Success" Variant="Variant.Flat"
+                        Size="ButtonSize.Medium" Shade="Shade.Lighter" Click="@(() => InsertAfterRow(career))"
+                        title="Add new row after this row"
+                        Disabled="@(editMode == DataGridEditMode.Single && careersToInsert.Count() > 0)" />
+                    <RadzenButton Icon="edit" ButtonStyle="ButtonStyle.Light" Variant="Variant.Flat"
+                        Size="ButtonSize.Medium" class="rz-my-1 rz-ms-1" Click="@(args => EditRow(career))"
+                        @onclick:stopPropagation="true" />
+                    <RadzenButton Icon="delete" ButtonStyle="ButtonStyle.Danger" Variant="Variant.Flat"
+                        Size="ButtonSize.Medium" Shade="Shade.Lighter" class="rz-my-1 rz-ms-1"
+                        Click="@(args => DeleteRow(career))" @onclick:stopPropagation="true" />
+                </Template>
+                <EditTemplate Context="career">
+                    <RadzenButton Icon="check" ButtonStyle="ButtonStyle.Success" Variant="Variant.Flat"
+                        Size="ButtonSize.Medium" Click="@((args) => SaveRow(career))" aria-label="Save" />
+                    <RadzenButton Icon="close" ButtonStyle="ButtonStyle.Light" Variant="Variant.Flat"
+                        Size="ButtonSize.Medium" class="rz-my-1 rz-ms-1" Click="@((args) => CancelEdit(career))"
+                        aria-label="Cancel" />
+                    <RadzenButton Icon="delete" ButtonStyle="ButtonStyle.Danger" Variant="Variant.Flat"
+                        Size="ButtonSize.Medium" Shade="Shade.Lighter" class="rz-my-1 rz-ms-1"
+                        Click="@(args => DeleteRow(career))" aria-label="Delete" />
+                </EditTemplate>
+            </RadzenDataGridColumn>
+        </Columns>
+    </RadzenDataGrid>
+}
 
 @code {
-    RadzenDataGrid<Career>? grid = null;
+    RadzenDataGrid<Career>? grid = new RadzenDataGrid<Career>();
     private List<Career> careers = new();
     private bool isLoading = false;
     private string name = string.Empty;
     private System.Threading.Timer? debounceTimer;
-
+    DataGridEditMode editMode = DataGridEditMode.Single;
+    List<Career> careersToInsert = new List<Career>();
 
     protected override async Task OnInitializedAsync()
     {
@@ -137,5 +186,96 @@ else
                 Duration = 4000
             });
         }
+    }
+
+    async Task OnUpdateRow(Career career)
+    {
+        if (career != null)
+        {
+            await CareerService.UpdateCareerAsync(career);
+        }
+    }
+
+    async Task OnCreateRow(Career career)
+    {
+        if (career != null)
+        {
+            await CareerService.CreateCareerAsync(career);
+            careersToInsert.Remove(career);
+            if (grid != null) await grid.Reload();
+        }
+    }
+
+    void Reset()
+    {
+        careersToInsert.Clear();
+    }
+
+    void Reset(Career career)
+    {
+        careersToInsert.Remove(career);
+    }
+
+    async Task InsertRow()
+    {
+        if (grid == null || !grid.IsValid) return;
+
+        if (editMode == DataGridEditMode.Single)
+        {
+            Reset();
+        }
+
+        var career = new Career();
+        careersToInsert.Add(career);
+        await grid.InsertRow(career);
+    }
+
+    async Task InsertAfterRow(Career career)
+    {
+        if (grid == null || !grid.IsValid) return;
+
+        if (editMode == DataGridEditMode.Single)
+        {
+            Reset();
+        }
+
+        var newCareer = new Career();
+        careersToInsert.Add(newCareer);
+        await grid.InsertRow(newCareer);
+    }
+
+    async Task EditRow(Career career)
+    {
+        if (grid == null || !grid.IsValid) return;
+
+        await grid.EditRow(career);
+    }
+
+    async Task SaveRow(Career career)
+    {
+        if (grid == null || !grid.IsValid) return;
+
+        await grid.UpdateRow(career);
+    }
+
+    void CancelEdit(Career career)
+    {
+        Reset(career);
+
+        grid?.CancelEditRow(career);
+    }
+
+    async Task DeleteRow(Career career)
+    {
+        if (grid == null || !grid.IsValid)
+        {
+            grid?.CancelEditRow(career);
+        }
+
+        Reset(career);
+
+        await CareerService.DeleteCareerAsync(career.Id);
+
+        if (grid != null) await grid.Reload();
     }
 }

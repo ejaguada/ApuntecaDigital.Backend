@@ -11,9 +11,14 @@
 }
 else
 {
-    <div>
-        <h4>@career.Name</h4>
-    </div>
+    <RadzenDataGrid @ref="careersGrid" AllowAlternatingRows="false" AllowFiltering="true" AllowPaging="true" PageSize="5"
+        AllowSorting="true" EditMode="@editMode" TItem="Career" RowUpdate="@OnUpdateRow" RowCreate="@OnCreateRow"
+        Sort="@Reset" Page="@Reset" Filter="@Reset" ColumnWidth="200px">
+        <HeaderTemplate>
+            <RadzenButton ButtonStyle="ButtonStyle.Success" Icon="add_circle" Text="Add New Career" Click="@InsertRow"
+                Disabled="@(editMode == DataGridEditMode.Single && careersToInsert.Count() > 0)" />
+        </HeaderTemplate>
+    </RadzenDataGrid>
 }
 
 @code {
@@ -21,6 +26,9 @@ else
     public int CareerId { get; set; }
     [Parameter]
     public Career? career { get; set; }
+    RadzenDataGrid<Career>? careersGrid;
+    DataGridEditMode editMode = DataGridEditMode.Single;
+    List<Career> careersToInsert = new List<Career>();
 
     protected override async Task OnInitializedAsync()
     {
@@ -41,4 +49,41 @@ else
             career = await CareerService.GetCareerByIdAsync(CareerId);
         }
     }
+
+    async Task OnUpdateRow(Career career)
+    {
+        if (career != null)
+        {
+            career.Id = CareerId;
+            await CareerService.UpdateCareerAsync(career);
+        }
+    }
+
+    async Task OnCreateRow(Career career)
+    {
+        if (career != null)
+        {
+            career.Id = CareerId;
+            await CareerService.CreateCareerAsync(career);
+        }
+    }
+
+    void Reset()
+    {
+        careersGrid?.Reload();
+    }
+    async Task InsertRow()
+    {
+        if (careersGrid == null || !careersGrid.IsValid) return;
+
+        if (editMode == DataGridEditMode.Single)
+        {
+            Reset();
+        }
+
+        var career = new Career();
+        careersToInsert.Add(career);
+        await careersGrid.InsertRow(career);
+    }
+
 }

@@ -47,4 +47,46 @@ public class CareerService
             return null;
         }
     }
+
+    public async Task<bool> CreateCareerAsync(Career career)
+    {
+        try
+        {
+            var response = await _httpClient.PostAsJsonAsync("/careers", new CareerDTO(0, career.Name));
+            return response.IsSuccessStatusCode;
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine($"Error creating career: {ex.Message}");
+            return false;
+        }
+    }
+
+    public async Task<bool> UpdateCareerAsync(Career career)
+    {
+        try
+        {
+            var response = await _httpClient.PutAsJsonAsync($"/careers/{career.Id}", new CareerDTO(career.Id, career.Name));
+            return response.IsSuccessStatusCode;
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine($"Error updating career: {ex.Message}");
+            return false;
+        }
+    }
+
+    public async Task<bool> DeleteCareerAsync(int id)
+    {
+        try
+        {
+            var response = await _httpClient.DeleteAsync($"/careers/{id}");
+            return response.IsSuccessStatusCode;
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine($"Error deleting career with id {id}: {ex.Message}");
+            return false;
+        }
+    }
 }
