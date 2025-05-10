@@ -7,7 +7,8 @@
 @inject ContextMenuService ContextMenuService
 @inject TooltipService TooltipService
 @inject NotificationService NotificationService
-
+@using Radzen
+@using Radzen.Blazor
 
 <PageTitle>Careers Search</PageTitle>
 
@@ -30,39 +31,11 @@ else if (careers == null || !careers.Any())
             : $"No careers found matching '{name}'. Please try a different search term.")
 </div>
 }
-else if (careers.Count > 10000)
-{
-    <RadzenCard class="rz-mb-3">
-        <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Normal" Wrap="FlexWrap.NoWrap">
-            <RadzenTextBox @bind-Value="name" Placeholder="Search careers..." Style="width: 100%;" @oninput="OnInputChange"
-                @onkeypress="OnKeyPress" />
-            <RadzenButton Text="ADD" Click="SearchCareers" />
-        </RadzenStack>
-    </RadzenCard>
-
-    <RadzenCard>
-        <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Normal" Wrap="FlexWrap.NoWrap">
-            <RadzenDataGrid @ref="grid" AllowFiltering="true" AllowColumnResize="true" AllowAlternatingRows="false"
-                AllowSorting="true" Data="@careers" TItem="Career" ColumnWidth="300px" FilterMode="FilterMode.Advanced"
-                AllowPaging="true" PageSize="5">
-                <Columns>
-                    <RadzenDataGridColumn TItem="Career" Property="Id" Title="ID" Width="70px" />
-                    <RadzenDataGridColumn TItem="Career" Property="Name" Title="Career Name" Width="200px" />
-                    <RadzenDataGridColumn TItem="Career" Title="Actions" Width="100px">
-                        <Template Context="context">
-                            <RadzenButton Text="Edit" Click="@(() => OnEditClick(context.Id))" />
-                        </Template>
-                    </RadzenDataGridColumn>
-                </Columns>
-            </RadzenDataGrid>
-        </RadzenStack>
-    </RadzenCard>
-}
 else
 {
     <RadzenDataGrid @ref="grid" AllowAlternatingRows="false" AllowFiltering="true" AllowPaging="true" PageSize="5"
-        Data="@careers" AllowSorting="true" EditMode="@editMode" TItem="Career" RowUpdate="@OnUpdateRow" RowCreate="@OnCreateRow"
-        Sort="@Reset" Page="@Reset" Filter="@Reset" ColumnWidth="200px">
+        Data="@careers" AllowSorting="true" EditMode="@editMode" TItem="Career" RowUpdate="@OnUpdateRow"
+        RowCreate="@OnCreateRow" Sort="@Reset" Page="@Reset" Filter="@Reset" ColumnWidth="200px">
         <HeaderTemplate>
             <RadzenButton ButtonStyle="ButtonStyle.Success" Icon="add_circle" Text="Add New Career" Click="@InsertRow"
                 Disabled="@(editMode == DataGridEditMode.Single && careersToInsert.Count() > 0)" />
@@ -71,20 +44,18 @@ else
             <RadzenDataGridColumn Property="Id" Title="Career ID" Width="120px" Frozen="true" />
             <RadzenDataGridColumn Property="@nameof(Career.Name)" Title="Career Name">
                 <EditTemplate Context="career">
-                    <RadzenTextBox @bind-Value="career.Name" Style="width:200px; display: block" Name="CareerName"
-                        aria-label="Enter career name" />
+                    <RadzenTextBox @onkeyup="@(args => OnKeyPress(args, career))"
+                        @oninput="@(args => OnInputChange(args, career))" @bind-Value="career.Name"
+                        Style="width:200px; display: block" Name="CareerName" aria-label="Enter career name" />
                     <RadzenRequiredValidator Text="CareerName is required" Component="CareerName" Popup="true" />
                 </EditTemplate>
             </RadzenDataGridColumn>
             <RadzenDataGridColumn Context="career" Filterable="false" Sortable="false" TextAlign="TextAlign.Right"
                 Frozen="true" FrozenPosition="FrozenColumnPosition.Right">
                 <Template Context="career">
-                    <RadzenButton Icon="add_circle" ButtonStyle="ButtonStyle.Success" Variant="Variant.Flat"
-                        Size="ButtonSize.Medium" Shade="Shade.Lighter" Click="@(() => InsertAfterRow(career))"
-                        title="Add new row after this row"
-                        Disabled="@(editMode == DataGridEditMode.Single && careersToInsert.Count() > 0)" />
                     <RadzenButton Icon="edit" ButtonStyle="ButtonStyle.Light" Variant="Variant.Flat"
-                        Size="ButtonSize.Medium" class="rz-my-1 rz-ms-1" Click="@(args => EditRow(career))"
+                        Size="ButtonSize.Medium" class="rz-my-1 rz-ms-1"
+                        Click="@(async args => { await EditRow(career); typeOfOperation = "Update"; })"
                         @onclick:stopPropagation="true" />
                     <RadzenButton Icon="delete" ButtonStyle="ButtonStyle.Danger" Variant="Variant.Flat"
                         Size="ButtonSize.Medium" Shade="Shade.Lighter" class="rz-my-1 rz-ms-1"
@@ -113,6 +84,7 @@ else
     private System.Threading.Timer? debounceTimer;
     DataGridEditMode editMode = DataGridEditMode.Single;
     List<Career> careersToInsert = new List<Career>();
+    private string typeOfOperation = "Create";
 
     protected override async Task OnInitializedAsync()
     {
@@ -255,7 +227,19 @@ else
     {
         if (grid == null || !grid.IsValid) return;
 
-        await grid.UpdateRow(career);
+        if (typeOfOperation == "Create")
+        {
+            await OnCreateRow(career);
+            await LoadCareers();
+            StateHasChanged();
+        }
+        else if (typeOfOperation == "Update")
+        {
+            await OnUpdateRow(career);
+            await LoadCareers();
+            typeOfOperation = "Create";
+            StateHasChanged();
+        }
     }
 
     void CancelEdit(Career career)
@@ -276,6 +260,35 @@ else
 
         await CareerService.DeleteCareerAsync(career.Id);
 
+        await LoadCareers();
+
         if (grid != null) await grid.Reload();
+
+        StateHasChanged();
+    }
+
+    private async Task OnKeyPress(KeyboardEventArgs e, Career career)
+    {
+        if (e.Key == "Enter" && typeOfOperation == "Create")
+        {
+            await OnCreateRow(career);
+            await LoadCareers();
+            StateHasChanged();
+        }
+        else if (e.Key == "Enter" && typeOfOperation == "Update")
+        {
+            await OnUpdateRow(career);
+            await LoadCareers();
+            typeOfOperation = "Create";
+            StateHasChanged();
+        }
+    }
+
+    private void OnInputChange(ChangeEventArgs e, Career career)
+    {
+        if (career != null)
+        {
+            career.Name = e.Value?.ToString() ?? string.Empty;
+        }
     }
 }
