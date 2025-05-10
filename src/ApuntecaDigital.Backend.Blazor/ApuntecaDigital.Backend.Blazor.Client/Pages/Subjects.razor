@@ -1,0 +1,327 @@
+@page "/subjects"
+@rendermode InteractiveAuto
+@using ApuntecaDigital.Backend.Blazor.Client.Models
+@using ApuntecaDigital.Backend.Blazor.Client.Services
+@inject CareerService CareerService
+@inject ClassService ClassService
+@inject SubjectService SubjectService
+@inject DialogService DialogService
+@inject ContextMenuService ContextMenuService
+@inject TooltipService TooltipService
+@inject NotificationService NotificationService
+@using Radzen
+@using Radzen.Blazor
+
+<PageTitle>Classes Search</PageTitle>
+
+@* CSS styles for the spinner and RadzenDataGrid *@
+<style>
+    .ui-spinner-button {
+        display: none;
+    }
+</style>
+
+
+@if (isLoading)
+{
+    <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+}
+else
+{
+    <RadzenDataGrid @ref="grid" AllowAlternatingRows="false" AllowFiltering="true" AllowPaging="true" PageSize="5"
+        Data="@subjects" AllowSorting="true" EditMode="@editMode" TItem="Subject" RowUpdate="@OnUpdateRow"
+        RowCreate="@OnCreateRow" Sort="@Reset" Page="@Reset" Filter="@Reset" ColumnWidth="200px">
+        <HeaderTemplate>
+            <RadzenButton ButtonStyle="ButtonStyle.Success" Icon="add_circle" Text="Add New Subject" Click="@InsertRow"
+                Disabled="@(editMode == DataGridEditMode.Single && subjectsToInsert.Count() > 0)" />
+        </HeaderTemplate>
+        <Columns>
+            <RadzenDataGridColumn Property="Id" Title="Subject ID" Width="120px" Frozen="true" />
+            <RadzenDataGridColumn Property="@nameof(Subject.Name)" Title="Subject Name">
+                <EditTemplate Context="subjectObj">
+                    <RadzenTextBox @onkeyup="@(args => OnKeyPress(args, subjectObj))"
+                        @oninput="@(args => OnInputChange(args, subjectObj))" @bind-Value="subjectObj.Name"
+                        Style="width:200px; display: block" Name="SubjectName" aria-label="Enter subject name" />
+                    <RadzenRequiredValidator Text="SubjectName is required" Component="SubjectName" Popup="true" />
+                </EditTemplate>
+            </RadzenDataGridColumn>
+            <RadzenDataGridColumn Property="@nameof(Subject.ClassId)" Title="Class">
+                <EditTemplate Context="subjectObj">
+                    <RadzenDropDown TValue="int" Data="@classes" TextProperty="Name" ValueProperty="Id"
+                        @bind-Value="subjectObj.ClassId" Style="width:200px;" Name="ClassDropdown"
+                        Placeholder="Select a class" />
+                    <RadzenRequiredValidator Text="Class is required" Component="ClassDropdown" Popup="true" />
+                </EditTemplate>
+                <Template Context="subjectObj">
+                    @classes.FirstOrDefault(c => c.Id == subjectObj.ClassId)?.Name
+                </Template>
+            </RadzenDataGridColumn>
+            <RadzenDataGridColumn Context="subjectObj" Filterable="false" Sortable="false" TextAlign="TextAlign.Right"
+                Frozen="true" FrozenPosition="FrozenColumnPosition.Right">
+                <Template Context="subjectObj">
+                    <RadzenButton Icon="edit" ButtonStyle="ButtonStyle.Light" Variant="Variant.Flat"
+                        Size="ButtonSize.Medium" class="rz-my-1 rz-ms-1"
+                        Click="@(async args => { await EditRow(subjectObj); typeOfOperation = "Update"; })"
+                        @onclick:stopPropagation="true" />
+                    <RadzenButton Icon="delete" ButtonStyle="ButtonStyle.Danger" Variant="Variant.Flat"
+                        Size="ButtonSize.Medium" Shade="Shade.Lighter" class="rz-my-1 rz-ms-1"
+                        Click="@(args => DeleteRow(subjectObj))" @onclick:stopPropagation="true" />
+                </Template>
+                <EditTemplate Context="subjectObj">
+                    <RadzenButton Icon="check" ButtonStyle="ButtonStyle.Success" Variant="Variant.Flat"
+                        Size="ButtonSize.Medium" Click="@((args) => SaveRow(subjectObj))" aria-label="Save" />
+                    <RadzenButton Icon="close" ButtonStyle="ButtonStyle.Light" Variant="Variant.Flat"
+                        Size="ButtonSize.Medium" class="rz-my-1 rz-ms-1" Click="@((args) => CancelEdit(subjectObj))"
+                        aria-label="Cancel" />
+                    <RadzenButton Icon="delete" ButtonStyle="ButtonStyle.Danger" Variant="Variant.Flat"
+                        Size="ButtonSize.Medium" Shade="Shade.Lighter" class="rz-my-1 rz-ms-1"
+                        Click="@(args => DeleteRow(subjectObj))" aria-label="Delete" />
+                </EditTemplate>
+            </RadzenDataGridColumn>
+        </Columns>
+    </RadzenDataGrid>
+}
+
+@code {
+    RadzenDataGrid<Subject>? grid = new RadzenDataGrid<Subject>();
+    private List<Subject> subjects = new();
+    private bool isLoading = false;
+    private string name = string.Empty;
+    private System.Threading.Timer? debounceTimer;
+    DataGridEditMode editMode = DataGridEditMode.Single;
+    List<Subject> subjectsToInsert = new List<Subject>();
+    private string typeOfOperation = "Create";
+    private List<Career> careers = new();
+    private List<Class> classes = new();
+    private List<Class> classesToInsert = new List<Class>();
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadClasses();
+        await LoadSubjects();
+    }
+    private async Task LoadCareers()
+    {
+        try
+        {
+            careers = await CareerService.GetCareersAsync();
+        }
+        catch (Exception ex)
+        {
+            NotificationService.Notify(new NotificationMessage
+            {
+                Severity = NotificationSeverity.Error,
+                Summary = "Error",
+                Detail = $"Failed to load careers: {ex.Message}",
+                Duration = 4000
+            });
+        }
+    }
+    private async Task LoadClasses()
+    {
+        isLoading = true;
+        try
+        {
+            classes = await ClassService.GetClassesAsync(name);
+        }
+        catch (Exception ex)
+        {
+            NotificationService.Notify(new NotificationMessage
+            {
+                Severity = NotificationSeverity.Error,
+                Summary = "Error",
+                Detail = $"Failed to load classes: {ex.Message}",
+                Duration = 4000
+            });
+        }
+        finally
+        {
+            isLoading = false;
+            StateHasChanged();
+        }
+    }
+
+    private async Task LoadSubjects()
+    {
+        isLoading = true;
+        try
+        {
+            subjects = await SubjectService.GetSubjectsAsync(name);
+        }
+        catch (Exception ex)
+        {
+            NotificationService.Notify(new NotificationMessage
+            {
+                Severity = NotificationSeverity.Error,
+                Summary = "Error",
+                Detail = $"Failed to load subjects: {ex.Message}",
+                Duration = 4000
+            });
+        }
+        finally
+        {
+            isLoading = false;
+            StateHasChanged();
+        }
+    }
+
+    private async Task SearchSubjects()
+    {
+        await LoadSubjects();
+    }
+
+    private void OnInputChange(ChangeEventArgs e)
+    {
+        name = e.Value?.ToString() ?? string.Empty;
+
+        // Debounce the search to avoid excessive calls
+        debounceTimer?.Dispose();
+        debounceTimer = new System.Threading.Timer(async _ =>
+        {
+            await InvokeAsync(SearchSubjects);
+        }, null, 500, Timeout.Infinite);
+    }
+
+    private async Task OnKeyPress(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+        {
+            await SearchSubjects();
+        }
+    }
+
+    async Task OnUpdateRow(Subject subjectObj)
+    {
+        if (subjectObj != null)
+        {
+            await SubjectService.UpdateSubjectAsync(subjectObj);
+        }
+    }
+
+    async Task OnCreateRow(Subject subjectObj)
+    {
+        if (subjectObj != null)
+        {
+            await SubjectService.CreateSubjectAsync(subjectObj);
+            subjectsToInsert.Remove(subjectObj);
+            if (grid != null) await grid.Reload();
+        }
+    }
+
+    void Reset()
+    {
+        subjectsToInsert.Clear();
+    }
+
+    void Reset(Subject subjectObj)
+    {
+        subjectsToInsert.Remove(subjectObj);
+    }
+
+    async Task InsertRow()
+    {
+        if (grid == null || !grid.IsValid) return;
+
+        if (editMode == DataGridEditMode.Single)
+        {
+            Reset();
+        }
+
+        var subjectObj = new Subject();
+        subjectsToInsert.Add(subjectObj);
+        await grid.InsertRow(subjectObj);
+    }
+
+    async Task InsertAfterRow(Subject subjectObj)
+    {
+        if (grid == null || !grid.IsValid) return;
+
+        if (editMode == DataGridEditMode.Single)
+        {
+            Reset();
+        }
+
+        var newSubject = new Subject();
+        subjectsToInsert.Add(newSubject);
+        await grid.InsertRow(newSubject);
+    }
+
+    async Task EditRow(Subject subjectObj)
+    {
+        if (grid == null || !grid.IsValid) return;
+
+        await grid.EditRow(subjectObj);
+    }
+
+    async Task SaveRow(Subject subjectObj)
+    {
+        if (grid == null || !grid.IsValid) return;
+
+        if (typeOfOperation == "Create")
+        {
+            await OnCreateRow(subjectObj);
+            await LoadSubjects();
+            StateHasChanged();
+        }
+        else if (typeOfOperation == "Update")
+        {
+            await OnUpdateRow(subjectObj);
+            await LoadSubjects();
+            typeOfOperation = "Create";
+            StateHasChanged();
+        }
+    }
+
+    void CancelEdit(Subject subjectObj)
+    {
+        Reset(subjectObj);
+
+        grid?.CancelEditRow(subjectObj);
+    }
+
+    async Task DeleteRow(Subject subjectObj)
+    {
+        if (grid == null || !grid.IsValid)
+        {
+            grid?.CancelEditRow(subjectObj);
+        }
+
+        Reset(subjectObj);
+
+        await SubjectService.DeleteSubjectAsync(subjectObj.Id);
+
+        await LoadSubjects();
+
+        if (grid != null) await grid.Reload();
+
+        StateHasChanged();
+    }
+
+    private async Task OnKeyPress(KeyboardEventArgs e, Subject subjectObj)
+    {
+        if (e.Key == "Enter" && typeOfOperation == "Create")
+        {
+            await OnCreateRow(subjectObj);
+            await LoadSubjects();
+            StateHasChanged();
+        }
+        else if (e.Key == "Enter" && typeOfOperation == "Update")
+        {
+            await OnUpdateRow(subjectObj);
+            await LoadSubjects();
+            typeOfOperation = "Create";
+            StateHasChanged();
+        }
+    }
+
+    private void OnInputChange(ChangeEventArgs e, Subject subjectObj)
+    {
+        if (subjectObj != null)
+        {
+            subjectObj.Name = e.Value?.ToString() ?? string.Empty;
+        }
+    }
+}

@@ -31,6 +31,13 @@ builder.Services.AddScoped<ClassService>(sp => {
     return new ClassService(httpClient);
 });
 
+// Register the SubjectService for server-side rendering
+builder.Services.AddScoped<SubjectService>(sp => {
+    var httpClientFactory = sp.GetRequiredService<IHttpClientFactory>();
+    var httpClient = httpClientFactory.CreateClient("ApiClient");
+    return new SubjectService(httpClient);
+});
+
 builder.Services.AddScoped<DialogService>();
 builder.Services.AddScoped<TooltipService>();
 builder.Services.AddScoped<ContextMenuService>();

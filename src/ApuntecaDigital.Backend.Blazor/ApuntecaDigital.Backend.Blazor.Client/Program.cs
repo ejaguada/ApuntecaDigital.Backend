@@ -18,6 +18,7 @@ builder.Services.AddScoped(sp =>
 builder.Services.AddRadzenComponents();
 builder.Services.AddScoped<CareerService>();
 builder.Services.AddScoped<ClassService>();
+builder.Services.AddScoped<SubjectService>();
 builder.Services.AddScoped<DialogService>();
 builder.Services.AddScoped<TooltipService>();
 builder.Services.AddScoped<ContextMenuService>();
