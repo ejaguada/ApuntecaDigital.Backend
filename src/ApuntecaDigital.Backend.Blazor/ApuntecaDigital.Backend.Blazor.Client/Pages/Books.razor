@@ -1,0 +1,343 @@
+@page "/books"
+@rendermode InteractiveAuto
+@using ApuntecaDigital.Backend.Blazor.Client.Models
+@using ApuntecaDigital.Backend.Blazor.Client.Services
+@inject CareerService CareerService
+@inject ClassService ClassService
+@inject SubjectService SubjectService
+@inject DialogService DialogService
+@inject ContextMenuService ContextMenuService
+@inject TooltipService TooltipService
+@inject NotificationService NotificationService
+@inject BookService BookService
+@using Radzen
+@using Radzen.Blazor
+
+<PageTitle>Classes Search</PageTitle>
+
+@* CSS styles for the spinner and RadzenDataGrid *@
+<style>
+    .ui-spinner-button {
+        display: none;
+    }
+</style>
+
+
+@if (isLoading)
+{
+    <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+}
+else
+{
+    <RadzenDataGrid @ref="grid" AllowAlternatingRows="false" AllowFiltering="true" AllowPaging="true" PageSize="5"
+        Data="@books" AllowSorting="true" EditMode="@editMode" TItem="Book" RowUpdate="@OnUpdateRow"
+        RowCreate="@OnCreateRow" Sort="@Reset" Page="@Reset" Filter="@Reset" ColumnWidth="200px">
+        <HeaderTemplate>
+            <RadzenButton ButtonStyle="ButtonStyle.Success" Icon="add_circle" Text="Add New Book" Click="@InsertRow"
+                Disabled="@(editMode == DataGridEditMode.Single && booksToInsert.Count() > 0)" />
+        </HeaderTemplate>
+        <Columns>
+            <RadzenDataGridColumn Property="Id" Title="Book ID" Width="120px" Frozen="true" />
+            <RadzenDataGridColumn Property="@nameof(Book.Title)" Title="Book Title">
+                <EditTemplate Context="bookObj">
+                    <RadzenTextBox @onkeyup="@(args => OnKeyPress(args, bookObj))"
+                        @oninput="@(args => OnInputChange(args, bookObj))" @bind-Value="bookObj.Title"
+                        Style="width:200px; display: block" Name="BookTitle" aria-label="Enter book title" />
+                    <RadzenRequiredValidator Text="BookTitle is required" Component="BookTitle" Popup="true" />
+                </EditTemplate>
+            </RadzenDataGridColumn>
+            <RadzenDataGridColumn Property="@nameof(Book.CareerId)" Title="Career">
+                <EditTemplate Context="bookObj">
+                    <RadzenDropDown TValue="int" Data="@careers" TextProperty="Name" ValueProperty="Id"
+                        @bind-Value="bookObj.CareerId" Style="width:200px;" Name="CareerDropdown"
+                        Placeholder="Select a career" />
+                    <RadzenNumericRangeValidator Component="CareerDropdown" Min="1" Text="Career is required" Popup="true"
+                        Style="position: absolute" />
+                </EditTemplate>
+                <Template Context="bookObj">
+                    @careers.FirstOrDefault(c => c.Id == bookObj.CareerId)?.Name
+                </Template>
+            </RadzenDataGridColumn>
+            <RadzenDataGridColumn Property="@nameof(Book.ClassId)" Title="Class">
+                <EditTemplate Context="bookObj">
+                    <RadzenDropDown TValue="int" Data="@classes" TextProperty="Name" ValueProperty="Id"
+                        @bind-Value="bookObj.ClassId" Style="width:200px;" Name="ClassDropdown"
+                        Placeholder="Select a class" />
+                    <RadzenNumericRangeValidator Component="ClassDropdown" Min="1" Text="Class is required" Popup="true"
+                        Style="position: absolute" />
+                </EditTemplate>
+                <Template Context="bookObj">
+                    @classes.FirstOrDefault(c => c.Id == bookObj.ClassId)?.Name
+                </Template>
+            </RadzenDataGridColumn>
+            <RadzenDataGridColumn Property="@nameof(Book.SubjectId)" Title="Subject">
+                <EditTemplate Context="bookObj">
+                    <RadzenDropDown TValue="int" Data="@subjects" TextProperty="Name" ValueProperty="Id"
+                        @bind-Value="bookObj.SubjectId" Style="width:200px;" Name="SubjectDropdown"
+                        Placeholder="Select a subject" />
+                    <RadzenNumericRangeValidator Component="SubjectDropdown" Min="1" Text="Subject is required" Popup="true"
+                        Style="position: absolute" />
+                </EditTemplate>
+                <Template Context="bookObj">
+                    @subjects.FirstOrDefault(s => s.Id == bookObj.SubjectId)?.Name
+                </Template>
+            </RadzenDataGridColumn>
+            <RadzenDataGridColumn Context="bookObj" Filterable="false" Sortable="false" TextAlign="TextAlign.Right"
+                Frozen="true" FrozenPosition="FrozenColumnPosition.Right">
+                <Template Context="bookObj">
+                    <RadzenButton Icon="edit" ButtonStyle="ButtonStyle.Light" Variant="Variant.Flat"
+                        Size="ButtonSize.Medium" class="rz-my-1 rz-ms-1"
+                        Click="@(async args => { await EditRow(bookObj); typeOfOperation = "Update"; })"
+                        @onclick:stopPropagation="true" />
+                    <RadzenButton Icon="delete" ButtonStyle="ButtonStyle.Danger" Variant="Variant.Flat"
+                        Size="ButtonSize.Medium" Shade="Shade.Lighter" class="rz-my-1 rz-ms-1"
+                        Click="@(args => DeleteRow(bookObj))" @onclick:stopPropagation="true" />
+                </Template>
+                <EditTemplate Context="bookObj">
+                    <RadzenButton Icon="check" ButtonStyle="ButtonStyle.Success" Variant="Variant.Flat"
+                        Size="ButtonSize.Medium" Click="@((args) => SaveRow(bookObj))" aria-label="Save" />
+                    <RadzenButton Icon="close" ButtonStyle="ButtonStyle.Light" Variant="Variant.Flat"
+                        Size="ButtonSize.Medium" class="rz-my-1 rz-ms-1" Click="@((args) => CancelEdit(bookObj))"
+                        aria-label="Cancel" />
+                    <RadzenButton Icon="delete" ButtonStyle="ButtonStyle.Danger" Variant="Variant.Flat"
+                        Size="ButtonSize.Medium" Shade="Shade.Lighter" class="rz-my-1 rz-ms-1"
+                        Click="@(args => DeleteRow(bookObj))" aria-label="Delete" />
+                </EditTemplate>
+            </RadzenDataGridColumn>
+        </Columns>
+    </RadzenDataGrid>
+}
+
+@code {
+    RadzenDataGrid<Book>? grid = new RadzenDataGrid<Book>();
+    private List<Book> books = new();
+    private bool isLoading = false;
+    private string name = string.Empty;
+    private System.Threading.Timer? debounceTimer;
+    DataGridEditMode editMode = DataGridEditMode.Single;
+    List<Book> booksToInsert = new List<Book>();
+    private string typeOfOperation = "Create";
+    private List<Career> careers = new();
+    private List<Class> classes = new();
+    private List<Subject> subjects = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadCareers();
+        await LoadClasses();
+        await LoadSubjects();
+        await LoadBooks();
+    }
+    private async Task LoadCareers()
+    {
+        try
+        {
+            careers = await CareerService.GetCareersAsync();
+        }
+        catch (Exception ex)
+        {
+            NotificationService.Notify(new NotificationMessage
+            {
+                Severity = NotificationSeverity.Error,
+                Summary = "Error",
+                Detail = $"Failed to load careers: {ex.Message}",
+                Duration = 4000
+            });
+        }
+    }
+
+    private async Task LoadSubjects()
+    {
+        try
+        {
+            subjects = await SubjectService.GetSubjectsAsync();
+        }
+        catch (Exception ex)
+        {
+            NotificationService.Notify(new NotificationMessage
+            {
+                Severity = NotificationSeverity.Error,
+                Summary = "Error",
+                Detail = $"Failed to load subjects: {ex.Message}",
+                Duration = 4000
+            });
+        }
+    }
+
+    private async Task LoadClasses()
+    {
+        try
+        {
+            classes = await ClassService.GetClassesAsync();
+        }
+        catch (Exception ex)
+        {
+            NotificationService.Notify(new NotificationMessage
+            {
+                Severity = NotificationSeverity.Error,
+                Summary = "Error",
+                Detail = $"Failed to load classes: {ex.Message}",
+                Duration = 4000
+            });
+        }
+    }
+
+    private async Task LoadBooks()
+    {
+        isLoading = true;
+        try
+        {
+            books = await BookService.GetBooksAsync(name);
+        }
+        catch (Exception ex)
+        {
+            NotificationService.Notify(new NotificationMessage
+            {
+                Severity = NotificationSeverity.Error,
+                Summary = "Error",
+                Detail = $"Failed to load classes: {ex.Message}",
+                Duration = 4000
+            });
+        }
+        finally
+        {
+            isLoading = false;
+            StateHasChanged();
+        }
+    }
+
+    private async Task SearchBooks()
+    {
+        await LoadBooks();
+    }
+
+    private void OnInputChange(ChangeEventArgs e)
+    {
+        name = e.Value?.ToString() ?? string.Empty;
+
+        // Debounce the search to avoid excessive calls
+        debounceTimer?.Dispose();
+        debounceTimer = new System.Threading.Timer(async _ =>
+        {
+            await InvokeAsync(SearchBooks);
+        }, null, 500, Timeout.Infinite);
+    }
+
+    async Task OnUpdateRow(Book bookObj)
+    {
+        if (bookObj != null && !string.IsNullOrEmpty(bookObj.Title) && bookObj.CareerId > 0)
+        {
+            var result = await BookService.UpdateBookAsync(bookObj);
+            if (result) await LoadBooks();
+        }
+    }
+
+    async Task OnCreateRow(Book bookObj)
+    {
+        if (bookObj != null && !string.IsNullOrEmpty(bookObj.Title) && bookObj.CareerId > 0)
+        {
+            var result = await BookService.CreateBookAsync(bookObj);
+            booksToInsert.Remove(bookObj);
+            if (result) await LoadBooks();
+        }
+    }
+
+    void Reset()
+    {
+        booksToInsert.Clear();
+    }
+
+    void Reset(Book bookObj)
+    {
+        booksToInsert.Remove(bookObj);
+    }
+
+    async Task InsertRow()
+    {
+        if (grid == null || !grid.IsValid) return;
+
+        if (editMode == DataGridEditMode.Single)
+        {
+            Reset();
+        }
+
+        var bookObj = new Book();
+        booksToInsert.Add(bookObj);
+        await grid.InsertRow(bookObj);
+    }
+
+    async Task EditRow(Book bookObj)
+    {
+        if (grid == null || !grid.IsValid) return;
+
+        await grid.EditRow(bookObj);
+    }
+
+    async Task SaveRow(Book bookObj)
+    {
+        if (grid != null) await grid.UpdateRow(bookObj);
+    }
+
+    void CancelEdit(Book bookObj)
+    {
+        Reset(bookObj);
+
+        grid?.CancelEditRow(bookObj);
+    }
+
+    async Task DeleteRow(Book bookObj)
+    {
+        if (grid == null || !grid.IsValid)
+        {
+            grid?.CancelEditRow(bookObj);
+        }
+
+        Reset(bookObj);
+
+        await BookService.DeleteBookAsync(bookObj.Id);
+
+        await LoadBooks();
+
+        if (grid != null) await grid.Reload();
+
+        StateHasChanged();
+    }
+
+    private async Task OnKeyPress(KeyboardEventArgs e, Book bookObj)
+    {
+        if (e.Key == "Enter" && typeOfOperation == "Create")
+        {
+            if (grid != null) await SaveRow(bookObj);
+            bookObj = new Book();
+            await OnCreateRow(bookObj);
+        }
+        else if (e.Key == "Enter" && typeOfOperation == "Update")
+        {
+            if (grid != null) await SaveRow(bookObj);
+            await OnUpdateRow(bookObj);
+            bookObj = new Book();
+
+            typeOfOperation = "Create";
+        }
+    }
+
+    private void OnInputChange(ChangeEventArgs e, Book bookObj)
+    {
+        if (bookObj != null)
+        {
+            bookObj.Title = e.Value?.ToString() ?? string.Empty;
+        }
+    }
+
+    @* private void OnInputChangeYear(ChangeEventArgs e, Book bookObj)
+    {
+        if (bookObj != null)
+        {
+            bookObj.Year = int.TryParse(e.Value?.ToString(), out var year) ? year : 0;
+        }
+    } *@
+}

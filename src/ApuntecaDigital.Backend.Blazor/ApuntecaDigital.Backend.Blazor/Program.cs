@@ -38,6 +38,12 @@ builder.Services.AddScoped<SubjectService>(sp => {
     return new SubjectService(httpClient);
 });
 
+builder.Services.AddScoped<BookService>(sp => {
+    var httpClientFactory = sp.GetRequiredService<IHttpClientFactory>();
+    var httpClient = httpClientFactory.CreateClient("ApiClient");
+    return new BookService(httpClient);
+});
+
 builder.Services.AddScoped<DialogService>();
 builder.Services.AddScoped<TooltipService>();
 builder.Services.AddScoped<ContextMenuService>();
