@@ -140,26 +140,6 @@ else
         }
     }
 
-    private async Task OnEditClick(int id)
-    {
-        var career = await CareerService.GetCareerByIdAsync(id);
-        if (career != null)
-        {
-            // Open the edit dialog or navigate to the edit page
-            await DialogService.OpenAsync<CareerDetails>("Edit Career", new Dictionary<string, object> { { "Career", career } });
-        }
-        else
-        {
-            NotificationService.Notify(new NotificationMessage
-            {
-                Severity = NotificationSeverity.Error,
-                Summary = "Error",
-                Detail = "Career not found.",
-                Duration = 4000
-            });
-        }
-    }
-
     async Task OnUpdateRow(Career career)
     {
         if (career != null)

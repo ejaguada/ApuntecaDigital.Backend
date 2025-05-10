@@ -23,6 +23,14 @@ builder.Services.AddScoped<CareerService>(sp => {
     var httpClient = httpClientFactory.CreateClient("ApiClient");
     return new CareerService(httpClient);
 });
+
+// Register the ClassService for server-side rendering
+builder.Services.AddScoped<ClassService>(sp => {
+    var httpClientFactory = sp.GetRequiredService<IHttpClientFactory>();
+    var httpClient = httpClientFactory.CreateClient("ApiClient");
+    return new ClassService(httpClient);
+});
+
 builder.Services.AddScoped<DialogService>();
 builder.Services.AddScoped<TooltipService>();
 builder.Services.AddScoped<ContextMenuService>();
