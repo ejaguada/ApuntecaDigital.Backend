@@ -142,19 +142,20 @@ else
 
     async Task OnUpdateRow(Career career)
     {
-        if (career != null)
+        if (career != null && !string.IsNullOrEmpty(career.Name))
         {
-            await CareerService.UpdateCareerAsync(career);
+            var result = await CareerService.UpdateCareerAsync(career);
+            if (result) await LoadCareers();
         }
     }
 
     async Task OnCreateRow(Career career)
     {
-        if (career != null)
+        if (career != null && !string.IsNullOrEmpty(career.Name))
         {
-            await CareerService.CreateCareerAsync(career);
+            var result = await CareerService.CreateCareerAsync(career);
             careersToInsert.Remove(career);
-            if (grid != null) await grid.Reload();
+            if (result) await LoadCareers();
         }
     }
 
@@ -182,20 +183,6 @@ else
         await grid.InsertRow(career);
     }
 
-    async Task InsertAfterRow(Career career)
-    {
-        if (grid == null || !grid.IsValid) return;
-
-        if (editMode == DataGridEditMode.Single)
-        {
-            Reset();
-        }
-
-        var newCareer = new Career();
-        careersToInsert.Add(newCareer);
-        await grid.InsertRow(newCareer);
-    }
-
     async Task EditRow(Career career)
     {
         if (grid == null || !grid.IsValid) return;
@@ -205,21 +192,7 @@ else
 
     async Task SaveRow(Career career)
     {
-        if (grid == null || !grid.IsValid) return;
-
-        if (typeOfOperation == "Create")
-        {
-            await OnCreateRow(career);
-            await LoadCareers();
-            StateHasChanged();
-        }
-        else if (typeOfOperation == "Update")
-        {
-            await OnUpdateRow(career);
-            await LoadCareers();
-            typeOfOperation = "Create";
-            StateHasChanged();
-        }
+        if (grid != null) await grid.UpdateRow(career);
     }
 
     void CancelEdit(Career career)
@@ -251,16 +224,17 @@ else
     {
         if (e.Key == "Enter" && typeOfOperation == "Create")
         {
+            if (grid != null) await SaveRow(career);
+            career = new Career();
             await OnCreateRow(career);
-            await LoadCareers();
-            StateHasChanged();
         }
         else if (e.Key == "Enter" && typeOfOperation == "Update")
         {
+            if (grid != null) await SaveRow(career);
             await OnUpdateRow(career);
-            await LoadCareers();
+            career = new Career();
+
             typeOfOperation = "Create";
-            StateHasChanged();
         }
     }
 

@@ -54,7 +54,7 @@ else
                     <RadzenDropDown TValue="int" Data="@classes" TextProperty="Name" ValueProperty="Id"
                         @bind-Value="subjectObj.ClassId" Style="width:200px;" Name="ClassDropdown"
                         Placeholder="Select a class" />
-                    <RadzenRequiredValidator Text="Class is required" Component="ClassDropdown" Popup="true" />
+                        <RadzenNumericRangeValidator Component="ClassDropdown" Min="1" Max="10m" Text="Class is required" Popup="true" Style="position: absolute" />
                 </EditTemplate>
                 <Template Context="subjectObj">
                     @classes.FirstOrDefault(c => c.Id == subjectObj.ClassId)?.Name
@@ -87,7 +87,7 @@ else
 }
 
 @code {
-    RadzenDataGrid<Subject>? grid = new RadzenDataGrid<Subject>();
+    RadzenDataGrid<Subject>? grid;
     private List<Subject> subjects = new();
     private bool isLoading = false;
     private string name = string.Empty;
@@ -185,29 +185,22 @@ else
         }, null, 500, Timeout.Infinite);
     }
 
-    private async Task OnKeyPress(KeyboardEventArgs e)
-    {
-        if (e.Key == "Enter")
-        {
-            await SearchSubjects();
-        }
-    }
-
     async Task OnUpdateRow(Subject subjectObj)
     {
-        if (subjectObj != null)
+        if (subjectObj != null && !string.IsNullOrEmpty(subjectObj.Name) && subjectObj.ClassId > 0)
         {
-            await SubjectService.UpdateSubjectAsync(subjectObj);
+            var result = await SubjectService.UpdateSubjectAsync(subjectObj);
+            if (result) await LoadSubjects();
         }
     }
 
     async Task OnCreateRow(Subject subjectObj)
     {
-        if (subjectObj != null)
+        if (subjectObj != null && !string.IsNullOrEmpty(subjectObj.Name) && subjectObj.ClassId > 0)
         {
-            await SubjectService.CreateSubjectAsync(subjectObj);
+            var result = await SubjectService.CreateSubjectAsync(subjectObj);
             subjectsToInsert.Remove(subjectObj);
-            if (grid != null) await grid.Reload();
+            if (result) await LoadSubjects();
         }
     }
 
@@ -235,20 +228,6 @@ else
         await grid.InsertRow(subjectObj);
     }
 
-    async Task InsertAfterRow(Subject subjectObj)
-    {
-        if (grid == null || !grid.IsValid) return;
-
-        if (editMode == DataGridEditMode.Single)
-        {
-            Reset();
-        }
-
-        var newSubject = new Subject();
-        subjectsToInsert.Add(newSubject);
-        await grid.InsertRow(newSubject);
-    }
-
     async Task EditRow(Subject subjectObj)
     {
         if (grid == null || !grid.IsValid) return;
@@ -258,21 +237,7 @@ else
 
     async Task SaveRow(Subject subjectObj)
     {
-        if (grid == null || !grid.IsValid) return;
-
-        if (typeOfOperation == "Create")
-        {
-            await OnCreateRow(subjectObj);
-            await LoadSubjects();
-            StateHasChanged();
-        }
-        else if (typeOfOperation == "Update")
-        {
-            await OnUpdateRow(subjectObj);
-            await LoadSubjects();
-            typeOfOperation = "Create";
-            StateHasChanged();
-        }
+        if (grid != null) await grid.UpdateRow(subjectObj);
     }
 
     void CancelEdit(Subject subjectObj)
@@ -304,16 +269,17 @@ else
     {
         if (e.Key == "Enter" && typeOfOperation == "Create")
         {
+            if (grid != null) await SaveRow(subjectObj);
+            subjectObj = new Subject();
             await OnCreateRow(subjectObj);
-            await LoadSubjects();
-            StateHasChanged();
         }
         else if (e.Key == "Enter" && typeOfOperation == "Update")
         {
+            if (grid != null) await SaveRow(subjectObj);
             await OnUpdateRow(subjectObj);
-            await LoadSubjects();
+            subjectObj = new Subject();
+
             typeOfOperation = "Create";
-            StateHasChanged();
         }
     }
 
