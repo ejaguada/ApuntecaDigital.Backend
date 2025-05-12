@@ -4,7 +4,7 @@ using MediatR;
 
 namespace ApuntecaDigital.Backend.UseCases.Subjects.Update;
 
-public class UpdateSubjectHandler : IRequestHandler<UpdateSubjectCommand, Result<SubjectDTO>>
+public class UpdateSubjectHandler : IRequestHandler<UpdateSubjectCommand, Result<UpdateSubjectDTO>>
 {
   private readonly IRepository<Subject> _repository;
 
@@ -13,14 +13,14 @@ public class UpdateSubjectHandler : IRequestHandler<UpdateSubjectCommand, Result
     _repository = repository;
   }
 
-  public async Task<Result<SubjectDTO>> Handle(UpdateSubjectCommand request, CancellationToken cancellationToken)
+  public async Task<Result<UpdateSubjectDTO>> Handle(UpdateSubjectCommand request, CancellationToken cancellationToken)
   {
     var spec = new SubjectByIdSpec(request.Id);
     var subject = await _repository.FirstOrDefaultAsync(spec, cancellationToken);
     
     if (subject == null)
     {
-      return Result<SubjectDTO>.NotFound();
+      return Result<UpdateSubjectDTO>.NotFound();
     }
 
     subject.UpdateName(request.Name);
@@ -28,6 +28,6 @@ public class UpdateSubjectHandler : IRequestHandler<UpdateSubjectCommand, Result
 
     await _repository.SaveChangesAsync(cancellationToken);
 
-    return Result<SubjectDTO>.Success(new SubjectDTO(subject.Id, subject.Name, subject.ClassId));
+    return Result<UpdateSubjectDTO>.Success(new UpdateSubjectDTO(subject.Id, subject.Name, subject.ClassId));
   }
 }

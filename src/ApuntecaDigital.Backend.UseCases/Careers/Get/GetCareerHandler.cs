@@ -1,5 +1,6 @@
 ﻿using ApuntecaDigital.Backend.Core.CareerAggregate;
 using ApuntecaDigital.Backend.Core.CareerAggregate.Specifications;
+using ApuntecaDigital.Backend.UseCases.Classes;
 using MediatR;
 
 namespace ApuntecaDigital.Backend.UseCases.Careers.Get;
@@ -32,7 +33,21 @@ public class GetCareerHandler : IRequestHandler<GetCareerQuery, Result<CareerDTO
       return Result<CareerDTO>.NotFound();
     }
 
-    return Result<CareerDTO>.Success(new CareerDTO(career.Id, career.Name));
+    return Result<CareerDTO>.Success(
+      new CareerDTO(
+        career.Id,
+        career.Name,
+        career.Classes.Select(cl => new SimpleClassDTO(
+          cl.Id,
+          cl.Name,
+          cl.Year,
+          new SimpleCareerDTO(
+            cl.Career?.Id ?? 0,
+            cl.Career?.Name ?? string.Empty
+          )
+        )).ToList()
+      )
+    );
   }
 }
 

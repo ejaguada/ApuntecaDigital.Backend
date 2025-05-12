@@ -4,7 +4,7 @@ using MediatR;
 
 namespace ApuntecaDigital.Backend.UseCases.Books.Update;
 
-public class UpdateBookHandler : IRequestHandler<UpdateBookCommand, Result<BookDTO>>
+public class UpdateBookHandler : IRequestHandler<UpdateBookCommand, Result<UpdateBookDTO>>
 {
   private readonly IRepository<Book> _repository;
 
@@ -13,14 +13,14 @@ public class UpdateBookHandler : IRequestHandler<UpdateBookCommand, Result<BookD
     _repository = repository;
   }
 
-  public async Task<Result<BookDTO>> Handle(UpdateBookCommand request, CancellationToken cancellationToken)
+  public async Task<Result<UpdateBookDTO>> Handle(UpdateBookCommand request, CancellationToken cancellationToken)
   {
     var spec = new BookByIdSpec(request.Id);
     var book = await _repository.FirstOrDefaultAsync(spec, cancellationToken);
     
     if (book == null)
     {
-      return Result<BookDTO>.NotFound();
+      return Result<UpdateBookDTO>.NotFound();
     }
 
     book.UpdateTitle(request.Title);
@@ -29,6 +29,18 @@ public class UpdateBookHandler : IRequestHandler<UpdateBookCommand, Result<BookD
 
     await _repository.SaveChangesAsync(cancellationToken);
 
-    return Result<BookDTO>.Success(new BookDTO(book.Id, book.Title, book.Author, book.Isbn));
+    if (book.Subject == null) {
+      return Result<UpdateBookDTO>.NotFound();
+    }
+
+    if (book.Subject.Class == null) {
+      return Result<UpdateBookDTO>.NotFound();
+    }
+
+    if (book.Subject.Class.Career == null) {
+      return Result<UpdateBookDTO>.NotFound();
+    }
+
+    return Result<UpdateBookDTO>.Success(new UpdateBookDTO(book.Id, book.Title, book.Author, book.Isbn, book.SubjectId));
   }
 }

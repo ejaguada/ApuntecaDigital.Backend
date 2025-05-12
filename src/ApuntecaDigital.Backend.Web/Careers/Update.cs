@@ -1,5 +1,6 @@
 ﻿using ApuntecaDigital.Backend.UseCases.Careers.Get;
 using ApuntecaDigital.Backend.UseCases.Careers.Update;
+using ApuntecaDigital.Backend.Web.Classes;
 
 namespace ApuntecaDigital.Backend.Web.Careers;
 
@@ -43,7 +44,19 @@ public class Update(IMediator _mediator)
     if (queryResult.IsSuccess)
     {
       var dto = queryResult.Value;
-      Response = new UpdateCareerResponse(new CareerRecord(dto.Id, dto.Name));
+      Response = new UpdateCareerResponse(new CareerRecord(
+        dto.Id,
+        dto.Name,
+        dto.Classes.Select(cl => new SimpleClassRecord(
+          cl.Id,
+          cl.Name,
+          cl.Year,
+          new SimpleCareerRecord(
+            cl.Career?.Id ?? 0,
+            cl.Career?.Name ?? string.Empty
+          )
+        )).ToList()
+      ));
       return;
     }
   }

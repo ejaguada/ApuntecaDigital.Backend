@@ -1,5 +1,7 @@
 using ApuntecaDigital.Backend.UseCases.Classes.Get;
 using ApuntecaDigital.Backend.UseCases.Classes.Update;
+using ApuntecaDigital.Backend.Web.Careers;
+using ApuntecaDigital.Backend.Web.Subjects;
 
 namespace ApuntecaDigital.Backend.Web.Classes;
 
@@ -43,7 +45,28 @@ public class Update(IMediator _mediator)
     if (queryResult.IsSuccess)
     {
       var dto = queryResult.Value;
-      Response = new UpdateClassResponse(new ClassRecord(dto.Id, dto.Name, dto.Year, dto.CareerId));
+      Response = new UpdateClassResponse(new ClassRecord(
+        dto.Id,
+        dto.Name,
+        dto.Year,
+        new SimpleCareerRecord(
+          dto.Career?.Id ?? 0,
+          dto.Career?.Name ?? string.Empty
+        ),
+        dto.Subjects?.Select(s => new SimpleSubjectRecord(
+          s.Id,
+          s.Name,
+          new SimpleClassRecord(
+            s.Class?.Id ?? 0,
+            s.Class?.Name ?? string.Empty,
+            s.Class?.Year ?? 0,
+            new SimpleCareerRecord(
+              s.Class?.Career?.Id ?? 0,
+              s.Class?.Career?.Name ?? string.Empty
+            )
+          )
+        )).ToList() ?? new List<SimpleSubjectRecord>()
+      ));
       return;
     }
   }

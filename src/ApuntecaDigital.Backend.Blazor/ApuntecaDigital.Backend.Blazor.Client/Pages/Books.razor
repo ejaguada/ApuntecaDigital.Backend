@@ -53,8 +53,8 @@ else
             <RadzenDataGridColumn Property="@nameof(Book.CareerId)" Title="Career">
                 <EditTemplate Context="bookObj">
                     <RadzenDropDown TValue="int" Data="@careers" TextProperty="Name" ValueProperty="Id"
-                        @bind-Value="bookObj.CareerId" Style="width:200px;" Name="CareerDropdown"
-                        Placeholder="Select a career" />
+                        @bind-Value="bookObj.CareerId" Change="@(args => OnCareerChange(bookObj.CareerId))"
+                        Style="width:200px;" Name="CareerDropdown" Placeholder="Select a career" />
                     <RadzenNumericRangeValidator Component="CareerDropdown" Min="1" Text="Career is required" Popup="true"
                         Style="position: absolute" />
                 </EditTemplate>
@@ -124,19 +124,31 @@ else
     private List<Career> careers = new();
     private List<Class> classes = new();
     private List<Subject> subjects = new();
+    private bool loadFirstTime = true;
+    private List<Career> careersAux = new();
+    private List<Class> classesAux = new();
+    private List<Subject> subjectsAux = new();
 
     protected override async Task OnInitializedAsync()
     {
-        await LoadCareers();
-        await LoadClasses();
-        await LoadSubjects();
+        if (loadFirstTime)
+        {
+            loadFirstTime = false;
+            await LoadInitialData();
+        }
+    }
+
+    private async Task LoadInitialData()
+    {
+        await PopulateAuxiliaryLists();
         await LoadBooks();
     }
+
     private async Task LoadCareers()
     {
         try
         {
-            careers = await CareerService.GetCareersAsync();
+            var apiCareers = await CareerService.GetCareersAsync();
         }
         catch (Exception ex)
         {
@@ -186,12 +198,30 @@ else
         }
     }
 
+    //populate careersaux, classesAux and subjectsAux
+    private async Task PopulateAuxiliaryLists()
+    {
+        careersAux = await CareerService.GetCareersAsync();
+        classesAux = await ClassService.GetClassesAsync();
+        subjectsAux = await SubjectService.GetSubjectsAsync();
+    }
+
     private async Task LoadBooks()
     {
         isLoading = true;
         try
         {
-            books = await BookService.GetBooksAsync(name);
+            var apiBooks = await BookService.GetBooksAsync(name);
+
+            books = apiBooks.Select(book => new Book
+            {
+                Id = book.Id,
+                Title = book.Title,
+                SubjectId = book.SubjectId,
+                ClassId = classesAux.FirstOrDefault(cls => cls.CareerId == book.CareerId)?.Id ?? 0, // Map ClassId
+                CareerId = careersAux.FirstOrDefault(c => c.Id == book.CareerId)?.Id ?? 0 // Map CareerId (if needed)
+            }).ToList();
+
         }
         catch (Exception ex)
         {
@@ -199,7 +229,7 @@ else
             {
                 Severity = NotificationSeverity.Error,
                 Summary = "Error",
-                Detail = $"Failed to load classes: {ex.Message}",
+                Detail = $"Failed to load books: {ex.Message}",
                 Duration = 4000
             });
         }
@@ -340,4 +370,10 @@ else
             bookObj.Year = int.TryParse(e.Value?.ToString(), out var year) ? year : 0;
         }
     } *@
+
+    async Task OnCareerChange(int careerId)
+    {
+        classes = await ClassService.GetClassesByCareerIdAsync(careerId);
+        StateHasChanged();
+    }
 }

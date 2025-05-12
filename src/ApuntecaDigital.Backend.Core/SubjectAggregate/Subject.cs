@@ -1,3 +1,4 @@
+using ApuntecaDigital.Backend.Core.BookAggregate;
 using ApuntecaDigital.Backend.Core.ClassAggregate;
 
 namespace ApuntecaDigital.Backend.Core.SubjectAggregate;
@@ -13,7 +14,9 @@ public class Subject(string name, int classId) : EntityBase, IAggregateRoot
   
   // Navigation property
   public Class? Class { get; private set; }
-  
+
+  public virtual ICollection<Book> Books { get; private set; } = new List<Book>();
+
   public void UpdateName(string newName) => Name = Guard.Against.NullOrEmpty(newName, nameof(newName));
   public void UpdateClassId(int newClassId) => ClassId = Guard.Against.NegativeOrZero(newClassId, nameof(newClassId));
 }

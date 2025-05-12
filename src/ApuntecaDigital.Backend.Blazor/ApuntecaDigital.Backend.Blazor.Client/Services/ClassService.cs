@@ -51,10 +51,12 @@ public class ClassService
 
   public async Task<bool> CreateClassAsync(Class classObj)
   {
+    await Task.Delay(1000);
     try
     {
-      var response = await _httpClient.PostAsJsonAsync("/classes", new ClassDTO(0, classObj.Name, classObj.Year, classObj.CareerId));
-      return response.IsSuccessStatusCode;
+      // var response = await _httpClient.PostAsJsonAsync("/classes", new ClassDTO(0, classObj.Name, classObj.Year, classObj.CareerId));
+      // return response.IsSuccessStatusCode;
+      return false;
     }
     catch (Exception ex)
     {
@@ -65,10 +67,13 @@ public class ClassService
 
   public async Task<bool> UpdateClassAsync(Class classObj)
   {
+    await Task.Delay(1000);
     try
     {
-      var response = await _httpClient.PutAsJsonAsync($"/classes/{classObj.Id}", new ClassDTO(classObj.Id, classObj.Name, classObj.Year, classObj.CareerId));
-      return response.IsSuccessStatusCode;
+      // var response = await _httpClient.PutAsJsonAsync($"/classes/{classObj.Id}", new ClassDTO(classObj.Id, classObj.Name, classObj.Year, classObj.CareerId));
+      // return response.IsSuccessStatusCode;
+      //return false;
+      return false;
     }
     catch (Exception ex)
     {

@@ -20,4 +20,6 @@ public class UpdateBookRequest
   
   [Required]
   public string? Isbn { get; set; }
+  [Required]
+  public int SubjectId { get; set; }
 }

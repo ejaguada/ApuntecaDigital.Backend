@@ -1,4 +1,5 @@
 using ApuntecaDigital.Backend.UseCases.Careers.Get;
+using ApuntecaDigital.Backend.Web.Classes;
 
 namespace ApuntecaDigital.Backend.Web.Careers;
 
@@ -32,7 +33,19 @@ public class GetById(IMediator _mediator)
 
     if (result.IsSuccess)
     {
-      Response = new CareerRecord(result.Value.Id, result.Value.Name);
+      Response = new CareerRecord(
+        result.Value.Id,
+        result.Value.Name,
+        result.Value.Classes.Select(c => new SimpleClassRecord(
+          c.Id,
+          c.Name,
+          c.Year,
+          new SimpleCareerRecord(
+            c.Career?.Id ?? 0,
+            c.Career?.Name ?? string.Empty
+          )
+        )).ToList()
+      );
     }
   }
 }
