@@ -52,7 +52,7 @@ public class CareerService
     {
         try
         {
-            var response = await _httpClient.PostAsJsonAsync("/careers", new CareerDTO(0, career.Name));
+            var response = await _httpClient.PostAsJsonAsync("/careers", new UpdateCareerDTO(0, career.Name));
             return response.IsSuccessStatusCode;
         }
         catch (Exception ex)
@@ -66,7 +66,7 @@ public class CareerService
     {
         try
         {
-            var response = await _httpClient.PutAsJsonAsync($"/careers/{career.Id}", new CareerDTO(career.Id, career.Name));
+            var response = await _httpClient.PutAsJsonAsync($"/careers/{career.Id}", new UpdateCareerDTO(career.Id, career.Name));
             return response.IsSuccessStatusCode;
         }
         catch (Exception ex)

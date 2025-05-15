@@ -1,6 +1,6 @@
-namespace ApuntecaDigital.Backend.Web.Books;
+﻿namespace ApuntecaDigital.Backend.Web.Books;
 
-public class UpdateBookResponse(BookRecord book)
+public class UpdateBookResponse(UpdateBookRecord book)
 {
-  public BookRecord Book { get; set; } = book;
+  public UpdateBookRecord Book { get; set; } = book;
 }

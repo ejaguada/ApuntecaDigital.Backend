@@ -1,4 +1,4 @@
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace ApuntecaDigital.Backend.Web.Books;
 
@@ -8,10 +8,9 @@ public class CreateBookRequest
 
   [Required]
   public string? Title { get; set; }
-  
-  [Required]
-  public string? Author { get; set; }
-  
-  [Required]
-  public string? Isbn { get; set; }
+
+  public string Author { get; set; } = string.Empty;
+
+  public string Isbn { get; set; } = string.Empty;
+  public int SubjectId { get; set; } = 0;
 }

@@ -5,7 +5,7 @@ public class Class
     public int Id { get; set; }
     public string Name { get; set; } = string.Empty;
     public int Year { get; set; }
-    public int CareerId { get; set; }
+    public Career Career { get; set; } = new Career();
 }
 
 public class ClassListResponse

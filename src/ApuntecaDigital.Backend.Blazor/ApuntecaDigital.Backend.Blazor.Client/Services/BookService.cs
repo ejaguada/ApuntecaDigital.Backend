@@ -1,7 +1,9 @@
-using System.Net.Http.Json;
+﻿using System.Net.Http.Json;
 using ApuntecaDigital.Backend.Blazor.Client.Models;
 using ApuntecaDigital.Backend.UseCases.Careers;
 using ApuntecaDigital.Backend.UseCases.Classes;
+using Ardalis.Result;
+using Microsoft.EntityFrameworkCore;
 
 namespace ApuntecaDigital.Backend.Blazor.Client.Services;
 
@@ -26,7 +28,7 @@ public class BookService
       }
 
       var response = await _httpClient.GetFromJsonAsync<BookListResponse>(url);
-      return response?.Books?.Select(b => new Book { Id = b.Id, Title = b.Title, Author = b.Author, Isbn = b.Isbn }).ToList() ?? new List<Book>();
+      return response?.Books?.Select(b => new Book { Id = b.Id, Title = b.Title, Author = b.Author, Isbn = b.Isbn, Subject = b.Subject }).ToList() ?? new List<Book>();
     }
     catch (Exception ex)
     {
@@ -39,8 +41,8 @@ public class BookService
   {
     try
     {
-      var response = await _httpClient.GetFromJsonAsync<Book>($"/books/id/{id}");
-      return response == null ? null : new Book { Id = response.Id, Title = response.Title, Author = response.Author, Isbn = response.Isbn };
+      var response = await _httpClient.GetFromJsonAsync<Book>($"/books/{id}");
+      return response == null ? null : new Book { Id = response.Id, Title = response.Title, Author = response.Author, Isbn = response.Isbn, Subject = response.Subject };
     }
     catch (Exception ex)
     {
@@ -49,7 +51,7 @@ public class BookService
     }
   }
 
-  public async Task<bool> CreateBookAsync(Book bookObj)
+  public async Task<bool> CreateBookAsync(CreateBook bookObj)
   {
     try
     {
@@ -63,7 +65,7 @@ public class BookService
     }
   }
 
-  public async Task<bool> UpdateBookAsync(Book bookObj)
+  public async Task<bool> UpdateBookAsync(UpdateBook bookObj)
   {
     try
     {

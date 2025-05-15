@@ -1,4 +1,4 @@
-using MediatR;
+﻿using MediatR;
 
 namespace ApuntecaDigital.Backend.UseCases.Subjects.Get.ByName;
 

@@ -1,4 +1,4 @@
-using ApuntecaDigital.Backend.Core.BookAggregate;
+﻿using ApuntecaDigital.Backend.Core.BookAggregate;
 using ApuntecaDigital.Backend.Core.BookAggregate.Specifications;
 using MediatR;
 
@@ -26,20 +26,9 @@ public class UpdateBookHandler : IRequestHandler<UpdateBookCommand, Result<Updat
     book.UpdateTitle(request.Title);
     book.UpdateAuthor(request.Author);
     book.UpdateIsbn(request.Isbn);
+    book.UpdateSubjectId(request.SubjectId);
 
     await _repository.SaveChangesAsync(cancellationToken);
-
-    if (book.Subject == null) {
-      return Result<UpdateBookDTO>.NotFound();
-    }
-
-    if (book.Subject.Class == null) {
-      return Result<UpdateBookDTO>.NotFound();
-    }
-
-    if (book.Subject.Class.Career == null) {
-      return Result<UpdateBookDTO>.NotFound();
-    }
 
     return Result<UpdateBookDTO>.Success(new UpdateBookDTO(book.Id, book.Title, book.Author, book.Isbn, book.SubjectId));
   }

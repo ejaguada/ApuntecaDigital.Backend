@@ -12,19 +12,19 @@ namespace ApuntecaDigital.Backend.Web.Subjects;
 /// <remarks>
 /// Takes a name and returns matching Subject records.
 /// </remarks>
-public class GetSubjectsByName(IMediator _mediator)
-  : Endpoint<GetSubjectsByNameRequest, SubjectListResponse>
+public class GetByClassId(IMediator _mediator)
+  : Endpoint<GetSubjectsByClassIdRequest, SubjectListResponse>
 {
   public override void Configure()
   {
-    Get(GetSubjectsByNameRequest.Route);
+    Get(GetSubjectsByClassIdRequest.Route);
     AllowAnonymous();
   }
 
-  public override async Task HandleAsync(GetSubjectsByNameRequest request,
+  public override async Task HandleAsync(GetSubjectsByClassIdRequest request,
     CancellationToken cancellationToken)
   {
-    Result<IEnumerable<SubjectDTO>> result = await _mediator.Send(new GetSubjectsByNameQuery(request.Name), cancellationToken);
+    Result<IEnumerable<SubjectDTO>> result = await _mediator.Send(new GetSubjectsByClassIdQuery(request.Id), cancellationToken);
 
     if (result.Status == ResultStatus.NotFound)
     {

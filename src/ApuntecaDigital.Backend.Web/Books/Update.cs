@@ -1,4 +1,4 @@
-using ApuntecaDigital.Backend.UseCases.Books.Get;
+﻿using ApuntecaDigital.Backend.UseCases.Books.Get;
 using ApuntecaDigital.Backend.UseCases.Books.Update;
 using ApuntecaDigital.Backend.Web.Careers;
 using ApuntecaDigital.Backend.Web.Classes;
@@ -46,24 +46,12 @@ public class Update(IMediator _mediator)
     if (queryResult.IsSuccess)
     {
       var dto = queryResult.Value;
-      Response = new UpdateBookResponse(new BookRecord(
+      Response = new UpdateBookResponse(new UpdateBookRecord(
         dto.Id,
         dto.Title,
         dto.Author,
         dto.Isbn,
-        new SubjectForBookRecord(
-          dto.Subject?.Id ?? 0,
-          dto.Subject?.Name ?? string.Empty,
-          new ClassForBookRecord(
-            dto.Subject?.Class?.Id ?? 0,
-            dto.Subject?.Class?.Name ?? string.Empty,
-            dto.Subject?.Class?.Year ?? 0,
-            new SimpleCareerRecord(
-              dto.Subject?.Class?.Career?.Id ?? 0,
-              dto.Subject?.Class?.Career?.Name ?? string.Empty
-            )
-          )
-        )
+        dto.SubjectId
       ));
       return;
     }

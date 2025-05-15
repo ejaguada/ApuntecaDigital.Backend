@@ -1,4 +1,4 @@
-using ApuntecaDigital.Backend.Infrastructure.Data.Config;
+﻿using ApuntecaDigital.Backend.Infrastructure.Data.Config;
 using FluentValidation;
 
 namespace ApuntecaDigital.Backend.Web.Books;

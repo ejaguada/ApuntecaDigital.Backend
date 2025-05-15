@@ -49,15 +49,15 @@ else
                     <RadzenRequiredValidator Text="SubjectName is required" Component="SubjectName" Popup="true" />
                 </EditTemplate>
             </RadzenDataGridColumn>
-            <RadzenDataGridColumn Property="@nameof(Subject.ClassId)" Title="Class">
+            <RadzenDataGridColumn Property="@nameof(Subject.Class.Id)" Title="Class">
                 <EditTemplate Context="subjectObj">
                     <RadzenDropDown TValue="int" Data="@classes" TextProperty="Name" ValueProperty="Id"
-                        @bind-Value="subjectObj.ClassId" Style="width:200px;" Name="ClassDropdown"
+                        @bind-Value="subjectObj.Class.Id" Style="width:200px;" Name="ClassDropdown"
                         Placeholder="Select a class" />
                         <RadzenNumericRangeValidator Component="ClassDropdown" Min="1" Max="10m" Text="Class is required" Popup="true" Style="position: absolute" />
                 </EditTemplate>
                 <Template Context="subjectObj">
-                    @classes.FirstOrDefault(c => c.Id == subjectObj.ClassId)?.Name
+                    @classes.FirstOrDefault(c => c.Id == subjectObj.Class.Id)?.Name
                 </Template>
             </RadzenDataGridColumn>
             <RadzenDataGridColumn Context="subjectObj" Filterable="false" Sortable="false" TextAlign="TextAlign.Right"
@@ -187,7 +187,7 @@ else
 
     async Task OnUpdateRow(Subject subjectObj)
     {
-        if (subjectObj != null && !string.IsNullOrEmpty(subjectObj.Name) && subjectObj.ClassId > 0)
+        if (subjectObj != null && !string.IsNullOrEmpty(subjectObj.Name) && subjectObj.Class.Id > 0)
         {
             var result = await SubjectService.UpdateSubjectAsync(subjectObj);
             if (result) await LoadSubjects();
@@ -196,7 +196,7 @@ else
 
     async Task OnCreateRow(Subject subjectObj)
     {
-        if (subjectObj != null && !string.IsNullOrEmpty(subjectObj.Name) && subjectObj.ClassId > 0)
+        if (subjectObj != null && !string.IsNullOrEmpty(subjectObj.Name) && subjectObj.Class.Id > 0)
         {
             var result = await SubjectService.CreateSubjectAsync(subjectObj);
             subjectsToInsert.Remove(subjectObj);

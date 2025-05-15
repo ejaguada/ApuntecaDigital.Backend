@@ -29,3 +29,5 @@ tmp-*/**
 # Ignore other temporary files
 *.cache
 *.log
+
+.idea/

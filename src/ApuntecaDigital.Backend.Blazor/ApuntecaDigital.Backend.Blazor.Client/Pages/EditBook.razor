@@ -1,0 +1,167 @@
+﻿@page "/editbook/{BookId}"
+@using ApuntecaDigital.Backend.Blazor.Client.Models
+@using ApuntecaDigital.Backend.Blazor.Client.Services
+@inject Radzen.DialogService dialogService
+@inject BookService bookService
+@inject SubjectService subjectService
+@inject CareerService careerService
+@inject ClassService classService
+@inject NavigationManager NavigationManager
+@inject NotificationService notificationService
+
+<h1>HEA</h1>
+
+@if (bookNotFound)
+{
+	<RadzenProgressBar Mode="ProgressBarMode.Indeterminate" />
+}
+else
+{
+	<RadzenTemplateForm TItem="Book" Data="@book" Submit="Submit">
+		<RadzenFieldset Text="Book Details">
+			<RadzenRow JustifyContent="JustifyContent.Center">
+				<RadzenColumn Size="12">
+					<RadzenLabel Text="Title" />
+					<RadzenTextBox @bind-Value="book.Title" Style="width:100%" Name="Title" />
+					<RadzenRequiredValidator Component="Title" Text="Title is required" Style="display:block" />
+				</RadzenColumn>
+				<RadzenColumn Size="12">
+
+					<RadzenLabel Text="Author" />
+					<RadzenTextBox @bind-Value="book.Author" Style="width:100%" Name="Author" />
+					<RadzenRequiredValidator Component="Author" Text="Author is required" Style="display:block" />
+				</RadzenColumn>
+				<RadzenColumn Size="12">
+					<RadzenLabel Text="ISBN" />
+                    <RadzenTextBox @bind-Value="book.Isbn" Style="width:100%" Name="Isbn" />
+                    <RadzenRequiredValidator Component="Isbn" Text="Author is required" Style="display:block" />
+				</RadzenColumn>
+				<RadzenColumn Size="12">
+					<RadzenLabel Text="Career" Component="CareerDropDownFiltering" />
+					<RadzenDropDown @ref=@careerDropDown @bind-SearchText=careerSearchText FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive" FilterOperator="StringFilterOperator.StartsWith" AllowFiltering="true"
+					Data=@careers TextProperty="@nameof(Book.Subject.Class.Career.Name)" ValueProperty="@nameof(Book.Subject.Class.Career.Id)"
+					Change="@((args) => OnCareerChange((int)args))"
+					AllowClear="true" @bind-Value=careerSearchValue Style="width:100%" Name="CareerDropDownFiltering" />
+					<RadzenNumericRangeValidator Component="CareerDropDownFiltering" Min="1" Text="Career required" />
+				</RadzenColumn>
+				<RadzenColumn Size="12">
+					<RadzenLabel Text="Class" Component="ClassDropDownFiltering" />
+					<RadzenDropDown @ref=@classDropDown @bind-SearchText=classSearchText FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive" FilterOperator="StringFilterOperator.StartsWith" AllowFiltering="true"
+					Change="@((args) => OnClassChange((int)args))"
+					Data=@classes TextProperty="@nameof(Book.Subject.Class.Name)" ValueProperty="@nameof(Book.Subject.Class.Id)" AllowClear="true" @bind-Value=classSearchValue Style="width:100%" Name="ClassDropDownFiltering" />
+					<RadzenNumericRangeValidator Component="ClassDropDownFiltering" Min="1" Text="Class required" />
+				</RadzenColumn>
+				<RadzenColumn Size="12">
+					<RadzenLabel Text="Subject" Component="SubjectDropDownFiltering" />
+					<RadzenDropDown @ref=@subjectDropDown @bind-SearchText=subjectSearchText FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive" FilterOperator="StringFilterOperator.StartsWith" AllowFiltering="true"
+					Data=@subjects TextProperty="@nameof(Book.Subject.Name)" ValueProperty="@nameof(Book.Subject.Id)" AllowClear="true" @bind-Value=subjectSearchValue Style="width:100%" Name="SubjectDropDownFiltering" />
+					<RadzenNumericRangeValidator Component="SubjectDropDownFiltering" Min="1" Text="Subject required" />
+				</RadzenColumn>
+			</RadzenRow>
+		</RadzenFieldset>
+		<RadzenButton ButtonType="ButtonType.Submit" Text="Save" Style="margin-top:1rem" Icon="save" ButtonStyle="ButtonStyle.Primary" />
+		<RadzenButton Click="@((args) => dialogService.Close(true))" Text="Cancel" Style="margin-top:1rem; margin-left:1rem" Icon="close" ButtonStyle="ButtonStyle.Light" />
+	</RadzenTemplateForm>
+}
+
+@code {
+	[Parameter]
+	public int BookId { get; set; }
+	Book book = new Book();
+	List<Subject>? subjects;
+	List<Career>? careers;
+	List<Class>? classes;
+	RadzenDropDown<int>? careerDropDown;
+	RadzenDropDown<int>? classDropDown;
+	RadzenDropDown<int>? subjectDropDown;
+	string? classSearchText;
+	string? subjectSearchText;
+	string? careerSearchText;
+	int careerSearchValue;
+	int classSearchValue;
+	int subjectSearchValue;
+    bool bookNotFound;
+
+	protected override async Task OnParametersSetAsync()
+	{
+		await base.OnParametersSetAsync();
+        bookNotFound = true;
+        if (BookId != -1)
+        {
+            book = await bookService.GetBookByIdAsync(BookId) ?? new Book();
+            careerSearchValue = book?.Subject?.Class?.Career?.Id ?? 0;
+            classSearchValue = book?.Subject?.Class?.Id ?? 0;
+            subjectSearchValue = book?.Subject?.Id ?? 0;
+            subjects = await subjectService.GetSubjectsByClassIdAsync(classSearchValue);
+            classes = await classService.GetClassesByCareerIdAsync(careerSearchValue);
+            careers = await careerService.GetCareersAsync();
+        }
+        else if (BookId == -1)
+        {
+            careers = await careerService.GetCareersAsync();
+        }
+        bookNotFound = false;
+    }
+
+	private void GoBack()
+	{
+		NavigationManager.NavigateTo("/books");
+	}
+
+
+
+	async Task Submit(Book arg)
+    {
+        bool result = false;
+        
+		if (arg != null)
+		{
+            if (arg.Id > 0)
+            {
+                result = await bookService.UpdateBookAsync(new UpdateBook { Title = arg.Title, Id = arg.Id, Isbn = arg.Isbn, Author = arg.Author, SubjectId = subjectSearchValue });
+            }
+            else if (arg.Id == 0)
+            {
+                result = await bookService.CreateBookAsync(new CreateBook { Title = arg.Title, Isbn = arg.Isbn, Author = arg.Author, SubjectId = subjectSearchValue });
+            }
+            
+			if (result)
+			{
+				dialogService?.Close(true);
+				StateHasChanged();
+			}
+			else
+			{
+				var msg = new NotificationMessage { Severity = NotificationSeverity.Error, Summary = "Error Summary", Detail = "Error Detail", Duration = 4000 };
+				ShowNotification(msg);
+				// Maneja el error aquí
+			}
+		}
+	}
+
+	void ShowNotification(NotificationMessage message)
+	{
+		notificationService.Notify(message);
+	}
+
+	async Task OnCareerChange(int careerId)
+	{
+		classSearchValue = -1;
+		subjectSearchValue = -1;
+		subjects = new List<Subject>();
+		classes = await classService.GetClassesByCareerIdAsync(careerId);
+		StateHasChanged();
+	}
+
+	async Task OnClassChange(int classId)
+	{
+		subjectSearchValue = -1;
+		subjects = await subjectService.GetSubjectsByClassIdAsync(classId);
+		StateHasChanged();
+	}
+
+	void Cancel()
+	{
+		//
+	}
+}

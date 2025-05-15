@@ -7,9 +7,7 @@ public class Book
     public string Author { get; set; } = string.Empty;
     public string Description { get; set; } = string.Empty;
     public string Isbn { get; set; } = string.Empty;
-    public int CareerId { get; set; }
-    public int ClassId { get; set; }
-    public int SubjectId { get; set; }
+    public Subject Subject { get; set; } = new Subject();
 }
 
 public class BookListResponse

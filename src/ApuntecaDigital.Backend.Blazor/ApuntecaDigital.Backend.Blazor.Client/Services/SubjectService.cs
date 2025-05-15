@@ -1,4 +1,4 @@
-using System.Net.Http.Json;
+﻿using System.Net.Http.Json;
 using ApuntecaDigital.Backend.Blazor.Client.Models;
 using ApuntecaDigital.Backend.UseCases.Subjects;
 namespace ApuntecaDigital.Backend.Blazor.Client.Services;
@@ -24,7 +24,7 @@ public class SubjectService
       }
 
       var response = await _httpClient.GetFromJsonAsync<SubjectListResponse>(url);
-      return response?.Subjects?.Select(s => new Subject { Id = s.Id, Name = s.Name, ClassId = s.ClassId }).ToList() ?? new List<Subject>();
+      return response?.Subjects?.Select(s => new Subject { Id = s.Id, Name = s.Name, Class = new Class { Id = s.Class.Id, Name = s.Class.Name } }).ToList() ?? new List<Subject>();
     }
     catch (Exception ex)
     {
@@ -38,7 +38,7 @@ public class SubjectService
     try
     {
       var response = await _httpClient.GetFromJsonAsync<SubjectDTO>($"/subjects/id/{id}");
-      return response == null ? null : new Subject { Id = response.Id, Name = response.Name, ClassId = response.ClassId };
+      return response == null ? null : new Subject { Id = response.Id, Name = response.Name, Class = new Class { Id = response.ClassId, Name = response.Name } };
     }
     catch (Exception ex)
     {
@@ -51,7 +51,7 @@ public class SubjectService
   {
     try
     {
-      var response = await _httpClient.PostAsJsonAsync("/subjects", new SubjectDTO(0, subject.Name, subject.ClassId));
+      var response = await _httpClient.PostAsJsonAsync("/subjects", new UpdateSubjectDTO(0, subject.Name, subject.Class.Id));
       return response.IsSuccessStatusCode;
     }
     catch (Exception ex)
@@ -65,7 +65,7 @@ public class SubjectService
   {
     try
     {
-      var response = await _httpClient.PutAsJsonAsync($"/subjects/{subject.Id}", new SubjectDTO(subject.Id, subject.Name, subject.ClassId));
+      var response = await _httpClient.PutAsJsonAsync($"/subjects/{subject.Id}", new UpdateSubjectDTO(subject.Id, subject.Name, subject.Class.Id));
       return response.IsSuccessStatusCode;
     }
     catch (Exception ex)
@@ -94,7 +94,7 @@ public class SubjectService
     try
     {
       var response = await _httpClient.GetFromJsonAsync<SubjectListResponse>($"/subjects/career/{careerId}");
-      return response?.Subjects?.Select(s => new Subject { Id = s.Id, Name = s.Name, ClassId = s.ClassId }).ToList() ?? new List<Subject>();
+      return response?.Subjects?.Select(s => new Subject { Id = s.Id, Name = s.Name, Class = new Class { Id = s.Class.Id, Name = s.Class.Name } }).ToList() ?? new List<Subject>();
     }
     catch (Exception ex)
     {
@@ -108,11 +108,25 @@ public class SubjectService
     try
     {
       var response = await _httpClient.GetFromJsonAsync<SubjectListResponse>($"/subjects/name/{Uri.EscapeDataString(name)}");
-      return response?.Subjects?.Select(s => new Subject { Id = s.Id, Name = s.Name, ClassId = s.ClassId }).ToList() ?? new List<Subject>();
+      return response?.Subjects?.Select(s => new Subject { Id = s.Id, Name = s.Name, Class = new Class { Id = s.Class.Id, Name = s.Class.Name } }).ToList() ?? new List<Subject>();
     }
     catch (Exception ex)
     {
       Console.Error.WriteLine($"Error fetching subjects by name {name}: {ex.Message}");
+      return new List<Subject>();
+    }
+  }
+
+  public async Task<List<Subject>> GetSubjectsByClassIdAsync(int classId)
+  {
+    try
+    {
+      var response = await _httpClient.GetFromJsonAsync<SubjectListResponse>($"/subjects/filter-by/class/id/{Uri.EscapeDataString(classId.ToString())}");
+      return response?.Subjects?.Select(s => new Subject { Id = s.Id, Name = s.Name, Class = new Class { Id = s.Class.Id, Name = s.Class.Name } }).ToList() ?? new List<Subject>();
+    }
+    catch (Exception ex)
+    {
+      Console.Error.WriteLine($"Error fetching subjects by class id {classId}: {ex.Message}");
       return new List<Subject>();
     }
   }

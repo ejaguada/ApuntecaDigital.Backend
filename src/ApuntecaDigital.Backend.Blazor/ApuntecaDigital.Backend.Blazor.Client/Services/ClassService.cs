@@ -1,4 +1,4 @@
-using System.Net.Http.Json;
+﻿using System.Net.Http.Json;
 using ApuntecaDigital.Backend.Blazor.Client.Models;
 using ApuntecaDigital.Backend.UseCases.Careers;
 using ApuntecaDigital.Backend.UseCases.Classes;
@@ -26,7 +26,7 @@ public class ClassService
       }
 
       var response = await _httpClient.GetFromJsonAsync<ClassListResponse>(url);
-      return response?.Classes?.Select(c => new Class { Id = c.Id, Name = c.Name, Year = c.Year, CareerId = c.CareerId }).ToList() ?? new List<Class>();
+      return response?.Classes?.Select(c => new Class { Id = c.Id, Name = c.Name, Year = c.Year, Career = c.Career }).ToList() ?? new List<Class>();
     }
     catch (Exception ex)
     {
@@ -40,7 +40,7 @@ public class ClassService
     try
     {
       var response = await _httpClient.GetFromJsonAsync<ClassDTO>($"/classes/id/{id}");
-      return response == null ? null : new Class { Id = response.Id, Name = response.Name, Year = response.Year, CareerId = response.CareerId };
+      return response == null ? null : new Class { Id = response.Id, Name = response.Name, Year = response.Year, Career = new Career { Id = response.Career.Id, Name = response.Career.Name } };
     }
     catch (Exception ex)
     {
@@ -100,8 +100,8 @@ public class ClassService
   {
     try
     {
-      var response = await _httpClient.GetFromJsonAsync<ClassListResponse>($"/classes/career/{careerId}");
-      return response?.Classes?.Select(c => new Class { Id = c.Id, Name = c.Name, Year = c.Year, CareerId = c.CareerId }).ToList() ?? new List<Class>();
+      var response = await _httpClient.GetFromJsonAsync<ClassListResponse>($"/classes/filter-by/career/id/{careerId}");
+      return response?.Classes?.Select(c => new Class { Id = c.Id, Name = c.Name, Year = c.Year, Career = new Career { Id = c.Career.Id, Name = c.Career.Name } }).ToList() ?? new List<Class>();
     }
     catch (Exception ex)
     {
@@ -115,7 +115,7 @@ public class ClassService
     try
     {
       var response = await _httpClient.GetFromJsonAsync<ClassListResponse>($"/classes/name/{Uri.EscapeDataString(name)}");
-      return response?.Classes?.Select(c => new Class { Id = c.Id, Name = c.Name, Year = c.Year, CareerId = c.CareerId }).ToList() ?? new List<Class>();
+      return response?.Classes?.Select(c => new Class { Id = c.Id, Name = c.Name, Year = c.Year, Career = new Career { Id = c.Career.Id, Name = c.Career.Name } }).ToList() ?? new List<Class>();
     }
     catch (Exception ex)
     {
@@ -123,5 +123,24 @@ public class ClassService
       return new List<Class>();
     }
   }
-}
 
+  //GetClassesBySubjectIdAsync
+  public async Task<List<Class>> GetClassesBySubjectIdAsync(int subjectId)
+  {
+    try
+    {
+      var response = await _httpClient.GetFromJsonAsync<ClassListResponse>($"/classes/filter-by/id/{subjectId}");
+      return response?.Classes?.Select(c => new Class { Id = c.Id, Name = c.Name, Year = c.Year, Career = c.Career }).ToList() ?? new List<Class>();
+    }
+    catch (Exception ex)
+    {
+      Console.Error.WriteLine($"Error fetching classes by subject id {subjectId}: {ex.Message}");
+      return new List<Class>();
+    }
+    finally
+    {
+      // Optional: Log the completion of the method
+      Console.WriteLine($"GetClassesBySubjectIdAsync completed for subject id {subjectId}");
+    }
+  }
+}

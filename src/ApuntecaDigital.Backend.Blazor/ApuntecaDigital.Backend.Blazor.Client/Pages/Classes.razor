@@ -56,15 +56,15 @@ else
                         <RadzenNumericRangeValidator Component="ClassYear" Min="1985" Max="2100" Text="Year is invalid (1985-2100)" Popup="true" Style="position: absolute" />
                 </EditTemplate>
             </RadzenDataGridColumn>
-            <RadzenDataGridColumn Property="@nameof(Class.CareerId)" Title="Career">
+            <RadzenDataGridColumn Property="@nameof(Class.Career.Id)" Title="Career">
                 <EditTemplate Context="classObj">
                     <RadzenDropDown TValue="int" Data="@careers" TextProperty="Name" ValueProperty="Id"
-                        @bind-Value="classObj.CareerId" Style="width:200px;" Name="CareerDropdown"
+                        @bind-Value="classObj.Career.Id" Style="width:200px;" Name="CareerDropdown"
                         Placeholder="Select a career" />
                         <RadzenNumericRangeValidator Component="CareerDropdown"  Min="1" Text="Career is required" Popup="true" Style="position: absolute" />
                 </EditTemplate>
                 <Template Context="classObj">
-                    @careers.FirstOrDefault(c => c.Id == classObj.CareerId)?.Name
+                    @careers.FirstOrDefault(c => c.Id == classObj.Career.Id)?.Name
                 </Template>
             </RadzenDataGridColumn>
             <RadzenDataGridColumn Context="classObj" Filterable="false" Sortable="false" TextAlign="TextAlign.Right"
@@ -169,7 +169,7 @@ else
 
     async Task OnUpdateRow(Class classObj)
     {
-        if (classObj != null && !string.IsNullOrEmpty(classObj.Name) && classObj.Year > 0 && classObj.CareerId > 0)
+        if (classObj != null && !string.IsNullOrEmpty(classObj.Name) && classObj.Year > 0 && classObj.Career.Id > 0)
         {
             var result = await ClassService.UpdateClassAsync(classObj);
             if (result) await LoadClasses();
@@ -178,7 +178,7 @@ else
 
     async Task OnCreateRow(Class classObj)
     {
-        if (classObj != null && !string.IsNullOrEmpty(classObj.Name) && classObj.Year > 0 && classObj.CareerId > 0)
+        if (classObj != null && !string.IsNullOrEmpty(classObj.Name) && classObj.Year > 0 && classObj.Career.Id > 0)
         {
             var result = await ClassService.CreateClassAsync(classObj);
             classesToInsert.Remove(classObj);

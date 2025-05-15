@@ -7,22 +7,22 @@ using MediatR;
 
 namespace ApuntecaDigital.Backend.UseCases.Subjects.Get.ByName;
 
-public class GetSubjectsByNameHandler : IRequestHandler<GetSubjectsByNameQuery, Result<IEnumerable<SubjectDTO>>>
+public class GetSubjectsByClassIdHandler : IRequestHandler<GetSubjectsByClassIdQuery, Result<IEnumerable<SubjectDTO>>>
 {
   private readonly IRepository<Subject> _repository;
 
-  public GetSubjectsByNameHandler(IRepository<Subject> repository)
+  public GetSubjectsByClassIdHandler(IRepository<Subject> repository)
   {
     _repository = repository;
   }
 
-  public async Task<Result<IEnumerable<SubjectDTO>>> Handle(GetSubjectsByNameQuery request, CancellationToken cancellationToken)
+  public async Task<Result<IEnumerable<SubjectDTO>>> Handle(GetSubjectsByClassIdQuery request, CancellationToken cancellationToken)
   {
     var subjects = new List<Subject>();
 
-    if (!string.IsNullOrEmpty(request.Name))
+    if (request.ClassId != 0)
     {
-      var spec = new SubjectByNameSpec(request.Name);
+      var spec = new SubjectByClassIdSpec(request.ClassId);
       subjects = await _repository.ListAsync(spec, cancellationToken);
     }
 

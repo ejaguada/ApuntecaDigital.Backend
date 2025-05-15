@@ -1,4 +1,4 @@
-using ApuntecaDigital.Backend.UseCases.Books.Create;
+﻿using ApuntecaDigital.Backend.UseCases.Books.Create;
 
 namespace ApuntecaDigital.Backend.Web.Books;
 
@@ -17,7 +17,7 @@ public class Create(IMediator _mediator)
     AllowAnonymous();
     Summary(s =>
     {
-      s.ExampleRequest = new CreateBookRequest { Title = "Book Title", Author = "Book Author", Isbn = "1234567890" };
+      s.ExampleRequest = new CreateBookRequest { Title = "Book Title", Author = "Book Author", Isbn = "1234567890", SubjectId = 2 };
     });
   }
 
@@ -26,11 +26,11 @@ public class Create(IMediator _mediator)
     CancellationToken cancellationToken)
   {
     var result = await _mediator.Send(new CreateBookCommand(request.Title!,
-      request.Author!, request.Isbn!), cancellationToken);
+      request.Author!, request.Isbn!, request.SubjectId!), cancellationToken);
 
     if (result.IsSuccess)
     {
-      Response = new CreateBookResponse(result.Value, request.Title!, request.Author!, request.Isbn!);
+      Response = new CreateBookResponse(result.Value, request.Title!, request.Author!, request.Isbn!, request.SubjectId!);
       return;
     }
     // TODO: Handle other cases as necessary
