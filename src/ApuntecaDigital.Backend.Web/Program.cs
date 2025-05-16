@@ -2,6 +2,8 @@
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddAuthServices();
+
 var logger = Log.Logger = new LoggerConfiguration()
   .Enrich.FromLogContext()
   .WriteTo.Console()
@@ -25,7 +27,8 @@ builder.Services.AddFastEndpoints()
 
 
 var app = builder.Build();
-
+app.UseAuthentication();
+app.UseAuthorization();
 await app.UseAppMiddlewareAndSeedDatabase();
 
 app.Run();

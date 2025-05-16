@@ -2,6 +2,7 @@
 @rendermode InteractiveAuto
 @using ApuntecaDigital.Backend.Blazor.Client.Models
 @using ApuntecaDigital.Backend.Blazor.Client.Services
+@using Microsoft.AspNetCore.Authorization
 @inject CareerService CareerService
 @inject ClassService ClassService
 @inject SubjectService SubjectService
@@ -10,8 +11,10 @@
 @inject TooltipService TooltipService
 @inject NotificationService NotificationService
 @inject BookService BookService
+@inject AuthenticationService AuthenticationService
 @using Radzen
 @using Radzen.Blazor
+@attribute [Authorize]
 
 <PageTitle>Classes</PageTitle>
 
@@ -94,8 +97,11 @@ else
     private List<Class> classesAux = new();
     private List<Subject> subjectsAux = new();
 
+    
+    
     protected override async Task OnInitializedAsync()
     {
+        var tokenResponse = await AuthenticationService.GetTokenAsync("api1.read"); 
         if (loadFirstTime)
         {
             loadFirstTime = false;

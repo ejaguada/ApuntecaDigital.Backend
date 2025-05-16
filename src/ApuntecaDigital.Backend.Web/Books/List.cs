@@ -17,7 +17,6 @@ public class List(IMediator _mediator) : EndpointWithoutRequest<BookListResponse
   public override void Configure()
   {
     Get("/Books");
-    AllowAnonymous();
   }
 
   public override async Task HandleAsync(CancellationToken cancellationToken)

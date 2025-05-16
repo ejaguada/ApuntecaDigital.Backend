@@ -9,8 +9,6 @@
 @inject NavigationManager NavigationManager
 @inject NotificationService notificationService
 
-<h1>HEA</h1>
-
 @if (bookNotFound)
 {
 	<RadzenProgressBar Mode="ProgressBarMode.Indeterminate" />
@@ -19,45 +17,59 @@ else
 {
 	<RadzenTemplateForm TItem="Book" Data="@book" Submit="Submit">
 		<RadzenFieldset Text="Book Details">
-			<RadzenRow JustifyContent="JustifyContent.Center">
-				<RadzenColumn Size="12">
-					<RadzenLabel Text="Title" />
-					<RadzenTextBox @bind-Value="book.Title" Style="width:100%" Name="Title" />
-					<RadzenRequiredValidator Component="Title" Text="Title is required" Style="display:block" />
-				</RadzenColumn>
-				<RadzenColumn Size="12">
+            <RadzenRow JustifyContent="JustifyContent.Center">
+                <RadzenColumn Size="12">
+                    <RadzenLabel Text="File" />
+                    <RadzenUpload id="uploadWithDragAndDrop" @ref="uploadFile" ChooseText="Drag and drop here or click to choose files"
+                                  Accept=".pdf,.docx,.doc,.epub,.mobi,.azw,.azw3,.txt"
+                                  Auto="false" Multiple="false" Url="upload/multiple" InputAttributes="@(new Dictionary<string, object>() { { "aria-label", "select file" } })"
+                                  Progress=@OnFileUploadProgress
+                                  Error="@((args) => OnFileUploadError(args))"
+                                  Change="@((args) => OnFileUploadChange(args))"
+                                  Style="width: 100%">
+                        <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.H3">
+                            Upload Book File (Max 20MB)
+                        </RadzenText>
+                    </RadzenUpload>
+                </RadzenColumn>
+                <RadzenColumn Size="12">
+                    <RadzenLabel Text="Title"/>
+                    <RadzenTextBox @bind-Value="book.Title" Style="width:100%" Name="Title"/>
+                    <RadzenRequiredValidator Component="Title" Text="Title is required" Style="display:block"/>
+                </RadzenColumn>
+                <RadzenColumn Size="12">
 
-					<RadzenLabel Text="Author" />
-					<RadzenTextBox @bind-Value="book.Author" Style="width:100%" Name="Author" />
-					<RadzenRequiredValidator Component="Author" Text="Author is required" Style="display:block" />
-				</RadzenColumn>
-				<RadzenColumn Size="12">
-					<RadzenLabel Text="ISBN" />
-                    <RadzenTextBox @bind-Value="book.Isbn" Style="width:100%" Name="Isbn" />
-                    <RadzenRequiredValidator Component="Isbn" Text="Author is required" Style="display:block" />
-				</RadzenColumn>
-				<RadzenColumn Size="12">
-					<RadzenLabel Text="Career" Component="CareerDropDownFiltering" />
-					<RadzenDropDown @ref=@careerDropDown @bind-SearchText=careerSearchText FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive" FilterOperator="StringFilterOperator.StartsWith" AllowFiltering="true"
-					Data=@careers TextProperty="@nameof(Book.Subject.Class.Career.Name)" ValueProperty="@nameof(Book.Subject.Class.Career.Id)"
-					Change="@((args) => OnCareerChange((int)args))"
-					AllowClear="true" @bind-Value=careerSearchValue Style="width:100%" Name="CareerDropDownFiltering" />
-					<RadzenNumericRangeValidator Component="CareerDropDownFiltering" Min="1" Text="Career required" />
-				</RadzenColumn>
-				<RadzenColumn Size="12">
-					<RadzenLabel Text="Class" Component="ClassDropDownFiltering" />
-					<RadzenDropDown @ref=@classDropDown @bind-SearchText=classSearchText FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive" FilterOperator="StringFilterOperator.StartsWith" AllowFiltering="true"
-					Change="@((args) => OnClassChange((int)args))"
-					Data=@classes TextProperty="@nameof(Book.Subject.Class.Name)" ValueProperty="@nameof(Book.Subject.Class.Id)" AllowClear="true" @bind-Value=classSearchValue Style="width:100%" Name="ClassDropDownFiltering" />
-					<RadzenNumericRangeValidator Component="ClassDropDownFiltering" Min="1" Text="Class required" />
-				</RadzenColumn>
-				<RadzenColumn Size="12">
-					<RadzenLabel Text="Subject" Component="SubjectDropDownFiltering" />
-					<RadzenDropDown @ref=@subjectDropDown @bind-SearchText=subjectSearchText FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive" FilterOperator="StringFilterOperator.StartsWith" AllowFiltering="true"
-					Data=@subjects TextProperty="@nameof(Book.Subject.Name)" ValueProperty="@nameof(Book.Subject.Id)" AllowClear="true" @bind-Value=subjectSearchValue Style="width:100%" Name="SubjectDropDownFiltering" />
-					<RadzenNumericRangeValidator Component="SubjectDropDownFiltering" Min="1" Text="Subject required" />
-				</RadzenColumn>
-			</RadzenRow>
+                    <RadzenLabel Text="Author"/>
+                    <RadzenTextBox @bind-Value="book.Author" Style="width:100%" Name="Author"/>
+                    <RadzenRequiredValidator Component="Author" Text="Author is required" Style="display:block"/>
+                </RadzenColumn>
+                <RadzenColumn Size="12">
+                    <RadzenLabel Text="ISBN"/>
+                    <RadzenTextBox @bind-Value="book.Isbn" Style="width:100%" Name="Isbn"/>
+                    <RadzenRequiredValidator Component="Isbn" Text="Author is required" Style="display:block"/>
+                </RadzenColumn>
+                <RadzenColumn Size="12">
+                    <RadzenLabel Text="Career" Component="CareerDropDownFiltering"/>
+                    <RadzenDropDown @ref=@careerDropDown @bind-SearchText=careerSearchText FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive" FilterOperator="StringFilterOperator.StartsWith" AllowFiltering="true"
+                                    Data=@careers TextProperty="@nameof(Book.Subject.Class.Career.Name)" ValueProperty="@nameof(Book.Subject.Class.Career.Id)"
+                                    Change="@((args) => OnCareerChange((int)args))"
+                                    AllowClear="true" @bind-Value=careerSearchValue Style="width:100%" Name="CareerDropDownFiltering"/>
+                    <RadzenNumericRangeValidator Component="CareerDropDownFiltering" Min="1" Text="Career required"/>
+                </RadzenColumn>
+                <RadzenColumn Size="12">
+                    <RadzenLabel Text="Class" Component="ClassDropDownFiltering"/>
+                    <RadzenDropDown @ref=@classDropDown @bind-SearchText=classSearchText FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive" FilterOperator="StringFilterOperator.StartsWith" AllowFiltering="true"
+                                    Change="@((args) => OnClassChange((int)args))"
+                                    Data=@classes TextProperty="@nameof(Book.Subject.Class.Name)" ValueProperty="@nameof(Book.Subject.Class.Id)" AllowClear="true" @bind-Value=classSearchValue Style="width:100%" Name="ClassDropDownFiltering"/>
+                    <RadzenNumericRangeValidator Component="ClassDropDownFiltering" Min="1" Text="Class required"/>
+                </RadzenColumn>
+                <RadzenColumn Size="12">
+                    <RadzenLabel Text="Subject" Component="SubjectDropDownFiltering"/>
+                    <RadzenDropDown @ref=@subjectDropDown @bind-SearchText=subjectSearchText FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive" FilterOperator="StringFilterOperator.StartsWith" AllowFiltering="true"
+                                    Data=@subjects TextProperty="@nameof(Book.Subject.Name)" ValueProperty="@nameof(Book.Subject.Id)" AllowClear="true" @bind-Value=subjectSearchValue Style="width:100%" Name="SubjectDropDownFiltering"/>
+                    <RadzenNumericRangeValidator Component="SubjectDropDownFiltering" Min="1" Text="Subject required"/>
+                </RadzenColumn>
+            </RadzenRow>
 		</RadzenFieldset>
 		<RadzenButton ButtonType="ButtonType.Submit" Text="Save" Style="margin-top:1rem" Icon="save" ButtonStyle="ButtonStyle.Primary" />
 		<RadzenButton Click="@((args) => dialogService.Close(true))" Text="Cancel" Style="margin-top:1rem; margin-left:1rem" Icon="close" ButtonStyle="ButtonStyle.Light" />
@@ -81,7 +93,41 @@ else
 	int classSearchValue;
 	int subjectSearchValue;
     bool bookNotFound;
+    RadzenUpload? uploadFile;
 
+    void OnUpload()
+    {
+        if (uploadFile != null) uploadFile.Upload();
+    }
+
+    void OnFileUploadError(UploadErrorEventArgs args)
+    {
+        var msg = new NotificationMessage { Severity = NotificationSeverity.Error, Summary = "Upload Failed", Detail = args.Message, Duration = 4000 };
+        ShowNotification(msg);
+    }
+
+    void OnFileUploadChange(UploadChangeEventArgs args)
+    {
+        foreach (var file in args.Files)
+        {
+            if (file.Size > 20971520) // 20MB in bytes
+            {
+                var msg = new NotificationMessage { Severity = NotificationSeverity.Warning, Summary = "File Too Large", Detail = "File size exceeds 20MB limit", Duration = 4000 };
+                ShowNotification(msg);
+            }
+        }
+    }
+
+    void OnFileUploadProgress(UploadProgressArgs args)
+    {
+        if (args.Progress == 100)
+        {
+            foreach (var file in args.Files)
+            {
+                //TODO: Upload file to temp backend
+            }
+        }
+    }
 	protected override async Task OnParametersSetAsync()
 	{
 		await base.OnParametersSetAsync();

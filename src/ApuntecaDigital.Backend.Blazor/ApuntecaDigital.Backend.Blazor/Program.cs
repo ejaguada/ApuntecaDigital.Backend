@@ -4,6 +4,26 @@ using Radzen;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
+
+builder.Services.AddAuthentication(options =>
+  {
+    options.DefaultScheme = "Cookies";
+    options.DefaultChallengeScheme = "oidc";
+  })
+  .AddCookie("Cookies")
+  .AddOpenIdConnect("oidc", options =>
+  {
+    options.Authority = "https://localhost:7057"; // Your IdentityServer URL
+    options.ClientId = "blazor_client";
+    options.ResponseType = "code";
+    options.SaveTokens = true;
+    options.Scope.Add("api1");
+    options.Scope.Add("profile");
+    options.Scope.Add("openid");
+    options.GetClaimsFromUserInfoEndpoint = true;
+  });
+
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents()
@@ -14,6 +34,13 @@ builder.Services.AddHttpClient("ApiClient", client =>
 {
     client.BaseAddress = new Uri(builder.Configuration["ApiBaseUrl"] ?? "https://localhost:57679");
 });
+
+// Register the auth client
+builder.Services.AddHttpClient("AuthClient", client =>
+{
+  client.BaseAddress = new Uri("https://localhost:7057"); // Your IdentityServer URL
+});
+
 builder.Services.AddRadzenComponents();
 
 
@@ -50,6 +77,9 @@ builder.Services.AddScoped<ContextMenuService>();
 builder.Services.AddScoped<NotificationService>();
 builder.Services.AddScoped<ThemeService>();
 var app = builder.Build();
+
+app.UseAuthentication();
+app.UseAuthorization();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
