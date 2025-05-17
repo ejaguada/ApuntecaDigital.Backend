@@ -1,27 +1,37 @@
 ﻿using ApuntecaDigital.Backend.Blazor.Components;
 using ApuntecaDigital.Backend.Blazor.Client.Services;
 using Radzen;
+using ApuntecaDigital.Backend.Blazor.Client;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.OpenIdConnect;
+using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
+var configuration = builder.Configuration;
+
+var sessionCookieLifetime = configuration.GetValue("SessionCookieLifetimeMinutes", 60);
 
 builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
 
+builder.Services.AddAuthorization();
 builder.Services.AddAuthentication(options =>
   {
-    options.DefaultScheme = "Cookies";
-    options.DefaultChallengeScheme = "oidc";
+      options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+      options.DefaultChallengeScheme = OpenIdConnectDefaults.AuthenticationScheme;
   })
-  .AddCookie("Cookies")
-  .AddOpenIdConnect("oidc", options =>
+  .AddCookie(options => options.ExpireTimeSpan = TimeSpan.FromMinutes(sessionCookieLifetime))
+  .AddOpenIdConnect(options =>
   {
-    options.Authority = "https://localhost:7057"; // Your IdentityServer URL
-    options.ClientId = "blazor_client";
-    options.ResponseType = "code";
-    options.SaveTokens = true;
-    options.Scope.Add("api1");
-    options.Scope.Add("profile");
-    options.Scope.Add("openid");
-    options.GetClaimsFromUserInfoEndpoint = true;
+      options.Authority = "https://localhost:7057";
+      options.SignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+      options.ClientId = "blazor_client";
+      options.ResponseType = "code";
+      options.SaveTokens = true;
+      options.Scope.Add("api1.read");
+      options.Scope.Add("profile");
+      options.Scope.Add("openid");
+      options.GetClaimsFromUserInfoEndpoint = true;
+      options.ClientSecret = "secret";
   });
 
 // Add services to the container.
@@ -38,38 +48,28 @@ builder.Services.AddHttpClient("ApiClient", client =>
 // Register the auth client
 builder.Services.AddHttpClient("AuthClient", client =>
 {
-  client.BaseAddress = new Uri("https://localhost:7057"); // Your IdentityServer URL
+    client.BaseAddress = new Uri("https://localhost:7057");
 });
 
 builder.Services.AddRadzenComponents();
 
+builder.Services.AddScoped<AuthenticationHeaderHandler>();
+
+builder.Services.AddHttpClient("AuthenticatedClient", client =>
+{
+    client.BaseAddress = new Uri(builder.Configuration["ApiBaseUrl"] ?? "https://localhost:57679");
+}).AddHttpMessageHandler<AuthenticationHeaderHandler>();
 
 // Register the CareerService for server-side rendering
-builder.Services.AddScoped<CareerService>(sp => {
-    var httpClientFactory = sp.GetRequiredService<IHttpClientFactory>();
-    var httpClient = httpClientFactory.CreateClient("ApiClient");
-    return new CareerService(httpClient);
-});
+builder.Services.AddScoped<CareerService>();
 
 // Register the ClassService for server-side rendering
-builder.Services.AddScoped<ClassService>(sp => {
-    var httpClientFactory = sp.GetRequiredService<IHttpClientFactory>();
-    var httpClient = httpClientFactory.CreateClient("ApiClient");
-    return new ClassService(httpClient);
-});
+builder.Services.AddScoped<ClassService>();
 
 // Register the SubjectService for server-side rendering
-builder.Services.AddScoped<SubjectService>(sp => {
-    var httpClientFactory = sp.GetRequiredService<IHttpClientFactory>();
-    var httpClient = httpClientFactory.CreateClient("ApiClient");
-    return new SubjectService(httpClient);
-});
+builder.Services.AddScoped<SubjectService>();
 
-builder.Services.AddScoped<BookService>(sp => {
-    var httpClientFactory = sp.GetRequiredService<IHttpClientFactory>();
-    var httpClient = httpClientFactory.CreateClient("ApiClient");
-    return new BookService(httpClient);
-});
+builder.Services.AddScoped<BookService>();
 
 builder.Services.AddScoped<DialogService>();
 builder.Services.AddScoped<TooltipService>();
@@ -84,13 +84,13 @@ app.UseAuthorization();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-  app.UseWebAssemblyDebugging();
+    app.UseWebAssemblyDebugging();
 }
 else
 {
-  app.UseExceptionHandler("/Error", createScopeForErrors: true);
-  // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-  app.UseHsts();
+    app.UseExceptionHandler("/Error", createScopeForErrors: true);
+    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    app.UseHsts();
 }
 
 app.UseHttpsRedirection();
@@ -106,6 +106,7 @@ app.MapStaticAssets();
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode()
     .AddInteractiveWebAssemblyRenderMode()
-    .AddAdditionalAssemblies(typeof(ApuntecaDigital.Backend.Blazor.Client._Imports).Assembly);
+    .AddAdditionalAssemblies(typeof(ApuntecaDigital.Backend.Blazor.Client._Imports).Assembly)
+    .RequireAuthorization();
 
 app.Run();

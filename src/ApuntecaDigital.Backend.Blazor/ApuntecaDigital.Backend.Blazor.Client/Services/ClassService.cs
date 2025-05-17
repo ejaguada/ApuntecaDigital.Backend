@@ -9,9 +9,9 @@ public class ClassService
 {
   private readonly HttpClient _httpClient;
 
-  public ClassService(HttpClient httpClient)
+  public ClassService(IHttpClientFactory httpClientFactory)
   {
-    _httpClient = httpClient;
+    _httpClient = httpClientFactory.CreateClient("AuthenticatedClient");
   }
 
   public async Task<List<Class>> GetClassesAsync(string? name = null)

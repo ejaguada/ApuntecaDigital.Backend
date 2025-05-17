@@ -1,6 +1,8 @@
-using ApuntecaDigital.Backend.IdentityServer;
+﻿using ApuntecaDigital.Backend.IdentityServer;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddRazorPages();
+
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddIdentityServer()
@@ -20,6 +22,10 @@ app.UseStaticFiles();
 app.UseRouting();
 app.UseIdentityServer();
 app.UseAuthorization();
+
+app.MapRazorPages()
+    .RequireAuthorization();
+
 app.UseCors(policy =>
 {
   policy.AllowAnyOrigin();

@@ -25,6 +25,14 @@ builder.Services.AddHttpClient("BlazorClient", client =>
   client.BaseAddress = new Uri(builder.HostEnvironment.BaseAddress);
 });
 
+builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
+
+builder.Services.AddScoped<AuthenticationHeaderHandler>();
+
+builder.Services.AddHttpClient("AuthenticatedClient", client =>
+{
+  client.BaseAddress = new Uri(builder.HostEnvironment.BaseAddress);
+}).AddHttpMessageHandler<AuthenticationHeaderHandler>();
 //
 // builder.Services.AddScoped<IAuthenticationService>(sp =>
 // {
@@ -38,15 +46,6 @@ builder.Services.AddHttpClient("BlazorClient", client =>
 //     authStateProvider);
 // });
 //
-
-
-
-builder.Services.AddScoped<AuthenticationHeaderHandler>();
-
-builder.Services.AddHttpClient("AuthenticatedClient", client =>
-{
-  client.BaseAddress = new Uri(builder.HostEnvironment.BaseAddress);
-}).AddHttpMessageHandler<AuthenticationHeaderHandler>();
 
 // Register services
 

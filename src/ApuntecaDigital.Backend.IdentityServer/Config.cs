@@ -52,20 +52,22 @@ public static class Config
         ClientName = "Blazor Client",
         AllowedGrantTypes = GrantTypes.Code,
         ClientSecrets = new List<Secret> { new Secret("secret".Sha256()) },
-        RequirePkce = false,
-        RequireClientSecret = false,
-        RedirectUris = { "https://localhost:7214/signin-oidc" },
+        RequirePkce = true,
+        RequireClientSecret = true,
+        RedirectUris = { 
+          "https://localhost:7214/signin-oidc",
+          "https://localhost:7214/books"
+        },
         PostLogoutRedirectUris = { "https://localhost:7214/logout-callback" },
-        AllowAccessTokensViaBrowser = false,
-        RequireConsent = false,
+        RequireConsent = true,
         AllowOfflineAccess = true,
+        AllowPlainTextPkce = false,
         AlwaysIncludeUserClaimsInIdToken = true,
         AllowedScopes =
         {
           IdentityServerConstants.StandardScopes.OpenId,
           IdentityServerConstants.StandardScopes.Profile,
-          "api1.read",
-          "api1.write"
+          "api1.read"
         }
       }
     };

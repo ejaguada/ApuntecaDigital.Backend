@@ -1,8 +1,12 @@
-﻿@inject NavigationManager Navigation
+﻿@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+
+@inject NavigationManager Navigation
 
 @code {
-    protected override void OnInitialized()
-    {
-        Navigation.NavigateTo($"login", true);
+	protected override void OnInitialized()
+	{
+		var currentUri = Navigation.Uri; // Esto es la URL completa actual del cliente
+		var loginUrl = $"https://localhost:7057/Account/Login?returnUrl={Uri.EscapeDataString(currentUri)}";
+		Navigation.NavigateTo(loginUrl, true);
     }
 }

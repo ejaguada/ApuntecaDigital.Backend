@@ -7,12 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\ApuntecaDigital.Backend.Infrastructure\ApuntecaDigital.Backend.Infrastructure.csproj"/>
-    <ProjectReference Include="..\..\ApuntecaDigital.Backend.UseCases\ApuntecaDigital.Backend.UseCases.csproj"/>
-    <ProjectReference Include="..\ApuntecaDigital.Backend.Blazor.Client\ApuntecaDigital.Backend.Blazor.Client.csproj"/>
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect"/>
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server"/>
-    <PackageReference Include="Radzen.Blazor"/>
+    <ProjectReference Include="..\..\ApuntecaDigital.Backend.Infrastructure\ApuntecaDigital.Backend.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\ApuntecaDigital.Backend.UseCases\ApuntecaDigital.Backend.UseCases.csproj" />
+    <ProjectReference Include="..\ApuntecaDigital.Backend.Blazor.Client\ApuntecaDigital.Backend.Blazor.Client.csproj" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Authentication" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" />
+    <PackageReference Include="Radzen.Blazor" />
   </ItemGroup>
 
 </Project>

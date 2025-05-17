@@ -51,7 +51,7 @@ public class AuthenticationService : IAuthenticationService
         new ClientCredentialsTokenRequest
         {
           Address = _discoveryDocument.TokenEndpoint,
-          ClientId = "blazor_client",
+          ClientId = "api_client",
           ClientSecret = "secret",
           Scope = scope,
         }

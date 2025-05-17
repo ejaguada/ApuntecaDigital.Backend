@@ -1,26 +1,23 @@
-﻿using System.Net.Http.Headers;
-using Blazored.LocalStorage;
+﻿using ApuntecaDigital.Backend.Blazor.Client.Services;
 
 namespace ApuntecaDigital.Backend.Blazor.Client;
 
 public class AuthenticationHeaderHandler : DelegatingHandler
 {
-  private readonly ILocalStorageService _localStorage;
+  private readonly IAuthenticationService _authService;
 
-  public AuthenticationHeaderHandler(ILocalStorageService localStorage)
+  public AuthenticationHeaderHandler(IAuthenticationService authService)
   {
-    _localStorage = localStorage;
+    _authService = authService;
   }
 
   protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
   {
-    var token = await _localStorage.GetItemAsync<string>("authToken");
-        
-    if (!string.IsNullOrEmpty(token))
+    var token = await _authService.GetTokenAsync("api1.read");
+    if (!string.IsNullOrEmpty(token.AccessToken))
     {
-      request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
+      request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token.AccessToken);
     }
-
     return await base.SendAsync(request, cancellationToken);
   }
 }

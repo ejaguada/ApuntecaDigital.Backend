@@ -6,14 +6,14 @@ namespace ApuntecaDigital.Backend.Blazor.Client.Services;
 
 public class CareerService
 {
-    private readonly HttpClient _httpClient;
+  private readonly HttpClient _httpClient;
 
-    public CareerService(HttpClient httpClient)
-    {
-        _httpClient = httpClient;
-    }
+  public CareerService(IHttpClientFactory httpClientFactory)
+  {
+    _httpClient = httpClientFactory.CreateClient("AuthenticatedClient");
+  }
 
-    public async Task<List<Career>> GetCareersAsync(string? name = null)
+  public async Task<List<Career>> GetCareersAsync(string? name = null)
     {
         try
         {

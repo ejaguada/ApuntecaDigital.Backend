@@ -7,9 +7,9 @@ public class SubjectService
 {
   private readonly HttpClient _httpClient;
 
-  public SubjectService(HttpClient httpClient)
+  public SubjectService(IHttpClientFactory httpClientFactory)
   {
-    _httpClient = httpClient;
+    _httpClient = httpClientFactory.CreateClient("AuthenticatedClient");
   }
 
   public async Task<List<Subject>> GetSubjectsAsync(string? name = null)

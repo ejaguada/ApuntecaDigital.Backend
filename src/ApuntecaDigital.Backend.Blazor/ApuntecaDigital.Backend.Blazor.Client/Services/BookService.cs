@@ -11,9 +11,9 @@ public class BookService
 {
   private readonly HttpClient _httpClient;
 
-  public BookService(HttpClient httpClient)
+  public BookService(IHttpClientFactory httpClientFactory)
   {
-    _httpClient = httpClient;
+    _httpClient = httpClientFactory.CreateClient("AuthenticatedClient");
   }
 
   public async Task<List<Book>> GetBooksAsync(string? title = null)
