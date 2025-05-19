@@ -1,0 +1,15 @@
+services:
+  apuntecadigital.backend.web:
+    image: ${DOCKER_REGISTRY-}apuntecadigitalbackendweb
+    build:
+      context: .
+      dockerfile: src/ApuntecaDigital.Backend.Web/Dockerfile
+    depends_on:
+    - sqlserver
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:latest
+    ports:
+      - "1433:1433"
+    environment:
+      SA_PASSWORD: "Your_password123"
+      ACCEPT_EULA: "Y"

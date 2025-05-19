@@ -38,7 +38,10 @@ public static class MiddlewareConfig
       var context = services.GetRequiredService<AppDbContext>();
       //          context.Database.Migrate();
       context.Database.EnsureCreated();
-      await SeedData.InitializeAsync(context);
+      if (!context.Books.Any())
+      {
+        await SeedData.InitializeAsync(context);
+      }
     }
     catch (Exception ex)
     {
