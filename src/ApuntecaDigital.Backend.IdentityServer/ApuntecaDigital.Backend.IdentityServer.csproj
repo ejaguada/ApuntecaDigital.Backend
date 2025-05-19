@@ -4,12 +4,14 @@
         <TargetFramework>net9.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>1cdad2e6-0b90-4d8b-83a5-5332b3b8936e</UserSecretsId>
     </PropertyGroup>
 
     <ItemGroup>
       <PackageReference Include="Duende.IdentityServer" />
       <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" />
+      <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" />
     </ItemGroup>
 
 </Project>

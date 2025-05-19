@@ -22,7 +22,7 @@ builder.Services.AddAuthentication(options =>
   .AddCookie(options => options.ExpireTimeSpan = TimeSpan.FromMinutes(sessionCookieLifetime))
   .AddOpenIdConnect(options =>
   {
-      options.Authority = "https://localhost:7057";
+      options.Authority = "https://localhost:8081";
       options.SignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
       options.ClientId = "blazor_client";
       options.ResponseType = "code";
@@ -42,13 +42,13 @@ builder.Services.AddRazorComponents()
 // Configure HttpClient with the API base URL
 builder.Services.AddHttpClient("ApiClient", client =>
 {
-    client.BaseAddress = new Uri(builder.Configuration["ApiBaseUrl"] ?? "https://localhost:57679");
+    client.BaseAddress = new Uri(builder.Configuration["ApiBaseUrl"] ?? "https://localhost:443/api");
 });
 
 // Register the auth client
 builder.Services.AddHttpClient("AuthClient", client =>
 {
-    client.BaseAddress = new Uri("https://localhost:7057");
+    client.BaseAddress = new Uri("https://localhost:443/identity");
 });
 
 builder.Services.AddRadzenComponents();
@@ -57,7 +57,7 @@ builder.Services.AddScoped<AuthenticationHeaderHandler>();
 
 builder.Services.AddHttpClient("AuthenticatedClient", client =>
 {
-    client.BaseAddress = new Uri(builder.Configuration["ApiBaseUrl"] ?? "https://localhost:57679");
+    client.BaseAddress = new Uri(builder.Configuration["ApiBaseUrl"] ?? "https://localhost:443/api");
 }).AddHttpMessageHandler<AuthenticationHeaderHandler>();
 
 // Register the CareerService for server-side rendering
@@ -106,7 +106,6 @@ app.MapStaticAssets();
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode()
     .AddInteractiveWebAssemblyRenderMode()
-    .AddAdditionalAssemblies(typeof(ApuntecaDigital.Backend.Blazor.Client._Imports).Assembly)
-    .RequireAuthorization();
+    .AddAdditionalAssemblies(typeof(ApuntecaDigital.Backend.Blazor.Client._Imports).Assembly);
 
 app.Run();

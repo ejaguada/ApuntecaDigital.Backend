@@ -55,11 +55,10 @@ public static class Config
         RequirePkce = true,
         RequireClientSecret = true,
         RedirectUris = { 
-          "https://localhost:7214/signin-oidc",
-          "https://localhost:7214/books"
+          "https://localhost:7214/signin-oidc"
         },
         PostLogoutRedirectUris = { "https://localhost:7214/logout-callback" },
-        RequireConsent = true,
+        RequireConsent = false,
         AllowOfflineAccess = true,
         AllowPlainTextPkce = false,
         AlwaysIncludeUserClaimsInIdToken = true,

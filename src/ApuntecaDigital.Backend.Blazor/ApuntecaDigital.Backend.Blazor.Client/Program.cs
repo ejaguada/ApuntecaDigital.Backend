@@ -3,9 +3,8 @@ using ApuntecaDigital.Backend.Blazor.Client.Providers;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using ApuntecaDigital.Backend.Blazor.Client.Services;
 using Blazored.LocalStorage;
-using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Components.Authorization;
 using Radzen;
+using Microsoft.AspNetCore.Components.Authorization;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 // Authentication services for the client
@@ -16,7 +15,7 @@ builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthenticationStat
 // Register the auth client
 builder.Services.AddHttpClient("AuthClient", client =>
 {
-  client.BaseAddress = new Uri("https://localhost:7057"); // Your IdentityServer URL
+  client.BaseAddress = new Uri("https://apuntecadigital.backend.identityserver:443"); // Your IdentityServer URL
 });
 
 // Register the Blazor client

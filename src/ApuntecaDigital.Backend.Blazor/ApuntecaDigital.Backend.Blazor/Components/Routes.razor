@@ -8,7 +8,6 @@
                 <NotAuthorized>
                     @if (!context.User.Identity?.IsAuthenticated ?? false)
                     {
-                        <RedirectToLogin/>
                     }
                     else
                     {
