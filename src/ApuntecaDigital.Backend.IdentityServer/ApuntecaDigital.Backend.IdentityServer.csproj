@@ -14,4 +14,8 @@
       <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\ApuntecaDigital.Backend.Aspire.ServiceDefaults\ApuntecaDigital.Backend.Aspire.ServiceDefaults.csproj" />
+    </ItemGroup>
+
 </Project>

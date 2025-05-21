@@ -1,6 +1,9 @@
 ﻿using ApuntecaDigital.Backend.IdentityServer;
+using Microsoft.Extensions.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.AddServiceDefaults();
+
 builder.Services.AddRazorPages();
 
 builder.Services.AddControllersWithViews();
@@ -17,19 +20,16 @@ builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
+app.MapDefaultEndpoints();
+
 app.UseStaticFiles();
+
+// This cookie policy fixes login issues with Chrome 80+ using HTTP
+app.UseCookiePolicy(new CookiePolicyOptions { MinimumSameSitePolicy = SameSiteMode.Lax });
 app.UseRouting();
 app.UseIdentityServer();
 app.UseAuthorization();
 
-app.MapRazorPages()
-    .RequireAuthorization();
-
-app.UseCors(policy =>
-{
-    policy.AllowAnyOrigin();
-    policy.AllowAnyHeader();
-    policy.AllowAnyMethod();
-});
 app.MapDefaultControllerRoute();
+
 app.Run();

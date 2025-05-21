@@ -41,9 +41,9 @@ public static class Config
         ClientName = "Swagger UI",
         AllowedGrantTypes = GrantTypes.Implicit,
         AllowAccessTokensViaBrowser = true,
-        RedirectUris = { "https://localhost:5001/swagger/oauth2-redirect.html" },
-        PostLogoutRedirectUris = { "https://localhost:5001/swagger/" },
-        AllowedScopes = { "api1" }
+        RedirectUris = { $"{configuration["ApiClient"]}/oauth2-redirect.html" },
+        PostLogoutRedirectUris = { $"{configuration["ApiClient"]}/swagger/" },
+        AllowedScopes = { "api1.read", "api1.write" }
       },
       // Blazor client
       new Client
@@ -52,22 +52,27 @@ public static class Config
         ClientName = "Blazor Client",
         AllowedGrantTypes = GrantTypes.Code,
         ClientSecrets = new List<Secret> { new Secret("secret".Sha256()) },
-        RequirePkce = true,
+        RequirePkce = false,
         RequireClientSecret = true,
-        RedirectUris = {
-          "https://localhost:5000/signin-oidc"
+        AllowAccessTokensViaBrowser = false,
+        ClientUri = $"{configuration["AppClient"]}",
+        RedirectUris = new List<string> {
+          $"{configuration["AppClient"]}/signin-oidc"
         },
-        PostLogoutRedirectUris = { "https://localhost:5000/logout-callback" },
+        PostLogoutRedirectUris = new List<string> { $"{configuration["AppClient"]}/signout-callback-oidc" },
         RequireConsent = false,
         AllowOfflineAccess = true,
         AllowPlainTextPkce = false,
         AlwaysIncludeUserClaimsInIdToken = true,
-        AllowedScopes =
+        AllowedScopes = new List<string>
         {
           IdentityServerConstants.StandardScopes.OpenId,
           IdentityServerConstants.StandardScopes.Profile,
+          IdentityServerConstants.StandardScopes.OfflineAccess,
           "api1.read"
-        }
+        },
+        AccessTokenLifetime = 60*60*2, // 2 hours
+        IdentityTokenLifetime= 60*60*2 // 2 hours
       },
       new Client
       {
