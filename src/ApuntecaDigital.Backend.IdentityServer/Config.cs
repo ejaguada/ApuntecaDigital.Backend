@@ -24,7 +24,7 @@ public static class Config
       }
     };
 
-  public static IEnumerable<Client> Clients =>
+  public static IEnumerable<Client> Clients(IConfiguration configuration) =>
     new Client[]
     {
       // Web API client
@@ -41,8 +41,8 @@ public static class Config
         ClientName = "Swagger UI",
         AllowedGrantTypes = GrantTypes.Implicit,
         AllowAccessTokensViaBrowser = true,
-        RedirectUris = { "https://localhost:57679/swagger/oauth2-redirect.html" },
-        PostLogoutRedirectUris = { "https://localhost:57679/swagger/" },
+        RedirectUris = { "https://localhost:5001/swagger/oauth2-redirect.html" },
+        PostLogoutRedirectUris = { "https://localhost:5001/swagger/" },
         AllowedScopes = { "api1" }
       },
       // Blazor client
@@ -54,10 +54,10 @@ public static class Config
         ClientSecrets = new List<Secret> { new Secret("secret".Sha256()) },
         RequirePkce = true,
         RequireClientSecret = true,
-        RedirectUris = { 
-          "https://localhost:7214/signin-oidc"
+        RedirectUris = {
+          "https://localhost:5000/signin-oidc"
         },
-        PostLogoutRedirectUris = { "https://localhost:7214/logout-callback" },
+        PostLogoutRedirectUris = { "https://localhost:5000/logout-callback" },
         RequireConsent = false,
         AllowOfflineAccess = true,
         AllowPlainTextPkce = false,
@@ -67,6 +67,22 @@ public static class Config
           IdentityServerConstants.StandardScopes.OpenId,
           IdentityServerConstants.StandardScopes.Profile,
           "api1.read"
+        }
+      },
+      new Client
+      {
+        ClientId = "swaggerui",
+        ClientName = "Swagger UI",
+        AllowedGrantTypes = GrantTypes.Implicit,
+        AllowAccessTokensViaBrowser = true,
+
+        RedirectUris = { $"{configuration["ApiClient"]}/swagger/oauth2-redirect.html" },
+        PostLogoutRedirectUris = { $"{configuration["ApiClient"]}/swagger/" },
+
+        AllowedScopes =
+        {
+            "api1.read",
+            "api1.write"
         }
       }
     };

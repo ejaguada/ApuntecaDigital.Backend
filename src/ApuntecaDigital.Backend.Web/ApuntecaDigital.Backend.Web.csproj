@@ -17,6 +17,7 @@
     <PackageReference Include="Ardalis.ListStartupServices" />
     <PackageReference Include="Ardalis.Result" />
     <PackageReference Include="Ardalis.Result.AspNetCore" />
+    <PackageReference Include="Aspire.StackExchange.Redis.OutputCaching" />
     <PackageReference Include="FastEndpoints" />
     <PackageReference Include="FastEndpoints.Swagger" />
     <PackageReference Include="MediatR" />
@@ -35,6 +36,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ApuntecaDigital.Backend.Aspire.ServiceDefaults\ApuntecaDigital.Backend.Aspire.ServiceDefaults.csproj" />
     <ProjectReference Include="..\ApuntecaDigital.Backend.Infrastructure\ApuntecaDigital.Backend.Infrastructure.csproj" />
     <ProjectReference Include="..\ApuntecaDigital.Backend.UseCases\ApuntecaDigital.Backend.UseCases.csproj" />
   </ItemGroup>

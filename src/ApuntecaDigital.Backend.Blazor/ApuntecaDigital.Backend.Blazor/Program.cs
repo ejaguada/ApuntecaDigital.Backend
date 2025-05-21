@@ -1,13 +1,14 @@
-﻿using ApuntecaDigital.Backend.Blazor.Components;
+﻿using ApuntecaDigital.Backend.Blazor.Client;
 using ApuntecaDigital.Backend.Blazor.Client.Services;
-using Radzen;
-using ApuntecaDigital.Backend.Blazor.Client;
+using ApuntecaDigital.Backend.Blazor.Components;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
-using Microsoft.Extensions.Configuration;
+using Radzen;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
+builder.AddServiceDefaults();
+builder.AddRedisOutputCache("cache");
 
 var sessionCookieLifetime = configuration.GetValue("SessionCookieLifetimeMinutes", 60);
 
@@ -22,7 +23,7 @@ builder.Services.AddAuthentication(options =>
   .AddCookie(options => options.ExpireTimeSpan = TimeSpan.FromMinutes(sessionCookieLifetime))
   .AddOpenIdConnect(options =>
   {
-      options.Authority = "https://localhost:8085";
+      options.Authority = "https://localhost:5002";
       options.SignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
       options.ClientId = "blazor_client";
       options.ResponseType = "code";
@@ -42,13 +43,13 @@ builder.Services.AddRazorComponents()
 // Configure HttpClient with the API base URL
 builder.Services.AddHttpClient("ApiClient", client =>
 {
-    client.BaseAddress = new Uri(builder.Configuration["ApiBaseUrl"] ?? "https://localhost:8081");
+    client.BaseAddress = new Uri(builder.Configuration["ApiBaseUrl"] ?? "https://localhost:5001");
 });
 
 // Register the auth client
 builder.Services.AddHttpClient("AuthClient", client =>
 {
-    client.BaseAddress = new Uri("https://localhost:8085");
+    client.BaseAddress = new Uri("https://localhost:5002");
 });
 
 builder.Services.AddRadzenComponents();
@@ -57,7 +58,7 @@ builder.Services.AddScoped<AuthenticationHeaderHandler>();
 
 builder.Services.AddHttpClient("AuthenticatedClient", client =>
 {
-    client.BaseAddress = new Uri(builder.Configuration["ApiBaseUrl"] ?? "https://localhost:8081");
+    client.BaseAddress = new Uri(builder.Configuration["ApiBaseUrl"] ?? "https://localhost:5001");
 }).AddHttpMessageHandler<AuthenticationHeaderHandler>();
 
 // Register the CareerService for server-side rendering
@@ -106,6 +107,8 @@ app.MapStaticAssets();
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode()
     .AddInteractiveWebAssemblyRenderMode()
-    .AddAdditionalAssemblies(typeof(ApuntecaDigital.Backend.Blazor.Client._Imports).Assembly);
+    .AddAdditionalAssemblies(typeof(ApuntecaDigital.Backend.Blazor.Client._Imports).Assembly)
+    .RequireAuthorization();
 
+app.MapDefaultEndpoints();
 app.Run();

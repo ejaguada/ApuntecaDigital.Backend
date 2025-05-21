@@ -2,6 +2,8 @@
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.AddServiceDefaults();
+
 builder.Services.AddAuthServices();
 
 var logger = Log.Logger = new LoggerConfiguration()
@@ -27,11 +29,10 @@ builder.Services.AddFastEndpoints()
 
 
 var app = builder.Build();
+
 app.UseAuthentication();
 app.UseAuthorization();
+
 await app.UseAppMiddlewareAndSeedDatabase();
-
+app.MapDefaultEndpoints();
 app.Run();
-
-// Make the implicit Program.cs class public, so integration tests can reference the correct assembly for host building
-public partial class Program { }

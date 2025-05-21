@@ -15,7 +15,7 @@ builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthenticationStat
 // Register the auth client
 builder.Services.AddHttpClient("AuthClient", client =>
 {
-  client.BaseAddress = new Uri("https://localhost:8085"); // Your IdentityServer URL
+  client.BaseAddress = new Uri("https://localhost:5002"); // Your IdentityServer URL
 });
 
 // Register the Blazor client
