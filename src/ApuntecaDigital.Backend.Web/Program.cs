@@ -3,6 +3,7 @@
 var builder = WebApplication.CreateBuilder(args);
 
 builder.AddServiceDefaults();
+builder.AddSqlServerClient("sql");
 
 builder.Services.AddAuthServices();
 

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <Sdk Name="Aspire.AppHost.Sdk" Version="9.0.0" />
 
@@ -14,10 +14,11 @@
   <ItemGroup>
     <PackageReference Include="Aspire.Hosting.AppHost" />
     <PackageReference Include="Aspire.Hosting.Redis" />
+    <PackageReference Include="Aspire.Hosting.SqlServer" />
+    <PackageReference Include="CommunityToolkit.Aspire.Hosting.NodeJS.Extensions" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ApuntecaDigital.Backend.Blazor\ApuntecaDigital.Backend.Blazor\ApuntecaDigital.Backend.Blazor.csproj" />
     <ProjectReference Include="..\ApuntecaDigital.Backend.IdentityServer\ApuntecaDigital.Backend.IdentityServer.csproj" />
     <ProjectReference Include="..\ApuntecaDigital.Backend.Web\ApuntecaDigital.Backend.Web.csproj" />
   </ItemGroup>

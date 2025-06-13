@@ -17,7 +17,7 @@ public static class InfrastructureServiceExtensions
     ConfigurationManager config,
     ILogger logger)
   {
-    string? connectionString = config.GetConnectionString("DefaultConnection");
+    string? connectionString = config.GetConnectionString("database");
     Guard.Against.Null(connectionString);
     services.AddDbContext<AppDbContext>(options =>
      options.UseSqlServer(connectionString));

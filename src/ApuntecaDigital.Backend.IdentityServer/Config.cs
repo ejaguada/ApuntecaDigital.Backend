@@ -48,18 +48,16 @@ public static class Config
       // Blazor client
       new Client
       {
-        ClientId = "blazor_client",
-        ClientName = "Blazor Client",
+        ClientId = "nuxt_client",
+        ClientName = "NUXT Client",
         AllowedGrantTypes = GrantTypes.Code,
         ClientSecrets = new List<Secret> { new Secret("secret".Sha256()) },
-        RequirePkce = false,
-        RequireClientSecret = true,
-        AllowAccessTokensViaBrowser = false,
-        ClientUri = $"{configuration["AppClient"]}",
-        RedirectUris = new List<string> {
-          $"{configuration["AppClient"]}/signin-oidc"
-        },
-        PostLogoutRedirectUris = new List<string> { $"{configuration["AppClient"]}/signout-callback-oidc" },
+        RequirePkce = true,
+        RequireClientSecret = false,
+        AllowAccessTokensViaBrowser = true,
+        RedirectUris = { "https://localhost:3000/callback" },
+        PostLogoutRedirectUris = { "https://localhost:3000" },
+        AllowedCorsOrigins = { "https://localhost:3000" },
         RequireConsent = false,
         AllowOfflineAccess = true,
         AllowPlainTextPkce = false,
