@@ -1,6 +1,7 @@
-using ApuntecaDigital.Backend.Core.CareerAggregate;
+﻿using ApuntecaDigital.Backend.Core.CareerAggregate;
 using ApuntecaDigital.Backend.UseCases.Careers;
 using ApuntecaDigital.Backend.UseCases.Careers.Get;
+using ApuntecaDigital.Backend.UseCases.Careers.List;
 using ApuntecaDigital.Backend.Web.Classes;
 
 namespace ApuntecaDigital.Backend.Web.Careers;
@@ -23,9 +24,18 @@ public class GetByName(IMediator _mediator)
   public override async Task HandleAsync(GetCareersByNameRequest request,
     CancellationToken cancellationToken)
   {
-    Result<IEnumerable<CareerDTO>> result = await _mediator.Send(new GetCareersByNameQuery(request.Name), cancellationToken);
+    Result<IEnumerable<CareerDTO>>? result = null;
 
-    if (result.Status == ResultStatus.NotFound)
+    if (!string.IsNullOrEmpty(request.Name))
+    {
+      result = await _mediator.Send(new GetCareersByNameQuery(request.Name), cancellationToken);
+    }
+    else
+    {
+      result = await _mediator.Send(new ListCareersQuery(null, null), cancellationToken);
+    }
+
+    if (result == null || result.Status == ResultStatus.NotFound)
     {
       await SendNotFoundAsync(cancellationToken);
       return;

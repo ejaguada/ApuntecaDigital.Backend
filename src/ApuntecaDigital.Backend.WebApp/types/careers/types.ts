@@ -10,3 +10,19 @@ export interface ECommerceProduct {
   image: string
   productBrand: string
 }
+
+export interface ECareerData {
+  id: number
+  name: string
+  classes:
+  [
+    id: number,
+    name: string,
+    year: number,
+    career:
+    {
+      id: number
+      name: string
+    },
+  ]
+}

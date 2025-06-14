@@ -1,4 +1,4 @@
-using ApuntecaDigital.Backend.UseCases.Careers;
+﻿using ApuntecaDigital.Backend.UseCases.Careers;
 using ApuntecaDigital.Backend.UseCases.Careers.List;
 using ApuntecaDigital.Backend.Web.Classes;
 
@@ -14,7 +14,7 @@ public class List(IMediator _mediator) : EndpointWithoutRequest<CareerListRespon
 {
   public override void Configure()
   {
-    Get("/Careers");
+    Get("/Career/list");
     AllowAnonymous();
   }
 

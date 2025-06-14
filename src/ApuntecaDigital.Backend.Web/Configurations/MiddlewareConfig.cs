@@ -18,7 +18,7 @@ public static class MiddlewareConfig
       app.UseHsts();
     }
 
-    app.UseFastEndpoints()
+    app.UseFastEndpoints() // Adds OpenAPI/Swagger support
         .UseSwaggerGen(); // Includes AddFileServer and static files middleware
 
     app.UseHttpsRedirection(); // Note this will drop Authorization headers

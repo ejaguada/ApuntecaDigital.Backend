@@ -53,7 +53,7 @@ public static class Config
         AllowedGrantTypes = GrantTypes.Code,
         ClientSecrets = new List<Secret> { new Secret("secret".Sha256()) },
         RequirePkce = true,
-        RequireClientSecret = false,
+        RequireClientSecret = false,        
         AllowAccessTokensViaBrowser = true,
         RedirectUris = { "https://localhost:3000/callback" },
         PostLogoutRedirectUris = { "https://localhost:3000" },

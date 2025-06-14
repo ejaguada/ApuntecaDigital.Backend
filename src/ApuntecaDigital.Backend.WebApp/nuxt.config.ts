@@ -49,6 +49,7 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
+      apiBaseUrl: 'https://localhost:5001/',
       oidc: {
         authority: 'https://localhost:5002', // Your IdentityServer URL (browser accessible)
         client_id: 'nuxt_client',

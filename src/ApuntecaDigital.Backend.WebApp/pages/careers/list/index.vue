@@ -1,100 +1,62 @@
 <script lang="ts" setup>
-import type { ECommerceProduct } from '../../../types/careers/types'
+import type { ECareerData } from '../../../types/careers/types'
 import auth from '@/middleware/auth'
 
-const selectedStatus = ref()
-const selectedCategory = ref()
-const selectedStock = ref<boolean | undefined>()
-const searchQuery = ref('')
-const selectedRows = ref([])
-
-const status = ref([
-  { title: 'Scheduled', value: 'Scheduled' },
-  { title: 'Publish', value: 'Published' },
-  { title: 'Inactive', value: 'Inactive' },
-])
-
-const categories = ref([
-  { title: 'Accessories', value: 'Accessories' },
-  { title: 'Home Decor', value: 'Home Decor' },
-  { title: 'Electronics', value: 'Electronics' },
-  { title: 'Shoes', value: 'Shoes' },
-  { title: 'Office', value: 'Office' },
-  { title: 'Games', value: 'Games' },
-])
-
-const stockStatus = ref([
-  { title: 'In Stock', value: true },
-  { title: 'Out of Stock', value: false },
-])
-
-// Data table options
-const itemsPerPage = ref(10)
-const page = ref(1)
-const sortBy = ref()
-const orderBy = ref()
-
-// Update data table options
-const updateOptions = (options: any) => {
-  sortBy.value = options.sortBy[0]?.key
-  orderBy.value = options.sortBy[0]?.order
-}
-
 const headers = [
-  { title: 'Product', key: 'product' },
-  { title: 'Category', key: 'category' },
-  { title: 'Stock', key: 'stock', sortable: false },
-  { title: 'SKU', key: 'sku' },
-  { title: 'Price', key: 'price' },
-  { title: 'QTY', key: 'qty' },
-  { title: 'Status', key: 'status' },
-  { title: 'Actions', key: 'actions', sortable: false },
+  { title: 'Name', key: 'name' },
 ]
 
-const resolveCategory = (category: string) => {
-  if (category === 'Accessories')
-    return { color: 'error', icon: 'tabler-device-watch' }
-  if (category === 'Home Decor')
-    return { color: 'info', icon: 'tabler-home' }
-  if (category === 'Electronics')
-    return { color: 'primary', icon: 'tabler-device-imac' }
-  if (category === 'Shoes')
-    return { color: 'success', icon: 'tabler-shoe' }
-  if (category === 'Office')
-    return { color: 'warning', icon: 'tabler-briefcase' }
-  if (category === 'Games')
-    return { color: 'primary', icon: 'tabler-device-gamepad-2' }
-}
+// const resolveCategory = (category: string) => {
+//   if (category === 'Accessories')
+//     return { color: 'error', icon: 'tabler-device-watch' }
+//   if (category === 'Home Decor')
+//     return { color: 'info', icon: 'tabler-home' }
+//   if (category === 'Electronics')
+//     return { color: 'primary', icon: 'tabler-device-imac' }
+//   if (category === 'Shoes')
+//     return { color: 'success', icon: 'tabler-shoe' }
+//   if (category === 'Office')
+//     return { color: 'warning', icon: 'tabler-briefcase' }
+//   if (category === 'Games')
+//     return { color: 'primary', icon: 'tabler-device-gamepad-2' }
+// }
 
-const resolveStatus = (statusMsg: string) => {
-  if (statusMsg === 'Scheduled')
-    return { text: 'Scheduled', color: 'warning' }
-  if (statusMsg === 'Published')
-    return { text: 'Publish', color: 'success' }
-  if (statusMsg === 'Inactive')
-    return { text: 'Inactive', color: 'error' }
-}
+// const resolveStatus = (statusMsg: string) => {
+//   if (statusMsg === 'Scheduled')
+//     return { text: 'Scheduled', color: 'warning' }
+//   if (statusMsg === 'Published')
+//     return { text: 'Publish', color: 'success' }
+//   if (statusMsg === 'Inactive')
+//     return { text: 'Inactive', color: 'error' }
+// }
+const searchQuery = ref('')
+const careersData = ref({ careers: [], total: 0 })
 
-const { data: productsData } = await useApi<any>(createUrl('/apps/ecommerce/products',
-  {
+const careers = computed((): ECareerData[] => careersData.value.careers)
+const totalCareers = computed(() => careersData.value.total)
+
+const fetchCareers = async () => {
+  // Fetch careers data from the API
+  const { data } = await useApi<any>(createUrl('/Careers', {
     query: {
-      q: searchQuery,
-      stock: selectedStock,
-      category: selectedCategory,
-      status: selectedStatus,
-      page,
-      itemsPerPage,
-      sortBy,
-      orderBy,
+      name: searchQuery.value,
     },
-  },
-))
+  }))
 
-const products = computed((): ECommerceProduct[] => productsData.value.products)
-const totalProduct = computed(() => productsData.value.total)
+  careersData.value = data.value
+}
 
-// const deleteProduct = async (id: number) => {
-//   await $api(`apps/ecommerce/products/${id}`, {
+onMounted(() => {
+  fetchCareers()
+})
+
+watch(searchQuery, () => {
+  // Refetch careers when search query changes
+  fetchCareers()
+})
+
+// const deleteCareer = async (id: number) => {
+//   await $api(`apps/ecommerce/careers/${id}`, {
 //     method: 'DELETE',
 //   })
 
@@ -103,8 +65,8 @@ const totalProduct = computed(() => productsData.value.total)
 //   if (index !== -1)
 //     selectedRows.value.splice(index, 1)
 
-//   // Refetch products
-//   fetchProducts()
+//   // Refetch careers
+//   fetchCareers()
 // }
 
 definePageMeta({
@@ -114,7 +76,7 @@ definePageMeta({
 
 <template>
   <div>
-    <!-- 👉 products -->
+    <!-- 👉 careers -->
     <VCard
       title="Filters"
       class="mb-6"
@@ -122,46 +84,52 @@ definePageMeta({
       <VCardText>
         <VRow>
           <!-- 👉 Select Status -->
-          <VCol
+          <!--
+            <VCol
             cols="12"
             sm="4"
-          >
+            >
             <AppSelect
-              v-model="selectedStatus"
-              placeholder="Status"
-              :items="status"
-              clearable
-              clear-icon="tabler-x"
+            v-model="selectedStatus"
+            placeholder="Status"
+            :items="status"
+            clearable
+            clear-icon="tabler-x"
             />
-          </VCol>
+            </VCol>
+          -->
 
           <!-- 👉 Select Category -->
-          <VCol
+          <!--
+            <VCol
             cols="12"
             sm="4"
-          >
+            >
             <AppSelect
-              v-model="selectedCategory"
-              placeholder="Category"
-              :items="categories"
-              clearable
-              clear-icon="tabler-x"
+            v-model="selectedCategory"
+            placeholder="Category"
+            :items="categories"
+            clearable
+            clear-icon="tabler-x"
             />
-          </VCol>
+            </VCol>
+          -->
 
           <!-- 👉 Select Stock Status -->
-          <VCol
+          <!--
+            <VCol
             cols="12"
             sm="4"
-          >
+            >
             <AppSelect
-              v-model="selectedStock"
-              placeholder="Stock"
-              :items="stockStatus"
-              clearable
-              clear-icon="tabler-x"
+            v-model="selectedStock"
+            placeholder="Stock"
+            :items="stockStatus"
+            clearable
+            clear-icon="tabler-x"
             />
-          </VCol>
+            </VCol>
+          -->
         </VRow>
       </VCardText>
 
@@ -172,7 +140,7 @@ definePageMeta({
           <!-- 👉 Search  -->
           <AppTextField
             v-model="searchQuery"
-            placeholder="Search Product"
+            placeholder="Search Careers"
             style="inline-size: 200px;"
             class="me-3"
           />
@@ -185,21 +153,23 @@ definePageMeta({
             :items="[5, 10, 20, 25, 50]"
           />
           <!-- 👉 Export button -->
-          <VBtn
+          <!--
+            <VBtn
             variant="tonal"
             color="secondary"
             prepend-icon="tabler-upload"
-          >
+            >
             Export
-          </VBtn>
+            </VBtn>
 
-          <VBtn
+            <VBtn
             color="primary"
             prepend-icon="tabler-plus"
             @click="$router.push('/apps/ecommerce/product/add')"
-          >
+            >
             Add Product
-          </VBtn>
+            </VBtn>
+          -->
         </div>
       </div>
 
@@ -207,66 +177,69 @@ definePageMeta({
 
       <!-- 👉 Datatable  -->
       <VDataTableServer
-        v-model:items-per-page="itemsPerPage"
-        v-model:model-value="selectedRows"
-        v-model:page="page"
         :headers="headers"
         show-select
-        :items="products"
-        :items-length="totalProduct"
-        class="text-no-wrap"
-        @update:options="updateOptions"
+        :items="careers"
+        :items-length="totalCareers"
       >
         <!-- product  -->
-        <template #item.product="{ item }">
+        <!--
+          <template #item.product="{ item }">
           <div class="d-flex align-center gap-x-4">
-            <VAvatar
-              v-if="item.image"
-              size="38"
-              variant="tonal"
-              rounded
-              :image="item.image"
-            />
-            <div class="d-flex flex-column">
-              <span class="text-body-1 font-weight-medium text-high-emphasis">{{ item.productName }}</span>
-              <span class="text-body-2">{{ item.productBrand }}</span>
-            </div>
+          <VAvatar
+          v-if="item.image"
+          size="38"
+          variant="tonal"
+          rounded
+          :image="item.image"
+          />
+          <div class="d-flex flex-column">
+          <span class="text-body-1 font-weight-medium text-high-emphasis">{{ item.productName }}</span>
+          <span class="text-body-2">{{ item.productBrand }}</span>
           </div>
-        </template>
+          </div>
+          </template>
+        -->
 
         <!-- category -->
-        <template #item.category="{ item }">
+        <!--
+          <template #item.category="{ item }">
           <VAvatar
-            size="30"
-            variant="tonal"
-            :color="resolveCategory(item.category)?.color"
-            class="me-4"
+          size="30"
+          variant="tonal"
+          :color="resolveCategory(item.category)?.color"
+          class="me-4"
           >
-            <VIcon
-              :icon="resolveCategory(item.category)?.icon"
-              size="18"
-            />
+          <VIcon
+          :icon="resolveCategory(item.category)?.icon"
+          size="18"
+          />
           </VAvatar>
           <span class="text-body-1 text-high-emphasis">{{ item.category }}</span>
-        </template>
+          </template>
+        -->
 
         <!-- stock -->
-        <template #item.stock="{ item }">
+        <!--
+          <template #item.stock="{ item }">
           <VSwitch
-            :id="useId()"
-            :model-value="item.stock"
+          :id="useId()"
+          :model-value="item.stock"
           />
-        </template>
+          </template>
+        -->
 
         <!-- status -->
-        <template #item.status="{ item }">
+        <!--
+          <template #item.status="{ item }">
           <VChip
-            v-bind="resolveStatus(item.status)"
-            density="default"
-            label
-            size="small"
+          v-bind="resolveStatus(item.status)"
+          density="default"
+          label
+          size="small"
           />
-        </template>
+          </template>
+        -->
 
         <!-- Actions -->
         <template #item.actions>
@@ -301,7 +274,7 @@ definePageMeta({
           <TablePagination
             v-model:page="page"
             :items-per-page="itemsPerPage"
-            :total-items="totalProduct"
+            :total-items="totalCareers"
           />
         </template>
       </VDataTableServer>

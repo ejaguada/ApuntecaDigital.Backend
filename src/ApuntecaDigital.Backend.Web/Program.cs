@@ -7,6 +7,17 @@ builder.AddSqlServerClient("sql");
 
 builder.Services.AddAuthServices();
 
+// Configuración de CORS: permite cualquier origen, método y cabecera
+builder.Services.AddCors(options =>
+{
+  options.AddDefaultPolicy(policy =>
+  {
+    policy.AllowAnyOrigin()
+          .AllowAnyHeader()
+          .AllowAnyMethod();
+  });
+});
+
 var logger = Log.Logger = new LoggerConfiguration()
   .Enrich.FromLogContext()
   .WriteTo.Console()
@@ -29,7 +40,11 @@ builder.Services.AddFastEndpoints()
                 });
 
 
+
 var app = builder.Build();
+
+// Usa CORS después de la autenticación y antes de la autorización/endpoints
+app.UseCors();
 
 app.UseAuthentication();
 app.UseAuthorization();
